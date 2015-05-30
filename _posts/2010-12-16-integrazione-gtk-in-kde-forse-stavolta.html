@@ -1,0 +1,18 @@
+---
+layout: post
+title: Integrazione GTK in KDE, forse stavolta ci siamo davvero
+date: '2010-12-16T15:36:00.000+01:00'
+author: Matteo Pani
+tags:
+- personalizzazione
+- KDE
+- GTK
+- GNOME
+- Qt
+modified_time: '2010-12-16T15:36:36.571+01:00'
+thumbnail: http://2.bp.blogspot.com/_c9tXAWBZ8s4/TQn9pNFLYPI/AAAAAAAAAEI/es-5Xd4bOsU/s72-c/gimp+gtk-qt.png
+blogger_id: tag:blogger.com,1999:blog-1607064176246964751.post-6612180706399560551
+blogger_orig_url: http://mattuxblog.blogspot.com/2010/12/integrazione-gtk-in-kde-forse-stavolta.html
+---
+
+Torniamo a parlare dell'integrazione delle applicazioni che utilizzano le librerie grafiche GTK in KDE. Avevamo trovato una buona <a href="http://mattuxblog.blogspot.com/2010/10/le-applicazioni-gtk-in-kde.html">soluzione</a>, ma grazie al blog "Pc fai da thé" <a href="http://www.pcfaidate.com/2010/12/installiamo-il-nuovo-oxygen-engine-per.html">ho scoperto</a> che forse abbiamo trovato quella definitiva e per questo dobbiamo ringraziare il team di...KDE O_o<br /><a name='more'></a><br />Eh sì, il team del draghetto ha realizzato un engine GTK, che possiamo anche usare per esempio su GNOME.<br />Ecco come si presenta sul mio pc GIMP:<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_c9tXAWBZ8s4/TQn9pNFLYPI/AAAAAAAAAEI/es-5Xd4bOsU/s1600/gimp+gtk-qt.png" style="margin-left: auto; margin-right: auto;"><img border="0" height="241" src="http://2.bp.blogspot.com/_c9tXAWBZ8s4/TQn9pNFLYPI/AAAAAAAAAEI/es-5Xd4bOsU/s320/gimp+gtk-qt.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">si integra quasi alla perfezione *-*</td><td class="tr-caption" style="text-align: center;"><br /></td></tr></tbody></table><br />Hanno fatto veramente un ottimo lavoro. Ogni mese ci sarà un rilascio di <i>bug fixing</i>, mentre ogni 6 mesi avremo un rilascio di <i>major-feature</i>.<br /><br />Vediamone l'installazione o meglio, la compilazione.<br /><br />Da <a href="http://download.kde.org/download.php?url=stable/oxygen-gtk/1.0.0/src/oxygen-gtk-1.0.0.tar.bz2">questa pagina</a> scarichiamo il pacchetto .bz2, dopodichè lo scompattiamo e poi apriamo il terminale, posizionandoci nella directory in cui abbiamo scompattato il file.<br />Quindi, digitiamo questi comandi uno alla volta:<br /><blockquote>cd oxygen-gtk<br />mkdir build<br />cd build<br />cmake ../<br />make -j2<br />sudo make install</blockquote><br />Note riguardanti la procedura:<br /><ul><li>se usando <b>cmake</b> da solo non otteniamo il risultato sperato possiamo risolvere così:</li></ul><blockquote>cmake -DCMAKE_INSTALL_PREFIX=`pkg-config --variable=prefix gtk+-2.0` ../</blockquote><ul><li>&nbsp;se usiamo un sistema a <b>64bit</b> è necessario dare <b>cmake</b> così:</li></ul><blockquote>cmake -DLIB_SUFFIX=64 ../</blockquote><br />Sul blog di Hugo Pareira <a href="http://hugo-kde.blogspot.com/2010/11/oxygen-gtk.html">tutte le info</a> a riguardo.

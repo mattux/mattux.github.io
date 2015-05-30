@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'GNU/Linux: Skype non squilla quando ci chiamano? Aggiriamo il problema!'
+date: '2010-08-07T11:31:00.002+02:00'
+author: Matteo Pani
+tags:
+- skype
+- GNU/linux
+modified_time: '2010-09-10T09:34:49.446+02:00'
+blogger_id: tag:blogger.com,1999:blog-1607064176246964751.post-3965732060921613052
+blogger_orig_url: http://mattuxblog.blogspot.com/2010/08/gnulinux-skype-non-squilla-quando-ci.html
+---
+
+Ho notato che skype non emetteva alcun suono quando mi chiamavano, nonostante il file che dovesse riprodurre esiste. La cosa non è di per sé grave, per cui non mi sono adoperato per risolvere il problema. Qualche giorno fa però ho deciso di porvi rimedio.<br />Questo che illustrerò è solo un modo per aggirarlo, non per risolvere di fatto il problema.<br />&nbsp;In sostanza possiamo dire a skype di eseguire un comando per ogni evento quindi anche quando ci chiamano, ma poniamo fine ai preamboli e mettiamoci all'opera!<br /><a name='more'></a><br />Non so se conoscete <b>mplayer</b>,&nbsp; il famoso riproduttore multimediale. Beh, di suo è un programma a riga di comando, ma sono disponibili interfacce grafiche. A noi non serve però l'interfaccia grafica, ma la riga di comando per riprodurre l'audio, che è<br /><div style="text-align: center;"><br /></div><div style="text-align: center;"><span style="font-family: 'Courier New', Courier, monospace;"><i><b>mplayer /directory/che/contiene/il/file.estensione </b></i></span></div><div style="text-align: center;"><br /></div><div style="text-align: left;"><span style="font-family: 'Trebuchet MS', sans-serif;">Ora </span>dobbiamo dire a skype di eseguire questo comando quando ci chiamano.</div><ol><li>Aprite Skype</li><li>Cliccate sul simbolo di Skype in basso a sinistra <span id="goog_1568598837"></span><span id="goog_1568598838"></span></li><li>Cliccate su Opzioni -&gt; Notifiche -&gt;Vista avanzata</li><li>Cliccate su "Suoneria chiamata in ingresso"</li></ol>A questo punto&nbsp; alla voce "Esegui lo script seguente" inserite il comando<br /><div style="text-align: center;"><br /></div><div style="text-align: center;"><span style="font-family: 'Courier New', Courier, monospace;"><i><b>mplayer /usr/share/skype/sounds/CallRingingIn.wav&nbsp; </b></i></span></div><br />oppure fate seguire a 'mplayer' il riferimento al suono che decidete di far riprodurre. Ovviamente vale anche per gli altri eventi.

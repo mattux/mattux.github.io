@@ -1,0 +1,14 @@
+---
+layout: post
+title: Diamo un nome ai comandi grazie agli alias
+date: '2010-09-11T10:00:00.002+02:00'
+author: Matteo Pani
+tags:
+- howto
+- GNU/linux
+modified_time: '2010-09-11T10:00:02.553+02:00'
+blogger_id: tag:blogger.com,1999:blog-1607064176246964751.post-2036948140467287603
+blogger_orig_url: http://mattuxblog.blogspot.com/2010/09/diamo-un-nome-ai-comandi-grazie-agli.html
+---
+
+Nonostante ci siano applicazioni grafiche che ci consentono di fare praticamente tutto quello che ci passa per la testa, il terminale è a volte la soluzione ideale (quando non siamo costretti ad usarlo), per potenza, velocità e perché no, semplicità :)<br />Ma usare spesso lunghi comandi è certamente scomodo e soprattutto se siamo pigri ci viene incontro il meccanismo degli <b>alias</b>.<br /><a name='more'></a>In sostanza è come dire: "Da adesso questa roba qua la chiamo in questo modo qui".<br /><br />Prendiamo ad esempio il comando <b>rm</b>, che rimuove un file, ma lo fa senza chiedere conferma, a meno che non usiamo l'opzione <b>-i</b>, cioè così:<br /><blockquote>rm -i file_da_cancellare</blockquote><br />per fare in modo che ogni volta che uso <b>rm</b> il sistema utilizzi <b>rm -i</b> faremo in questa maniera:<br /><blockquote>alias rm = 'rm -i'</blockquote><br />&nbsp;e se vogliamo rimuovere l'alias scriveremo:<br /><blockquote>unalias rm</blockquote><br /><b>Attenzione</b>: in questo modo l'alias funziona solo per la sessione di terminale corrente, per renderlo definitivo dobbiamo scrivere il comando per definire l'alias nel file <i>.bashrc</i> che sta nella nostra home.

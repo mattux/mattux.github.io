@@ -1,0 +1,16 @@
+---
+layout: post
+title: Sorci e piazzamenti delle finestre
+date: '2013-07-22T23:29:00.000+02:00'
+author: Matteo Pani
+tags:
+- bash
+- GNU/linux
+- Xfce
+modified_time: '2013-09-25T17:05:23.076+02:00'
+thumbnail: http://4.bp.blogspot.com/-0xY4NS3xb5s/Ue2fsXf6c9I/AAAAAAAAC8A/XelKShHlht0/s72-c/posizionamento.png
+blogger_id: tag:blogger.com,1999:blog-1607064176246964751.post-5094206679556187731
+blogger_orig_url: http://mattuxblog.blogspot.com/2013/07/sorci-e-piazzamenti-delle-finestre.html
+---
+
+Non so voi, ma io preferisco che il window manager mi apra le finestre esattamente al centro dello schermo e non in una posizione per me quasi impredicibile. <br />Xfce mi consente di configurare in maniera molto semplice questo aspetto:<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-0xY4NS3xb5s/Ue2fsXf6c9I/AAAAAAAAC8A/XelKShHlht0/s1600/posizionamento.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="269" src="http://4.bp.blogspot.com/-0xY4NS3xb5s/Ue2fsXf6c9I/AAAAAAAAC8A/XelKShHlht0/s320/posizionamento.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Semplice come bere un biccher d'acqua</td></tr></tbody></table>Purtroppo <b>molti temi</b> di Xfwm (il gestore delle finestre di Xfce) <b>ignorano questa impostazione</b> e le finestre si aprono dove pare a loro.<br />A questo punto ho deciso di indagare.<br />Nella directory <b>xfwm4</b> è presente il file <i>themerc</i>, nel quale spesso è presente una riga con questa direttiva:<br /><blockquote class="tr_bq">placement_ratio=20</blockquote>Ecco il colpevole. In breve, quel "20" rappresenta la dimensione minima delle finestre per cui si attiva il posizionamento intelligente, ma come si può vedere dall'immagine che sta sopra il cursore sta in fondo e cioè è a <b>100</b>. Scrivendolo esplicitamente nel file del tema, le impostazioni del DE vengono bypassate. Basta eliminare quella riga e la cosa si risolve. <br />Compiere questa operazione a mano per tutti i temi è una grossa seccatura e così ho deciso di elaborare un comando per risolvere questo problema velocemente:<br /><pre class="brush:bash">sed -i s/placement_ratio=20//g ~/.themes/*/xfwm4/themerc </pre>Grazie a sed, in tutti i file che si trovano in ~/.themes, l'odiosa riga viene sostituita con una riga vuota e quindi di fatto eliminata.<br />Per il file che si trovano in <i>/usr/share/themes</i> basta andare a modificare il percorso e diventare root:<br /><pre class="brush:bash">sed -i s/placement_ratio=20//g /usr/share/themes/*/xfwm4/themerc </pre><br />Et voilà, problema risolto ;)<br /><br /><br /><br /><span style="font-size: x-small;">p.s. Ho deciso di non "spezzare" più i post e sto meditando anche un bel restyling di tutto il blog.</span>

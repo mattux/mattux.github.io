@@ -1,0 +1,15 @@
+---
+layout: post
+title: Spegnere il pc automaticamente dopo l'aggiornamento
+date: '2013-02-02T16:34:00.000+01:00'
+author: Matteo Pani
+tags:
+- tip
+- GNU/linux
+- terminale
+modified_time: '2013-09-24T23:17:11.495+02:00'
+blogger_id: tag:blogger.com,1999:blog-1607064176246964751.post-1134008334849630941
+blogger_orig_url: http://mattuxblog.blogspot.com/2013/02/spegnere-il-pc-automaticamente-dopo.html
+---
+
+<div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-5JHWuezsm7k/UQ0q0MnpSJI/AAAAAAAACGs/SMz5O-ddC64/s1600/update-manager.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://lh3.ggpht.com/-5JHWuezsm7k/UQ0q0MnpSJI/AAAAAAAACGs/SMz5O-ddC64/s1600/update-manager.png" /></a></div>Piccola tip che ho scoperto di recente che non tutti conoscono.<br />Sappiamo benissimo che su GNU/Linux possiamo fare gli aggiornamenti quando ci pare e mentre il gestore dei pacchetti lavora noi possiamo continuare a farci bellamente gli affari nostri.<br />Però magari noi vogliamo dare gli aggiornamenti prima di spegnere il pc, perché abbiamo esigenza di poter sfruttare tutta la banda di rete disponibile o perché semplicemente mentre lavoriamo vogliamo che le rotture di scatole tendano a zero, o per qualche altro motivo.<br /><a name='more'></a><br />La soluzione è molto semplice ed il terminale è nostro amico.<br /><br />I comandi non si possono <b>concatenare</b> solo con la pipe, ma anche con un <b>and logico</b> (&amp;&amp;). L'effetto è che il secondo comando verrà eseguito solo se il primo è andato a buon fine.<br /><br />Piccolo esempio: <pre class="brush:shell"><br />$ wget --spider -q http://www.mattux.co.vu &amp;&amp; echo -e "\n\n\nCiao, se mi leggi vuol dire che il comando precedente è stato eseguito"</pre>Quello che fa questa riga di comando è molto semplice:<br /><ul><li>wget controlla (opzione --spider) se esiste l'index di questo blog (ovviamente esiste);</li><li>se e solo se wget è stato lanciato e una volta che wget ha finito, viene eseguito l'output del comando echo.</li></ul><br />Applichiamo questo concetto agli update ed allo spegnimento. <br /><br />Su Debian/Ubuntu diamo qualcosa del tipo: <br /><blockquote># apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; shutdown -h now</blockquote>Su Fedora invece: <br /><blockquote># yum update -y &amp;&amp; poweroff</blockquote><br />Il pc <b>non</b> si spegnerà soltanto nel caso in cui l'update dovesse bloccarsi per qualche problema. Da un lato è male, mentre dall'altro è bene, poiché in caso di mancato spegnimento ci si accorgerebbe immediatamente della cosa ed eventualmente porre rimedio qualora l'update si interrompesse durante l'update dei pacchetti e non semplicemente durante il loro download.<br /><br />Alla prossima :)<br /><br /><span style="font-size: x-small;"><br />Nota: L'<span style="font-size: x-small;">i</span>mmagine del post<span style="font-size: x-small;"> </span>fa parte del set di icone</span> <a class="g-profile" href="http://plus.google.com/116957764483417291271" target="_blank">+AwOken</a>.

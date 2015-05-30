@@ -1,0 +1,16 @@
+---
+layout: post
+title: Di sorci e PulseAudio
+date: '2013-04-26T19:07:00.000+02:00'
+author: Matteo Pani
+tags:
+- pulseaudio
+- GNU/linux
+- Xfce
+modified_time: '2013-04-26T19:07:46.292+02:00'
+thumbnail: http://1.bp.blogspot.com/-2W2WwGbNzwo/UXqyuxH9PFI/AAAAAAAACeM/a6G5lx-fStg/s72-c/xfce_audio.png
+blogger_id: tag:blogger.com,1999:blog-1607064176246964751.post-232041177501713528
+blogger_orig_url: http://mattuxblog.blogspot.com/2013/04/di-sorci-e-pulseaudio.html
+---
+
+<div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-2W2WwGbNzwo/UXqyuxH9PFI/AAAAAAAACeM/a6G5lx-fStg/s1600/xfce_audio.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="153" src="http://1.bp.blogspot.com/-2W2WwGbNzwo/UXqyuxH9PFI/AAAAAAAACeM/a6G5lx-fStg/s320/xfce_audio.png" width="320" /></a></div>Una delle poche cose che mi hanno sempre dato un po' noia su Xfce è il fatto che abilitando il <i>mute</i>&nbsp;dell'audio usando i tasti funzione/multimediali, l'<i>unmute</i>&nbsp;non avviene correttamente, costringendomi ad aprire il mixer ed abilitare nuovamente il canale opportuno a manina.<br /><br /><br /><br /><a name='more'></a>Il colpevole di questo malfunzionamento è <b>xfce4-volumed</b>, che non supporta il nostro amico PulseAudio. Fortunatamente qualcuno ha provveduto a sistemare le cose (il bello dell'opensource :D).<br />Quello che bisogna fare è sostanzialmente <a href="https://launchpad.net/xfce4-volumed-pulse/trunk/0.2.0/+download/xfce4-volumed-pulse-0.2.0.tar.bz2" target="_blank">scaricare <b>xfce4-volumed-pulse</b></a>, compilarlo, installarlo ed abilitarlo al boot al posto del vecchio xfce4-volumed:<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td><a href="http://1.bp.blogspot.com/-Dki7s1reUms/UXqwhgpgxXI/AAAAAAAACd0/cUcw7iS786g/s1600/Selezione_031.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="187" src="http://1.bp.blogspot.com/-Dki7s1reUms/UXqwhgpgxXI/AAAAAAAACd0/cUcw7iS786g/s320/Selezione_031.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="font-size: 13px;">"Mister, sostituzione!"</td></tr></tbody></table><a href="https://aur.archlinux.org/packages/xfce4-volumed-pulse/" target="_blank">Su AUR</a>&nbsp;le dipendenze indicate sono, a parte pulseaudio, <b>libkeybinder2</b>&nbsp;e <b>libnotify</b>, ma chiaramente i nomi dei pacchetti variano da distro a distro. Ora finalmente possiamo zittire il pc sapendo che non avremo il minimo sbattimento per riabilitare il sonoro, come in teoria dovrebbe essere...<br /><br />Ringrazio&nbsp;<a class="g-profile" href="http://plus.google.com/115147457025961956673" target="_blank">+Marco Milone</a>&nbsp;che me l'ha fatto scoprire :)

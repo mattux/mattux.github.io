@@ -1,0 +1,16 @@
+---
+layout: post
+title: 'REISUB: quando il gioco si fa duro, i duri riavviano così'
+date: '2012-02-25T15:35:00.000+01:00'
+author: Matteo Pani
+tags:
+- tip
+- GNU/linux
+- utilità
+modified_time: '2012-04-06T16:16:03.862+02:00'
+thumbnail: http://3.bp.blogspot.com/-Cs2-rrWTXkM/T0grlhbDI3I/AAAAAAAAAs0/f2tTbt1JY_c/s72-c/reboot.png
+blogger_id: tag:blogger.com,1999:blog-1607064176246964751.post-8612327287099181072
+blogger_orig_url: http://mattuxblog.blogspot.com/2012/02/reisub-quando-il-gioco-si-fa-duro-i.html
+---
+
+<div class="separator" style="clear: both; text-align: center;"></div><a href="http://3.bp.blogspot.com/-Cs2-rrWTXkM/T0grlhbDI3I/AAAAAAAAAs0/f2tTbt1JY_c/s1600/reboot.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-Cs2-rrWTXkM/T0grlhbDI3I/AAAAAAAAAs0/f2tTbt1JY_c/s1600/reboot.png" /></a>Ieri una collega (che ringrazio :D), mi ha insegnato un modo per riavviare il pc quando linux è totalmente bloccato e non risponde più ad input di alcun tipo.<br />In sostanza, si tratta di effettuare una potentissima combinazione di tasti:<br /><br /><b>CTRL + ALT + SHIFT + CANC + RSist</b> da tenere premuti mentre si digita la parola <b>REISUB</b>.<br /><br /><a name='more'></a>Perché funziona?<br /><br /><b>CTRL + ALT + SHIFT + CANC + RSist</b> serve per comunicare direttamente col kernel, dicendogli questo:<br /><br /><b>R</b> -&gt; Passa alla modalita XLATE, per la tastiera;<br /><b>E</b> -&gt; Manda un segnale di SIGTERM a tutti i processi tranne init;<br /><b>I</b> -&gt;&nbsp; Manda un segnale di SIGKILL a tutti i processi tranne init;<br /><b>S</b> -&gt; Sincronizza tutti i filesystem montati;<br /><b>U</b> -&gt; Rimonta tutti i filesystem in modalità read-only;<br /><b>B</b> -&gt; Fai un reboot del sistema, senza smontare o sincronizzare i filesystem.<br /><br />Ulteriori informazioni le troviamo nella <a href="http://en.wikipedia.org/wiki/Magic_SysRq_key">pagina di wikipedia dedicata</a>.<br /><br />Credo che questa combinazione di tasti mi salverà il fondoschiena parecchie volte.
