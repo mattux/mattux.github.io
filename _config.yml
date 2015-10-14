@@ -11,6 +11,7 @@ github_username:  mattux
 # Build settings
 markdown: kramdown
 
+# prose.io
 prose:
   rooturl: '_posts'
   siteurl: 'http://mattux.github.io/'
