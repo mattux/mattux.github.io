@@ -11,7 +11,11 @@ Chi sono
 
 ![](https://pbs.twimg.com/profile_images/589901395186188289/K3zggXv2_400x400.png)
 
-Matteo. Col pc faccio cose che poi i cosi si cosano da soli. È facile riconoscermi, sono quello basso.
+Ciao! Sono Matteo, sardo dalla nascita e pare che sono un Informatico.
+
+Citando la mio Bio su Twitter:
+
+> Col pc faccio cose che poi i cosi si cosano da soli. <br />È facile riconoscermi, sono quello basso.
 
 Qua scrivo un po' di Informatica, un po' di Linux, un po' di Open Source.
 
