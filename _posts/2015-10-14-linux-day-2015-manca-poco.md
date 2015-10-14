@@ -8,7 +8,7 @@ tags:
 
 Ciao!
 
-Scrivo nuovamente sul blog dopo eoni per ricordarvi (e ricordarmi, si sa mai mi scordi) che il 24 Ottobre, cioè tra 10 giorni si terrà il **Linux Day 2015**.
+Scrivo nuovamente sul blog dopo eoni per ricordarvi (e ricordarmi, si sa mai mi scordi) che il 24 Ottobre, cioè tra 10 giorni, si terrà il **Linux Day 2015**.
 
 Vi segnalo per ovvi motivi l'evento di **Cagliari**. Qui, come al solito, [la giornata di talk](http://linuxday.gulch.it/node/65) si suddividerà in due tracce: [Divulgativa](http://linuxday.gulch.it/node/67 "Traccia Divulgativa") e [Tecnica](http://linuxday.gulch.it/node/68 "Traccia Tecnica").
 
