@@ -1,6 +1,9 @@
 ---
-published: true
+layout: blog
+published: false
+tags: null
 ---
+
 
 
 
