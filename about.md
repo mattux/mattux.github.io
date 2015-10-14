@@ -2,17 +2,18 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
+
 
 Chi sono
 ---
 
 ![](https://pbs.twimg.com/profile_images/589901395186188289/K3zggXv2_400x400.png)
 
-Matteo. Classe '88. Sono alto due mele o poco più. Studente del Corso di Laurea Magistrale in Informatica all'Università degli Studi di Cagliari.
+Matteo. Col pc faccio cose che poi i cosi si cosano da soli. È facile riconoscermi, sono quello basso.
 
 Qua scrivo un po' di Informatica, un po' di Linux, un po' di Open Source.
-
 
 Se proprio sentite il bisogno di scrivermi, la mia mail è `andovais[AT]gmail[DOT]com`
 (sostituite `[AT]` con @ e `[DOT]` con un punto).
