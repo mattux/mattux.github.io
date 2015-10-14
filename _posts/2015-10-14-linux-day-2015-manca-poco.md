@@ -1,7 +1,6 @@
 ---
 layout: post
 published: true
-tags: null
 title: Linux Day 2015 - manca poco
 tags: linuxday
 ---
