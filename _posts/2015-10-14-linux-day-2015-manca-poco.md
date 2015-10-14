@@ -3,6 +3,7 @@ published: true
 ---
 
 
+
 ## Linux Day 2015: manca poco
 
 Ciao!
