@@ -1,3 +1,4 @@
+@import "http://fonts.googleapis.com/css?family=Jaldi:300,400,700|Open+Sans:300,400,700|Share+Tech+Mono:400";
 /**
  * Reset some basic elements
  */
@@ -11,11 +12,11 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: Jaldi, "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 19px;
   line-height: 1.5;
-  font-weight: 300;
-  color: #111;
+  font-weight: 400;
+  color: #353535;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
 
@@ -42,7 +43,7 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 14px; }
+  font-size: 16.625px; }
 
 /**
  * Lists
@@ -58,7 +59,7 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
+  font-weight: 400; }
 
 /**
  * Links
@@ -69,7 +70,7 @@ a {
   a:visited {
     color: #1756a9; }
   a:hover {
-    color: #111;
+    color: #353535;
     text-decoration: underline; }
 
 /**
@@ -79,8 +80,7 @@ blockquote {
   color: #828282;
   border-left: 4px solid #e8e8e8;
   padding-left: 15px;
-  font-size: 18px;
-  letter-spacing: -1px;
+  font-size: 22.8px;
   font-style: italic; }
   blockquote > :last-child {
     margin-bottom: 0; }
@@ -93,7 +93,8 @@ code {
   font-size: 15px;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
-  background-color: #eef; }
+  background-color: #eef;
+  font-family: "Share Tech Mono"; }
 
 code {
   padding: 1px 5px; }
@@ -146,19 +147,19 @@ pre {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
+  border-top: 20px solid transparent;
+  border-bottom: 40px solid transparent;
   min-height: 56px;
-  position: relative; }
+  position: relative;
+  text-align: center; }
 
 .site-title {
-  font-size: 26px;
+  font-size: 2.2rem;
   line-height: 56px;
-  letter-spacing: -1px;
   margin-bottom: 0;
-  float: left; }
+  font-family: "Share Tech Mono"; }
   .site-title, .site-title:visited {
-    color: #424242; }
+    color: #353535; }
 
 .site-nav {
   float: right;
@@ -166,7 +167,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #353535;
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
@@ -191,7 +192,7 @@ pre {
           width: 18px;
           height: 15px; }
           .site-nav .menu-icon > svg path {
-            fill: #424242; }
+            fill: #353535; }
       .site-nav .trigger {
         clear: both;
         display: none; }
@@ -254,6 +255,9 @@ pre {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
+.footer-msg {
+  text-align: center; }
+
 /**
  * Page content
  */
@@ -270,7 +274,7 @@ pre {
     margin-bottom: 30px; }
 
 .post-meta {
-  font-size: 14px;
+  font-size: 16.625px;
   color: #828282; }
 
 .post-link {
@@ -284,8 +288,7 @@ pre {
   margin-bottom: 30px; }
 
 .post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
+  font-size: 2.7rem;
   line-height: 1; }
   @media screen and (max-width: 800px) {
     .post-title {
@@ -308,6 +311,13 @@ pre {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+
+/**
+ * Pagination
+ */
+.pagination {
+  text-align: center;
+  padding-top: 40px; }
 
 /**
  * Syntax highlighting styles

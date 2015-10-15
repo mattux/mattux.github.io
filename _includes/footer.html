@@ -2,16 +2,29 @@
 
   <div class="wrapper">
 
+<!--
     <h2 class="footer-heading">{{ site.title }}</h2>
+-->
 
+
+<!--
     <div class="footer-col-wrapper">
+-->
+
+<!--
+      <div class="footer-col  footer-col-1">
+      </div>
+-->
+<!--
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
           <li>{{ site.title }}</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         </ul>
       </div>
+-->
 
+<!--
       <div class="footer-col  footer-col-2">
         <ul class="social-media-list">
           {% if site.github_username %}
@@ -44,12 +57,27 @@
           {% endif %}
         </ul>
       </div>
+-->
 
-      <div class="footer-col  footer-col-3">
+<!--
+      <div class="footer-col  footer-col-2">
         <p class="text">{{ site.description }}</p>
       </div>
+-->
+<!--
+      <div class="footer-col  footer-col-3">
+        <div class="trigger">
+          {% for page in site.pages %}
+            {% if page.title %}
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
     </div>
+-->
 
+  <p class="footer-msg">This blog is brought to you by <a href="matteopani.altervista.org">Mattux</a> with Jekyll and ♥</p>
   </div>
 
 </footer>
