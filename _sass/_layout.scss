@@ -221,7 +221,7 @@ color: $grey-color;
 
 .post-title {
     //font-size: 42px;
-    font-size: 2.7rem;
+    font-size: 3rem;
     //letter-spacing: -1px;
     line-height: 1;
 
@@ -235,7 +235,10 @@ color: $grey-color;
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+        //font-size: 34px;
+        font-size: 2.2rem;
+
+
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -243,15 +246,17 @@ color: $grey-color;
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 2rem;
 
         @include media-query($on-laptop) {
             font-size: 22px;
         }
+
+        font-style: italic;
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 1.8rem;
 
         @include media-query($on-laptop) {
             font-size: 18px;
