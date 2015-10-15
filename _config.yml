@@ -1,7 +1,7 @@
 # Site settings
 email:
 title: Mattux >> log
-description: Mattux >> log - Un blog di cui non si sentiva la mancanza.
+description: Un blog di cui non si sentiva la mancanza.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mattux.github.io" # the base hostname & protocol for your site
 twitter_username: _mattux_
