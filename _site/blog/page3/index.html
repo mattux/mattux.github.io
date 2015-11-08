@@ -6,9 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Mattux >> log</title>
-  <meta name="description" content="Di Linux, Open Source ed in teoria anche di Informatica.
-">
+  <title>Mattux >> log &middot; Un blog di cui non si sentiva la mancanza.</title>
+  <meta name="description" content="Un blog di cui non si sentiva la mancanza.">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://mattux.github.io/blog/page3/">
@@ -23,6 +22,7 @@
   <div class="wrapper">
 
       <a class="site-title" href="/">Mattux >> log</a>
+      <p class="site-description">Un blog di cui non si sentiva la mancanza.</p>
 
 <!--
     <nav class="site-nav">
@@ -75,8 +75,7 @@
   </div>
   <div class="wrapper">
 <!--
-    <p class="text">Di Linux, Open Source ed in teoria anche di Informatica.
-</p>
+    <p class="text">Un blog di cui non si sentiva la mancanza.</p>
 -->
   <div class="trigger">
         <span class="rss-subscribe"><a href="/feed.xml"> RSS</a></span>
@@ -130,6 +129,32 @@
 <!--
     
       <li>
+        <span class="post-meta">Nov 8, 2015</span>
+
+        <h2>
+          <a class="post-link" href="/2015/11/08/linuxday-2015-e-anche-quest-anno-e-andata.html">Linux Day 2015 - E anche quest'anno è andata</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
+        <span class="post-meta">Oct 15, 2015</span>
+
+        <h2>
+          <a class="post-link" href="/2015/10/15/reboot.html">Reboot</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
         <span class="post-meta">Oct 14, 2015</span>
 
         <h2>
@@ -172,7 +197,7 @@
         <span class="post-meta">May 19, 2014</span>
 
         <h2>
-          <a class="post-link" href="/2014/05/19/gbach-check-della-propria-casella-gmail_19.html">GBach - Check della propria casella GMail via Bash</a>
+          <a class="post-link" href="/2014/05/19/gbach-check-della-propria-casella-gmail-19.html">GBach - Check della propria casella GMail via Bash</a>
         </h2>
         <p class="post-summary">
           
@@ -800,6 +825,52 @@
   <!-- This loops through the paginated posts -->
   
 <!--
+    <h1><a href="/2013/04/26/di-sorci-e-pulseaudio.html">Di sorci e PulseAudio</a></h1>
+    <p class="author">
+      <span class="date">2013-04-26 19:07:00 +0200</span>
+    </p>
+-->
+    <span class="post-meta">Apr 26, 2013</span>
+
+    <h2>
+      <a class="post-link" href="/2013/04/26/di-sorci-e-pulseaudio.html">Di sorci e PulseAudio</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      <div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-2W2WwGbNzwo/UXqyuxH9PFI/AAAAAAAACeM/a6G5lx-fStg/s1600/xfce_audio.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="153" src="http://1.bp.blogspot.com/-2W2WwGbNzwo/UXqyuxH9PFI/AAAAAAAACeM/a6G5lx-fStg/s320/xfce_audio.png" width="320" /></a></div>Una delle poche cose che mi hanno sempre dato un po' noia su Xfce è il fatto che abilitando il <i>mute</i>&nbsp;dell'audio usando i tasti funzione/multimediali, l'<i>unmute</i>&nbsp;non avviene correttamente, costringendomi ad aprire il mixer ed abilitare nuovamente il canale opportuno a manina.<br /><br /><br /><br /><a name='more'></a>Il colpevole di questo malfunzionamento è <b>xfce4-volumed</b>, che non supporta il nostro amico PulseAudio. Fortunatamente qualcuno ha provveduto a sistemare le cose (il bello dell'opensource :D).<br />Quello che bisogna fare è sostanzialmente <a href="https://launchpad.net/xfce4-volumed-pulse/trunk/0.2.0/+download/xfce4-volumed-pulse-0.2.0.tar.bz2" target="_blank">scaricare <b>xfce4-volumed-pulse</b></a>, compilarlo, installarlo ed abilitarlo al boot al posto del vecchio xfce4-volumed:<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td><a href="http://1.bp.blogspot.com/-Dki7s1reUms/UXqwhgpgxXI/AAAAAAAACd0/cUcw7iS786g/s1600/Selezione_031.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="187" src="http://1.bp.blogspot.com/-Dki7s1reUms/UXqwhgpgxXI/AAAAAAAACd0/cUcw7iS786g/s320/Selezione_031.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="font-size: 13px;">"Mister, sostituzione!"</td></tr></tbody></table><a href="https://aur.archlinux.org/packages/xfce4-volumed-pulse/" target="_blank">Su AUR</a>&nbsp;le dipendenze indicate sono, a parte pulseaudio, <b>libkeybinder2</b>&nbsp;e <b>libnotify</b>, ma chiaramente i nomi dei pacchetti variano da distro a distro. Ora finalmente possiamo zittire il pc sapendo che non avremo il minimo sbattimento per riabilitare il sonoro, come in teoria dovrebbe essere...<br /><br />Ringrazio&nbsp;<a class="g-profile" href="http://plus.google.com/115147457025961956673" target="_blank">+Marco Milone</a>&nbsp;che me l'ha fatto scoprire :)
+    </div>
+-->
+  
+<!--
+    <h1><a href="/2013/02/02/spegnere-il-pc-automaticamente-dopo.html">Spegnere il pc automaticamente dopo l'aggiornamento</a></h1>
+    <p class="author">
+      <span class="date">2013-02-02 16:34:00 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Feb 2, 2013</span>
+
+    <h2>
+      <a class="post-link" href="/2013/02/02/spegnere-il-pc-automaticamente-dopo.html">Spegnere il pc automaticamente dopo l'aggiornamento</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-5JHWuezsm7k/UQ0q0MnpSJI/AAAAAAAACGs/SMz5O-ddC64/s1600/update-manager.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://lh3.ggpht.com/-5JHWuezsm7k/UQ0q0MnpSJI/AAAAAAAACGs/SMz5O-ddC64/s1600/update-manager.png" /></a></div>Piccola tip che ho scoperto di recente che non tutti conoscono.<br />Sappiamo benissimo che su GNU/Linux possiamo fare gli aggiornamenti quando ci pare e mentre il gestore dei pacchetti lavora noi possiamo continuare a farci bellamente gli affari nostri.<br />Però magari noi vogliamo dare gli aggiornamenti prima di spegnere il pc, perché abbiamo esigenza di poter sfruttare tutta la banda di rete disponibile o perché semplicemente mentre lavoriamo vogliamo che le rotture di scatole tendano a zero, o per qualche altro motivo.<br /><a name='more'></a><br />La soluzione è molto semplice ed il terminale è nostro amico.<br /><br />I comandi non si possono <b>concatenare</b> solo con la pipe, ma anche con un <b>and logico</b> (&amp;&amp;). L'effetto è che il secondo comando verrà eseguito solo se il primo è andato a buon fine.<br /><br />Piccolo esempio: <pre class="brush:shell"><br />$ wget --spider -q http://www.mattux.co.vu &amp;&amp; echo -e "\n\n\nCiao, se mi leggi vuol dire che il comando precedente è stato eseguito"</pre>Quello che fa questa riga di comando è molto semplice:<br /><ul><li>wget controlla (opzione --spider) se esiste l'index di questo blog (ovviamente esiste);</li><li>se e solo se wget è stato lanciato e una volta che wget ha finito, viene eseguito l'output del comando echo.</li></ul><br />Applichiamo questo concetto agli update ed allo spegnimento. <br /><br />Su Debian/Ubuntu diamo qualcosa del tipo: <br /><blockquote># apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; shutdown -h now</blockquote>Su Fedora invece: <br /><blockquote># yum update -y &amp;&amp; poweroff</blockquote><br />Il pc <b>non</b> si spegnerà soltanto nel caso in cui l'update dovesse bloccarsi per qualche problema. Da un lato è male, mentre dall'altro è bene, poiché in caso di mancato spegnimento ci si accorgerebbe immediatamente della cosa ed eventualmente porre rimedio qualora l'update si interrompesse durante l'update dei pacchetti e non semplicemente durante il loro download.<br /><br />Alla prossima :)<br /><br /><span style="font-size: x-small;"><br />Nota: L'<span style="font-size: x-small;">i</span>mmagine del post<span style="font-size: x-small;"> </span>fa parte del set di icone</span> <a class="g-profile" href="http://plus.google.com/116957764483417291271" target="_blank">+AwOken</a>.
+    </div>
+-->
+  
+<!--
     <h1><a href="/2012/12/30/quando-versionlock-ci-risparmia-insulti.html">Quando Versionlock ci risparmia insulti contro Xorg</a></h1>
     <p class="author">
       <span class="date">2012-12-30 23:21:00 +0100</span>
@@ -865,52 +936,6 @@
 <!--
     <div class="content">
       <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-warC8cT88zQ/UBfmWbcmjOI/AAAAAAAABUo/KE7vsLElnmU/s1600/slitaz-spider.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="190" src="http://3.bp.blogspot.com/-warC8cT88zQ/UBfmWbcmjOI/AAAAAAAABUo/KE7vsLElnmU/s200/slitaz-spider.png" width="200" /></a></div>In questo periodo per me di totale o quasi nullafacenza, mi è venuta voglia di provare un po' di distro GNU/Linux minimali, quelle che difficilmente usiamo tutti giorni, ma che ci possono tornare utilissime in più di una situazione, per esempio per rimettere in attività vecchi pc oppure per l'utilizzo di micropc come il RaspberryPi.<br />Questa volta grazie a Virtualbox mi sono fatto un giretto su <a href="http://www.slitaz.org/" target="_blank">SliTaz</a>, distribuzione nata nel 2006, a gestione comunitaria e la cui ultima release, la 4.0, è stata rilasciata il 10 aprile di quest'anno.<br /><br /><a name='more'></a><h3>Piacere, SliTaz!</h3>Esteticamente non è bellissima, d'accordo, però almeno non è anonima e soprattutto ha un desktop curato nella disposizione degli elementi, risultando pratica. Il desktop però lo vediamo con maggior dettaglio più avanti.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-Jz6CM8GDXs4/UBfuMQvavzI/AAAAAAAABU8/wiTXzOrrSCE/s1600/slitaz.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="256" src="http://3.bp.blogspot.com/-Jz6CM8GDXs4/UBfuMQvavzI/AAAAAAAABU8/wiTXzOrrSCE/s320/slitaz.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Ciao, mi chiamo SliTaz. Non sono molto bella, <br />ma sono taaanto simpatica :)</td></tr></tbody></table><br /><h3>Caratteristiche generali</h3><b></b><b>SliTaz</b> è innanzitutto una distribuzione creata "from scratch", cioè non si basa su nessun'altra distro esistente e questo aspetto la rende in qualche modo particolare ed unica. <br />Nasce per essere installata anche in pochissimo spazio, in quanto la .iso è di appena 35MB ed una volta installata occupa poche centinaia di MB. Nasce anche per essere leggera, leggerissima. Non ci credete? Ecco cosa mi dice htop:<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-Lz3oR6QEIUQ/UBfu_fRS-EI/AAAAAAAABVE/MM20Bm_ZgQQ/s1600/slitaz1.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="86" src="http://1.bp.blogspot.com/-Lz3oR6QEIUQ/UBfu_fRS-EI/AAAAAAAABVE/MM20Bm_ZgQQ/s320/slitaz1.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Una piuma, praticamente</td></tr></tbody></table><br />Ha inoltre un package manager tutto suo, chiamato <b>tazpkg</b>, un centro di controllo con interfaccia web di nome <b>TazPanel</b> e tutta una serie di strumenti secondari di amministrazione, il che mi fa pensare che il target della distro non sia tanto l'utente base, quanto quello più smaliziato (e la cosa mi piace!). <br />L'ultima relase monta il kernel 2.6.37, un po' vecchiotto direi.<br /><br /><h3>Il desktop</h3>Al primo avvio, confesso di non aver capito al volo quale DE avessi davanti, ma dopo due click, ho scoperto di stare usando LXDE, senza il minimo fronzolo (anche LXDE si può inciccionire ed abbellire, se lo si vuole). <br />Ho notato quindi due cose: <br /><ul><li>una combinazione non proprio elegantissima (per usare un eufemismo) di tema e colori;</li><li>una reattività bestiale.</li></ul>In pratica è come usare una Duna che fa 300 all'ora.<br />Per salvaguardare i miei occhi ho preferito personalizzarla un po':<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-RgxM0th9S8w/UBfzdieFUfI/AAAAAAAABVY/bD1QWuszZ-I/s1600/slitaz2.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="239" src="http://2.bp.blogspot.com/-RgxM0th9S8w/UBfzdieFUfI/AAAAAAAABVY/bD1QWuszZ-I/s320/slitaz2.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Molto meglio no? ;)</td></tr></tbody></table><br />Scelte estetiche a parte, il desktop è curato per essere leggero e pratico, non male davvero.<br /><br /><h3>Dotazione software</h3>In linea con la leggerezza del sistema operativo, anche gli applicativi sono tutti selezionati tra quelli più leggeri disponibili. Abbiamo infatti <b>Midori</b> come browser, <b>Leafpad</b> come editor di testo, <b>AlsaPlayer</b> come player audio e <b>mtPaint</b> al posto di GIMP. Nessuna traccia di <b>LibreOffice</b>. Alcune applicazioni sono sostiuite da symlink a tool online, per esempio <a href="https://viewer.zoho.com/home.do" target="_blank">Zoho</a>. Con un numero per me sorprendemente alto di applicativi per una .iso così pccina (ricordiamoci, 35MB!), troviamo in sostanza un buon mix tra programmi per le cose di tutti giorni e per amministrare seriamente il sistema.<br /><br /><h3>Il gestore dei pacchetti</h3>Come detto in precedenza, il package manager si chiama <b>tazpkg</b>. Ho installato qualche piccolo pacchetto ed ho subito constatato che:<br /><ul><li>è piuttosto veloce, o almeno questa è la mia impressione;</li><li>scarica ed installa i pacchetti uno alla volta (un po' come faceva zypper su openSUSE) anziché scaricarli tutti e solo dopo installarli uno dietro l'altro;</li><li>non mostra la dimensione totale del download prima di scaricarli, ma solo i KB scaricati dei singoli pacchetti durante il download.</li></ul>Le ultime due cose non mi piacciono assolutamente. Comunque sia, mi pare che abbia un buon numero di comandi, per poter gestire bene i pacchetti.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-DnH1mFwwSKw/UBf36HdAwoI/AAAAAAAABVs/cIRb6KOLnF4/s1600/slitaz3.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="213" src="http://4.bp.blogspot.com/-DnH1mFwwSKw/UBf36HdAwoI/AAAAAAAABVs/cIRb6KOLnF4/s320/slitaz3.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Per esempio, se volessimo installare Firefox...</td></tr></tbody></table><br />Purtroppo i repository non sono fornitissimi e contengono software abbastanza vecchio. Possiamo contare su poco più di 3300 pacchetti, ma magari esistono repo aggiuntivi che io non ho abilitato.<br /><h3><br />Il centro di controllo</h3><b>TazPanel</b> mi ha fatto un'ottima impressione: è leggero, piuttosto completo (si possono gestire i demoni, vedere i moduli del kernel attivi, ecc.) e abbastanza semplice da usare. Ovviamente consente anche di gestire i pacchetti.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-YL276_2ImNI/UBf5skMlnQI/AAAAAAAABV0/isg2zhN-Ggs/s1600/slitaz4.jpg" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="239" src="http://4.bp.blogspot.com/-YL276_2ImNI/UBf5skMlnQI/AAAAAAAABV0/isg2zhN-Ggs/s320/slitaz4.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Un centro di controllo sicuramente ben fatto </td></tr></tbody></table><br /><h3>Concludendo</h3>Secondo me è una distro molto buona, da tenere in considerazione. I pro sono soprattutto le ridotte dimensioni e la sua leggerezza, mentre tra i contro sicuramente un parco software limitato e vecchio e la mancanza di un kernel precompilato per architetture ARM.
-    </div>
--->
-  
-<!--
-    <h1><a href="/2012/05/25/kde-si-plasma-che-e-un-piacere.html">KDE si "plasma" che è un piacere :)</a></h1>
-    <p class="author">
-      <span class="date">2012-05-25 22:57:00 +0200</span>
-    </p>
--->
-    <span class="post-meta">May 25, 2012</span>
-
-    <h2>
-      <a class="post-link" href="/2012/05/25/kde-si-plasma-che-e-un-piacere.html">KDE si "plasma" che è un piacere :)</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-Mf5ymWEross/T7-OjTrvFXI/AAAAAAAABAc/-8bED4dkjHs/s1600/klogo-official-lineart_simple_shadow.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-Mf5ymWEross/T7-OjTrvFXI/AAAAAAAABAc/-8bED4dkjHs/s1600/klogo-official-lineart_simple_shadow.png" /></a></div>KDE, pur con tutti i suoi difetti è il DE più flessibile e completo che noi pinguini potremmo mai desiderare. Sul mio portatile uso con enorme soddisfazione Xfce (la 4.10 è spettacolare), ma ho installato anche il DE del draghetto.<br />Attenendomi dunque al <i>famoso</i> detto "un DE non è bello se non posso modificare questo e quello"¹, in questo momento in cui DE e presunti tali spuntano da ogni dove, mi sono divertito a trovare una configurazione di KDE magari inusuale, ma che a mio modestissimo parere fa la sua porca figura davanti a siffatte interfacce.<br /><br /><br /><br /><a name='more'></a><h3>     Risultato finale</h3>Come prima cosa, vi illustro cosa ho ottenuto:<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-4JTz_JgqRPk/T7-XwYKGn9I/AAAAAAAABAw/c5B6G3SVR9k/s1600/Fedora+16+KDE+120526+vuoto.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="200" src="http://3.bp.blogspot.com/-4JTz_JgqRPk/T7-XwYKGn9I/AAAAAAAABAw/c5B6G3SVR9k/s320/Fedora+16+KDE+120526+vuoto.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Desktop "vuoto"</td></tr></tbody></table><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-WhJQqXp-jyk/T7-XrkdKMBI/AAAAAAAABAo/KKB44cgR1xg/s1600/Fedora+16+KDE+120525.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="200" src="http://2.bp.blogspot.com/-WhJQqXp-jyk/T7-XrkdKMBI/AAAAAAAABAo/KKB44cgR1xg/s320/Fedora+16+KDE+120525.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Desktop "pieno" </td></tr></tbody></table><br />Ve gusta? A me tanto :3<br /><br />Come ho fatto? Lo vediamo subito. Preciso che questo post non è una guida molto dettagliata, altrimenti verrebbe un post enormemente lungo. Oddio, chiamare questo post una guida mi sembra un po' esagerato, comunque...let's go.<br /><br /><h3>    Plasma</h3>Innanzitutto bisogna cambiare la modalità di Plasma, abilitando "Cerca e avvia":<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-6KFV3rTohaM/T7-oJVu24FI/AAAAAAAABA8/gjxs1V8krVA/s1600/Selezione_001.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="320" src="http://1.bp.blogspot.com/-6KFV3rTohaM/T7-oJVu24FI/AAAAAAAABA8/gjxs1V8krVA/s320/Selezione_001.png" width="291" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Conferiamo una nuova "faccia" al desktop :)</td></tr></tbody></table><br />Consiglio però prima di effettuare questa operazioni, di rimuovere tutti i plasmoidi presenti sul desktop, 'ché non si sa mai.<br />Questa modalità è molto interessante, perché è indirizzata più alle applicazioni che ai dati, con un menù a tutto schermo.<br /><br />Passando alle questioni squisitamente estetiche, come tema io ho scelto <a href="http://kde-look.org/content/show.php/Caledonia?content=142424" target="_blank">Caledonia</a>, mentre come sfondo <a href="http://wallbase.cc/wallpaper/399972" target="_blank">questo qua</a>.<br /><br /><h4>   </h4><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-gzSLzbpeqSc/T7-qVeCe8UI/AAAAAAAABBE/RiTjmlP_naU/s1600/Selezione_003.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="6" src="http://1.bp.blogspot.com/-gzSLzbpeqSc/T7-qVeCe8UI/AAAAAAAABBE/RiTjmlP_naU/s320/Selezione_003.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Il pannello superiore</td></tr></tbody></table><br />Per quanto riguarda il pannello superiore, uso un discreto numero di plasmoidi. Da sinistra a destra:<br /><ul><li><b>Vista delle cartelle</b>, che mostra la home;</li><li><b>Cambiadesktop</b>;</li><li><b>Gestore dei processi</b>, che mostra le finestre aperte su tutti i desktop;</li><li><b>GMail-Plasmoid</b>, che mi notifica quando mi arrivano delle emai;<b> </b></li><li><b>Visualizzatore del carico di sistema</b>;</li><li><b>Temperatura dell'hardware</b>, che mi mostra la temperatura del processore;</li><li><b>Vassoio di sistema</b>, con quasi tutto impostato a "auto", per risparmiare spazio;</li><li><b>Orologio digitale</b>.</li></ul>Ho cercato di impiegare poco spazio senza rinunciare alle comodità. Se "Gestore dei processi" consentisse di mostrare solo le icone, ci sarebbe più spazio a disposizione, ma per ora mi accontento.<br /><br />Nella dock (sì, io "dock" lo declino al femminile) al di sotto del pannello superiore ho messo i riferimenti alle applicazioni che apro più spesso, d'altronde è fatta apposta.<br /><br /><h3>  Finestre</h3>Vediamo un bel primo piano di Dolphin:<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-Y8B_lHM9_84/T7_pgg0tpTI/AAAAAAAABBQ/s2HVgL2DUA8/s1600/dolphin.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="201" src="http://4.bp.blogspot.com/-Y8B_lHM9_84/T7_pgg0tpTI/AAAAAAAABBQ/s2HVgL2DUA8/s320/dolphin.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Un file manager straordinErio. E fotogenico.</td></tr></tbody></table><br />Ho sostanzialmente agito sulla configurazione della decorazione delle finestre, cambiato lo schema di colori e le icone. <br /><br />La decorazione delle finestre è sempre Oxygen, cioè la classica, ma dal gestore delle impostazioni di sistema sono andato su "Aspetto dello spazio di lavoro", cliccato sulla decorazione Oxygen e sul pulsante "Configura la decorazione", quindi ho definito l'allineamento del titolo della finestra (a sinistra) e lo spessore dei bordi (sottile).<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-UMwX4uwpCa0/T7_tU4tnEAI/AAAAAAAABBs/UEpV_PiE_PU/s1600/dec1.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="195" src="http://2.bp.blogspot.com/-UMwX4uwpCa0/T7_tU4tnEAI/AAAAAAAABBs/UEpV_PiE_PU/s320/dec1.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Bordo sottile e allineamento del titolo a sinistra</td></tr></tbody></table>&nbsp; <br />&nbsp;Per dare maggiore risalto ai pulsanti, ho selezionato&nbsp; "Contorno per il titolo della finestra attiva".&nbsp;&nbsp; <br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: right;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-ukRbNOCwvGQ/T7_sQKUG7jI/AAAAAAAABBk/5P6_vN5tMu0/s1600/dec.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="195" src="http://4.bp.blogspot.com/-ukRbNOCwvGQ/T7_sQKUG7jI/AAAAAAAABBk/5P6_vN5tMu0/s320/dec.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Mette più in risalto i tasti</td></tr></tbody></table><br />Dopodiché ho modificato la posizione dei tasti, cliccando, dalla schermata precedente, su "Configura i pulsanti". I miei sono, in ordine:<br /><ul><li>su tutti i desktop;</li><li>mantieni sopra le altre;</li><li>minimizza;</li><li>massimizza;</li><li>chiudi.</li></ul>Tutto condito da spazi per raggrupparli meglio. <br /><div class="separator" style="clear: both; text-align: center;"></div><br />&nbsp;Infine, ho installato lo schema di colori <a href="http://kde-look.org/content/show.php/Gentle?content=101610" target="_blank">gentle</a>² e le icone <a href="http://kde-look.org/content/show.php/KFaenza?content=143890" target="_blank">KFaenza</a>³.<br /><br /><h3> È tutto :)</h3>No, davvero, è tutto.<br /><br /><br /><br />¹<span style="font-size: x-small;"> Me lo sono inventato sul momento LOL</span><br />² <span style="font-size: x-small;">L'unico "difetto" che riscontro è che i pulsanti non sono molto in evidenza.</span><br />³ <span style="font-size: x-small;">I programmi GTk usano le Oxygen, devo ancora capire perché e come ovviare senza barbatrucchi.</span>
-    </div>
--->
-  
-<!--
-    <h1><a href="/2012/04/28/google-cloud-sql.html">Google Cloud SQL</a></h1>
-    <p class="author">
-      <span class="date">2012-04-28 17:45:00 +0200</span>
-    </p>
--->
-    <span class="post-meta">Apr 28, 2012</span>
-
-    <h2>
-      <a class="post-link" href="/2012/04/28/google-cloud-sql.html">Google Cloud SQL</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-4EOxCkO-PSs/T5mNGwz_PKI/AAAAAAAAAyI/jwgvKDwbLgE/s1600/google+cloud+sql.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-4EOxCkO-PSs/T5mNGwz_PKI/AAAAAAAAAyI/jwgvKDwbLgE/s1600/google+cloud+sql.png" /></a></div>Quest'oggi parliamo di database :)<br />Google Cloud SQL è un servizio offerto da Google che consente di avere delle istanze cloud di database MySQL.<br />È molto comodo, efficiente ed affidabile. Per ora è disponibile soltanto in limited preview per sviluppatori, quindi bisogna fare richiesta di attivazione del servizio, con tempi che possono arrivare anche alle due settimane.<br /><br /><br /><a name='more'></a>È possibile interagire direttamente col database ed attraverso la creazione di applicazioni in Java e Python. <br />Il servizio consente perciò di mettere in piedi applicazioni web motorizzate Google, cloud anche per quel che riguarda il database.<br /><br />La figata è che ci si ritrova ad avere a che fare con un database MySQL quasi senza che uno si accorga che non sta in locale, ma memorizzato chissà dove.<br /><br />Io ci ho smanettato ed ho concluso che è senz'altro un'ottimo servizio, efficiente ed affidabile. Ho anche creato un <a href="http://deseb-test.appspot.com/">prototipo di applicazione</a> che sfrutta un database Google Cloud SQL. Non fa granché, però non si chiama prototipo per caso :)<br />&nbsp; <br />Per approfondire il discorso, vi rimando alla <a href="https://developers.google.com/cloud-sql/">documentazione ufficiale</a> ed alle <a href="http://www.slideshare.net/mattux/valutazione-sperimentale-di-un-database-relazionale-in-ambiente-cloud">slide</a> che ho realizzato per la presentazione della mia tesi di laurea¹, che verte proprio su questo argomento.<br /><br /><b>Update</b>: Dal 12 giugno il servizio non sarà più gratuito, ma a pagamento. Maggiori dettagli <a href="https://developers.google.com/cloud-sql/docs/billing" target="_blank">qui</a>.<br /><br /><br />¹ <span style="font-size: x-small;">Sì, finalmente mi sono laureato :D Questa è la ragione per cui non scrivo sul blog da febbraio, ero un <i>tantinello</i> impegnato.</span>
     </div>
 -->
   
@@ -1061,8 +1086,7 @@
 
 <!--
       <div class="footer-col  footer-col-2">
-        <p class="text">Di Linux, Open Source ed in teoria anche di Informatica.
-</p>
+        <p class="text">Un blog di cui non si sentiva la mancanza.</p>
       </div>
 -->
 <!--

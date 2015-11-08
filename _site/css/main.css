@@ -16,7 +16,7 @@ body {
   font-size: 19px;
   line-height: 1.5;
   font-weight: 400;
-  color: #353535;
+  color: #363636;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
 
@@ -70,7 +70,7 @@ a {
   a:visited {
     color: #1756a9; }
   a:hover {
-    color: #353535;
+    color: #363636;
     text-decoration: underline; }
 
 /**
@@ -153,13 +153,16 @@ pre {
   position: relative;
   text-align: center; }
 
+.site-description {
+  color: #828282; }
+
 .site-title {
   font-size: 2.2rem;
   line-height: 56px;
   margin-bottom: 0;
   font-family: "Share Tech Mono"; }
   .site-title, .site-title:visited {
-    color: #353535; }
+    color: #363636; }
 
 .site-nav {
   float: right;
@@ -167,7 +170,7 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #353535;
+    color: #363636;
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
@@ -192,7 +195,7 @@ pre {
           width: 18px;
           height: 15px; }
           .site-nav .menu-icon > svg path {
-            fill: #353535; }
+            fill: #363636; }
       .site-nav .trigger {
         clear: both;
         display: none; }
@@ -288,7 +291,7 @@ pre {
   margin-bottom: 30px; }
 
 .post-title {
-  font-size: 2.7rem;
+  font-size: 3rem;
   line-height: 1; }
   @media screen and (max-width: 800px) {
     .post-title {
@@ -297,17 +300,18 @@ pre {
 .post-content {
   margin-bottom: 30px; }
   .post-content h2 {
-    font-size: 32px; }
+    font-size: 2.2rem; }
     @media screen and (max-width: 800px) {
       .post-content h2 {
         font-size: 28px; } }
   .post-content h3 {
-    font-size: 26px; }
+    font-size: 2rem;
+    font-style: italic; }
     @media screen and (max-width: 800px) {
       .post-content h3 {
         font-size: 22px; } }
   .post-content h4 {
-    font-size: 20px; }
+    font-size: 1.8rem; }
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }

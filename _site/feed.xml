@@ -2,13 +2,70 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mattux &gt;&gt; log</title>
-    <description>Di Linux, Open Source ed in teoria anche di Informatica.
-</description>
+    <description>Un blog di cui non si sentiva la mancanza.</description>
     <link>http://mattux.github.io/</link>
     <atom:link href="http://mattux.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Oct 2015 02:21:03 +0200</pubDate>
-    <lastBuildDate>Thu, 15 Oct 2015 02:21:03 +0200</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Sun, 08 Nov 2015 23:34:23 +0100</pubDate>
+    <lastBuildDate>Sun, 08 Nov 2015 23:34:23 +0100</lastBuildDate>
+    <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>Linux Day 2015 - E anche quest&#39;anno è andata</title>
+        <description>&lt;p&gt;Circa due settimane fa, come ben sappiamo, si è tenuto il &lt;strong&gt;Linux Day&lt;/strong&gt;. In quel di &lt;strong&gt;Cagliari&lt;/strong&gt;, stavolta solo (si fa per dire) seminari, per mancanza di spazi da adibire a install corner, aree demo et similia.&lt;/p&gt;
+
+&lt;p&gt;Ciononostante, l’affluenza è stata in linea con le aspettative e forse, in alcuni momenti della giornata (poco prima e appena dopo pranzo), anche superiori. E magari non sembra, ma sono cose belle. Questo grazie anche alla presenza agli studenti delle scuole superiori, che ogni anno invitiamo. Purtroppo alcuni di loro hanno movimentato negativamente, disturbando al punto che mi sono reso protagonista di un siparietto durante il mio talk in cui mi fermo, batto due volte col piede sulla pedana guardando &lt;em&gt;brutto&lt;/em&gt; i ragazzi, che capiscono e si zittiscono, per fortuna.&lt;/p&gt;
+
+&lt;p&gt;Effettivamente faccio paura. E sono anche molto fotogenico. Sseh.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/p720x720/12143084_10153416635562326_7780239441049279199_n.jpg?oh=0acd1c0d04ef08c2cca4f70b279841f3&amp;amp;oe=56C1AD8D&quot; alt=&quot;Talk&quot; title=&quot;Paura, eh?&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Come ho anticipato nello scorso post, ho parlato di &lt;a href=&quot;http://linuxday.gulch.it/slides/2015/traccia-tecnica/dbms.pdf&quot; title=&quot;Graph Database&quot;&gt;Graph Database&lt;/a&gt;, un tipo di database che viene adottato sempre di più e a cui mi sono avvicinato poco più di un anno fa. Addirittura qualcuno stima che tra 3-4 anni ci sarà un vero e proprio boom; io credo che non si sbagli, visto anche l’interesse dei presenti durante il talk.&lt;/p&gt;
+
+&lt;p&gt;A &lt;a href=&quot;http://linuxday.gulch.it/node/67&quot; title=&quot;Materiale traccia divulgativa&quot;&gt;questo link&lt;/a&gt;, il materiale dei seminari della traccia divulgativa, a &lt;a href=&quot;http://linuxday.gulch.it/node/68&quot; title=&quot;&amp;quot;Materiale traccia tecnica&quot;&gt;quest’altro&lt;/a&gt;, il materiale della traccia tecnica. Letture (ovviamente) consigliatissime.
+&lt;a href=&quot;http://linuxday.gulch.it/album/2015/&quot;&gt;Qui&lt;/a&gt;, le nostre foto della manifestazione.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Nov 2015 23:34:23 +0100</pubDate>
+        <link>http://mattux.github.io/2015/11/08/linuxday-2015-e-anche-quest-anno-e-andata.html</link>
+        <guid isPermaLink="true">http://mattux.github.io/2015/11/08/linuxday-2015-e-anche-quest-anno-e-andata.html</guid>
+        
+        <category>linuxday</category>
+        
+        <category>seminari</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Reboot</title>
+        <description>&lt;p&gt;Ieri sera ho pubblicato un nuovo post e di notte mi sono dedicato alla personalizzazione del blog. Mi pare dunque giusto fare il punto della situazione.&lt;/p&gt;
+
+&lt;p&gt;Le ragioni per cui ho smesso di scrivere sono sostanzialmente due: ho fatto meno “smanettamenti” degni di nota e mi è passata la voglia di scrivere.&lt;/p&gt;
+
+&lt;p&gt;Vicessitudini recenti mi hanno però ricordato perché avevo aperto il blog: voglia di condividere quel che facevo e quel poco che sapevo, ché magari quella cosa poteva tornare anche utile a qualcun altro, diventando anche degli appunti da riguardare in caso di necessità.&lt;/p&gt;
+
+&lt;p&gt;E quindi eccoci. Scriverò come sempre quando mi girerà, ma credo che scriverò.&lt;/p&gt;
+
+&lt;h3 id=&quot;aspetti-tecnici&quot;&gt;Aspetti tecnici&lt;/h3&gt;
+&lt;p&gt;Come ho già detto in altre sedi, ho migrato tutto da &lt;strong&gt;Blogger&lt;/strong&gt; a &lt;strong&gt;&lt;a href=&quot;https://pages.github.com/&quot; title=&quot;GitHub Pages&quot;&gt;GitHub Pages&lt;/a&gt;&lt;/strong&gt;, chiudendo definitivamente il vecchio.
+Grazie a &lt;strong&gt;GitHub Pages&lt;/strong&gt; ho potuto mettere in piedi in poco tempo un blog leggero, minimale e hostato gratuitamente, perché di fatto sta in un repository. Creo in locale un nuovo file per il post, poi &lt;code&gt;commit&lt;/code&gt; e &lt;code&gt;push&lt;/code&gt;. Facile, semplice, comodo e dal contenutissimo uso di banda.&lt;/p&gt;
+
+&lt;p&gt;Il blog non fa uso di un CMS ma di &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt;, che è proprio l’engine che sta dietro a GitHub Pages. In poche parole è un &lt;em&gt;generatore di pagine web statiche&lt;/em&gt;: io scrivo un post in &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot; title=&quot;Markdown&quot;&gt;Markdown&lt;/a&gt; e lui lo converte automaticamente in pagina HTML. Meraviglioso.&lt;/p&gt;
+
+&lt;p&gt;L’unico problema è che a causa della migrazione, nei post importati, i link che referenziano altri post sono rotti perché puntano ai vecchi url. Immagino di dover scrivere uno script per correggerli.
+In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata &lt;em&gt;Jekyll+GitHub Pages&lt;/em&gt;. Consigliatissima.&lt;/p&gt;
+
+&lt;p&gt;Un’altra cosa da fare sarà automatizzare nuovamente la condivisione dei post su Twitter e G+.&lt;/p&gt;
+
+&lt;p&gt;Comunque man mano sistemerò tutto.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 15 Oct 2015 00:00:00 +0200</pubDate>
+        <link>http://mattux.github.io/2015/10/15/reboot.html</link>
+        <guid isPermaLink="true">http://mattux.github.io/2015/10/15/reboot.html</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
     
       <item>
         <title>Linux Day 2015 - manca poco</title>
@@ -69,8 +126,8 @@
         <title>GBach - Check della propria casella GMail via Bash</title>
         <description>Tempo fa, &lt;a href=&quot;http://www.mattux.co.vu/2012/01/script-bash-per-sapere-il-numero-di.html&quot;&gt;feci uno script&lt;/a&gt; per controllare quante email non lette ho nella mia casella GMail. Ho  deciso di andare oltre: uno script che mostra anche l&#39;elenco dei campi  oggetto delle email.&lt;br /&gt;&lt;br /&gt;L&#39;ho chiamato &lt;b&gt;GBaCh&lt;/b&gt;, che sta per &lt;b&gt;G&lt;/b&gt;Mail&lt;b&gt; Ba&lt;/b&gt;sh&lt;b&gt; Ch&lt;/b&gt;ecker.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Cosa fa&lt;/h3&gt;Come ho spiegato nell&#39;&lt;a href=&quot;http://www.mattux.co.vu/2012/01/script-bash-per-sapere-il-numero-di.html&quot;&gt;altro post&lt;/a&gt;, non tutti sanno che GMail offre un feed atom della propria casella di posta. &lt;br /&gt;È sufficiente recarsi col proprio browser all&#39;indirizzo &lt;a href=&quot;http://mail.google.com/feed&quot;&gt;https://mail.google.com/mail/feed/atom&lt;/a&gt;:&lt;br /&gt;&lt;pre class=&quot;brush:xml; highlight: [2,8,20];&quot;&gt;&lt;feed version=&quot;0.3&quot;&gt;&lt;br /&gt;      &lt;title&gt;Gmail - Inbox for INDIRIZZO@gmail.com&lt;/title&gt;&lt;br /&gt;      &lt;tagline&gt;New messages in your Gmail Inbox&lt;/tagline&gt;&lt;br /&gt;      &lt;fullcount&gt;2&lt;/fullcount&gt;&lt;br /&gt;      &lt;link href=&quot;http://mail.google.com/mail&quot; rel=&quot;alternate&quot; type=&quot;text/html&quot;&gt;&lt;/link&gt;&lt;br /&gt;      &lt;modified&gt;2014-05-18T20:36:19Z&lt;/modified&gt;&lt;br /&gt;      &lt;entry&gt;&lt;br /&gt;         &lt;title&gt;Seconda email di prova&lt;/title&gt;&lt;br /&gt;         &lt;summary&gt;Prova. -- “If you have an apple and I have an apple and we exchange these apples then you and I will&lt;/summary&gt;&lt;br /&gt;         &lt;link href=&quot;http://mail.google.com/mail?account_id=INDIRIZZO@gmail.com&amp;amp;amp;message_id=146110c97d0bea96&amp;amp;amp;view=conv&amp;amp;amp;extsrc=atom&quot; rel=&quot;alternate&quot; type=&quot;text/html&quot;&gt;&lt;/link&gt;&lt;br /&gt;         &lt;modified&gt;2014-05-18T20:36:16Z&lt;/modified&gt;&lt;br /&gt;         &lt;issued&gt;2014-05-18T20:36:16Z&lt;/issued&gt;&lt;br /&gt;         &lt;id&gt;tag:gmail.google.com,2004:1468473411071896214&lt;/id&gt;&lt;br /&gt;         &lt;author&gt;&lt;br /&gt;            &lt;name&gt;me&lt;/name&gt;&lt;br /&gt;            &lt;email&gt;INDIRIZZO@gmail.com&lt;/email&gt;&lt;br /&gt;         &lt;/author&gt;&lt;br /&gt;      &lt;/entry&gt;&lt;br /&gt;      &lt;entry&gt;&lt;br /&gt;         &lt;title&gt;Email di prova&lt;/title&gt;&lt;br /&gt;         &lt;summary&gt;Prova. -- “If you have an apple and I have an apple and we exchange these apples then you and I will&lt;/summary&gt;&lt;br /&gt;         &lt;link href=&quot;http://mail.google.com/mail?account_id=INDIRIZZO@gmail.com&amp;amp;amp;message_id=146110bfdb9c6b8b&amp;amp;amp;view=conv&amp;amp;amp;extsrc=atom&quot; rel=&quot;alternate&quot; type=&quot;text/html&quot;&gt;&lt;/link&gt;&lt;modified&gt;2014-05-18T20:35:37Z&lt;/modified&gt;&lt;br /&gt;         &lt;issued&gt;2014-05-18T20:35:37Z&lt;/issued&gt;&lt;br /&gt;         &lt;id&gt;tag:gmail.google.com,2004:1468473369708751755&lt;/id&gt;&lt;br /&gt;         &lt;author&gt;&lt;br /&gt;            &lt;name&gt;me&lt;/name&gt;&lt;br /&gt;            &lt;email&gt;INDIRIZZO@gmail.com&lt;/email&gt;&lt;br /&gt;         &lt;/author&gt;&lt;br /&gt;      &lt;/entry&gt;&lt;br /&gt;&lt;/feed&gt;&lt;br /&gt;&lt;/pre&gt;Nelle righe evidenziate vediamo chiaramente l&#39;oggetto delle  email che ci sono arrivate: gli oggetti sono racchiusi all&#39;interno del  tag &lt;i&gt;title&lt;/i&gt;, così come l&#39;intestazione della mailbox, ma sappiamo che è la prima riga e perciò non è un problema.&lt;br /&gt;Quello che lo script fa è quindi isolare queste righe e poi stampare i campi oggetto riga per riga.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Come lo fa&lt;/h3&gt;Innanzitutto sono previste due modalità di utilizzo: &lt;b&gt;interattiva&lt;/b&gt; e &lt;b&gt;non-interattiva&lt;/b&gt;. Nel codice sono presenti le variabili &lt;b&gt;$user&lt;/b&gt; e &lt;b&gt;$password&lt;/b&gt;;&amp;nbsp;  se non sono settate, lo script lavora in modalità interattiva, cioè  chiede le credenziali di google, altrimenti va da solo (importante se lo  si usa con Conky).&lt;br /&gt;&lt;br /&gt;Ora analizziamo uno alla volta i frammenti principali di codice.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;&lt;span style=&quot;font-size: large;&quot;&gt;Donwload e filtraggio del feed&lt;/span&gt;&lt;/b&gt;&lt;br /&gt;&lt;pre class=&quot;brush:bash&quot;&gt;mail=$(curl -u $user:$password --silent &quot;https://mail.google.com/mail/feed/atom&quot; | sed -n &#39;/&amp;lt;title&amp;gt;/p&#39; |  sed s/\&amp;lt;title\&amp;gt;//g| sed s/\&amp;amp;quot\;/\&quot;/g);&lt;br /&gt;&lt;/pre&gt;Questa riga di codice semplicemente scarica il feed, isola le  righe che iniziano con &quot;&amp;lt;title&amp;gt;&quot;, rimuove i tag &amp;lt;title&amp;gt; ed  infine converte gli &lt;i&gt;&amp;amp;quot;&lt;/i&gt; in &lt;i&gt;&quot;&lt;/i&gt;. Occhio, stiamo  eliminando solo i tag &amp;lt;title&amp;gt; di apertura, il motivo per cui  quelli di chiusura li teniamo lo vediamo tra pochissimo.&lt;br /&gt;&lt;br /&gt;Dunque, in output abbiamo una riga fatta così:&lt;br /&gt;&lt;blockquote class=&quot;tr_bq&quot;&gt;intestazione mailbox &amp;lt;/title&amp;gt; oggetto #1 &amp;lt;/title&amp;gt; oggetto #2 &amp;lt;/title&amp;gt;&lt;/blockquote&gt;Possiamo  vederla come separata in campi, delimitati da &amp;lt;/title&amp;gt; (ecco  perché li abbiamo tenuti!). Ci viene quindi in aiuto il nostro fido &lt;b&gt;Awk&lt;/b&gt;.&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;font-size: large;&quot;&gt;&lt;b&gt;Conteggio e stampa dei campi oggetto&lt;/b&gt;&lt;/span&gt;&lt;br /&gt;&lt;pre class=&quot;brush:bash; highlight: [4,13];&quot;&gt;# fields number = n_email + 1&lt;br /&gt;if [[ $mail != &quot;&quot; ]]&lt;br /&gt;   then&lt;br /&gt;      n_email=$(echo $mail | awk -F &#39;&amp;lt;/title&amp;gt;&#39; &#39;{print NF}&#39;);&lt;br /&gt;      n_email=$(echo &quot;$n_email - 2&quot; | bc)&lt;br /&gt;fi&lt;br /&gt;&lt;br /&gt;echo -e &quot;($n_email)&quot;;&lt;br /&gt;&lt;br /&gt;# printing the titles of the emails one per line&lt;br /&gt;if [[ $n_email &amp;gt; 0 ]]&lt;br /&gt;   then&lt;br /&gt;      echo $mail | awk &#39;BEGIN { RS = &quot;&quot; ; FS = &quot;&amp;lt;/title&amp;gt;&quot; } { for (i = 2; i &amp;lt;= NF-1; i++) print &quot;-&quot;,$i }&#39;&lt;br /&gt;fi&lt;br /&gt;&lt;/pre&gt;Nel primo blocco contiamo quante email abbiamo, mentre nel  secondo, iteriamo (dal secondo campo) e stampiamo il contenuto di ogni  campo in una riga diversa.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Conky!&lt;/h3&gt;Può essere comodo avere l&#39;output dello script a schermo.  Conky è il nostro fidato amico con cui possiamo anche schedulare  l&#39;esecuzione dello script: &lt;br /&gt;&lt;pre class=&quot;brush:bash&quot;&gt;${texeci 60 sh ~/gbach.sh}&lt;br /&gt;&lt;/pre&gt;Ipotizzando che il nostro script si trovi nella home. &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Donwload&lt;/h3&gt;&lt;a href=&quot;https://github.com/mattux/gbach&quot;&gt;Ecco qui il repo Github&lt;/a&gt;.</description>
         <pubDate>Mon, 19 May 2014 09:00:00 +0200</pubDate>
-        <link>http://mattux.github.io/2014/05/19/gbach-check-della-propria-casella-gmail_19.html</link>
-        <guid isPermaLink="true">http://mattux.github.io/2014/05/19/gbach-check-della-propria-casella-gmail_19.html</guid>
+        <link>http://mattux.github.io/2014/05/19/gbach-check-della-propria-casella-gmail-19.html</link>
+        <guid isPermaLink="true">http://mattux.github.io/2014/05/19/gbach-check-della-propria-casella-gmail-19.html</guid>
         
         <category>bash</category>
         
@@ -149,38 +206,6 @@
         <category>GNU/linux</category>
         
         <category>Xfce</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Di sorci e PulseAudio</title>
-        <description>&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://1.bp.blogspot.com/-2W2WwGbNzwo/UXqyuxH9PFI/AAAAAAAACeM/a6G5lx-fStg/s1600/xfce_audio.png&quot; imageanchor=&quot;1&quot; style=&quot;clear: left; float: left; margin-bottom: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;153&quot; src=&quot;http://1.bp.blogspot.com/-2W2WwGbNzwo/UXqyuxH9PFI/AAAAAAAACeM/a6G5lx-fStg/s320/xfce_audio.png&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;&lt;/div&gt;Una delle poche cose che mi hanno sempre dato un po&#39; noia su Xfce è il fatto che abilitando il &lt;i&gt;mute&lt;/i&gt;&amp;nbsp;dell&#39;audio usando i tasti funzione/multimediali, l&#39;&lt;i&gt;unmute&lt;/i&gt;&amp;nbsp;non avviene correttamente, costringendomi ad aprire il mixer ed abilitare nuovamente il canale opportuno a manina.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;a name=&#39;more&#39;&gt;&lt;/a&gt;Il colpevole di questo malfunzionamento è &lt;b&gt;xfce4-volumed&lt;/b&gt;, che non supporta il nostro amico PulseAudio. Fortunatamente qualcuno ha provveduto a sistemare le cose (il bello dell&#39;opensource :D).&lt;br /&gt;Quello che bisogna fare è sostanzialmente &lt;a href=&quot;https://launchpad.net/xfce4-volumed-pulse/trunk/0.2.0/+download/xfce4-volumed-pulse-0.2.0.tar.bz2&quot; target=&quot;_blank&quot;&gt;scaricare &lt;b&gt;xfce4-volumed-pulse&lt;/b&gt;&lt;/a&gt;, compilarlo, installarlo ed abilitarlo al boot al posto del vecchio xfce4-volumed:&lt;br /&gt;&lt;br /&gt;&lt;table align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;margin-left: auto; margin-right: auto; text-align: center;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://1.bp.blogspot.com/-Dki7s1reUms/UXqwhgpgxXI/AAAAAAAACd0/cUcw7iS786g/s1600/Selezione_031.png&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: auto; margin-right: auto;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;187&quot; src=&quot;http://1.bp.blogspot.com/-Dki7s1reUms/UXqwhgpgxXI/AAAAAAAACd0/cUcw7iS786g/s320/Selezione_031.png&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;font-size: 13px;&quot;&gt;&quot;Mister, sostituzione!&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;a href=&quot;https://aur.archlinux.org/packages/xfce4-volumed-pulse/&quot; target=&quot;_blank&quot;&gt;Su AUR&lt;/a&gt;&amp;nbsp;le dipendenze indicate sono, a parte pulseaudio, &lt;b&gt;libkeybinder2&lt;/b&gt;&amp;nbsp;e &lt;b&gt;libnotify&lt;/b&gt;, ma chiaramente i nomi dei pacchetti variano da distro a distro. Ora finalmente possiamo zittire il pc sapendo che non avremo il minimo sbattimento per riabilitare il sonoro, come in teoria dovrebbe essere...&lt;br /&gt;&lt;br /&gt;Ringrazio&amp;nbsp;&lt;a class=&quot;g-profile&quot; href=&quot;http://plus.google.com/115147457025961956673&quot; target=&quot;_blank&quot;&gt;+Marco Milone&lt;/a&gt;&amp;nbsp;che me l&#39;ha fatto scoprire :)</description>
-        <pubDate>Fri, 26 Apr 2013 19:07:00 +0200</pubDate>
-        <link>http://mattux.github.io/2013/04/26/di-sorci-e-pulseaudio.html</link>
-        <guid isPermaLink="true">http://mattux.github.io/2013/04/26/di-sorci-e-pulseaudio.html</guid>
-        
-        <category>pulseaudio</category>
-        
-        <category>GNU/linux</category>
-        
-        <category>Xfce</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Spegnere il pc automaticamente dopo l&#39;aggiornamento</title>
-        <description>&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;http://1.bp.blogspot.com/-5JHWuezsm7k/UQ0q0MnpSJI/AAAAAAAACGs/SMz5O-ddC64/s1600/update-manager.png&quot; imageanchor=&quot;1&quot; style=&quot;clear: left; float: left; margin-bottom: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;https://lh3.ggpht.com/-5JHWuezsm7k/UQ0q0MnpSJI/AAAAAAAACGs/SMz5O-ddC64/s1600/update-manager.png&quot; /&gt;&lt;/a&gt;&lt;/div&gt;Piccola tip che ho scoperto di recente che non tutti conoscono.&lt;br /&gt;Sappiamo benissimo che su GNU/Linux possiamo fare gli aggiornamenti quando ci pare e mentre il gestore dei pacchetti lavora noi possiamo continuare a farci bellamente gli affari nostri.&lt;br /&gt;Però magari noi vogliamo dare gli aggiornamenti prima di spegnere il pc, perché abbiamo esigenza di poter sfruttare tutta la banda di rete disponibile o perché semplicemente mentre lavoriamo vogliamo che le rotture di scatole tendano a zero, o per qualche altro motivo.&lt;br /&gt;&lt;a name=&#39;more&#39;&gt;&lt;/a&gt;&lt;br /&gt;La soluzione è molto semplice ed il terminale è nostro amico.&lt;br /&gt;&lt;br /&gt;I comandi non si possono &lt;b&gt;concatenare&lt;/b&gt; solo con la pipe, ma anche con un &lt;b&gt;and logico&lt;/b&gt; (&amp;amp;&amp;amp;). L&#39;effetto è che il secondo comando verrà eseguito solo se il primo è andato a buon fine.&lt;br /&gt;&lt;br /&gt;Piccolo esempio: &lt;pre class=&quot;brush:shell&quot;&gt;&lt;br /&gt;$ wget --spider -q http://www.mattux.co.vu &amp;amp;&amp;amp; echo -e &quot;\n\n\nCiao, se mi leggi vuol dire che il comando precedente è stato eseguito&quot;&lt;/pre&gt;Quello che fa questa riga di comando è molto semplice:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;wget controlla (opzione --spider) se esiste l&#39;index di questo blog (ovviamente esiste);&lt;/li&gt;&lt;li&gt;se e solo se wget è stato lanciato e una volta che wget ha finito, viene eseguito l&#39;output del comando echo.&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;Applichiamo questo concetto agli update ed allo spegnimento. &lt;br /&gt;&lt;br /&gt;Su Debian/Ubuntu diamo qualcosa del tipo: &lt;br /&gt;&lt;blockquote&gt;# apt-get update &amp;amp;&amp;amp; apt-get upgrade -y &amp;amp;&amp;amp; shutdown -h now&lt;/blockquote&gt;Su Fedora invece: &lt;br /&gt;&lt;blockquote&gt;# yum update -y &amp;amp;&amp;amp; poweroff&lt;/blockquote&gt;&lt;br /&gt;Il pc &lt;b&gt;non&lt;/b&gt; si spegnerà soltanto nel caso in cui l&#39;update dovesse bloccarsi per qualche problema. Da un lato è male, mentre dall&#39;altro è bene, poiché in caso di mancato spegnimento ci si accorgerebbe immediatamente della cosa ed eventualmente porre rimedio qualora l&#39;update si interrompesse durante l&#39;update dei pacchetti e non semplicemente durante il loro download.&lt;br /&gt;&lt;br /&gt;Alla prossima :)&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;&lt;br /&gt;Nota: L&#39;&lt;span style=&quot;font-size: x-small;&quot;&gt;i&lt;/span&gt;mmagine del post&lt;span style=&quot;font-size: x-small;&quot;&gt; &lt;/span&gt;fa parte del set di icone&lt;/span&gt; &lt;a class=&quot;g-profile&quot; href=&quot;http://plus.google.com/116957764483417291271&quot; target=&quot;_blank&quot;&gt;+AwOken&lt;/a&gt;.</description>
-        <pubDate>Sat, 02 Feb 2013 16:34:00 +0100</pubDate>
-        <link>http://mattux.github.io/2013/02/02/spegnere-il-pc-automaticamente-dopo.html</link>
-        <guid isPermaLink="true">http://mattux.github.io/2013/02/02/spegnere-il-pc-automaticamente-dopo.html</guid>
-        
-        <category>tip</category>
-        
-        <category>GNU/linux</category>
-        
-        <category>terminale</category>
         
         
       </item>

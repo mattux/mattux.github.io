@@ -4,10 +4,14 @@ title: Mattux >> log
 description: Un blog di cui non si sentiva la mancanza.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mattux.github.io" # the base hostname & protocol for your site
+local: "http://127.0.0.1:4000"
 twitter_username: _mattux_
 github_username:  mattux
 paginate: 5
 paginate_path: "/blog/page:num/"
+
+gems :
+  - jekyll-paginate
 
 # Build settings
 markdown: kramdown

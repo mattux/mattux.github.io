@@ -6,9 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Mattux >> log</title>
-  <meta name="description" content="Di Linux, Open Source ed in teoria anche di Informatica.
-">
+  <title>Mattux >> log &middot; Un blog di cui non si sentiva la mancanza.</title>
+  <meta name="description" content="Un blog di cui non si sentiva la mancanza.">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://mattux.github.io/blog/page2/">
@@ -23,6 +22,7 @@
   <div class="wrapper">
 
       <a class="site-title" href="/">Mattux >> log</a>
+      <p class="site-description">Un blog di cui non si sentiva la mancanza.</p>
 
 <!--
     <nav class="site-nav">
@@ -75,8 +75,7 @@
   </div>
   <div class="wrapper">
 <!--
-    <p class="text">Di Linux, Open Source ed in teoria anche di Informatica.
-</p>
+    <p class="text">Un blog di cui non si sentiva la mancanza.</p>
 -->
   <div class="trigger">
         <span class="rss-subscribe"><a href="/feed.xml"> RSS</a></span>
@@ -130,6 +129,32 @@
 <!--
     
       <li>
+        <span class="post-meta">Nov 8, 2015</span>
+
+        <h2>
+          <a class="post-link" href="/2015/11/08/linuxday-2015-e-anche-quest-anno-e-andata.html">Linux Day 2015 - E anche quest'anno è andata</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
+        <span class="post-meta">Oct 15, 2015</span>
+
+        <h2>
+          <a class="post-link" href="/2015/10/15/reboot.html">Reboot</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
         <span class="post-meta">Oct 14, 2015</span>
 
         <h2>
@@ -172,7 +197,7 @@
         <span class="post-meta">May 19, 2014</span>
 
         <h2>
-          <a class="post-link" href="/2014/05/19/gbach-check-della-propria-casella-gmail_19.html">GBach - Check della propria casella GMail via Bash</a>
+          <a class="post-link" href="/2014/05/19/gbach-check-della-propria-casella-gmail-19.html">GBach - Check della propria casella GMail via Bash</a>
         </h2>
         <p class="post-summary">
           
@@ -800,6 +825,52 @@
   <!-- This loops through the paginated posts -->
   
 <!--
+    <h1><a href="/2014/05/19/gbach-check-della-propria-casella-gmail-19.html">GBach - Check della propria casella GMail via Bash</a></h1>
+    <p class="author">
+      <span class="date">2014-05-19 09:00:00 +0200</span>
+    </p>
+-->
+    <span class="post-meta">May 19, 2014</span>
+
+    <h2>
+      <a class="post-link" href="/2014/05/19/gbach-check-della-propria-casella-gmail-19.html">GBach - Check della propria casella GMail via Bash</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      Tempo fa, <a href="http://www.mattux.co.vu/2012/01/script-bash-per-sapere-il-numero-di.html">feci uno script</a> per controllare quante email non lette ho nella mia casella GMail. Ho  deciso di andare oltre: uno script che mostra anche l'elenco dei campi  oggetto delle email.<br /><br />L'ho chiamato <b>GBaCh</b>, che sta per <b>G</b>Mail<b> Ba</b>sh<b> Ch</b>ecker.<br /><br /><br /><h3>Cosa fa</h3>Come ho spiegato nell'<a href="http://www.mattux.co.vu/2012/01/script-bash-per-sapere-il-numero-di.html">altro post</a>, non tutti sanno che GMail offre un feed atom della propria casella di posta. <br />È sufficiente recarsi col proprio browser all'indirizzo <a href="http://mail.google.com/feed">https://mail.google.com/mail/feed/atom</a>:<br /><pre class="brush:xml; highlight: [2,8,20];"><feed version="0.3"><br />      <title>Gmail - Inbox for INDIRIZZO@gmail.com</title><br />      <tagline>New messages in your Gmail Inbox</tagline><br />      <fullcount>2</fullcount><br />      <link href="http://mail.google.com/mail" rel="alternate" type="text/html"></link><br />      <modified>2014-05-18T20:36:19Z</modified><br />      <entry><br />         <title>Seconda email di prova</title><br />         <summary>Prova. -- “If you have an apple and I have an apple and we exchange these apples then you and I will</summary><br />         <link href="http://mail.google.com/mail?account_id=INDIRIZZO@gmail.com&amp;amp;message_id=146110c97d0bea96&amp;amp;view=conv&amp;amp;extsrc=atom" rel="alternate" type="text/html"></link><br />         <modified>2014-05-18T20:36:16Z</modified><br />         <issued>2014-05-18T20:36:16Z</issued><br />         <id>tag:gmail.google.com,2004:1468473411071896214</id><br />         <author><br />            <name>me</name><br />            <email>INDIRIZZO@gmail.com</email><br />         </author><br />      </entry><br />      <entry><br />         <title>Email di prova</title><br />         <summary>Prova. -- “If you have an apple and I have an apple and we exchange these apples then you and I will</summary><br />         <link href="http://mail.google.com/mail?account_id=INDIRIZZO@gmail.com&amp;amp;message_id=146110bfdb9c6b8b&amp;amp;view=conv&amp;amp;extsrc=atom" rel="alternate" type="text/html"></link><modified>2014-05-18T20:35:37Z</modified><br />         <issued>2014-05-18T20:35:37Z</issued><br />         <id>tag:gmail.google.com,2004:1468473369708751755</id><br />         <author><br />            <name>me</name><br />            <email>INDIRIZZO@gmail.com</email><br />         </author><br />      </entry><br /></feed><br /></pre>Nelle righe evidenziate vediamo chiaramente l'oggetto delle  email che ci sono arrivate: gli oggetti sono racchiusi all'interno del  tag <i>title</i>, così come l'intestazione della mailbox, ma sappiamo che è la prima riga e perciò non è un problema.<br />Quello che lo script fa è quindi isolare queste righe e poi stampare i campi oggetto riga per riga.<br /><br /><br /><h3>Come lo fa</h3>Innanzitutto sono previste due modalità di utilizzo: <b>interattiva</b> e <b>non-interattiva</b>. Nel codice sono presenti le variabili <b>$user</b> e <b>$password</b>;&nbsp;  se non sono settate, lo script lavora in modalità interattiva, cioè  chiede le credenziali di google, altrimenti va da solo (importante se lo  si usa con Conky).<br /><br />Ora analizziamo uno alla volta i frammenti principali di codice.<br /><br /><b><span style="font-size: large;">Donwload e filtraggio del feed</span></b><br /><pre class="brush:bash">mail=$(curl -u $user:$password --silent "https://mail.google.com/mail/feed/atom" | sed -n '/&lt;title&gt;/p' |  sed s/\&lt;title\&gt;//g| sed s/\&amp;quot\;/\"/g);<br /></pre>Questa riga di codice semplicemente scarica il feed, isola le  righe che iniziano con "&lt;title&gt;", rimuove i tag &lt;title&gt; ed  infine converte gli <i>&amp;quot;</i> in <i>"</i>. Occhio, stiamo  eliminando solo i tag &lt;title&gt; di apertura, il motivo per cui  quelli di chiusura li teniamo lo vediamo tra pochissimo.<br /><br />Dunque, in output abbiamo una riga fatta così:<br /><blockquote class="tr_bq">intestazione mailbox &lt;/title&gt; oggetto #1 &lt;/title&gt; oggetto #2 &lt;/title&gt;</blockquote>Possiamo  vederla come separata in campi, delimitati da &lt;/title&gt; (ecco  perché li abbiamo tenuti!). Ci viene quindi in aiuto il nostro fido <b>Awk</b>.<br /><br /><span style="font-size: large;"><b>Conteggio e stampa dei campi oggetto</b></span><br /><pre class="brush:bash; highlight: [4,13];"># fields number = n_email + 1<br />if [[ $mail != "" ]]<br />   then<br />      n_email=$(echo $mail | awk -F '&lt;/title&gt;' '{print NF}');<br />      n_email=$(echo "$n_email - 2" | bc)<br />fi<br /><br />echo -e "($n_email)";<br /><br /># printing the titles of the emails one per line<br />if [[ $n_email &gt; 0 ]]<br />   then<br />      echo $mail | awk 'BEGIN { RS = "" ; FS = "&lt;/title&gt;" } { for (i = 2; i &lt;= NF-1; i++) print "-",$i }'<br />fi<br /></pre>Nel primo blocco contiamo quante email abbiamo, mentre nel  secondo, iteriamo (dal secondo campo) e stampiamo il contenuto di ogni  campo in una riga diversa.<br /><br /><br /><h3>Conky!</h3>Può essere comodo avere l'output dello script a schermo.  Conky è il nostro fidato amico con cui possiamo anche schedulare  l'esecuzione dello script: <br /><pre class="brush:bash">${texeci 60 sh ~/gbach.sh}<br /></pre>Ipotizzando che il nostro script si trovi nella home. <br /><br /><br /><h3>Donwload</h3><a href="https://github.com/mattux/gbach">Ecco qui il repo Github</a>.
+    </div>
+-->
+  
+<!--
+    <h1><a href="/2014/03/16/desert-schema-di-colore-per-geany.html">Desert - Schema di colore per Geany</a></h1>
+    <p class="author">
+      <span class="date">2014-03-16 01:04:00 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Mar 16, 2014</span>
+
+    <h2>
+      <a class="post-link" href="/2014/03/16/desert-schema-di-colore-per-geany.html">Desert - Schema di colore per Geany</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      Post molto breve, giusto per segnalarvi il fatto che ho realizzato un porting per <b>Geany</b> di <b>Desert</b>, lo schema di colore che uso su <b>GVim</b>. <br /><br /><div class="separator" style="clear: both; text-align: center;"></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-2grwixbpVps/UyTo-rRdIWI/AAAAAAAADrM/b_zrKJyhiS4/s1600/Istantanea+-+16032014+-+00%253A53%253A09.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://3.bp.blogspot.com/-2grwixbpVps/UyTo-rRdIWI/AAAAAAAADrM/b_zrKJyhiS4/s1600/Istantanea+-+16032014+-+00%253A53%253A09.png" height="338" width="400" />&nbsp;</a></td><td style="text-align: center;"></td><td style="text-align: center;"></td></tr><tr><td class="tr-caption" style="text-align: center;">Stralcio di codice in OCaml (cifrario di Vigenère)</td><td class="tr-caption" style="text-align: center;"><br /></td><td class="tr-caption" style="text-align: center;"><br /></td></tr></tbody></table><div class="separator" style="clear: both; text-align: center;"></div><br />Ho creato un <a href="https://github.com/mattux/geany-csx">repo su github</a> per i miei schemi di colore per Geany. Per ora c'è solo questo, ma chissà :D 
+    </div>
+-->
+  
+<!--
     <h1><a href="/2013/09/27/conky-pragha-quodlibet-e-la-canzone-in.html">Conky - Pragha, Quodlibet e la canzone in riproduzione</a></h1>
     <p class="author">
       <span class="date">2013-09-27 22:18:00 +0200</span>
@@ -868,52 +939,6 @@
     </div>
 -->
   
-<!--
-    <h1><a href="/2013/04/26/di-sorci-e-pulseaudio.html">Di sorci e PulseAudio</a></h1>
-    <p class="author">
-      <span class="date">2013-04-26 19:07:00 +0200</span>
-    </p>
--->
-    <span class="post-meta">Apr 26, 2013</span>
-
-    <h2>
-      <a class="post-link" href="/2013/04/26/di-sorci-e-pulseaudio.html">Di sorci e PulseAudio</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-2W2WwGbNzwo/UXqyuxH9PFI/AAAAAAAACeM/a6G5lx-fStg/s1600/xfce_audio.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="153" src="http://1.bp.blogspot.com/-2W2WwGbNzwo/UXqyuxH9PFI/AAAAAAAACeM/a6G5lx-fStg/s320/xfce_audio.png" width="320" /></a></div>Una delle poche cose che mi hanno sempre dato un po' noia su Xfce è il fatto che abilitando il <i>mute</i>&nbsp;dell'audio usando i tasti funzione/multimediali, l'<i>unmute</i>&nbsp;non avviene correttamente, costringendomi ad aprire il mixer ed abilitare nuovamente il canale opportuno a manina.<br /><br /><br /><br /><a name='more'></a>Il colpevole di questo malfunzionamento è <b>xfce4-volumed</b>, che non supporta il nostro amico PulseAudio. Fortunatamente qualcuno ha provveduto a sistemare le cose (il bello dell'opensource :D).<br />Quello che bisogna fare è sostanzialmente <a href="https://launchpad.net/xfce4-volumed-pulse/trunk/0.2.0/+download/xfce4-volumed-pulse-0.2.0.tar.bz2" target="_blank">scaricare <b>xfce4-volumed-pulse</b></a>, compilarlo, installarlo ed abilitarlo al boot al posto del vecchio xfce4-volumed:<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td><a href="http://1.bp.blogspot.com/-Dki7s1reUms/UXqwhgpgxXI/AAAAAAAACd0/cUcw7iS786g/s1600/Selezione_031.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="187" src="http://1.bp.blogspot.com/-Dki7s1reUms/UXqwhgpgxXI/AAAAAAAACd0/cUcw7iS786g/s320/Selezione_031.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="font-size: 13px;">"Mister, sostituzione!"</td></tr></tbody></table><a href="https://aur.archlinux.org/packages/xfce4-volumed-pulse/" target="_blank">Su AUR</a>&nbsp;le dipendenze indicate sono, a parte pulseaudio, <b>libkeybinder2</b>&nbsp;e <b>libnotify</b>, ma chiaramente i nomi dei pacchetti variano da distro a distro. Ora finalmente possiamo zittire il pc sapendo che non avremo il minimo sbattimento per riabilitare il sonoro, come in teoria dovrebbe essere...<br /><br />Ringrazio&nbsp;<a class="g-profile" href="http://plus.google.com/115147457025961956673" target="_blank">+Marco Milone</a>&nbsp;che me l'ha fatto scoprire :)
-    </div>
--->
-  
-<!--
-    <h1><a href="/2013/02/02/spegnere-il-pc-automaticamente-dopo.html">Spegnere il pc automaticamente dopo l'aggiornamento</a></h1>
-    <p class="author">
-      <span class="date">2013-02-02 16:34:00 +0100</span>
-    </p>
--->
-    <span class="post-meta">Feb 2, 2013</span>
-
-    <h2>
-      <a class="post-link" href="/2013/02/02/spegnere-il-pc-automaticamente-dopo.html">Spegnere il pc automaticamente dopo l'aggiornamento</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-5JHWuezsm7k/UQ0q0MnpSJI/AAAAAAAACGs/SMz5O-ddC64/s1600/update-manager.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://lh3.ggpht.com/-5JHWuezsm7k/UQ0q0MnpSJI/AAAAAAAACGs/SMz5O-ddC64/s1600/update-manager.png" /></a></div>Piccola tip che ho scoperto di recente che non tutti conoscono.<br />Sappiamo benissimo che su GNU/Linux possiamo fare gli aggiornamenti quando ci pare e mentre il gestore dei pacchetti lavora noi possiamo continuare a farci bellamente gli affari nostri.<br />Però magari noi vogliamo dare gli aggiornamenti prima di spegnere il pc, perché abbiamo esigenza di poter sfruttare tutta la banda di rete disponibile o perché semplicemente mentre lavoriamo vogliamo che le rotture di scatole tendano a zero, o per qualche altro motivo.<br /><a name='more'></a><br />La soluzione è molto semplice ed il terminale è nostro amico.<br /><br />I comandi non si possono <b>concatenare</b> solo con la pipe, ma anche con un <b>and logico</b> (&amp;&amp;). L'effetto è che il secondo comando verrà eseguito solo se il primo è andato a buon fine.<br /><br />Piccolo esempio: <pre class="brush:shell"><br />$ wget --spider -q http://www.mattux.co.vu &amp;&amp; echo -e "\n\n\nCiao, se mi leggi vuol dire che il comando precedente è stato eseguito"</pre>Quello che fa questa riga di comando è molto semplice:<br /><ul><li>wget controlla (opzione --spider) se esiste l'index di questo blog (ovviamente esiste);</li><li>se e solo se wget è stato lanciato e una volta che wget ha finito, viene eseguito l'output del comando echo.</li></ul><br />Applichiamo questo concetto agli update ed allo spegnimento. <br /><br />Su Debian/Ubuntu diamo qualcosa del tipo: <br /><blockquote># apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; shutdown -h now</blockquote>Su Fedora invece: <br /><blockquote># yum update -y &amp;&amp; poweroff</blockquote><br />Il pc <b>non</b> si spegnerà soltanto nel caso in cui l'update dovesse bloccarsi per qualche problema. Da un lato è male, mentre dall'altro è bene, poiché in caso di mancato spegnimento ci si accorgerebbe immediatamente della cosa ed eventualmente porre rimedio qualora l'update si interrompesse durante l'update dei pacchetti e non semplicemente durante il loro download.<br /><br />Alla prossima :)<br /><br /><span style="font-size: x-small;"><br />Nota: L'<span style="font-size: x-small;">i</span>mmagine del post<span style="font-size: x-small;"> </span>fa parte del set di icone</span> <a class="g-profile" href="http://plus.google.com/116957764483417291271" target="_blank">+AwOken</a>.
-    </div>
--->
-  
   </ul>
 
 
@@ -922,7 +947,7 @@
 <!--
   <div class="pagination">
     
-      <a href="/index.html" class="previous">Previous</a>
+      <a href="/" class="previous">Previous</a>
     
     <span class="page_number ">Page: 2 of 11</span>
     
@@ -934,12 +959,12 @@
   
 <div class="pagination">
   
-    <a href="/index.html">&laquo; Prev</a>
+    <a href="/">&laquo; Prev</a>
   
 
   
     
-      <a href="/index.html">1</a>
+      <a href="/">1</a>
     
   
     
@@ -1061,8 +1086,7 @@
 
 <!--
       <div class="footer-col  footer-col-2">
-        <p class="text">Di Linux, Open Source ed in teoria anche di Informatica.
-</p>
+        <p class="text">Un blog di cui non si sentiva la mancanza.</p>
       </div>
 -->
 <!--
