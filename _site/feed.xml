@@ -5,28 +5,29 @@
     <description>Un blog di cui non si sentiva la mancanza.</description>
     <link>http://mattux.github.io/</link>
     <atom:link href="http://mattux.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 08 Nov 2015 23:34:23 +0100</pubDate>
-    <lastBuildDate>Sun, 08 Nov 2015 23:34:23 +0100</lastBuildDate>
+    <pubDate>Tue, 10 Nov 2015 17:38:01 +0100</pubDate>
+    <lastBuildDate>Tue, 10 Nov 2015 17:38:01 +0100</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
         <title>Linux Day 2015 - E anche quest&#39;anno è andata</title>
-        <description>&lt;p&gt;Circa due settimane fa, come ben sappiamo, si è tenuto il &lt;strong&gt;Linux Day&lt;/strong&gt;. In quel di &lt;strong&gt;Cagliari&lt;/strong&gt;, stavolta solo (si fa per dire) seminari, per mancanza di spazi da adibire a install corner, aree demo et similia.&lt;/p&gt;
+        <description>&lt;p&gt;Circa due settimane fa, come ben sappiamo, si è tenuto il &lt;strong&gt;Linux Day&lt;/strong&gt;. In quel di &lt;strong&gt;Cagliari&lt;/strong&gt;, stavolta solo (si fa per dire) seminari, per mancanza di spazi da adibire a install corner, aree demo et similia. Ciononostante, è stata veramente una bella giornata.&lt;/p&gt;
 
-&lt;p&gt;Ciononostante, l’affluenza è stata in linea con le aspettative e forse, in alcuni momenti della giornata (poco prima e appena dopo pranzo), anche superiori. E magari non sembra, ma sono cose belle. Questo grazie anche alla presenza agli studenti delle scuole superiori, che ogni anno invitiamo. Purtroppo alcuni di loro hanno movimentato negativamente, disturbando al punto che mi sono reso protagonista di un siparietto durante il mio talk in cui mi fermo, batto due volte col piede sulla pedana guardando &lt;em&gt;brutto&lt;/em&gt; i ragazzi, che capiscono e si zittiscono, per fortuna.&lt;/p&gt;
+&lt;p&gt;L’affluenza è stata in linea con le aspettative e forse, in alcuni momenti della giornata (poco prima e appena dopo pranzo), anche superiori. E magari non sembra, ma sono cose belle. Questo grazie anche alla presenza agli studenti delle scuole superiori, che ogni anno invitiamo. Purtroppo alcuni di loro hanno movimentato negativamente, disturbando al punto che mi sono reso protagonista di un siparietto durante il mio talk in cui mi fermo, batto due volte col piede sulla pedana guardando &lt;em&gt;brutto&lt;/em&gt; i ragazzi, che capiscono e si zittiscono, per fortuna.&lt;/p&gt;
 
-&lt;p&gt;Effettivamente faccio paura. E sono anche molto fotogenico. Sseh.&lt;/p&gt;
+&lt;p&gt;Effettivamente faccio paura.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/p720x720/12143084_10153416635562326_7780239441049279199_n.jpg?oh=0acd1c0d04ef08c2cca4f70b279841f3&amp;amp;oe=56C1AD8D&quot; alt=&quot;Talk&quot; title=&quot;Paura, eh?&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Come ho anticipato nello scorso post, ho parlato di &lt;a href=&quot;http://linuxday.gulch.it/slides/2015/traccia-tecnica/dbms.pdf&quot; title=&quot;Graph Database&quot;&gt;Graph Database&lt;/a&gt;, un tipo di database che viene adottato sempre di più e a cui mi sono avvicinato poco più di un anno fa. Addirittura qualcuno stima che tra 3-4 anni ci sarà un vero e proprio boom; io credo che non si sbagli, visto anche l’interesse dei presenti durante il talk.&lt;/p&gt;
+&lt;p&gt;Come anticipato nello scorso post, ho parlato di &lt;a href=&quot;http://linuxday.gulch.it/slides/2015/traccia-tecnica/dbms.pdf&quot; title=&quot;Graph Database&quot;&gt;Graph Database&lt;/a&gt;, un tipo di database la cui adozione è in forte crescita e a cui mi sono avvicinato poco più di un anno fa. Addirittura qualcuno stima che tra 3-4 anni ci sarà un vero e proprio boom; &lt;a href=&quot;https://www.google.it/trends/explore#q=graph%20database&quot;&gt;qualcosa&lt;/a&gt; mi dice che costoro ci hanno preso in pieno, visto anche l’interesse che il talk ha suscitato nei presenti.
+Più nel dettaglio, il seminario ha affrontato le ragioni che hanno portato alla loro nascita e gli aspetti teorici di base, introducendo infine &lt;a href=&quot;http://neo4j.com&quot;&gt;Neo4j&lt;/a&gt;, il più popolare Graph-DBMS.&lt;/p&gt;
 
 &lt;p&gt;A &lt;a href=&quot;http://linuxday.gulch.it/node/67&quot; title=&quot;Materiale traccia divulgativa&quot;&gt;questo link&lt;/a&gt;, il materiale dei seminari della traccia divulgativa, a &lt;a href=&quot;http://linuxday.gulch.it/node/68&quot; title=&quot;&amp;quot;Materiale traccia tecnica&quot;&gt;quest’altro&lt;/a&gt;, il materiale della traccia tecnica. Letture (ovviamente) consigliatissime.
 &lt;a href=&quot;http://linuxday.gulch.it/album/2015/&quot;&gt;Qui&lt;/a&gt;, le nostre foto della manifestazione.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 08 Nov 2015 23:34:23 +0100</pubDate>
-        <link>http://mattux.github.io/2015/11/08/linuxday-2015-e-anche-quest-anno-e-andata.html</link>
-        <guid isPermaLink="true">http://mattux.github.io/2015/11/08/linuxday-2015-e-anche-quest-anno-e-andata.html</guid>
+        <pubDate>Tue, 10 Nov 2015 00:00:00 +0100</pubDate>
+        <link>http://mattux.github.io/2015/11/10/linuxday-2015-e-andata.html</link>
+        <guid isPermaLink="true">http://mattux.github.io/2015/11/10/linuxday-2015-e-andata.html</guid>
         
         <category>linuxday</category>
         
