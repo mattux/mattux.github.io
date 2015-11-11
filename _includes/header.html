@@ -33,14 +33,16 @@
     <p class="text">{{ site.description }}</p>
 -->
   <div class="trigger">
-        <span class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}"> RSS</a></span>
-          &nbsp;|&nbsp;
-          {% for page in site.pages %}
-            {% if page.title %}
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
+    <span class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}"> RSS</a></span>
+    &nbsp;|&nbsp;
+    <a href="https://plus.google.com/b/116514234298958416545/116514234298958416545/"> Google+</a></span>
+    &nbsp;|&nbsp;
+    {% for page in site.pages %}
+      {% if page.title %}
+      <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
   </div>
 
 </header>
