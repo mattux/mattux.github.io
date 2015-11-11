@@ -9,7 +9,7 @@ tags:
 
 Circa due settimane fa, come ben sappiamo, si è tenuto il **Linux Day**. In quel di **Cagliari**, stavolta solo (si fa per dire) seminari, per mancanza di spazi da adibire a install corner, aree demo et similia. Ciononostante, è stata veramente una bella giornata.
 
-L'affluenza è stata in linea con le aspettative e forse, in alcuni momenti della giornata (poco prima e appena dopo pranzo), anche superiori. E magari non sembra, ma sono cose belle. Questo grazie anche alla presenza degli studenti delle scuole superiori, che ogni anno invitiamo. Purtroppo alcuni di loro hanno movimentato negativamente, disturbando al punto che mi sono reso protagonista di un siparietto durante il mio talk in cui mi fermo, batto due volte col piede sulla pedana guardando _brutto_ i ragazzi, che capiscono e si zittiscono, per fortuna.
+L'affluenza è stata in linea con le aspettative e forse, in alcuni momenti della giornata (poco prima e appena dopo pranzo), anche superiori. E magari non sembra, ma sono cose belle. Questo grazie anche alla presenza degli studenti delle scuole superiori, che ogni anno invitiamo. Purtroppo alcuni di loro hanno movimentato lo svolgimento dei seminari, disturbando al punto che mi sono reso protagonista di un siparietto durante il mio talk in cui mi fermo, batto due volte col piede sulla pedana guardando _brutto_ i ragazzi, che capiscono e si zittiscono, per fortuna.
 
 Effettivamente faccio paura.
 
