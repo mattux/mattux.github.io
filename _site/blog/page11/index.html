@@ -78,40 +78,44 @@
     <p class="text">Un blog di cui non si sentiva la mancanza.</p>
 -->
   <div class="trigger">
-        <span class="rss-subscribe"><a href="/feed.xml"> RSS</a></span>
-          &nbsp;|&nbsp;
-          
-            
-            <a class="page-link" href="/about/">About</a>
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-        </div>
+    <span class="rss-subscribe"><a href="/feed.xml">RSS</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://plus.google.com/b/116514234298958416545/116514234298958416545/">Google+</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/mattux/">GitHub</a></span>
+    &nbsp;·&nbsp;
+    
+      
+      <a class="page-link" href="/about/">About</a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
   </div>
 
 </header>
@@ -127,6 +131,19 @@
 
   <ul class="post-list">
 <!--
+    
+      <li>
+        <span class="post-meta">Dec 23, 2015</span>
+
+        <h2>
+          <a class="post-link" href="/2015/12/23/i-miei-font-per-programmare-preferiti.html">I miei font per programmare preferiti</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
     
       <li>
         <span class="post-meta">Nov 10, 2015</span>
@@ -825,6 +842,29 @@
   <!-- This loops through the paginated posts -->
   
 <!--
+    <h1><a href="/2010/09/12/terminale-ls-colorato.html">Terminale: ls colorato</a></h1>
+    <p class="author">
+      <span class="date">2010-09-12 08:00:00 +0200</span>
+    </p>
+-->
+    <span class="post-meta">Sep 12, 2010</span>
+
+    <h2>
+      <a class="post-link" href="/2010/09/12/terminale-ls-colorato.html">Terminale: ls colorato</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      Come mi capita spesso (anzi, spessissimo) oggi ho aperto il mio amato terminale e con mia sorpresa, il comando <b>ls</b> scriveva tutto dello stesso colore. Non sia mai! Ma facciamo un passo indietro: che è 'sto comando ls?<br /><a name='more'></a><br />Ordunque, <b>ls</b> (che sta per "list") è a dir poco fondamentale e ci consente di visualizzare il contenuto di una directory (per saperne di più scrivete nel terminale <b>man ls</b>). Una bella comodità è che a seconda del tipo di oggetto (file, directory, link simbolici, ecc) colora il testo in modo diverso, in modo da facilitarci la lettura del contenuto della directory, grazie all'opzione <b>--color</b>, che può valere "<b>always</b>", "<b>never</b>", "<b>auto</b>".<br /><br />Per qualche strana ragione però la funzionalità potrebbe essere disattivata. Come riabilitarla? Beh, io ho fatto così:<br /><ul><li>siccome voglio questa opzione sempre attivata, mi serve il comando <b>ls --color=always</b></li><li>siccome voglio creare un <i>alias</i>¹ del comando che ho scritto su scriverò <b>alias='ls --color=always'</b></li><li>siccome voglio che l'alias sia definitivo per il mio utente devo mettere il comando nel file <i>.bashrc</i><b> </b>che sta nella mia home</li></ul><br /><br />In soldoni, andiamo nella nostra home e apriamo il file <i>.bashrc, quindi&nbsp;</i>cerchiamo queste righe<span id="goog_280888175"></span>²<span id="goog_280888176"></span>:<br /><br /><blockquote># enable color support of ls and also add handy aliases<br />if [ -x /usr/bin/dircolors ]; then</blockquote><br />appena sotto scriviamo questo:<br /><br /><blockquote>alias='ls --color=always'</blockquote><br />&nbsp;Chiudiamo il file e dalla prossima sessione avremo ls colorato!<br /><hr id="note" /><br />¹ <span style="font-size: small;"><a href="http://mattuxblog.blogspot.com/2010/09/diamo-un-nome-ai-comandi-grazie-agli.html">giusto ieri ho scritto un articolo a riguardo :)</a></span><br />² <span class="Apple-style-span" style="font-size: small;"><span class="Apple-style-span">se non le trovate inseritele in fondo al file e buonanotte al secchio :)</span></span>
+    </div>
+-->
+  
+<!--
     <h1><a href="/2010/09/11/diamo-un-nome-ai-comandi-grazie-agli.html">Diamo un nome ai comandi grazie agli alias</a></h1>
     <p class="author">
       <span class="date">2010-09-11 10:00:00 +0200</span>
@@ -1082,7 +1122,7 @@
     </div>
 -->
 
-  <p class="footer-msg">This blog is brought to you by <a href="matteopani.altervista.org">Mattux</a> with Jekyll and ♥</p>
+  <p class="footer-msg">This blog is brought to you by Mattux with <a href="http://jekyllrb.com/">Jekyll</a> and ♥, under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a></p>
   </div>
 
 </footer>

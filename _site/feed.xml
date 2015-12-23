@@ -5,15 +5,50 @@
     <description>Un blog di cui non si sentiva la mancanza.</description>
     <link>http://mattux.github.io/</link>
     <atom:link href="http://mattux.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 10 Nov 2015 17:38:01 +0100</pubDate>
-    <lastBuildDate>Tue, 10 Nov 2015 17:38:01 +0100</lastBuildDate>
+    <pubDate>Wed, 23 Dec 2015 01:20:30 +0100</pubDate>
+    <lastBuildDate>Wed, 23 Dec 2015 01:20:30 +0100</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>I miei font per programmare preferiti</title>
+        <description>&lt;p&gt;Tempo addietro abbiamo parlato della mia fissa per gli schemi di colore. Stavolta parliamo di font, più precisamente dei font che preferisco usare per scrivere codice e che uso in generale negli editor testuali. Alcuni di questi hanno una buona resa anche negli emulatori di terminale.&lt;/p&gt;
+
+&lt;p&gt;In ordine sparso:&lt;/p&gt;
+
+&lt;h3 id=&quot;courier-prime-codehttpquoteunquoteappscomcourierprime-courier-prime-code&quot;&gt;&lt;a href=&quot;http://quoteunquoteapps.com/courierprime/&quot; title=&quot;Courier Prime Code&quot;&gt;Courier Prime Code&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Rivisitazione in chiave moderna di Courier. Ha un aspetto classico e lo trovo molto piacevole.&lt;/p&gt;
+
+&lt;h3 id=&quot;envy-code-rhttpsdamiengcomenvy-code-r-envy-code-r&quot;&gt;&lt;a href=&quot;https://damieng.com/envy-code-r&quot; title=&quot;Envy Code R&quot;&gt;Envy Code R&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lo uso da anni. Bella leggibilità e resa ottima praticamente sempre.&lt;/p&gt;
+
+&lt;h3 id=&quot;hackhttpsourcefoundryorghack&quot;&gt;&lt;a href=&quot;http://sourcefoundry.org/hack/&quot;&gt;Hack&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Lo definirei “smooth”. È quasi elegante. Me l’ha segnalato pochi mesi fa un amico (grazie!).&lt;/p&gt;
+
+&lt;h3 id=&quot;meslohttpsgithubcomandrebergmeslo-font-meslo&quot;&gt;&lt;a href=&quot;https://github.com/andreberg/Meslo-Font&quot; title=&quot;Meslo&quot;&gt;Meslo&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Quasi non sembra neanche un monospaziato. Trovo che abbia una bella resa anche a piccole dimensioni.&lt;/p&gt;
+
+&lt;h3 id=&quot;source-code-prohttpsgithubcomadobe-fontssource-code-pro-source-code-pro&quot;&gt;&lt;a href=&quot;https://github.com/adobe-fonts/source-code-pro&quot; title=&quot;Source Code Pro&quot;&gt;Source Code Pro&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Il famoso font di Adobe per i programmatori. Inizialmente non mi piaceva, poi pian piano mi ha convinto.&lt;/p&gt;
+
+&lt;h3 id=&quot;inconsolatahttpwwwleviencomtypemyfontsinconsolatahtml-inconsolata&quot;&gt;&lt;a href=&quot;http://www.levien.com/type/myfonts/inconsolata.html&quot; title=&quot;Inconsolata&quot;&gt;Inconsolata&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Famoso anche lui. A volte mi ha salvato in situazioni in cui gli altri font non avevano una bella resa.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 23 Dec 2015 01:20:30 +0100</pubDate>
+        <link>http://mattux.github.io/2015/12/23/i-miei-font-per-programmare-preferiti.html</link>
+        <guid isPermaLink="true">http://mattux.github.io/2015/12/23/i-miei-font-per-programmare-preferiti.html</guid>
+        
+        <category>coding</category>
+        
+        <category>font</category>
+        
+        
+      </item>
     
       <item>
         <title>Linux Day 2015 - E anche quest&#39;anno è andata</title>
         <description>&lt;p&gt;Circa due settimane fa, come ben sappiamo, si è tenuto il &lt;strong&gt;Linux Day&lt;/strong&gt;. In quel di &lt;strong&gt;Cagliari&lt;/strong&gt;, stavolta solo (si fa per dire) seminari, per mancanza di spazi da adibire a install corner, aree demo et similia. Ciononostante, è stata veramente una bella giornata.&lt;/p&gt;
 
-&lt;p&gt;L’affluenza è stata in linea con le aspettative e forse, in alcuni momenti della giornata (poco prima e appena dopo pranzo), anche superiori. E magari non sembra, ma sono cose belle. Questo grazie anche alla presenza agli studenti delle scuole superiori, che ogni anno invitiamo. Purtroppo alcuni di loro hanno movimentato negativamente, disturbando al punto che mi sono reso protagonista di un siparietto durante il mio talk in cui mi fermo, batto due volte col piede sulla pedana guardando &lt;em&gt;brutto&lt;/em&gt; i ragazzi, che capiscono e si zittiscono, per fortuna.&lt;/p&gt;
+&lt;p&gt;L’affluenza è stata in linea con le aspettative e forse, in alcuni momenti della giornata (poco prima e appena dopo pranzo), anche superiori. E magari non sembra, ma sono cose belle. Questo grazie anche alla presenza degli studenti delle scuole superiori, che ogni anno invitiamo. Purtroppo alcuni di loro hanno movimentato lo svolgimento dei seminari, disturbando al punto che mi sono reso protagonista di un siparietto durante il mio talk in cui mi fermo, batto due volte col piede sulla pedana guardando &lt;em&gt;brutto&lt;/em&gt; i ragazzi, che capiscono e si zittiscono, per fortuna.&lt;/p&gt;
 
 &lt;p&gt;Effettivamente faccio paura.&lt;/p&gt;
 
@@ -191,22 +226,6 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata &lt;em
         <category>utilità</category>
         
         <category>shell</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Sorci e piazzamenti delle finestre</title>
-        <description>Non so voi, ma io preferisco che il window manager mi apra le finestre esattamente al centro dello schermo e non in una posizione per me quasi impredicibile. &lt;br /&gt;Xfce mi consente di configurare in maniera molto semplice questo aspetto:&lt;br /&gt;&lt;br /&gt;&lt;table align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;margin-left: auto; margin-right: auto; text-align: center;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://4.bp.blogspot.com/-0xY4NS3xb5s/Ue2fsXf6c9I/AAAAAAAAC8A/XelKShHlht0/s1600/posizionamento.png&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: auto; margin-right: auto;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;269&quot; src=&quot;http://4.bp.blogspot.com/-0xY4NS3xb5s/Ue2fsXf6c9I/AAAAAAAAC8A/XelKShHlht0/s320/posizionamento.png&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;Semplice come bere un biccher d&#39;acqua&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;Purtroppo &lt;b&gt;molti temi&lt;/b&gt; di Xfwm (il gestore delle finestre di Xfce) &lt;b&gt;ignorano questa impostazione&lt;/b&gt; e le finestre si aprono dove pare a loro.&lt;br /&gt;A questo punto ho deciso di indagare.&lt;br /&gt;Nella directory &lt;b&gt;xfwm4&lt;/b&gt; è presente il file &lt;i&gt;themerc&lt;/i&gt;, nel quale spesso è presente una riga con questa direttiva:&lt;br /&gt;&lt;blockquote class=&quot;tr_bq&quot;&gt;placement_ratio=20&lt;/blockquote&gt;Ecco il colpevole. In breve, quel &quot;20&quot; rappresenta la dimensione minima delle finestre per cui si attiva il posizionamento intelligente, ma come si può vedere dall&#39;immagine che sta sopra il cursore sta in fondo e cioè è a &lt;b&gt;100&lt;/b&gt;. Scrivendolo esplicitamente nel file del tema, le impostazioni del DE vengono bypassate. Basta eliminare quella riga e la cosa si risolve. &lt;br /&gt;Compiere questa operazione a mano per tutti i temi è una grossa seccatura e così ho deciso di elaborare un comando per risolvere questo problema velocemente:&lt;br /&gt;&lt;pre class=&quot;brush:bash&quot;&gt;sed -i s/placement_ratio=20//g ~/.themes/*/xfwm4/themerc &lt;/pre&gt;Grazie a sed, in tutti i file che si trovano in ~/.themes, l&#39;odiosa riga viene sostituita con una riga vuota e quindi di fatto eliminata.&lt;br /&gt;Per il file che si trovano in &lt;i&gt;/usr/share/themes&lt;/i&gt; basta andare a modificare il percorso e diventare root:&lt;br /&gt;&lt;pre class=&quot;brush:bash&quot;&gt;sed -i s/placement_ratio=20//g /usr/share/themes/*/xfwm4/themerc &lt;/pre&gt;&lt;br /&gt;Et voilà, problema risolto ;)&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;p.s. Ho deciso di non &quot;spezzare&quot; più i post e sto meditando anche un bel restyling di tutto il blog.&lt;/span&gt;</description>
-        <pubDate>Mon, 22 Jul 2013 23:29:00 +0200</pubDate>
-        <link>http://mattux.github.io/2013/07/22/sorci-e-piazzamenti-delle-finestre.html</link>
-        <guid isPermaLink="true">http://mattux.github.io/2013/07/22/sorci-e-piazzamenti-delle-finestre.html</guid>
-        
-        <category>bash</category>
-        
-        <category>GNU/linux</category>
-        
-        <category>Xfce</category>
         
         
       </item>

@@ -78,40 +78,44 @@
     <p class="text">Un blog di cui non si sentiva la mancanza.</p>
 -->
   <div class="trigger">
-        <span class="rss-subscribe"><a href="/feed.xml"> RSS</a></span>
-          &nbsp;|&nbsp;
-          
-            
-            <a class="page-link" href="/about/">About</a>
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-        </div>
+    <span class="rss-subscribe"><a href="/feed.xml">RSS</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://plus.google.com/b/116514234298958416545/116514234298958416545/">Google+</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/mattux/">GitHub</a></span>
+    &nbsp;·&nbsp;
+    
+      
+      <a class="page-link" href="/about/">About</a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
   </div>
 
 </header>
@@ -127,6 +131,19 @@
 
   <ul class="post-list">
 <!--
+    
+      <li>
+        <span class="post-meta">Dec 23, 2015</span>
+
+        <h2>
+          <a class="post-link" href="/2015/12/23/i-miei-font-per-programmare-preferiti.html">I miei font per programmare preferiti</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
     
       <li>
         <span class="post-meta">Nov 10, 2015</span>
@@ -825,6 +842,29 @@
   <!-- This loops through the paginated posts -->
   
 <!--
+    <h1><a href="/2012/01/15/script-bash-per-sapere-il-numero-di.html">Script bash per sapere il numero di email non lette su GMail</a></h1>
+    <p class="author">
+      <span class="date">2012-01-15 01:38:00 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Jan 15, 2012</span>
+
+    <h2>
+      <a class="post-link" href="/2012/01/15/script-bash-per-sapere-il-numero-di.html">Script bash per sapere il numero di email non lette su GMail</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-MGNsJd3_ldM/TxITMgJcAQI/AAAAAAAAAp8/sD-A1N_-xJM/s1600/bash_gmail.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="164" src="http://1.bp.blogspot.com/-MGNsJd3_ldM/TxITMgJcAQI/AAAAAAAAAp8/sD-A1N_-xJM/s200/bash_gmail.png" width="200" /></a></div>Qualche tempo fa, in preda ad un impeto di nerditudo ho pensato: "Come  posso controllare il numero di email non lette sul mio account GMail con  uno script Bash?".  Mi sono subito messo alla ricerca di una soluzione e l'ho trovata, ma  non funzionava, quindi l'ho aggiustata (semplificandola parecchio peraltro) in modo che facesse ciò che mi  serviva. Purtroppo non trovo più il link, perciò non posso dare i giusti  meriti a chi ha scritto lo script sul quale mi sono basato, però credo sia altrettanto giusto che sappiate che non è tutta farina del mio sacco.<br /><br /><a name='more'></a>Allora, io direi che è meglio se vediamo prima tutto il codice, così lo analizziamo.<br /><pre class="brush:bash">#! /bin/bash<br /><br />echo -e "\nnome utente:";<br />read nome<br /><br />echo -e "\npassword:";<br />read -s pwd<br /><br />mail=$(curl -u $nome:$pwd --silent "https://mail.google.com/mail/feed/atom" | sed -n '/&lt;fullcount&gt;/p' | tr "&lt;fullcount&gt;,&lt;/fullcount&gt;" " ");<br /><br />echo -e "\n---------------------------------\nEmail non lette: $mail\n---------------------------------\n";<br />    <br />exit 0;<br /><br /> </pre>Innanzitutto, vengono richiesti il nome utente e la password mediante il comando read. Il parametro <b>-s</b> della read sta per silent, cioè non mostra ciò che si scrive durante la digitazione.<br /><br />Inizia ora la parte interessante, che si concentra nella riga 9 del codice appena mostrato, che vediamo passo passo.<br /><pre class="brush:bash">mail=$(curl -u $nome:$pwd --silent "https://mail.google.com/mail/feed/atom"<br /><br /></pre>Lo scopo è far sì che la variabile mail contenga il numero di email non lette. Per prelevare il feed atom della casella di posta sfruttiamo <b>curl</b> e visto che è richiesta una autenticazione, usiamo il parametro <b>-u</b>, cui seguono ovviamente nome utente e password; con <b>--silent</b> non viene mostrato niente a schermo.<br /><br />Quel che otteniamo grazie a curl è qualcosa del genere:<br /><pre class="brush:xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br /><br />&lt;feed version="0.3" xmlns="http://purl.org/atom/ns#"&gt;<br /><br />&lt;title&gt;Gmail - Inbox for andovais@gmail.com&lt;/title&gt;<br /><br />&lt;tagline&gt;New messages in your Gmail Inbox&lt;/tagline&gt;<br /><br />&lt;fullcount&gt;0&lt;/fullcount&gt;<br /><br />&lt;link rel="alternate" href="http://mail.google.com/mail" type="text/html" /&gt;<br /><br />&lt;modified&gt;2012-01-14T23:40:54Z&lt;/modified&gt;<br /><br />&lt;/feed&gt;</pre>La riga 9 contiene il numero di email non lette. Dobbiamo&nbsp; isolare lei e poi isolare il numeretto che contiene. Qui entra in scena <b>sed</b>.<br /><pre class="brush:bash">sed -n '/&lt;fullcount&gt;/p'</pre>Grazie alla pipe diamo il feed in pasto al nostro amico sed e gli diciamo di stampare la riga contenente il pattern "&lt;fullcount&gt;", col parametro <b>-n </b>gli diciamo di stampare <b>solo</b> quella. Otteniamo qualcosa del tipo:<br /><blockquote class="tr_bq">&lt;fullcount&gt;0&lt;/fullcount&gt;</blockquote>Sempre grazie ad una pipe, dirigiamo l'output al suo ultimo lido: <b>tr</b>. <br /><pre class="brush:bash">&nbsp;tr "&lt;fullcount&gt;,&lt;/fullcount&gt;" " "</pre>Con tr convertiamo i tag xml in spazi vuoti, lasciando solo soletto il numero che stava lì in mezzo.<br />Adesso quindi la variabile $mail contiene il numero di email non lette&nbsp; (nel mio caso zero), ne stampiamo a video il contenuto et voilà :D<br /><br />Spero di essere stato abbastanza chiaro e di non aver scritto boiate, soprattutto su sed, che praticamente non conosco. Sicuramente esiste una soluzione migliore, ma questa funziona e ciò mi basta :)<br /><br /><br />p.s. L'immagine del post utilizza un icona di  <b>DsynFLO Creations</b>, che potete trovare <a href="http://www.iconspedia.com/icon/android-gmail-16-32.html">qui</a>.<br /><code></code><br /><code><code></code></code>
+    </div>
+-->
+  
+<!--
     <h1><a href="/2011/12/28/veromix-plasmoide-per-regolare-laudio.html">Veromix, plasmoide per regolare l'audio</a></h1>
     <p class="author">
       <span class="date">2011-12-28 15:04:00 +0100</span>
@@ -913,29 +953,6 @@
 <!--
     <div class="content">
       <div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-5IY1ikU-VPU/TqwaBf9GjXI/AAAAAAAAAbk/CUNIsBPKxAg/s1600/qupzilla256.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="200" src="http://1.bp.blogspot.com/-5IY1ikU-VPU/TqwaBf9GjXI/AAAAAAAAAbk/CUNIsBPKxAg/s200/qupzilla256.png" width="195" /></a></div>Sono un fedele utilizzatore di Firefox da anni, ma su KDE ahimè il nostro amato panda rosso non si è mai integrato benissimo, sembra sempre un pesce fuor d'acqua (Un panda rosso che sembra un pesce LOL). <br />Un progetto interessante inizialmente era <a href="http://code.google.com/p/arora/">Arora</a>, di cui ormai non si parla neanche più. È stata la volta poi di <a href="http://rekonq.kde.org/">Rekonq</a>, browser promettente, progetto che resiste, ma che non mi ha mai convinto del tutto. Infine, nel silenzio, è nato lui, <a href="http://qupzilla.co.cc/index.php">Qupzilla</a>.<br />Che sia la volta buona per avere un browser vero per KDE (non come <a href="http://www.konqueror.org/">Konqueror</a> -.-'') con Webkit?<br />Il DE del draghetto ne avrebbe veramente bisogno :)<br /><br /><a name='more'></a>QupZilla è al momento alla versione 1.0.0-rc1 e non si può pensare di usarlo nella quotidianeità, ma già da ora si possono intravedere le sue potenzialità.<br /><br />Ieri l'ho installato sulla mia Debian Testing e ci ho fatto un giro veloce.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-T-Z-Zg4svmw/Tqwd7JeYJmI/AAAAAAAAAb0/_XrgFKjqpgs/s1600/qupzilla1.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="173" src="http://4.bp.blogspot.com/-T-Z-Zg4svmw/Tqwd7JeYJmI/AAAAAAAAAb0/_XrgFKjqpgs/s320/qupzilla1.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Graficamente essenziale, ottimo :)</td></tr></tbody></table><br />Veloce si è dimostrato pure il browser, veramente un razzo nel caricamento delle pagine O_o<br />In particolare ho notato la possibilità di bloccare le tab come su Firefox (funzione che adoro!), la gestione dei segnalibri e della cronologia, ma ad occhio sembra non manchi nulla di fondamentale. A parte qualche crash e qualche bizza durante la navigazione non ho notato nulla di particolarmente negativo. Non male il livello di personalizzazione, già molto buono secondo me. <br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-whFIoD9vCB8/TqwefIpKH7I/AAAAAAAAAb8/frBdveRyys0/s1600/qupzilla2.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="216" src="http://2.bp.blogspot.com/-whFIoD9vCB8/TqwefIpKH7I/AAAAAAAAAb8/frBdveRyys0/s320/qupzilla2.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Già da quest'immagine si nota come sia <br />piuttosto personalizzabile</td></tr></tbody></table><br />Dal <a href="https://github.com/nowrep/QupZilla/blob/master/TODO">file TODO</a> che sta su GitHub possiamo vedere che sono pianificate le seguenti funzionalità:<br /><ul><li>Import / Export Bookmarks;</li><li>Speed Dial;</li><li>FTP Protocol support;</li><li>Zoom Widget in statusbar;</li><li>Password Manager: save more than one account for site + input completer;</li><li>New LocationBar completer;</li><li>QFileSystemWatcher reloading local files;</li><li>(KDE) Nepomuk integration;</li><li>Own FileType detect for downloads (based on suffix);</li><li>Page previews as tooltip on tabs (like Opera).</li></ul><br />Per provarlo basta andare sul <a href="http://qupzilla.co.cc/index.php">sito ufficiale</a>, nella sezione <a href="http://qupzilla.co.cc/download.php">download</a> si possono trovare i link per i .deb per Debian, l'.exe per Windows e per la pagina di GitHub, da cui possiamo scaricare il sorgente, rilasciato con licenza GPL3.<br /><br />QupZilla, speriamo sia la volta buona :D<br /><ul></ul>
-    </div>
--->
-  
-<!--
-    <h1><a href="/2011/10/23/ld2011-il-giorno-dopo.html">LD2011 - Il giorno dopo</a></h1>
-    <p class="author">
-      <span class="date">2011-10-23 18:26:00 +0200</span>
-    </p>
--->
-    <span class="post-meta">Oct 23, 2011</span>
-
-    <h2>
-      <a class="post-link" href="/2011/10/23/ld2011-il-giorno-dopo.html">LD2011 - Il giorno dopo</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-8X0barQ-tEk/TqNC4zoRoNI/AAAAAAAAAbA/SzI_t2pbB94/s1600/goppai-600x565.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="188" src="http://3.bp.blogspot.com/-8X0barQ-tEk/TqNC4zoRoNI/AAAAAAAAAbA/SzI_t2pbB94/s200/goppai-600x565.png" width="200" /></a></div>Ed anche questo Linux Day è passato. Purtroppo non sono andato alla traccia divulgativa, che si teneva la mattina, ma soltanto a quella tecnica, che invece si svolgeva nel pomeriggio.<br />Per queste ragioni non sono in grado di valutare se l''affluenza in generale è stata tanta e se tutto è stato super-mega-figo. Posso dirvi che purtroppo per quel che riguarda la traccia pomeridiana non c'era tantissima gente. Ciò mi ha fatto un po' dispiacere, ma non gli dò molto peso.<br />In compenso, i talk sono stati abbastanza interessanti, forse troppo brevi, almeno per la mia sete di conoscenza :)<br /><br /><br /><a name='more'></a>Come abbiamo visto nel <a href="http://mattuxblog.blogspot.com/2011/10/linuxday-2011.html">precedente post</a>, gli argomenti erano incentrati sullo <b>sviluppo su Android</b>, una <b>libreria di filtraggio multimediale</b> di FFmpeg, come il <b>software libero</b> può essere una possibilità di <b>sviluppo economico</b> e per concludere una introduzione al framework <b>JQuery</b>.<br /><br />Tutti i talk sono stati fondamentalmente introduttivi, quindi non abbiamo visto niente di approfondito.<br /><br />Per quel che riguarda Android, è stato presentato brevemente il sistema operativo e l'ambiente di sviluppo (Eclipse + SDK + NDK + ADT), con qualche semplice esempio pratico di applicazione. <br />Non avendo ancora visto lo sviluppo su questa piattaforma per motivi di tempo, questo talk mi è stato molto utile :)<br /><br /><a href="http://ffmpeg.org/libavfilter.html#Introduction">Libavfilter</a> è una libreria in fase di sviluppo del famosissimo progetto <a href="http://it.wikipedia.org/wiki/FFmpeg">FFmpeg</a> ed il suo campo di applicazione è quello del filtraggio di flussi audio e video. Interessante la sua capacità di supportare grafi di filtri.<br />Il supporto ai flussi audio è ancora incompleto ma a buon punto. Talk interessantissimo :)<br /><br />Il Software Libero può essere tranquillamente inserito in un modello di business adatto e se ne è parlato nel terzo talk della serata. Sono stati presentati i modelli più comuni e sono stati sfatati alcuni falsi miti. Bel talk pure questo.<br /><br />Infine JQuery, sul quale non ho ancora smanettato: pare che faccia cose fighissime che non abbiamo potuto purtroppo vedere in maniera esaustiva. Pochissimo codice e nulla di funzionante, peccato. In ogni caso bel talk pure questo e ci ho capito comunque abbastanza, tra qualche mese spero di potermici divertire pure io :)<br /><br />In conclusione mi ritengo piuttosto soddisfatto della traccia tecnica, speriamo che l'anno prossimo si vada avanti scendendo più nel dettaglio :)<br />Spero anche di poter essere presente a tutta la manifestazione.<br /><br />Non appena verrà pubblicato il materiale dell'evento aggiornerò il post.<br /><br />Sono già impaziente dell'evento del prossimo anno :D<br /><br /><b>[EDIT]</b><br />Finalmente è stato pubblicato il materiale di entrambe le tracce!<br /><ul><li><a href="http://linuxday.gulch.it/2011/materiale/slide/traccia-base.tgz">Scarica il materiale della traccia divulgativa</a></li><li><a href="http://linuxday.gulch.it/2011/materiale/slide/traccia-tecnica.tgz">Scarica il materiale della traccia tecnica</a></li></ul><br /><i><b>P.S</b>. Quel simpatico pinguino là in alto si chiama "Goppai" che in sardo significa "compare" (non nel senso di 3^ persona singolare del verbo comparire eh) ed è la mascotte del <a href="http://www.gulch.it/">GULCh</a> (Gruppo Utenti Linux di Cagliari h... (sì la "h" non significa niente XD)).</i>
     </div>
 -->
   
@@ -1128,7 +1145,7 @@
     </div>
 -->
 
-  <p class="footer-msg">This blog is brought to you by <a href="matteopani.altervista.org">Mattux</a> with Jekyll and ♥</p>
+  <p class="footer-msg">This blog is brought to you by Mattux with <a href="http://jekyllrb.com/">Jekyll</a> and ♥, under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a></p>
   </div>
 
 </footer>
