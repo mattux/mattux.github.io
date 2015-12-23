@@ -298,7 +298,12 @@ pre {
       font-size: 36px; } }
 
 .post-content {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  /* ul {
+     list-style-type: '-- ';
+     list-style-position: outside;
+   }
+   */ }
   .post-content h2 {
     font-size: 2.2rem; }
     @media screen and (max-width: 800px) {
