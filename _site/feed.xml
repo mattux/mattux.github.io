@@ -5,35 +5,41 @@
     <description>Un blog di cui non si sentiva la mancanza.</description>
     <link>http://mattux.github.io/</link>
     <atom:link href="http://mattux.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 23 Dec 2015 01:20:30 +0100</pubDate>
-    <lastBuildDate>Wed, 23 Dec 2015 01:20:30 +0100</lastBuildDate>
+    <pubDate>Wed, 23 Dec 2015 20:59:11 +0100</pubDate>
+    <lastBuildDate>Wed, 23 Dec 2015 20:59:11 +0100</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
-        <title>I miei font per programmare preferiti</title>
-        <description>&lt;p&gt;Tempo addietro abbiamo parlato della mia fissa per gli schemi di colore. Stavolta parliamo di font, più precisamente dei font che preferisco usare per scrivere codice e che uso in generale negli editor testuali. Alcuni di questi hanno una buona resa anche negli emulatori di terminale.&lt;/p&gt;
+        <title>I miei font preferiti per programmare</title>
+        <description>&lt;p&gt;Tempo addietro abbiamo parlato della mia fissa per gli schemi di colore. Stavolta parliamo di font e più precisamente dei font che preferisco usare per scrivere codice e che uso di consueto negli editor testuali.&lt;/p&gt;
 
-&lt;p&gt;In ordine sparso:&lt;/p&gt;
-
-&lt;h3 id=&quot;courier-prime-codehttpquoteunquoteappscomcourierprime-courier-prime-code&quot;&gt;&lt;a href=&quot;http://quoteunquoteapps.com/courierprime/&quot; title=&quot;Courier Prime Code&quot;&gt;Courier Prime Code&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Rivisitazione in chiave moderna di Courier. Ha un aspetto classico e lo trovo molto piacevole.&lt;/p&gt;
+&lt;p&gt;Dunque, in ordine sparso:&lt;/p&gt;
 
 &lt;h3 id=&quot;envy-code-rhttpsdamiengcomenvy-code-r-envy-code-r&quot;&gt;&lt;a href=&quot;https://damieng.com/envy-code-r&quot; title=&quot;Envy Code R&quot;&gt;Envy Code R&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Lo uso da anni. Bella leggibilità e resa ottima praticamente sempre.&lt;/p&gt;
+&lt;p&gt;L’ho usato ovunque per anni. Abbastanza &lt;em&gt;nerd&lt;/em&gt;, con una bella leggibilità e una resa quasi sempre ottima. Le ‘w’ e le ‘m’ possono apparire un po’ “impastate” se la resa non è ottimale.&lt;/p&gt;
 
 &lt;h3 id=&quot;hackhttpsourcefoundryorghack&quot;&gt;&lt;a href=&quot;http://sourcefoundry.org/hack/&quot;&gt;Hack&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Lo definirei “smooth”. È quasi elegante. Me l’ha segnalato pochi mesi fa un amico (grazie!).&lt;/p&gt;
+&lt;p&gt;È quasi elegante, con una ottima resa a schermo. Me l’ha segnalato qualche mesa fa un amico (grazie!).&lt;/p&gt;
 
 &lt;h3 id=&quot;meslohttpsgithubcomandrebergmeslo-font-meslo&quot;&gt;&lt;a href=&quot;https://github.com/andreberg/Meslo-Font&quot; title=&quot;Meslo&quot;&gt;Meslo&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Quasi non sembra neanche un monospaziato. Trovo che abbia una bella resa anche a piccole dimensioni.&lt;/p&gt;
+&lt;p&gt;Attualmente il mio preferito. Semplice e lineare. Quasi non sembra un monospaziato. Trovo che abbia una bella resa anche a piccole dimensioni.&lt;/p&gt;
+
+&lt;h3 id=&quot;bitstream-vera-sans-monohttpwwwfontsquirrelcomfontsbitstream-vera-sans-mono-bitstream-vera-sans-mono&quot;&gt;&lt;a href=&quot;http://www.fontsquirrel.com/fonts/Bitstream-Vera-Sans-Mono&quot; title=&quot;Bitstream-Vera-Sans-Mono&quot;&gt;Bitstream Vera Sans Mono&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Senza fronzoli e con una bella resa a schermo.&lt;/p&gt;
+
+&lt;h3 id=&quot;courier-prime-codehttpquoteunquoteappscomcourierprime-courier-prime-code&quot;&gt;&lt;a href=&quot;http://quoteunquoteapps.com/courierprime/&quot; title=&quot;Courier Prime Code&quot;&gt;Courier Prime Code&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Rivisitazione in chiave moderna di Courier ma che mantiene comunque un aspetto “classico”. Davvero bello.&lt;/p&gt;
 
 &lt;h3 id=&quot;source-code-prohttpsgithubcomadobe-fontssource-code-pro-source-code-pro&quot;&gt;&lt;a href=&quot;https://github.com/adobe-fonts/source-code-pro&quot; title=&quot;Source Code Pro&quot;&gt;Source Code Pro&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Il famoso font di Adobe per i programmatori. Inizialmente non mi piaceva, poi pian piano mi ha convinto.&lt;/p&gt;
+&lt;p&gt;Il famoso font di Adobe per i programmatori. All’inizio non mi piaceva, poi pian piano mi ha convinto.&lt;/p&gt;
 
 &lt;h3 id=&quot;inconsolatahttpwwwleviencomtypemyfontsinconsolatahtml-inconsolata&quot;&gt;&lt;a href=&quot;http://www.levien.com/type/myfonts/inconsolata.html&quot; title=&quot;Inconsolata&quot;&gt;Inconsolata&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Famoso anche lui. A volte mi ha salvato in situazioni in cui gli altri font non avevano una bella resa.&lt;/p&gt;
+&lt;p&gt;Famoso anche lui. Spesso mi salva in situazioni in cui altri font non hanno una bella resa.&lt;/p&gt;
+
+&lt;h3 id=&quot;cousinehttpwwwfontsquirrelcomfontscousine-cousine&quot;&gt;&lt;a href=&quot;http://www.fontsquirrel.com/fonts/cousine&quot; title=&quot;Cousine&quot;&gt;Cousine&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Molto, molto lineare e senza fronzoli di sorta. Come per Inconsolata, ho sempre riscontrato una resa a schermo ottima.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 23 Dec 2015 01:20:30 +0100</pubDate>
+        <pubDate>Wed, 23 Dec 2015 20:59:11 +0100</pubDate>
         <link>http://mattux.github.io/2015/12/23/i-miei-font-per-programmare-preferiti.html</link>
         <guid isPermaLink="true">http://mattux.github.io/2015/12/23/i-miei-font-per-programmare-preferiti.html</guid>
         
