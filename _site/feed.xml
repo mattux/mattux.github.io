@@ -5,54 +5,54 @@
     <description>Confondersi tra Halloween e Natale perché 31oct = 25dec</description>
     <link>http://mattux.github.io/</link>
     <atom:link href="http://mattux.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 23 Dec 2015 23:39:03 +0100</pubDate>
-    <lastBuildDate>Wed, 23 Dec 2015 23:39:03 +0100</lastBuildDate>
+    <pubDate>Thu, 24 Dec 2015 12:19:36 +0100</pubDate>
+    <lastBuildDate>Thu, 24 Dec 2015 12:19:36 +0100</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
         <title>I miei font preferiti per programmare</title>
-        <description>&lt;p&gt;Tempo addietro abbiamo parlato della mia fissa per gli schemi di colore. Stavolta parliamo di font e più precisamente dei font che preferisco usare per scrivere codice e che uso di consueto negli editor testuali. Non posso dirvi come rendono su display ad altissima risoluzione, ma su monitor “normali” rendono tutti piuttosto bene, anche se il risultato è variabile in base all’OS e all’editor.&lt;/p&gt;
+        <description>&lt;p&gt;Tempo addietro abbiamo parlato della mia fissa per gli schemi di colore. Stavolta parliamo di font e più precisamente dei font che preferisco usare per scrivere codice e che uso di consueto negli editor testuali. Non posso dirvi come rendono su display ad altissima risoluzione, ma su monitor “normali” rendono piuttosto bene, anche se il risultato è variabile in base all’OS e all’editor.&lt;/p&gt;
 
 &lt;p&gt;In ordine sparso:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://damieng.com/envy-code-r&quot; title=&quot;Envy Code R&quot;&gt;Envy Code R&lt;/a&gt;:
-l’ho usato per anni, ovunque. Abbastanza &lt;em&gt;nerd&lt;/em&gt;, con una bella leggibilità e una resa quasi sempre perfetta. Le ‘w’ e le ‘m’ possono apparire un po’ “impastate” se la resa non è ottimale;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://sourcefoundry.org/hack/&quot;&gt;Hack&lt;/a&gt;:
-è quasi elegante. Ottima resa a schermo. Me l’ha segnalato qualche mese fa un amico (grazie!);&lt;/p&gt;
+l’ho usato per anni, ovunque. Abbastanza &lt;em&gt;nerd&lt;/em&gt;, con una bellissima leggibilità. Le ‘w’ e le ‘m’ possono apparire un po’ “impastate” se la resa non è ottimale;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://github.com/andreberg/Meslo-Font&quot; title=&quot;Meslo LG&quot;&gt;Meslo LG&lt;/a&gt;:
-attualmente il mio preferito. Semplice e lineare. Quasi non sembra un monospaziato. Ha una bella resa anche a piccole dimensioni;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://www.fontsquirrel.com/fonts/Bitstream-Vera-Sans-Mono&quot; title=&quot;Bitstream-Vera-Sans-Mono&quot;&gt;Bitstream Vera Sans Mono&lt;/a&gt;:
-senza fronzoli e con una buonissima resa a schermo;&lt;/p&gt;
+attualmente il mio preferito. Quasi non sembra un monospaziato. Ha una bella leggibilità anche a piccole dimensioni;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://quoteunquoteapps.com/courierprime/&quot; title=&quot;Courier Prime Code&quot;&gt;Courier Prime Code&lt;/a&gt;:
-rivisitazione in chiave moderna di Courier ma che mantiene comunque un aspetto “classico”. Davvero bello;&lt;/p&gt;
+rivisitazione in chiave moderna di Courier ma che mantiene comunque un aspetto classico. Davvero bello;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://github.com/adobe-fonts/source-code-pro&quot; title=&quot;Source Code Pro&quot;&gt;Source Code Pro&lt;/a&gt;:
 il famoso font di Adobe per i programmatori. All’inizio non mi piaceva, poi pian piano mi ha convinto;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://sourcefoundry.org/hack/&quot;&gt;Hack&lt;/a&gt;:
+è quasi elegante. Me l’ha segnalato qualche mese fa un amico (grazie!);&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://www.levien.com/type/myfonts/inconsolata.html&quot; title=&quot;Inconsolata&quot;&gt;Inconsolata&lt;/a&gt;:
-famoso anche lui. Spesso mi salva in situazioni in cui altri font non hanno una bella resa;&lt;/p&gt;
+abbastanza famoso anche lui. Spesso mi salva in situazioni in cui altri font non hanno una resa abbastanza buona;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.carrois.com/fira-4-1/#download&quot; title=&quot;Fira Sans Mono&quot;&gt;Fira Sans Mono&lt;/a&gt;:
+trovo che il font monospaziato di Mozilla abbia una leggibilità pazzesca, è praticamente impossibile confondere due caratteri tra loro. Molto bello il corsivo;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://www.fontsquirrel.com/fonts/cousine&quot; title=&quot;Cousine&quot;&gt;Cousine&lt;/a&gt;:
-molto, molto lineare e senza fronzoli di sorta. Come per &lt;em&gt;Inconsolata&lt;/em&gt;, ho sempre riscontrato una resa a schermo ottima.&lt;/p&gt;
+non so se un font si possa definire equilibrato, ma nel caso, lo è di certo. Come per &lt;em&gt;Inconsolata&lt;/em&gt;, ho sempre riscontrato una resa a schermo ottima.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Wed, 23 Dec 2015 23:39:03 +0100</pubDate>
-        <link>http://mattux.github.io/2015/12/23/i-miei-font-per-preferiti-programmare.html</link>
-        <guid isPermaLink="true">http://mattux.github.io/2015/12/23/i-miei-font-per-preferiti-programmare.html</guid>
+        <pubDate>Thu, 24 Dec 2015 00:00:00 +0100</pubDate>
+        <link>http://mattux.github.io/2015/12/24/i-miei-font-preferiti-per-programmare.html</link>
+        <guid isPermaLink="true">http://mattux.github.io/2015/12/24/i-miei-font-preferiti-per-programmare.html</guid>
         
         <category>coding</category>
         
