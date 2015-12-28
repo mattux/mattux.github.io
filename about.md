@@ -5,10 +5,6 @@ permalink: /about/
 published: true
 ---
 
-
-Chi sono
----
-
 ![](https://pbs.twimg.com/profile_images/589901395186188289/K3zggXv2_400x400.png)
 
 Matteo, sardo dalla nascita e _pare che sono un Informatico_.

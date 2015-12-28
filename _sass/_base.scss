@@ -17,13 +17,11 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 400;
+    font-weight: 300;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -93,11 +91,13 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+//        color: darken($brand-color, 15%);
+        color: darken($brand-color, 5%);
     }
 
     &:hover {
-        color: $text-color;
+//        color: $text-color;
+        color: darken($text-color, 10%);
         text-decoration: underline;
     }
 }

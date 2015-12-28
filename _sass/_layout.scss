@@ -14,14 +14,17 @@
 
 
     text-align: center;
+
 }
 
 .site-description {
 color: $grey-color;
+font-size: 18px;
+font-family: $mono-font-family;
 }
 
 .site-title {
-    font-size: 2.2rem;
+    font-size: 36px;
 
     line-height: 56px;
     //letter-spacing: -1px;
@@ -198,11 +201,17 @@ color: $grey-color;
     > li {
         margin-bottom: $spacing-unit;
     }
+
+    h2 {
+      font-weight: 300;
+    }
 }
 
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    font-weight: 400;
+
 }
 
 .post-link {
@@ -220,10 +229,13 @@ color: $grey-color;
 }
 
 .post-title {
-    //font-size: 42px;
-    font-size: 3rem;
+    font-size: 44px;
     //letter-spacing: -1px;
     line-height: 1;
+    font-weight: 200;
+
+//    color: $brand-color;
+
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -233,6 +245,7 @@ color: $grey-color;
 
 .post-content {
     margin-bottom: $spacing-unit;
+
 
     h2 {
         //font-size: 34px;

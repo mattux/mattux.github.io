@@ -12,7 +12,7 @@ Tempo addietro abbiamo parlato della mia fissa per gli schemi di colore. Stavolt
 In ordine sparso:
 
 - [Envy Code R](https://damieng.com/envy-code-r "Envy Code R"):
-l'ho usato per anni, ovunque. Abbastanza _nerd_, con una bellissima leggibilità. Le 'w' e le 'm' possono apparire un po' "impastate" se la resa non è ottimale;
+l'ho usato per anni, ovunque. Forse un po' particolare, ma con una bellissima leggibilità. Le 'w' e le 'm' possono apparire un po' "impastate" se la resa non è ottimale;
 
 - [Meslo LG](https://github.com/andreberg/Meslo-Font "Meslo LG"):
 attualmente il mio preferito. Quasi non sembra un monospaziato. Ha una bella leggibilità anche a piccole dimensioni;
