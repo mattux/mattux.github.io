@@ -19,8 +19,8 @@
 
 .site-description {
 color: $grey-color;
-font-size: 18px;
-font-family: $mono-font-family;
+font-size: $base-font-size * 0.9;
+/*font-family: $mono-font-family;*/
 }
 
 .site-title {
@@ -203,8 +203,9 @@ font-family: $mono-font-family;
     }
 
     h2 {
-      font-weight: 300;
+      font-weight: 400;
     }
+
 }
 
 .post-meta {
@@ -232,7 +233,7 @@ font-family: $mono-font-family;
     font-size: 44px;
     //letter-spacing: -1px;
     line-height: 1;
-    font-weight: 200;
+    font-weight: 600;
 
 //    color: $brand-color;
 
@@ -266,6 +267,8 @@ font-family: $mono-font-family;
         }
 
         font-style: italic;
+        font-weight: 600;
+        margin-top: 50px;
     }
 
     h4 {
@@ -276,12 +279,18 @@ font-family: $mono-font-family;
         }
     }
 
-   /* ul {
-      list-style-type: '-- ';
-      list-style-position: outside;
-    }
-    */
+    a {
+        border-bottom: 2px solid transparentize($brand-color, 0.6);
+        // border-bottom: 2px solid lighten($brand-color, 40%);
 
+      &:hover {
+        border-bottom-color: transparentize($text-color, 0.6);
+      }
+    }
+
+    code {
+      font-size: $base-font-size;
+    }
 }
 
 

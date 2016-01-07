@@ -1,4 +1,4 @@
-@import "http://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,700,700italic,500,500italic|Fira+Mono:400";
+@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,700,700italic,500,500italic|Source+Code+Pro:400";
 /*$text-color:       $grey-color-dark;*/
 /**
  * Reset some basic elements
@@ -13,10 +13,10 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 20px;
-  line-height: 1.6;
-  font-weight: 300;
+  line-height: 1.5;
+  font-weight: 400;
   color: #444;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
@@ -71,8 +71,7 @@ a {
   a:visited {
     color: #0e63b3; }
   a:hover {
-    color: #2b2b2b;
-    text-decoration: underline; }
+    color: #2b2b2b; }
 
 /**
  * Blockquotes
@@ -91,11 +90,12 @@ blockquote {
  */
 pre,
 code {
-  font-size: 15px;
+  font-size: 16px;
   border: 1px solid #e8e8e8;
-  border-radius: 3px;
+  border-radius: 4px;
   background-color: #eef;
-  font-family: "Fira Mono"; }
+  font-family: "Source Code Pro";
+  line-height: 1.5; }
 
 code {
   padding: 1px 5px; }
@@ -157,13 +157,13 @@ pre {
 .site-description {
   color: #828282;
   font-size: 18px;
-  font-family: "Fira Mono"; }
+  /*font-family: $mono-font-family;*/ }
 
 .site-title {
   font-size: 36px;
   line-height: 56px;
   margin-bottom: 0;
-  font-family: "Fira Mono"; }
+  font-family: "Source Code Pro"; }
   .site-title, .site-title:visited {
     color: #363636; }
 
@@ -174,7 +174,7 @@ pre {
     display: none; }
   .site-nav .page-link {
     color: #444;
-    line-height: 1.6; }
+    line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
   @media screen and (max-width: 600px) {
@@ -279,7 +279,7 @@ pre {
   .post-list > li {
     margin-bottom: 30px; }
   .post-list h2 {
-    font-weight: 300; }
+    font-weight: 400; }
 
 .post-meta {
   font-size: 17.5px;
@@ -299,18 +299,13 @@ pre {
 .post-title {
   font-size: 44px;
   line-height: 1;
-  font-weight: 200; }
+  font-weight: 600; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
 
 .post-content {
-  margin-bottom: 30px;
-  /* ul {
-     list-style-type: '-- ';
-     list-style-position: outside;
-   }
-   */ }
+  margin-bottom: 30px; }
   .post-content h2 {
     font-size: 2.2rem; }
     @media screen and (max-width: 800px) {
@@ -318,7 +313,9 @@ pre {
         font-size: 28px; } }
   .post-content h3 {
     font-size: 2rem;
-    font-style: italic; }
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 50px; }
     @media screen and (max-width: 800px) {
       .post-content h3 {
         font-size: 22px; } }
@@ -327,6 +324,12 @@ pre {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+  .post-content a {
+    border-bottom: 2px solid rgba(16, 112, 203, 0.4); }
+    .post-content a:hover {
+      border-bottom-color: rgba(68, 68, 68, 0.4); }
+  .post-content code {
+    font-size: 20px; }
 
 /**
  * Pagination

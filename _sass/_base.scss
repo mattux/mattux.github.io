@@ -17,7 +17,7 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
+    font-weight: 400;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -98,11 +98,10 @@ a {
     &:hover {
 //        color: $text-color;
         color: darken($text-color, 10%);
-        text-decoration: underline;
+        // text-decoration: underline;
+        //text-decoration: none;
     }
 }
-
-
 
 /**
  * Blockquotes
@@ -127,12 +126,15 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    //font-size: 15px;
+    font-size: 16px;
     border: 1px solid $grey-color-light;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: #eef;
 
     font-family: $mono-font-family;
+
+    line-height: $base-line-height;
 }
 
 code {
