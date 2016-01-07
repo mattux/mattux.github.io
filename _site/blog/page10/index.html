@@ -133,6 +133,19 @@
 <!--
     
       <li>
+        <span class="post-meta">Jan 7, 2016</span>
+
+        <h2>
+          <a class="post-link" href="/2016/01/07/test-code.html">Test syntax highlighting</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
         <span class="post-meta">Dec 24, 2015</span>
 
         <h2>
@@ -842,6 +855,29 @@
   <!-- This loops through the paginated posts -->
   
 <!--
+    <h1><a href="/2010/12/07/pdfjam-gruppo-di-script-per-i-pdf.html">PDFjam: gruppo di script per i pdf</a></h1>
+    <p class="author">
+      <span class="date">2010-12-07 15:47:00 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Dec 7, 2010</span>
+
+    <h2>
+      <a class="post-link" href="/2010/12/07/pdfjam-gruppo-di-script-per-i-pdf.html">PDFjam: gruppo di script per i pdf</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      Avete bisogno di unire dei pdf? Volete ruotarne il senso delle pagine? Stamparne <i>n</i> pagine per foglio? Donne è arrivato l'arrot...aehm no scusate mi sono confuso XD<br />Dicevo, se avete bisogno di "giocare" con le pagine dei pdf che avete sotto mano, <b>PDFjam</b> potrebbe essere la risposta.<br /><a name='more'></a><br />Di cosa si tratta? In sostanza di una collezione di script (ebbene sì, dobbiamo lavorare di terminale, ma nulla di tragico) che fanno un bel numero di cose che vedremo più avanti nel post. Innanzitutto vediamo quali sono questi script:<br /><ul><li><b>pdfnup</b></li><li><b>pdfjoin</b> </li><li><b>pdf90</b>,<b> pdf180</b>,<b> pdf270</b></li><li><b>pdfflip</b></li><li><b>pdfbook</b></li><li><b></b><b>pdfjam-pocketmode</b></li><li><b>pdfjam-slides6up</b>, <b>pdfjam-slides3up</b></li></ul><br />Per avere tutto questo popò di roba, potete tranquillamente andare <a href="http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam">qui</a> e fare l'installazione a manina, ma credo che ci sia nei repository di un po' tutte le distribuzioni.<br /><br />Per Ubuntu nel terminale diamo un bel<br /><blockquote>sudo apt-get install pdfjam</blockquote>E per Fedora diamo (ovviamente da root):<br /><blockquote>yum install pdfjam</blockquote><br />Fatto?&nbsp; Bene, ora che abbiamo tutto analizziamo gli script uno alla volta.<br /><br /><h3>pdfnup</h3>Consente di creare, a partire da un pdf, un altro pdf che racchiude <i>n</i> pagine per foglio, con possibilità di scalarle, decidere lo spazio tra l'una e l'altra. Ma non solo. <br /><br />Per esempio, io per risparmiare carta, inchiostro e avere un malloppo meno ingombrante, di solito stampo le slide delle lezioni dei miei docenti dell'Università mettendo 6 pagine per foglio.<br />Per fare ciò, aprendo il terminale e poi scrivendo qualcosa del genere<br /><blockquote>pdfnup <span style="color: #660000;">--nup 2x3</span> FILE.pdf</blockquote>ci ritroviamo nella stessa directory di quella del file di origine, un secondo pdf che ha in ogni "foglio" 6 pagine! Però potrebbero risultarci un po' troppo attaccate. Risolviamo così:<br /><blockquote>pdfnup --nup 2x3 <span style="color: #660000;">--delta "0.2cm 0.3cm"</span> FILE.pdf</blockquote>&nbsp;Se poi vogliamo spostare tutto un po' più a destra perché ce le vogliamo rilegare:<br /><blockquote>pdfnup --nup 2x3 --delta "0.2cm 0.3cm"<span style="color: #660000;"> --offset "0.5cm 0cm"</span> FILE.pdf</blockquote><br />Riassumendo queste opzioni:<br /><br /><b>--nup</b><br /><i>parametro</i>: MxN<br /><i>effetto</i>: dispone le slide in M colonne ed N righe<br /><br /><b>--delta</b> <br /><i>parametro</i>: "Ncm Mcm"<br /><i>effetto</i>: distanzia tra loro le slide orizzontalmente di N centimetri e verticalmente di M centimetri<br /><br /><b>--offset</b><br /><i>parametro</i>: "Ncm Mcm"<br /><i>effetto</i><b>: </b>sposta le slide orizzontalmente di N centimetri e verticalmente di M centimetri<br /><br /><br />E se vogliamo riunire più file in un unico pdf con le stesse caratteristiche possiamo scrivere ad esempio: <br /><blockquote>&nbsp;pdfnup --nup 2x3 --delta "0.2cm 0.3cm" --offset "0.5cm 0" <span style="color: #660000;">--outfile RISULTANTE.pdf</span> FILE1.pdf FILE2.pdf FILE3.pdf </blockquote>Quindi:<br /><br /><b>--outfile</b><br /><i>parametro</i>: nome o indirizzo(relativo o assoluto) del file risultante<br /><i>effetto</i>: assegna un nome al file risultante (di default usa l'ultimo tra quelli dei file in input e aggiunge il suffisso -nup)<br /><br />Infine, <b>&nbsp;</b><br /><b>--scale</b><br /><i>parametro</i>: un numero N della forma <i>x.xx</i><br /><i>effetto</i>: nel pdf risultante abbiamo tutte le pagine scalate <br /><blockquote>pdfnup <span style="color: #660000;">--scale 0.5</span> FILE.pdf</blockquote>dove 0 corrisponde allo 0% mentre 1 al 100% (quindi 0.5 al 50%) della dimensione originaria.<br /><br />Faccio notare che di opzioni ce ne sono altre e che possono essere combinate come più ci aggrada.<br /><br /><br /><h3>pdfjoin</h3>Unisce i file, dandoci un file pdf composto dalle pagine del primo file seguito da quelle del secondo:<br /><blockquote>pdfjoin FILE1.pdf FILE2.pdf --outfile risultante.pdf</blockquote><br /><br /><h3>pdf90, pdf180, pdf270</h3>Ci danno un pdf risultante in cui le pagine sono ruotate di 90°, 180° o 270° in senso antiorario. La sintassi è banale:<br /><blockquote>pdf90 FILE1.pdf<br /><br />pdf180 FILE1.pdf<br /><br />pdf270 FILE.pdf</blockquote><br />E se diamo<br /><blockquote>pdf90 FILE1 FILE2 --outfile risultante.pdf<br /><br />pdf180 FILE1 FILE2 --outfile risultante.pdf<br /><br />pdf270 FILE1 FILE2 --outfile risultante.pdf</blockquote>otteniamo che risultante.pdf è l'unione di FILE1.pdf e FILE2.pdf ma ruotati di 90°/180°/270°<br /><br /><br /><h3>pdfflip</h3>Ci da un pdf risultante con le pagine invertite con un effetto a specchio.<br /><blockquote>pdfflip FILE1.pdf<br /><br />pdfflip FILE1 FILE2 --outfile risultante.pdf</blockquote><br />Avete capito come funziona il meccanismo no? Ma andiamo avanti.<br />&nbsp; <br /><br /><h3>pdfbook</h3>Avete presente i libri fotocopiati? Ecco, ci fa un pdf con quell'aspetto lì:<br /><blockquote>pdfbook FILE1.pdf</blockquote>E se abbiamo più file pdf sparsi:<br /><blockquote>pdfbook FILE1.pdf FILE2.pdf --outfile risultante.pdf</blockquote><br /><br /><h3>pdfjam-pocketmode</h3>Prende le prime 8 pagine del pdf e crea un pdf risultante in cui le pagine costituiscono un <a href="http://en.wikipedia.org/wiki/Booklet">booklet</a>:<br /><blockquote>pdfjam-pocketmode FILE1.pdf --outfile risultante.pdf</blockquote><br /><br /><h3>pdfjam-slides6up e pdfjam-slides3up</h3>Creano un pdf risultante dove abbiamo rispettivamente 6 e 3 slide per pagina (quello che abbiamo visto si può fare anche con pdfnup, che preferisco a questi perché posso impostare più parametri). Dunque:<br /><blockquote>pdfjam-slides6up FILE1.pdf<br /><br />pdfjam-slides3up FILE1.pdf</blockquote>ma anche<br /><blockquote>pdfjam-slides6up FILE1.pdf FILE2.pdf --outfile risultante.pdf<br /><br />pdfjam-slides3up FILE1.pdf FILE2.pdf --outfile risultante.pdf</blockquote>&nbsp; <br /><br />Ooooh, li abbiamo visti tutti! Solo una precisazione. Questi script scrivono qualcosa in output e se osserviamo attentamente il comando effettivo che viene lanciato, beh lanciano tutti <b>pdfjam</b>, utilizzando di volta in volta parametri giusti. Sono in sostanza dei <i>wrapper</i>, che in italiano potremmo tradurre come <i>adattatori</i>.<br />Spero che abbiate capito tutto. Il post è finito, andate in pace XD
+    </div>
+-->
+  
+<!--
     <h1><a href="/2010/12/03/ease-semplice-programma-per-creare.html">Ease, semplice programma per creare presentazioni</a></h1>
     <p class="author">
       <span class="date">2010-12-03 09:03:00 +0100</span>
@@ -930,29 +966,6 @@
 <!--
     <div class="content">
       Chi di noi non è abbonato a un certo numero di feed rss e&nbsp; scambia  giornalmente o comunque spessissimo email? Ammettendo che usiamo  appoggiarci a piattaforme web per questo, andare ogni tanto sul sito per  vedere se ci sono novità è un po' una scocciatura, ma un piccolo tool  per il desktop GNOME che ci risparmi la seccatura c'è e si chiama <b>CloudSN</b>.<br /><a name='more'></a><br />Vi spiego la mia situazione. Avendo 2 pc, ho deciso per leggere i feed rss dei miei siti preferiti di usare <a href="http://www.google.com/reader/">Google Reader</a>,  ma non avendo trovato un client desktop dedicato mi sono messo alla  ricerca di un qualche tool per notificarmi la presenza di nuovi feed e  sono capitato in <a href="http://forum.ubuntu-it.org/index.php?topic=393436.0">questa</a> discussione sul forum di ubuntu-it. Ma andiamo alla ciccia. <br />Grazie a questo programmino possiamo venire notificati di aggiornamenti relativi a <b>feed rss</b>, <b>Twitter</b>, <b>Identi.ca</b>, <b>Google Reader</b>, <b>email</b> (pop3 e imap) e <b>GMail</b>.  Una volta installato comparirà una iconcina nel pannello di  sistema ma sa anche integrarsi nell'applet con gli indicators (utile se  usiamo Ubuntu).<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><img border="0" height="320" src="http://3.bp.blogspot.com/_c9tXAWBZ8s4/TJn7TvlUZhI/AAAAAAAAACg/Ox-tE8dMAkg/s320/cloudsn-indicators.png" style="margin-left: auto; margin-right: auto;" width="247" /></td></tr><tr><td class="tr-caption" style="text-align: center;">CloudSN come indicator :D</td><td class="tr-caption" style="text-align: center;"><br /></td></tr></tbody></table><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_c9tXAWBZ8s4/TJn7TvlUZhI/AAAAAAAAACg/Ox-tE8dMAkg/s1600/cloudsn-indicators.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"></a></div><br />Per installarlo su Ubuntu apriamo il terminale e procediamo all'installazione scrivendo questi comandi uno alla volta:<br /><blockquote><pre style="display: inline; margin-top: 0pt;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">sudo add-apt-repository ppa:chuchiperriman/cloudsn<br />sudo apt-get update<br />sudo apt-get install cloudsn </span></pre></blockquote>Infine lo avviamo e lo configuriamo secondo le nostre esigenze :)<br /><br />Ah, se sapete come installarlo su altre distro, scrivetelo nei commenti e aggiornerò il post ;)
-    </div>
--->
-  
-<!--
-    <h1><a href="/2010/09/18/rollover-di-immagini-in-css.html">Rollover di immagini in css</a></h1>
-    <p class="author">
-      <span class="date">2010-09-18 12:51:00 +0200</span>
-    </p>
--->
-    <span class="post-meta">Sep 18, 2010</span>
-
-    <h2>
-      <a class="post-link" href="/2010/09/18/rollover-di-immagini-in-css.html">Rollover di immagini in css</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <div xmlns="http://www.w3.org/1999/xhtml">Come probabilmente avrete notato, da un po' di tempo sono comparse delle icone bianche che fanno riferimento ai miei account pubblici su alcuni social network e al feed rss di questo blog. Passando la freccetta del mouse sopra di essi vedrete che il logo contenuto nell'icona "diventa blu". In realtà sono due immagini diverse, ma carico un'altra immagine al verificarsi di questo evento, vale a dire effettuo quello che viene definito <b>rollover</b>.<br /><a name='more'></a><br />Ovviamente per farlo ci servono delle icone, per il momento sto usando le <a href="http://webtreats.mysitemyway.com/1540-infocus-simple-white-sidebar-social-media-icons/" target="_blank">inFocus</a>. Nel dettaglio, un esempio di codice necessario a ottenere questo effetto per realizzare un riferimento carino al nostro account di Twitter.<br /><br /><br /><b><i>HTML:</i></b><br /><blockquote>&lt;a href="<span style="color: maroon;"><i>URL_ACCOUNT_TWITTER</i></span>" id="twitter" title="Seguimi su Twitter" alt="Seguimi su Twitter" /&gt;&lt;/a&gt;</blockquote><b><i>CSS:</i></b><br /><blockquote>#twitter {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER</i></span>');;<br />width: 56px;<br />height: 56px;<br />display:block;<br />} </blockquote>Come potete vedere nell'HTML, il link è "vuoto", infatti non abbiamo un testo relativo, ma come invece si può notare osservando il codice css, un'immagine di sfondo (attributo <b>background</b>), di cui abbiamo anche impostato le dimensioni (attributi <b>width</b> e <b>height</b>), indicando di trattarlo come blocco (scrivendo <b>display:block;</b>).<br />Ora dobbiamo agire sull'effetto <i>hover</i>. La cosa è abbastanza semplice: <br /><blockquote>#twitter:hover {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER_HOVER</i></span>');;<br />} </blockquote>scrivendo <i>:hover</i> indichiamo appunto che questa regola vale quando il cursore del mouse ci passa sopra. C'è però un problema: la prima volta che l'utente passerà la freccetta del mouse sopra alla nostra icona vedrà un brutto effetto causato dal fatto che l'immagine viene caricata in cache solo quando l'evento <i>:hover</i> si verifica. Come ovviare? Semplice!<br />Quello che possiamo fare è realizzare noi un'immagine che contiene entrambe le immagini, una a destra e una a sinistra. Per esempio: <br /><div align="center"></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/_c9tXAWBZ8s4/TURkJJtxxcI/AAAAAAAAAFY/4_0jJx4PK5I/s1600/twitter.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/_c9tXAWBZ8s4/TURkJJtxxcI/AAAAAAAAAFY/4_0jJx4PK5I/s1600/twitter.png" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">l'icona per twitter :)</td><td class="tr-caption" style="text-align: center;"><br /></td></tr></tbody></table>e poi diciamo: "Senti bello, di default caricami la parte di sinistra, ma sull'effetto hover, quella di destra!". Come lo traduciamo in css? Vediamolo subito:<br /><blockquote>#twitter {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER</i></span>') <b>no-repeat left top</b>;;<br />width: 56px;<br />height: 56px;<br />display:block;<br />} </blockquote><blockquote>#twitter:hover {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER</i></span>') <b>no-repeat right top</b>;;<br />} </blockquote>Con i valori <b>no-repeat left top/no-repeat left top </b>indichiamo di non ripetere lo sfondo e poi il discorso sinistra-destra. Semplice no? Provate e ditemi se non è una figata :D</div>
     </div>
 -->
   

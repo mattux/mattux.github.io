@@ -133,6 +133,19 @@
 <!--
     
       <li>
+        <span class="post-meta">Jan 7, 2016</span>
+
+        <h2>
+          <a class="post-link" href="/2016/01/07/test-code.html">Test syntax highlighting</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
         <span class="post-meta">Dec 24, 2015</span>
 
         <h2>
@@ -842,6 +855,29 @@
   <!-- This loops through the paginated posts -->
   
 <!--
+    <h1><a href="/2014/08/03/acid-schema-di-colore-per-geany.html">Acid - Schema di colore per Geany</a></h1>
+    <p class="author">
+      <span class="date">2014-08-03 09:00:00 +0200</span>
+    </p>
+-->
+    <span class="post-meta">Aug 3, 2014</span>
+
+    <h2>
+      <a class="post-link" href="/2014/08/03/acid-schema-di-colore-per-geany.html">Acid - Schema di colore per Geany</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      Come avrete intuito ultimamente mi sto dando agli schemi di colore. La mia nuova creazione si chiama <b>Acid</b>. Probabilmente non è estremamente originale, però il risultato mi sembra buono.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-LkHZ9h-59hw/U91lei6ttnI/AAAAAAAAEQg/elZq-NjcK0k/s1600/acid_color_scheme.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-LkHZ9h-59hw/U91lei6ttnI/AAAAAAAAEQg/elZq-NjcK0k/s1600/acid_color_scheme.png" height="192" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Stralcio del codice di Xfwm4</td></tr></tbody></table><br />Lo sto usando da una settimana e mi sto trovando bene: non mi affatica la vista e distinguo gli elementi del codice abbastanza facilmente.<br /><br />Se vi va, provatelo e ditemi come vi trovate.<br /><br /><a href="https://github.com/mattux/geany-csx">Repo github dei miei schemi di colore per Geany</a>
+    </div>
+-->
+  
+<!--
     <h1><a href="/2014/07/07/desert-schema-di-colore-per-qt-creator.html">Desert - Schema di colore per Qt Creator</a></h1>
     <p class="author">
       <span class="date">2014-07-07 09:00:00 +0200</span>
@@ -930,29 +966,6 @@
 <!--
     <div class="content">
       <span id="goog_514458146"></span><span id="goog_514458147"></span>In questo angolo di web, dove scrivo cose sparse, senza badare alla benché minima connessione logica tra i post, oggi vediamo l'argomento <a href="http://conky.sourceforge.net/" target="_blank">Conky</a>.<br />Di recente mi sono interessato in particolare alla visualizzazione di artista e titolo della canzone in riproduzione. Ho trovato una soluzione, un po' artigianale (e che non richiede plugin esterni), per <b>Pragha</b> e <b>Quodlibet</b>.<br /><br /><h3>L'idea di fondo</h3>Entrambi i player possono essere lanciati da terminale con una particolare opzione, che mostra lo stato di riproduzione.<br /><br /><b>Pragha</b><br /><pre class="brush:shell; highlight: 1">«mattux@artemide:~»$ pragha -c<br />state: Playing<br />file: /home/mattux/Musica/Fabrizio De André (1967-2003)/1999 - In concerto Live/09 - Il testamento di Tito.mp3<br />title: Il testamento di Tito<br />artist: Fabrizio De André<br />album: In Concerto<br />genre: Other<br />year: 1999<br />track_no: 9<br />comment: <br />length: 498<br />bitrate: 252<br />channels: 2<br />samplerate: 44100 </pre><br /><b>Quodlibet</b><br /><pre class="brush:shell; highlight: 1">«mattux@artemide:~»$ quodlibet --print-playing<br />Fabrizio De André - In Concerto - 9 - Il testamento di Tito<br /></pre>L'idea di fondo è filtrare l'output di questi comandi e visualizzare solo quello che ci interessa, cioè <b>Artista - Titolo</b>.<br /><br /><h3>Pragha</h3>Estrapoliamo l'artista: <br /><pre class="brush:shell;">pragha -c | grep artist | sed s/artist://<br /></pre>Estrapoliamo il titolo della canzone: <br /><pre class="brush:shell;">pragha -c | grep title | sed s/title://<br /></pre>In sostanza quello che stiamo facendo è dire a <i>grep</i> di selezionare solo la riga contenete la parola "<i>artist</i>" e a <i>sed</i> di eliminare, da quella riga, la stringa "<i>artist:</i>". <br />Per il titolo della canzone agiamo in maniera analoga.<br /><br />E in Conky come lo inseriamo? Così:<br /><pre class="brush:shell;">${if_running pragha}<br />  ${exec pragha -c | grep artist | sed s/artist://} -${exec pragha -c | grep title | sed s/title://}<br />${endif}<br /></pre>Possiamo anche inserire un controllo per fare eseguire il comando a Conky soltanto se il player è in esecuzione.<br /><br /><h3>Quodlibet</h3><b>nota:</b> <u>In fondo al post (paragrafo "update" ) ho aggiunto un modo più semplice. Questo metodo rimane comunque valido.</u><br /><br />Possiamo estrapolare tutto con un solo comando: <br /><pre class="brush:shell;">quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $1,$4 }'<br /></pre>Il problema è il trattino da visualizzare a schermo, che io onestamente non saprei come inserire in un comando del genere. Perciò... <br /><br />Estrapoliamo l'artista: <br /><pre class="brush:shell;">quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $1 }'<br /></pre>Estrapoliamo il titolo della canzone: <br /><pre class="brush:shell;">quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $4 }'<br /></pre>Qui ci stiamo affidando ad <i>awk</i>, facendogli stampare rispettivamente la prima e la quarta colonna, usando il trattino come separatore (FS = " - "). <br /><br />In Conky diventa: <br /><pre class="brush:shell;">${if_running quodlibet}<br />  ${exec quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $1 }'} - ${exec quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $4 }' }<br />${endif}<br /></pre><br /><h3>Il risultato</h3>Se non abbiamo sbagliato nulla, a schermo dovremmo avere qualcosa del tipo<br /><a href="http://3.bp.blogspot.com/-A382C5fwpKE/UkXk0dvbKbI/AAAAAAAADNA/ioi_-SU5AV0/s1600/2013-09-27-215735_298x43_scrot.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-A382C5fwpKE/UkXk0dvbKbI/AAAAAAAADNA/ioi_-SU5AV0/s1600/2013-09-27-215735_298x43_scrot.png" /></a> <br />Con entrambi i player.<br /><br /><b>Update</b><br />Riguardo a <b>Quodlibet</b>, ho appena scoperto che l'opzione <i>--print-playing</i> supporta come parametro dei <b>tag</b>. La sintassi è piuttosto semplice:<br /><pre class="brush:shell">quodlibet --print-playing "<tag>"<br /></tag></pre>Si possono anche usare più tag, unendoli con una tilde (~): <br /><pre class="brush:shell">quodlibet --print-playing "<tag1>"<br /></tag1></pre>Ad esempio: <br /><pre class="brush:shell; highlight:1">«mattux@artemide:~»$ quodlibet --print-playing "&lt;artist~title&gt;"<br />Fabrizio De André - Il testamento di Tito<br /></artist></pre>Perciò in Conky diventa, molto più semplicemente: <br /><pre class="brush:shell;">${if_running quodlibet}<br />  ${exec quodlibet --print-playing "&lt;artist~title&gt;" }<br />${endif}<br /></artist></pre>
-    </div>
--->
-  
-<!--
-    <h1><a href="/2013/09/25/monitorare-la-connessione-dalla-shell.html">Monitorare la connessione dalla shell</a></h1>
-    <p class="author">
-      <span class="date">2013-09-25 00:34:00 +0200</span>
-    </p>
--->
-    <span class="post-meta">Sep 25, 2013</span>
-
-    <h2>
-      <a class="post-link" href="/2013/09/25/monitorare-la-connessione-dalla-shell.html">Monitorare la connessione dalla shell</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      Oggi mi è venuto in mente di cercare nei repo della mia fidatissima Fedora un programma con interfaccia testuale per il monitoraggio del traffico. Ebbene, esiste e si chiama <b>nload</b>.<br />Può essere utile in tutte quelle situazioni in cui si sta usando un desktop particolarmente minimale e non si hanno quindi a disposizione widget dedicati, ma non si vuole nemmeno ricorrere a Conky, anche perché magari si ha bisogno soltanto di fare un controllo veloce e tenere qualcosa costantemente in esecuzione può non piacere.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-Fv6qk3L1r9Q/UkIR347G7cI/AAAAAAAADLU/FqWceOzoOrk/s1600/2013-09-25-002350_562x387_scrot.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="220" src="http://1.bp.blogspot.com/-Fv6qk3L1r9Q/UkIR347G7cI/AAAAAAAADLU/FqWceOzoOrk/s320/2013-09-25-002350_562x387_scrot.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Bello bellissimo</td></tr></tbody></table><br />L'output&nbsp; è molto pulito e completo. Mediante le freccie destra e sinistra sulla tastiera possiamo scegliere l'interfaccia di rete da monitorare e con F2 possiamo accedere al menù opzioni, attraverso il quale è possibile configurare facilmente alcuni parametri dell'applicazione.<br /><br />
     </div>
 -->
   

@@ -133,6 +133,19 @@
 <!--
     
       <li>
+        <span class="post-meta">Jan 7, 2016</span>
+
+        <h2>
+          <a class="post-link" href="/2016/01/07/test-code.html">Test syntax highlighting</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
         <span class="post-meta">Dec 24, 2015</span>
 
         <h2>
@@ -840,6 +853,29 @@
 
 
   <!-- This loops through the paginated posts -->
+  
+<!--
+    <h1><a href="/2010/09/18/rollover-di-immagini-in-css.html">Rollover di immagini in css</a></h1>
+    <p class="author">
+      <span class="date">2010-09-18 12:51:00 +0200</span>
+    </p>
+-->
+    <span class="post-meta">Sep 18, 2010</span>
+
+    <h2>
+      <a class="post-link" href="/2010/09/18/rollover-di-immagini-in-css.html">Rollover di immagini in css</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      <div xmlns="http://www.w3.org/1999/xhtml">Come probabilmente avrete notato, da un po' di tempo sono comparse delle icone bianche che fanno riferimento ai miei account pubblici su alcuni social network e al feed rss di questo blog. Passando la freccetta del mouse sopra di essi vedrete che il logo contenuto nell'icona "diventa blu". In realtà sono due immagini diverse, ma carico un'altra immagine al verificarsi di questo evento, vale a dire effettuo quello che viene definito <b>rollover</b>.<br /><a name='more'></a><br />Ovviamente per farlo ci servono delle icone, per il momento sto usando le <a href="http://webtreats.mysitemyway.com/1540-infocus-simple-white-sidebar-social-media-icons/" target="_blank">inFocus</a>. Nel dettaglio, un esempio di codice necessario a ottenere questo effetto per realizzare un riferimento carino al nostro account di Twitter.<br /><br /><br /><b><i>HTML:</i></b><br /><blockquote>&lt;a href="<span style="color: maroon;"><i>URL_ACCOUNT_TWITTER</i></span>" id="twitter" title="Seguimi su Twitter" alt="Seguimi su Twitter" /&gt;&lt;/a&gt;</blockquote><b><i>CSS:</i></b><br /><blockquote>#twitter {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER</i></span>');;<br />width: 56px;<br />height: 56px;<br />display:block;<br />} </blockquote>Come potete vedere nell'HTML, il link è "vuoto", infatti non abbiamo un testo relativo, ma come invece si può notare osservando il codice css, un'immagine di sfondo (attributo <b>background</b>), di cui abbiamo anche impostato le dimensioni (attributi <b>width</b> e <b>height</b>), indicando di trattarlo come blocco (scrivendo <b>display:block;</b>).<br />Ora dobbiamo agire sull'effetto <i>hover</i>. La cosa è abbastanza semplice: <br /><blockquote>#twitter:hover {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER_HOVER</i></span>');;<br />} </blockquote>scrivendo <i>:hover</i> indichiamo appunto che questa regola vale quando il cursore del mouse ci passa sopra. C'è però un problema: la prima volta che l'utente passerà la freccetta del mouse sopra alla nostra icona vedrà un brutto effetto causato dal fatto che l'immagine viene caricata in cache solo quando l'evento <i>:hover</i> si verifica. Come ovviare? Semplice!<br />Quello che possiamo fare è realizzare noi un'immagine che contiene entrambe le immagini, una a destra e una a sinistra. Per esempio: <br /><div align="center"></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/_c9tXAWBZ8s4/TURkJJtxxcI/AAAAAAAAAFY/4_0jJx4PK5I/s1600/twitter.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/_c9tXAWBZ8s4/TURkJJtxxcI/AAAAAAAAAFY/4_0jJx4PK5I/s1600/twitter.png" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">l'icona per twitter :)</td><td class="tr-caption" style="text-align: center;"><br /></td></tr></tbody></table>e poi diciamo: "Senti bello, di default caricami la parte di sinistra, ma sull'effetto hover, quella di destra!". Come lo traduciamo in css? Vediamolo subito:<br /><blockquote>#twitter {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER</i></span>') <b>no-repeat left top</b>;;<br />width: 56px;<br />height: 56px;<br />display:block;<br />} </blockquote><blockquote>#twitter:hover {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER</i></span>') <b>no-repeat right top</b>;;<br />} </blockquote>Con i valori <b>no-repeat left top/no-repeat left top </b>indichiamo di non ripetere lo sfondo e poi il discorso sinistra-destra. Semplice no? Provate e ditemi se non è una figata :D</div>
+    </div>
+-->
   
 <!--
     <h1><a href="/2010/09/12/terminale-ls-colorato.html">Terminale: ls colorato</a></h1>

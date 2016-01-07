@@ -127,32 +127,34 @@ blockquote {
 pre,
 code {
     //font-size: 15px;
-    font-size: 16px;
-    border: 1px solid $grey-color-light;
-    border-radius: 4px;
-    background-color: #eef;
 
+    // border: 1px solid $grey-color-light;
+    border-radius: 2px;
+    background-color: #eaeaea;
     font-family: $mono-font-family;
-
     line-height: $base-line-height;
+    color: #333;
 }
 
 code {
     padding: 1px 5px;
+    overflow: hidden;
 }
 
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
+    padding: 10px 16px;
+    overflow-x: auto;
+    white-space: pre-wrap;
 
     > code {
         border: 0;
         padding-right: 0;
         padding-left: 0;
+
     }
 }
 
-
+pre code {   font-size: 14px; }
 
 /**
  * Wrapper

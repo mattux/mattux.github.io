@@ -5,9 +5,89 @@
     <description>Confondersi tra Halloween e Natale perché 31oct = 25dec</description>
     <link>http://mattux.github.io/</link>
     <atom:link href="http://mattux.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 Jan 2016 19:18:09 +0100</pubDate>
-    <lastBuildDate>Thu, 07 Jan 2016 19:18:09 +0100</lastBuildDate>
+    <pubDate>Thu, 07 Jan 2016 23:03:18 +0100</pubDate>
+    <lastBuildDate>Thu, 07 Jan 2016 23:03:18 +0100</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>Test syntax highlighting</title>
+        <description>&lt;p&gt;Test di prova con del codice&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span class=&quot;c&quot;&gt;#  gbach.sh&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  ver 0.3&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  Copyright © 2014 mattux &amp;lt;andovais@gmail.com&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  This work is free. You can redistribute it and/or modify it under the&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  terms of the Do What The Fuck You Want To Public License, Version 2,&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  as published by Sam Hocevar.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#                    Version 2, December 2004&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  Copyright (C) 2004 Sam Hocevar &amp;lt;sam@hocevar.net&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  Everyone is permitted to copy and distribute verbatim or modified&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  copies of this license document, and changing it is allowed as long&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  as the name is changed.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  0. You just DO WHAT THE FUCK YOU WANT TO.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  ---------------------------------------------------------------------&lt;/span&gt;
+
+
+&lt;span class=&quot;c&quot;&gt;#! /bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# set these to execute the script in non-interactive mode, otherwise&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# it runs in interactive mode.&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;;
+&lt;span class=&quot;nv&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;;
+
+&lt;span class=&quot;c&quot;&gt;# interactive mode&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$password&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;;  &lt;span class=&quot;k&quot;&gt;then
+      &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; -e &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;username:&quot;&lt;/span&gt;;
+      &lt;span class=&quot;nb&quot;&gt;read &lt;/span&gt;user
+
+      &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; -e &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;password:&quot;&lt;/span&gt;;
+      &lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt; -s password
+&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# retrieving the email feed&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# donloading the feed | isolating lines that starts with &amp;lt;fullcount&amp;gt; and &amp;lt;title&amp;gt; | removing &amp;lt;/title&amp;gt; | transforming &amp;amp;quote in &quot;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;curl -u &lt;span class=&quot;nv&quot;&gt;$user&lt;/span&gt;:&lt;span class=&quot;nv&quot;&gt;$password&lt;/span&gt; --silent &lt;span class=&quot;s2&quot;&gt;&quot;https://mail.google.com/mail/feed/atom&quot;&lt;/span&gt; | egrep -o &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;fullcount&amp;gt;+[0-9]*&amp;lt;/fullcount&amp;gt;|&amp;lt;title&amp;gt;*[[:alpha:],[:punct:],[:space:],[0-9]{0,100}]*&amp;lt;/title&amp;gt;&quot;&lt;/span&gt; |  sed s/&lt;span class=&quot;se&quot;&gt;\&amp;lt;&lt;/span&gt;title&lt;span class=&quot;se&quot;&gt;\&amp;gt;&lt;/span&gt;//g| sed s/&lt;span class=&quot;se&quot;&gt;\&amp;amp;&lt;/span&gt;quot&lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;/&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;/g&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;;
+
+
+&lt;span class=&quot;nv&quot;&gt;n_email&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Network problem. I&#39;m not able to retrieve the email feed.&quot;&lt;/span&gt;;
+&lt;span class=&quot;c&quot;&gt;# getting the number of undread emails&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$email&lt;/span&gt; !&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;;  &lt;span class=&quot;k&quot;&gt;then
+      &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;n_email&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$email&lt;/span&gt; | grep -o &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;fullcount&amp;gt;[0-9]*&amp;lt;/fullcount&amp;gt;&quot;&lt;/span&gt; | grep -o &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;0-9]&lt;span class=&quot;k&quot;&gt;*)&lt;/span&gt;;
+&lt;span class=&quot;k&quot;&gt;fi
+
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; -e &lt;span class=&quot;s2&quot;&gt;&quot;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$n_email&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;)&quot;&lt;/span&gt;;
+
+&lt;span class=&quot;c&quot;&gt;# deleting the number of unread emails (&amp;lt;fullcount&amp;gt;NUMBER&amp;lt;/fullcount)&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$email&lt;/span&gt; | sed &lt;span class=&quot;s1&quot;&gt;&#39;s/&amp;lt;fullcount&amp;gt;[0-9]*&amp;lt;\/fullcount&amp;gt;//&#39;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;;
+
+
+&lt;span class=&quot;c&quot;&gt;# printing the titles of the emails one per line&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$n_email&lt;/span&gt; &amp;gt; 0 &lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;;  &lt;span class=&quot;k&quot;&gt;then
+      &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$email&lt;/span&gt; | awk &lt;span class=&quot;s1&quot;&gt;&#39;BEGIN { RS = &quot;&quot; ; FS = &quot;&amp;lt;/title&amp;gt;&quot; } { for (i = 2; i &amp;lt;= NF-1; i++) print &quot;-&quot;,$i }&#39;&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# uncomment the following line to enable the notify&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;#notify-send &quot;$n_email emails to read!&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;fi
+
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;exit &lt;/span&gt;0;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Thu, 07 Jan 2016 23:03:18 +0100</pubDate>
+        <link>http://mattux.github.io/2016/01/07/test-code.html</link>
+        <guid isPermaLink="true">http://mattux.github.io/2016/01/07/test-code.html</guid>
+        
+        <category>coding</category>
+        
+        
+      </item>
     
       <item>
         <title>I miei font preferiti per programmare</title>
@@ -225,24 +305,6 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata &lt;em
         <category>GNU/linux</category>
         
         <category>conky</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Monitorare la connessione dalla shell</title>
-        <description>Oggi mi è venuto in mente di cercare nei repo della mia fidatissima Fedora un programma con interfaccia testuale per il monitoraggio del traffico. Ebbene, esiste e si chiama &lt;b&gt;nload&lt;/b&gt;.&lt;br /&gt;Può essere utile in tutte quelle situazioni in cui si sta usando un desktop particolarmente minimale e non si hanno quindi a disposizione widget dedicati, ma non si vuole nemmeno ricorrere a Conky, anche perché magari si ha bisogno soltanto di fare un controllo veloce e tenere qualcosa costantemente in esecuzione può non piacere.&lt;br /&gt;&lt;br /&gt;&lt;table align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;margin-left: auto; margin-right: auto; text-align: center;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://1.bp.blogspot.com/-Fv6qk3L1r9Q/UkIR347G7cI/AAAAAAAADLU/FqWceOzoOrk/s1600/2013-09-25-002350_562x387_scrot.png&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: auto; margin-right: auto;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;220&quot; src=&quot;http://1.bp.blogspot.com/-Fv6qk3L1r9Q/UkIR347G7cI/AAAAAAAADLU/FqWceOzoOrk/s320/2013-09-25-002350_562x387_scrot.png&quot; width=&quot;320&quot; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;Bello bellissimo&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br /&gt;L&#39;output&amp;nbsp; è molto pulito e completo. Mediante le freccie destra e sinistra sulla tastiera possiamo scegliere l&#39;interfaccia di rete da monitorare e con F2 possiamo accedere al menù opzioni, attraverso il quale è possibile configurare facilmente alcuni parametri dell&#39;applicazione.&lt;br /&gt;&lt;br /&gt;</description>
-        <pubDate>Wed, 25 Sep 2013 00:34:00 +0200</pubDate>
-        <link>http://mattux.github.io/2013/09/25/monitorare-la-connessione-dalla-shell.html</link>
-        <guid isPermaLink="true">http://mattux.github.io/2013/09/25/monitorare-la-connessione-dalla-shell.html</guid>
-        
-        <category>bash</category>
-        
-        <category>GNU/linux</category>
-        
-        <category>utilità</category>
-        
-        <category>shell</category>
         
         
       </item>

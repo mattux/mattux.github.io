@@ -133,6 +133,19 @@
 <!--
     
       <li>
+        <span class="post-meta">Jan 7, 2016</span>
+
+        <h2>
+          <a class="post-link" href="/2016/01/07/test-code.html">Test syntax highlighting</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
         <span class="post-meta">Dec 24, 2015</span>
 
         <h2>
@@ -842,6 +855,97 @@
   <!-- This loops through the paginated posts -->
   
 <!--
+    <h1><a href="/2016/01/07/test-code.html">Test syntax highlighting</a></h1>
+    <p class="author">
+      <span class="date">2016-01-07 23:03:18 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Jan 7, 2016</span>
+
+    <h2>
+      <a class="post-link" href="/2016/01/07/test-code.html">Test syntax highlighting</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      <p>Test di prova con del codice</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c">#  gbach.sh</span>
+<span class="c">#  ver 0.3</span>
+<span class="c">#</span>
+<span class="c">#  Copyright © 2014 mattux &lt;andovais@gmail.com&gt;</span>
+<span class="c">#  This work is free. You can redistribute it and/or modify it under the</span>
+<span class="c">#  terms of the Do What The Fuck You Want To Public License, Version 2,</span>
+<span class="c">#  as published by Sam Hocevar.</span>
+<span class="c">#</span>
+<span class="c">#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE</span>
+<span class="c">#                    Version 2, December 2004</span>
+<span class="c">#</span>
+<span class="c">#  Copyright (C) 2004 Sam Hocevar &lt;sam@hocevar.net&gt;</span>
+<span class="c">#</span>
+<span class="c">#  Everyone is permitted to copy and distribute verbatim or modified</span>
+<span class="c">#  copies of this license document, and changing it is allowed as long</span>
+<span class="c">#  as the name is changed.</span>
+<span class="c">#</span>
+<span class="c">#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE</span>
+<span class="c">#  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION</span>
+<span class="c">#</span>
+<span class="c">#  0. You just DO WHAT THE FUCK YOU WANT TO.</span>
+<span class="c">#  ---------------------------------------------------------------------</span>
+
+
+<span class="c">#! /bin/bash</span>
+
+<span class="c"># set these to execute the script in non-interactive mode, otherwise</span>
+<span class="c"># it runs in interactive mode.</span>
+<span class="nv">user</span><span class="o">=</span><span class="s2">""</span>;
+<span class="nv">password</span><span class="o">=</span><span class="s2">""</span>;
+
+<span class="c"># interactive mode</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="nv">$user</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">&amp;&amp;</span> <span class="nv">$password</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]]</span>;  <span class="k">then
+      </span><span class="nb">echo</span> -e <span class="s2">"</span><span class="se">\n</span><span class="s2">username:"</span>;
+      <span class="nb">read </span>user
+
+      <span class="nb">echo</span> -e <span class="s2">"</span><span class="se">\n</span><span class="s2">password:"</span>;
+      <span class="nb">read</span> -s password
+<span class="k">fi</span>
+
+<span class="c"># retrieving the email feed</span>
+<span class="c"># donloading the feed | isolating lines that starts with &lt;fullcount&gt; and &lt;title&gt; | removing &lt;/title&gt; | transforming &amp;quote in "</span>
+<span class="nv">email</span><span class="o">=</span><span class="k">$(</span>curl -u <span class="nv">$user</span>:<span class="nv">$password</span> --silent <span class="s2">"https://mail.google.com/mail/feed/atom"</span> | egrep -o <span class="s2">"&lt;fullcount&gt;+[0-9]*&lt;/fullcount&gt;|&lt;title&gt;*[[:alpha:],[:punct:],[:space:],[0-9]{0,100}]*&lt;/title&gt;"</span> |  sed s/<span class="se">\&lt;</span>title<span class="se">\&gt;</span>//g| sed s/<span class="se">\&amp;</span>quot<span class="se">\;</span>/<span class="se">\"</span>/g<span class="k">)</span>;
+
+
+<span class="nv">n_email</span><span class="o">=</span><span class="s2">"Network problem. I'm not able to retrieve the email feed."</span>;
+<span class="c"># getting the number of undread emails</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="nv">$email</span> !<span class="o">=</span> <span class="s2">""</span> <span class="o">]]</span>;  <span class="k">then
+      </span><span class="nv">n_email</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$email</span> | grep -o <span class="s2">"&lt;fullcount&gt;[0-9]*&lt;/fullcount&gt;"</span> | grep -o <span class="o">[</span>0-9]<span class="k">*)</span>;
+<span class="k">fi
+
+</span><span class="nb">echo</span> -e <span class="s2">"(</span><span class="nv">$n_email</span><span class="s2">)"</span>;
+
+<span class="c"># deleting the number of unread emails (&lt;fullcount&gt;NUMBER&lt;/fullcount)</span>
+<span class="nv">email</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$email</span> | sed <span class="s1">'s/&lt;fullcount&gt;[0-9]*&lt;\/fullcount&gt;//'</span><span class="k">)</span>;
+
+
+<span class="c"># printing the titles of the emails one per line</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="nv">$n_email</span> &gt; 0 <span class="o">]]</span>;  <span class="k">then
+      </span><span class="nb">echo</span> <span class="nv">$email</span> | awk <span class="s1">'BEGIN { RS = "" ; FS = "&lt;/title&gt;" } { for (i = 2; i &lt;= NF-1; i++) print "-",$i }'</span>
+      <span class="c"># uncomment the following line to enable the notify</span>
+      <span class="c">#notify-send "$n_email emails to read!"</span>
+<span class="k">fi
+
+</span><span class="nb">exit </span>0;</code></pre></figure>
+
+
+    </div>
+-->
+  
+<!--
     <h1><a href="/2015/12/24/i-miei-font-preferiti-per-programmare.html">I miei font preferiti per programmare</a></h1>
     <p class="author">
       <span class="date">2015-12-24 00:00:00 +0100</span>
@@ -1010,29 +1114,6 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
 
 <p>Ci vediamo al Linux Day!</p>
 
-    </div>
--->
-  
-<!--
-    <h1><a href="/2014/08/03/acid-schema-di-colore-per-geany.html">Acid - Schema di colore per Geany</a></h1>
-    <p class="author">
-      <span class="date">2014-08-03 09:00:00 +0200</span>
-    </p>
--->
-    <span class="post-meta">Aug 3, 2014</span>
-
-    <h2>
-      <a class="post-link" href="/2014/08/03/acid-schema-di-colore-per-geany.html">Acid - Schema di colore per Geany</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      Come avrete intuito ultimamente mi sto dando agli schemi di colore. La mia nuova creazione si chiama <b>Acid</b>. Probabilmente non è estremamente originale, però il risultato mi sembra buono.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-LkHZ9h-59hw/U91lei6ttnI/AAAAAAAAEQg/elZq-NjcK0k/s1600/acid_color_scheme.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-LkHZ9h-59hw/U91lei6ttnI/AAAAAAAAEQg/elZq-NjcK0k/s1600/acid_color_scheme.png" height="192" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Stralcio del codice di Xfwm4</td></tr></tbody></table><br />Lo sto usando da una settimana e mi sto trovando bene: non mi affatica la vista e distinguo gli elementi del codice abbastanza facilmente.<br /><br />Se vi va, provatelo e ditemi come vi trovate.<br /><br /><a href="https://github.com/mattux/geany-csx">Repo github dei miei schemi di colore per Geany</a>
     </div>
 -->
   

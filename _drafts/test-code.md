@@ -1,14 +1,14 @@
 ---
 layout: post
 published: true
-title: Test syntax highliting
+title: Test syntax highlighting
 tags:
 - coding
 ---
 
 Test di prova con del codice
 
-{% highlight shell linenos %}
+{% highlight shell %}
 #  gbach.sh
 #  ver 0.3
 #
