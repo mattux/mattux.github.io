@@ -102,8 +102,7 @@ code {
 
 pre {
   padding: 10px 16px;
-  overflow-x: auto;
-  white-space: pre-wrap; }
+  overflow-x: auto; }
   pre > code {
     border: 0;
     padding-right: 0;
@@ -319,7 +318,7 @@ pre code {
     font-size: 2rem;
     font-style: italic;
     font-weight: 600;
-    margin-top: 50px; }
+    margin-top: 40px; }
     @media screen and (max-width: 800px) {
       .post-content h3 {
         font-size: 22px; } }

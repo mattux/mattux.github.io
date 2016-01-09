@@ -65,6 +65,8 @@
         
           
         
+          
+        
       </div>
 -->
 
@@ -115,6 +117,8 @@
     
       
     
+      
+    
   </div>
   </div>
 
@@ -133,10 +137,36 @@
 <!--
     
       <li>
-        <span class="post-meta">Jan 7, 2016</span>
+        <span class="post-meta">Jan 9, 2016</span>
 
         <h2>
-          <a class="post-link" href="/2016/01/07/test-code.html">Test syntax highlighting</a>
+          <a class="post-link" href="/2016/01/09/test-code.html">Test syntax highlighting</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jan 9, 2016</span>
+
+        <h2>
+          <a class="post-link" href="/2016/01/09/considerazioni-sui-siti-statici.html">Considerazioni sui siti statici</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jan 9, 2016</span>
+
+        <h2>
+          <a class="post-link" href="/2016/01/09/jekyll-e-sistema-di-commenti.html">Jekyll e i sistemi di commenti</a>
         </h2>
         <p class="post-summary">
           
@@ -855,6 +885,52 @@
   <!-- This loops through the paginated posts -->
   
 <!--
+    <h1><a href="/2013/02/02/spegnere-il-pc-automaticamente-dopo.html">Spegnere il pc automaticamente dopo l'aggiornamento</a></h1>
+    <p class="author">
+      <span class="date">2013-02-02 16:34:00 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Feb 2, 2013</span>
+
+    <h2>
+      <a class="post-link" href="/2013/02/02/spegnere-il-pc-automaticamente-dopo.html">Spegnere il pc automaticamente dopo l'aggiornamento</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-5JHWuezsm7k/UQ0q0MnpSJI/AAAAAAAACGs/SMz5O-ddC64/s1600/update-manager.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://lh3.ggpht.com/-5JHWuezsm7k/UQ0q0MnpSJI/AAAAAAAACGs/SMz5O-ddC64/s1600/update-manager.png" /></a></div>Piccola tip che ho scoperto di recente che non tutti conoscono.<br />Sappiamo benissimo che su GNU/Linux possiamo fare gli aggiornamenti quando ci pare e mentre il gestore dei pacchetti lavora noi possiamo continuare a farci bellamente gli affari nostri.<br />Però magari noi vogliamo dare gli aggiornamenti prima di spegnere il pc, perché abbiamo esigenza di poter sfruttare tutta la banda di rete disponibile o perché semplicemente mentre lavoriamo vogliamo che le rotture di scatole tendano a zero, o per qualche altro motivo.<br /><a name='more'></a><br />La soluzione è molto semplice ed il terminale è nostro amico.<br /><br />I comandi non si possono <b>concatenare</b> solo con la pipe, ma anche con un <b>and logico</b> (&amp;&amp;). L'effetto è che il secondo comando verrà eseguito solo se il primo è andato a buon fine.<br /><br />Piccolo esempio: <pre class="brush:shell"><br />$ wget --spider -q http://www.mattux.co.vu &amp;&amp; echo -e "\n\n\nCiao, se mi leggi vuol dire che il comando precedente è stato eseguito"</pre>Quello che fa questa riga di comando è molto semplice:<br /><ul><li>wget controlla (opzione --spider) se esiste l'index di questo blog (ovviamente esiste);</li><li>se e solo se wget è stato lanciato e una volta che wget ha finito, viene eseguito l'output del comando echo.</li></ul><br />Applichiamo questo concetto agli update ed allo spegnimento. <br /><br />Su Debian/Ubuntu diamo qualcosa del tipo: <br /><blockquote># apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; shutdown -h now</blockquote>Su Fedora invece: <br /><blockquote># yum update -y &amp;&amp; poweroff</blockquote><br />Il pc <b>non</b> si spegnerà soltanto nel caso in cui l'update dovesse bloccarsi per qualche problema. Da un lato è male, mentre dall'altro è bene, poiché in caso di mancato spegnimento ci si accorgerebbe immediatamente della cosa ed eventualmente porre rimedio qualora l'update si interrompesse durante l'update dei pacchetti e non semplicemente durante il loro download.<br /><br />Alla prossima :)<br /><br /><span style="font-size: x-small;"><br />Nota: L'<span style="font-size: x-small;">i</span>mmagine del post<span style="font-size: x-small;"> </span>fa parte del set di icone</span> <a class="g-profile" href="http://plus.google.com/116957764483417291271" target="_blank">+AwOken</a>.
+    </div>
+-->
+  
+<!--
+    <h1><a href="/2012/12/30/quando-versionlock-ci-risparmia-insulti.html">Quando Versionlock ci risparmia insulti contro Xorg</a></h1>
+    <p class="author">
+      <span class="date">2012-12-30 23:21:00 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Dec 30, 2012</span>
+
+    <h2>
+      <a class="post-link" href="/2012/12/30/quando-versionlock-ci-risparmia-insulti.html">Quando Versionlock ci risparmia insulti contro Xorg</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      <div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-PdKNepgRspE/UOC8tJ_kEjI/AAAAAAAACAs/CGy99gvOenU/s1600/lock_xorg.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="200" src="http://3.bp.blogspot.com/-PdKNepgRspE/UOC8tJ_kEjI/AAAAAAAACAs/CGy99gvOenU/s200/lock_xorg.png" width="167" /></a></div>Da un po' di tempo a questa parte, mi sono ritrovato, sulla mia adorata Fedora con Xfce, ad essere impossibilitato ad usare certi temi di Xfwm a causa di un fastidioso bug.<br />Inizialmente ho pensato che il bug fosse di Xfwm, ma poi ho scoperto che si tratta di un <a href="https://bugs.freedesktop.org/show_bug.cgi?id=54168" target="_blank">bug di Xorg</a>. Con la versione 1.12.4 nessun problema, mentre con la successiva rilasciata nei repo ecco che il fastidioso bug si presenta.<br />Ho resistito per qualche tempo, ma ad un certo punto mi sono stufato e ho cercato una soluzione.<br /><br /><br /><a name='more'></a><br />Con Xorg &gt; 1.12.4 la situazione è questa:<br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="height: 231px; margin-left: auto; margin-right: auto; text-align: center; width: 158px;"><tbody><tr><td style="text-align: center;"><br /><a href="http://3.bp.blogspot.com/-YrPU72HZRik/UOBFXc8jTmI/AAAAAAAACAM/3PTQwJdd3QA/s1600/Istantanea+-+09122012+-+23:48:32.png" style="margin-left: auto; margin-right: auto;"><img border="0" height="200" src="http://3.bp.blogspot.com/-YrPU72HZRik/UOBFXc8jTmI/AAAAAAAACAM/3PTQwJdd3QA/s320/Istantanea+-+09122012+-+23:48:32.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Screenshot fatto appena mi sono accorto del bug. </td></tr></tbody></table><br />L'unica soluzione che mi è venuta in mente è stata quella di fare un <b>downgrade di Xorg</b>.<br /><pre class="brush:shell"># yum downgrade xorg-x11-server-common xorg-x11-server-Xorg xorg-x11-server-Xephyr xorg-x11-drv-intel<br /></pre>Siccome però al successivo tentativo di update Yum mi avrebbe proposto (giustamente!) gli aggiornamenti di Xorg, dovevo in qualche modo saltarli a priori.<br />Ho perciò fatto ricorso a <b>Versionlock</b>.<br /><br /><h3>Versionlock?</h3>Sì, esatto. È un plugin per Yum che <b>consente di bloccare l'update dei pacchetti</b> che decidiamo noi.<br /><br />Per prima cosa bisogna installarlo:<br /><pre class="brush:shell"># yum install yum-plugin-versionlock</pre>Dopodiché non resta che usarlo. Io voglio impedire gli aggiornamenti dei pacchetti di cui ho fatto un downgrade precedentemente, quindi darò il comando: <br /><pre class="brush:shell"># yum versionlock xorg-x11-drv-intel xorg-x11-server-Xephyr xorg-x11-server-Xorg xorg-x11-server-common</pre>Et voilà, Yum non proporrà più gli aggiornamenti di Xorg :D <br />Riprenderò ad aggiornarlo quando nei repository arriverà una versione che non presenterà questo bug.<br /><br />Ah, giusto, quasi scordavo. Per controllare se ci sono update per i pacchetti "bloccati" basta dare<br /><pre class="brush:shell"># yum check-update --disableplugin=versionlock</pre>oppure <br /><pre class="brush:shell"># yum update --disableplugin=versionlock</pre><br />E finalmente posso tornare ad usare tutti i temi che voglio :D
+    </div>
+-->
+  
+<!--
     <h1><a href="/2012/08/07/due-anni-d.html">Due anni :D</a></h1>
     <p class="author">
       <span class="date">2012-08-07 23:46:00 +0200</span>
@@ -923,52 +999,6 @@
     </div>
 -->
   
-<!--
-    <h1><a href="/2012/04/28/google-cloud-sql.html">Google Cloud SQL</a></h1>
-    <p class="author">
-      <span class="date">2012-04-28 17:45:00 +0200</span>
-    </p>
--->
-    <span class="post-meta">Apr 28, 2012</span>
-
-    <h2>
-      <a class="post-link" href="/2012/04/28/google-cloud-sql.html">Google Cloud SQL</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-4EOxCkO-PSs/T5mNGwz_PKI/AAAAAAAAAyI/jwgvKDwbLgE/s1600/google+cloud+sql.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-4EOxCkO-PSs/T5mNGwz_PKI/AAAAAAAAAyI/jwgvKDwbLgE/s1600/google+cloud+sql.png" /></a></div>Quest'oggi parliamo di database :)<br />Google Cloud SQL è un servizio offerto da Google che consente di avere delle istanze cloud di database MySQL.<br />È molto comodo, efficiente ed affidabile. Per ora è disponibile soltanto in limited preview per sviluppatori, quindi bisogna fare richiesta di attivazione del servizio, con tempi che possono arrivare anche alle due settimane.<br /><br /><br /><a name='more'></a>È possibile interagire direttamente col database ed attraverso la creazione di applicazioni in Java e Python. <br />Il servizio consente perciò di mettere in piedi applicazioni web motorizzate Google, cloud anche per quel che riguarda il database.<br /><br />La figata è che ci si ritrova ad avere a che fare con un database MySQL quasi senza che uno si accorga che non sta in locale, ma memorizzato chissà dove.<br /><br />Io ci ho smanettato ed ho concluso che è senz'altro un'ottimo servizio, efficiente ed affidabile. Ho anche creato un <a href="http://deseb-test.appspot.com/">prototipo di applicazione</a> che sfrutta un database Google Cloud SQL. Non fa granché, però non si chiama prototipo per caso :)<br />&nbsp; <br />Per approfondire il discorso, vi rimando alla <a href="https://developers.google.com/cloud-sql/">documentazione ufficiale</a> ed alle <a href="http://www.slideshare.net/mattux/valutazione-sperimentale-di-un-database-relazionale-in-ambiente-cloud">slide</a> che ho realizzato per la presentazione della mia tesi di laurea¹, che verte proprio su questo argomento.<br /><br /><b>Update</b>: Dal 12 giugno il servizio non sarà più gratuito, ma a pagamento. Maggiori dettagli <a href="https://developers.google.com/cloud-sql/docs/billing" target="_blank">qui</a>.<br /><br /><br />¹ <span style="font-size: x-small;">Sì, finalmente mi sono laureato :D Questa è la ragione per cui non scrivo sul blog da febbraio, ero un <i>tantinello</i> impegnato.</span>
-    </div>
--->
-  
-<!--
-    <h1><a href="/2012/02/25/reisub-quando-il-gioco-si-fa-duro-i.html">REISUB: quando il gioco si fa duro, i duri riavviano così</a></h1>
-    <p class="author">
-      <span class="date">2012-02-25 15:35:00 +0100</span>
-    </p>
--->
-    <span class="post-meta">Feb 25, 2012</span>
-
-    <h2>
-      <a class="post-link" href="/2012/02/25/reisub-quando-il-gioco-si-fa-duro-i.html">REISUB: quando il gioco si fa duro, i duri riavviano così</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <div class="separator" style="clear: both; text-align: center;"></div><a href="http://3.bp.blogspot.com/-Cs2-rrWTXkM/T0grlhbDI3I/AAAAAAAAAs0/f2tTbt1JY_c/s1600/reboot.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-Cs2-rrWTXkM/T0grlhbDI3I/AAAAAAAAAs0/f2tTbt1JY_c/s1600/reboot.png" /></a>Ieri una collega (che ringrazio :D), mi ha insegnato un modo per riavviare il pc quando linux è totalmente bloccato e non risponde più ad input di alcun tipo.<br />In sostanza, si tratta di effettuare una potentissima combinazione di tasti:<br /><br /><b>CTRL + ALT + SHIFT + CANC + RSist</b> da tenere premuti mentre si digita la parola <b>REISUB</b>.<br /><br /><a name='more'></a>Perché funziona?<br /><br /><b>CTRL + ALT + SHIFT + CANC + RSist</b> serve per comunicare direttamente col kernel, dicendogli questo:<br /><br /><b>R</b> -&gt; Passa alla modalita XLATE, per la tastiera;<br /><b>E</b> -&gt; Manda un segnale di SIGTERM a tutti i processi tranne init;<br /><b>I</b> -&gt;&nbsp; Manda un segnale di SIGKILL a tutti i processi tranne init;<br /><b>S</b> -&gt; Sincronizza tutti i filesystem montati;<br /><b>U</b> -&gt; Rimonta tutti i filesystem in modalità read-only;<br /><b>B</b> -&gt; Fai un reboot del sistema, senza smontare o sincronizzare i filesystem.<br /><br />Ulteriori informazioni le troviamo nella <a href="http://en.wikipedia.org/wiki/Magic_SysRq_key">pagina di wikipedia dedicata</a>.<br /><br />Credo che questa combinazione di tasti mi salverà il fondoschiena parecchie volte.
-    </div>
--->
-  
   </ul>
 
 
@@ -979,7 +1009,7 @@
     
       <a href="/blog/page3/" class="previous">Previous</a>
     
-    <span class="page_number ">Page: 4 of 11</span>
+    <span class="page_number ">Page: 4 of 12</span>
     
       <a href="/blog/page5/" class="next">Next</a>
     
@@ -1035,6 +1065,10 @@
   
     
       <a href="/blog/page11/">11</a>
+    
+  
+    
+      <a href="/blog/page12/">12</a>
     
   
 
@@ -1125,6 +1159,8 @@
           
             
             <a class="page-link" href="/about/">About</a>
+            
+          
             
           
             

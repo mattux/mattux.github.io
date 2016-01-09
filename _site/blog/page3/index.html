@@ -65,6 +65,8 @@
         
           
         
+          
+        
       </div>
 -->
 
@@ -115,6 +117,8 @@
     
       
     
+      
+    
   </div>
   </div>
 
@@ -133,10 +137,36 @@
 <!--
     
       <li>
-        <span class="post-meta">Jan 7, 2016</span>
+        <span class="post-meta">Jan 9, 2016</span>
 
         <h2>
-          <a class="post-link" href="/2016/01/07/test-code.html">Test syntax highlighting</a>
+          <a class="post-link" href="/2016/01/09/test-code.html">Test syntax highlighting</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jan 9, 2016</span>
+
+        <h2>
+          <a class="post-link" href="/2016/01/09/considerazioni-sui-siti-statici.html">Considerazioni sui siti statici</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jan 9, 2016</span>
+
+        <h2>
+          <a class="post-link" href="/2016/01/09/jekyll-e-sistema-di-commenti.html">Jekyll e i sistemi di commenti</a>
         </h2>
         <p class="post-summary">
           
@@ -855,6 +885,52 @@
   <!-- This loops through the paginated posts -->
   
 <!--
+    <h1><a href="/2014/03/16/desert-schema-di-colore-per-geany.html">Desert - Schema di colore per Geany</a></h1>
+    <p class="author">
+      <span class="date">2014-03-16 01:04:00 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Mar 16, 2014</span>
+
+    <h2>
+      <a class="post-link" href="/2014/03/16/desert-schema-di-colore-per-geany.html">Desert - Schema di colore per Geany</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      Post molto breve, giusto per segnalarvi il fatto che ho realizzato un porting per <b>Geany</b> di <b>Desert</b>, lo schema di colore che uso su <b>GVim</b>. <br /><br /><div class="separator" style="clear: both; text-align: center;"></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-2grwixbpVps/UyTo-rRdIWI/AAAAAAAADrM/b_zrKJyhiS4/s1600/Istantanea+-+16032014+-+00%253A53%253A09.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://3.bp.blogspot.com/-2grwixbpVps/UyTo-rRdIWI/AAAAAAAADrM/b_zrKJyhiS4/s1600/Istantanea+-+16032014+-+00%253A53%253A09.png" height="338" width="400" />&nbsp;</a></td><td style="text-align: center;"></td><td style="text-align: center;"></td></tr><tr><td class="tr-caption" style="text-align: center;">Stralcio di codice in OCaml (cifrario di Vigenère)</td><td class="tr-caption" style="text-align: center;"><br /></td><td class="tr-caption" style="text-align: center;"><br /></td></tr></tbody></table><div class="separator" style="clear: both; text-align: center;"></div><br />Ho creato un <a href="https://github.com/mattux/geany-csx">repo su github</a> per i miei schemi di colore per Geany. Per ora c'è solo questo, ma chissà :D 
+    </div>
+-->
+  
+<!--
+    <h1><a href="/2013/09/27/conky-pragha-quodlibet-e-la-canzone-in.html">Conky - Pragha, Quodlibet e la canzone in riproduzione</a></h1>
+    <p class="author">
+      <span class="date">2013-09-27 22:18:00 +0200</span>
+    </p>
+-->
+    <span class="post-meta">Sep 27, 2013</span>
+
+    <h2>
+      <a class="post-link" href="/2013/09/27/conky-pragha-quodlibet-e-la-canzone-in.html">Conky - Pragha, Quodlibet e la canzone in riproduzione</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      <span id="goog_514458146"></span><span id="goog_514458147"></span>In questo angolo di web, dove scrivo cose sparse, senza badare alla benché minima connessione logica tra i post, oggi vediamo l'argomento <a href="http://conky.sourceforge.net/" target="_blank">Conky</a>.<br />Di recente mi sono interessato in particolare alla visualizzazione di artista e titolo della canzone in riproduzione. Ho trovato una soluzione, un po' artigianale (e che non richiede plugin esterni), per <b>Pragha</b> e <b>Quodlibet</b>.<br /><br /><h3>L'idea di fondo</h3>Entrambi i player possono essere lanciati da terminale con una particolare opzione, che mostra lo stato di riproduzione.<br /><br /><b>Pragha</b><br /><pre class="brush:shell; highlight: 1">«mattux@artemide:~»$ pragha -c<br />state: Playing<br />file: /home/mattux/Musica/Fabrizio De André (1967-2003)/1999 - In concerto Live/09 - Il testamento di Tito.mp3<br />title: Il testamento di Tito<br />artist: Fabrizio De André<br />album: In Concerto<br />genre: Other<br />year: 1999<br />track_no: 9<br />comment: <br />length: 498<br />bitrate: 252<br />channels: 2<br />samplerate: 44100 </pre><br /><b>Quodlibet</b><br /><pre class="brush:shell; highlight: 1">«mattux@artemide:~»$ quodlibet --print-playing<br />Fabrizio De André - In Concerto - 9 - Il testamento di Tito<br /></pre>L'idea di fondo è filtrare l'output di questi comandi e visualizzare solo quello che ci interessa, cioè <b>Artista - Titolo</b>.<br /><br /><h3>Pragha</h3>Estrapoliamo l'artista: <br /><pre class="brush:shell;">pragha -c | grep artist | sed s/artist://<br /></pre>Estrapoliamo il titolo della canzone: <br /><pre class="brush:shell;">pragha -c | grep title | sed s/title://<br /></pre>In sostanza quello che stiamo facendo è dire a <i>grep</i> di selezionare solo la riga contenete la parola "<i>artist</i>" e a <i>sed</i> di eliminare, da quella riga, la stringa "<i>artist:</i>". <br />Per il titolo della canzone agiamo in maniera analoga.<br /><br />E in Conky come lo inseriamo? Così:<br /><pre class="brush:shell;">${if_running pragha}<br />  ${exec pragha -c | grep artist | sed s/artist://} -${exec pragha -c | grep title | sed s/title://}<br />${endif}<br /></pre>Possiamo anche inserire un controllo per fare eseguire il comando a Conky soltanto se il player è in esecuzione.<br /><br /><h3>Quodlibet</h3><b>nota:</b> <u>In fondo al post (paragrafo "update" ) ho aggiunto un modo più semplice. Questo metodo rimane comunque valido.</u><br /><br />Possiamo estrapolare tutto con un solo comando: <br /><pre class="brush:shell;">quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $1,$4 }'<br /></pre>Il problema è il trattino da visualizzare a schermo, che io onestamente non saprei come inserire in un comando del genere. Perciò... <br /><br />Estrapoliamo l'artista: <br /><pre class="brush:shell;">quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $1 }'<br /></pre>Estrapoliamo il titolo della canzone: <br /><pre class="brush:shell;">quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $4 }'<br /></pre>Qui ci stiamo affidando ad <i>awk</i>, facendogli stampare rispettivamente la prima e la quarta colonna, usando il trattino come separatore (FS = " - "). <br /><br />In Conky diventa: <br /><pre class="brush:shell;">${if_running quodlibet}<br />  ${exec quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $1 }'} - ${exec quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $4 }' }<br />${endif}<br /></pre><br /><h3>Il risultato</h3>Se non abbiamo sbagliato nulla, a schermo dovremmo avere qualcosa del tipo<br /><a href="http://3.bp.blogspot.com/-A382C5fwpKE/UkXk0dvbKbI/AAAAAAAADNA/ioi_-SU5AV0/s1600/2013-09-27-215735_298x43_scrot.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-A382C5fwpKE/UkXk0dvbKbI/AAAAAAAADNA/ioi_-SU5AV0/s1600/2013-09-27-215735_298x43_scrot.png" /></a> <br />Con entrambi i player.<br /><br /><b>Update</b><br />Riguardo a <b>Quodlibet</b>, ho appena scoperto che l'opzione <i>--print-playing</i> supporta come parametro dei <b>tag</b>. La sintassi è piuttosto semplice:<br /><pre class="brush:shell">quodlibet --print-playing "<tag>"<br /></tag></pre>Si possono anche usare più tag, unendoli con una tilde (~): <br /><pre class="brush:shell">quodlibet --print-playing "<tag1>"<br /></tag1></pre>Ad esempio: <br /><pre class="brush:shell; highlight:1">«mattux@artemide:~»$ quodlibet --print-playing "&lt;artist~title&gt;"<br />Fabrizio De André - Il testamento di Tito<br /></artist></pre>Perciò in Conky diventa, molto più semplicemente: <br /><pre class="brush:shell;">${if_running quodlibet}<br />  ${exec quodlibet --print-playing "&lt;artist~title&gt;" }<br />${endif}<br /></artist></pre>
+    </div>
+-->
+  
+<!--
     <h1><a href="/2013/09/25/monitorare-la-connessione-dalla-shell.html">Monitorare la connessione dalla shell</a></h1>
     <p class="author">
       <span class="date">2013-09-25 00:34:00 +0200</span>
@@ -923,52 +999,6 @@
     </div>
 -->
   
-<!--
-    <h1><a href="/2013/02/02/spegnere-il-pc-automaticamente-dopo.html">Spegnere il pc automaticamente dopo l'aggiornamento</a></h1>
-    <p class="author">
-      <span class="date">2013-02-02 16:34:00 +0100</span>
-    </p>
--->
-    <span class="post-meta">Feb 2, 2013</span>
-
-    <h2>
-      <a class="post-link" href="/2013/02/02/spegnere-il-pc-automaticamente-dopo.html">Spegnere il pc automaticamente dopo l'aggiornamento</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-5JHWuezsm7k/UQ0q0MnpSJI/AAAAAAAACGs/SMz5O-ddC64/s1600/update-manager.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="https://lh3.ggpht.com/-5JHWuezsm7k/UQ0q0MnpSJI/AAAAAAAACGs/SMz5O-ddC64/s1600/update-manager.png" /></a></div>Piccola tip che ho scoperto di recente che non tutti conoscono.<br />Sappiamo benissimo che su GNU/Linux possiamo fare gli aggiornamenti quando ci pare e mentre il gestore dei pacchetti lavora noi possiamo continuare a farci bellamente gli affari nostri.<br />Però magari noi vogliamo dare gli aggiornamenti prima di spegnere il pc, perché abbiamo esigenza di poter sfruttare tutta la banda di rete disponibile o perché semplicemente mentre lavoriamo vogliamo che le rotture di scatole tendano a zero, o per qualche altro motivo.<br /><a name='more'></a><br />La soluzione è molto semplice ed il terminale è nostro amico.<br /><br />I comandi non si possono <b>concatenare</b> solo con la pipe, ma anche con un <b>and logico</b> (&amp;&amp;). L'effetto è che il secondo comando verrà eseguito solo se il primo è andato a buon fine.<br /><br />Piccolo esempio: <pre class="brush:shell"><br />$ wget --spider -q http://www.mattux.co.vu &amp;&amp; echo -e "\n\n\nCiao, se mi leggi vuol dire che il comando precedente è stato eseguito"</pre>Quello che fa questa riga di comando è molto semplice:<br /><ul><li>wget controlla (opzione --spider) se esiste l'index di questo blog (ovviamente esiste);</li><li>se e solo se wget è stato lanciato e una volta che wget ha finito, viene eseguito l'output del comando echo.</li></ul><br />Applichiamo questo concetto agli update ed allo spegnimento. <br /><br />Su Debian/Ubuntu diamo qualcosa del tipo: <br /><blockquote># apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; shutdown -h now</blockquote>Su Fedora invece: <br /><blockquote># yum update -y &amp;&amp; poweroff</blockquote><br />Il pc <b>non</b> si spegnerà soltanto nel caso in cui l'update dovesse bloccarsi per qualche problema. Da un lato è male, mentre dall'altro è bene, poiché in caso di mancato spegnimento ci si accorgerebbe immediatamente della cosa ed eventualmente porre rimedio qualora l'update si interrompesse durante l'update dei pacchetti e non semplicemente durante il loro download.<br /><br />Alla prossima :)<br /><br /><span style="font-size: x-small;"><br />Nota: L'<span style="font-size: x-small;">i</span>mmagine del post<span style="font-size: x-small;"> </span>fa parte del set di icone</span> <a class="g-profile" href="http://plus.google.com/116957764483417291271" target="_blank">+AwOken</a>.
-    </div>
--->
-  
-<!--
-    <h1><a href="/2012/12/30/quando-versionlock-ci-risparmia-insulti.html">Quando Versionlock ci risparmia insulti contro Xorg</a></h1>
-    <p class="author">
-      <span class="date">2012-12-30 23:21:00 +0100</span>
-    </p>
--->
-    <span class="post-meta">Dec 30, 2012</span>
-
-    <h2>
-      <a class="post-link" href="/2012/12/30/quando-versionlock-ci-risparmia-insulti.html">Quando Versionlock ci risparmia insulti contro Xorg</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-PdKNepgRspE/UOC8tJ_kEjI/AAAAAAAACAs/CGy99gvOenU/s1600/lock_xorg.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="200" src="http://3.bp.blogspot.com/-PdKNepgRspE/UOC8tJ_kEjI/AAAAAAAACAs/CGy99gvOenU/s200/lock_xorg.png" width="167" /></a></div>Da un po' di tempo a questa parte, mi sono ritrovato, sulla mia adorata Fedora con Xfce, ad essere impossibilitato ad usare certi temi di Xfwm a causa di un fastidioso bug.<br />Inizialmente ho pensato che il bug fosse di Xfwm, ma poi ho scoperto che si tratta di un <a href="https://bugs.freedesktop.org/show_bug.cgi?id=54168" target="_blank">bug di Xorg</a>. Con la versione 1.12.4 nessun problema, mentre con la successiva rilasciata nei repo ecco che il fastidioso bug si presenta.<br />Ho resistito per qualche tempo, ma ad un certo punto mi sono stufato e ho cercato una soluzione.<br /><br /><br /><a name='more'></a><br />Con Xorg &gt; 1.12.4 la situazione è questa:<br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="height: 231px; margin-left: auto; margin-right: auto; text-align: center; width: 158px;"><tbody><tr><td style="text-align: center;"><br /><a href="http://3.bp.blogspot.com/-YrPU72HZRik/UOBFXc8jTmI/AAAAAAAACAM/3PTQwJdd3QA/s1600/Istantanea+-+09122012+-+23:48:32.png" style="margin-left: auto; margin-right: auto;"><img border="0" height="200" src="http://3.bp.blogspot.com/-YrPU72HZRik/UOBFXc8jTmI/AAAAAAAACAM/3PTQwJdd3QA/s320/Istantanea+-+09122012+-+23:48:32.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Screenshot fatto appena mi sono accorto del bug. </td></tr></tbody></table><br />L'unica soluzione che mi è venuta in mente è stata quella di fare un <b>downgrade di Xorg</b>.<br /><pre class="brush:shell"># yum downgrade xorg-x11-server-common xorg-x11-server-Xorg xorg-x11-server-Xephyr xorg-x11-drv-intel<br /></pre>Siccome però al successivo tentativo di update Yum mi avrebbe proposto (giustamente!) gli aggiornamenti di Xorg, dovevo in qualche modo saltarli a priori.<br />Ho perciò fatto ricorso a <b>Versionlock</b>.<br /><br /><h3>Versionlock?</h3>Sì, esatto. È un plugin per Yum che <b>consente di bloccare l'update dei pacchetti</b> che decidiamo noi.<br /><br />Per prima cosa bisogna installarlo:<br /><pre class="brush:shell"># yum install yum-plugin-versionlock</pre>Dopodiché non resta che usarlo. Io voglio impedire gli aggiornamenti dei pacchetti di cui ho fatto un downgrade precedentemente, quindi darò il comando: <br /><pre class="brush:shell"># yum versionlock xorg-x11-drv-intel xorg-x11-server-Xephyr xorg-x11-server-Xorg xorg-x11-server-common</pre>Et voilà, Yum non proporrà più gli aggiornamenti di Xorg :D <br />Riprenderò ad aggiornarlo quando nei repository arriverà una versione che non presenterà questo bug.<br /><br />Ah, giusto, quasi scordavo. Per controllare se ci sono update per i pacchetti "bloccati" basta dare<br /><pre class="brush:shell"># yum check-update --disableplugin=versionlock</pre>oppure <br /><pre class="brush:shell"># yum update --disableplugin=versionlock</pre><br />E finalmente posso tornare ad usare tutti i temi che voglio :D
-    </div>
--->
-  
   </ul>
 
 
@@ -979,7 +1009,7 @@
     
       <a href="/blog/page2/" class="previous">Previous</a>
     
-    <span class="page_number ">Page: 3 of 11</span>
+    <span class="page_number ">Page: 3 of 12</span>
     
       <a href="/blog/page4/" class="next">Next</a>
     
@@ -1035,6 +1065,10 @@
   
     
       <a href="/blog/page11/">11</a>
+    
+  
+    
+      <a href="/blog/page12/">12</a>
     
   
 
@@ -1125,6 +1159,8 @@
           
             
             <a class="page-link" href="/about/">About</a>
+            
+          
             
           
             

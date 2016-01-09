@@ -65,6 +65,8 @@
         
           
         
+          
+        
       </div>
 -->
 
@@ -115,6 +117,8 @@
     
       
     
+      
+    
   </div>
   </div>
 
@@ -133,10 +137,36 @@
 <!--
     
       <li>
-        <span class="post-meta">Jan 7, 2016</span>
+        <span class="post-meta">Jan 9, 2016</span>
 
         <h2>
-          <a class="post-link" href="/2016/01/07/test-code.html">Test syntax highlighting</a>
+          <a class="post-link" href="/2016/01/09/test-code.html">Test syntax highlighting</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jan 9, 2016</span>
+
+        <h2>
+          <a class="post-link" href="/2016/01/09/considerazioni-sui-siti-statici.html">Considerazioni sui siti statici</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jan 9, 2016</span>
+
+        <h2>
+          <a class="post-link" href="/2016/01/09/jekyll-e-sistema-di-commenti.html">Jekyll e i sistemi di commenti</a>
         </h2>
         <p class="post-summary">
           
@@ -855,15 +885,15 @@
   <!-- This loops through the paginated posts -->
   
 <!--
-    <h1><a href="/2016/01/07/test-code.html">Test syntax highlighting</a></h1>
+    <h1><a href="/2016/01/09/test-code.html">Test syntax highlighting</a></h1>
     <p class="author">
-      <span class="date">2016-01-07 23:03:18 +0100</span>
+      <span class="date">2016-01-09 22:47:38 +0100</span>
     </p>
 -->
-    <span class="post-meta">Jan 7, 2016</span>
+    <span class="post-meta">Jan 9, 2016</span>
 
     <h2>
-      <a class="post-link" href="/2016/01/07/test-code.html">Test syntax highlighting</a>
+      <a class="post-link" href="/2016/01/09/test-code.html">Test syntax highlighting</a>
     </h2>
 
     <p class="post-summary">
@@ -875,72 +905,118 @@
     <div class="content">
       <p>Test di prova con del codice</p>
 
-<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c">#  gbach.sh</span>
-<span class="c">#  ver 0.3</span>
-<span class="c">#</span>
-<span class="c">#  Copyright © 2014 mattux &lt;andovais@gmail.com&gt;</span>
-<span class="c">#  This work is free. You can redistribute it and/or modify it under the</span>
-<span class="c">#  terms of the Do What The Fuck You Want To Public License, Version 2,</span>
-<span class="c">#  as published by Sam Hocevar.</span>
-<span class="c">#</span>
-<span class="c">#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE</span>
-<span class="c">#                    Version 2, December 2004</span>
-<span class="c">#</span>
-<span class="c">#  Copyright (C) 2004 Sam Hocevar &lt;sam@hocevar.net&gt;</span>
-<span class="c">#</span>
-<span class="c">#  Everyone is permitted to copy and distribute verbatim or modified</span>
-<span class="c">#  copies of this license document, and changing it is allowed as long</span>
-<span class="c">#  as the name is changed.</span>
-<span class="c">#</span>
-<span class="c">#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE</span>
-<span class="c">#  TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION</span>
-<span class="c">#</span>
-<span class="c">#  0. You just DO WHAT THE FUCK YOU WANT TO.</span>
-<span class="c">#  ---------------------------------------------------------------------</span>
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="code"><pre><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"All'ombra dell'ultimo sole s'era assopito un pescatore e aveva un</span><span class="err">
+</span><span class="s">          solco lungo il viso come una specia di sorriso"</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 
-<span class="c">#! /bin/bash</span>
+    </div>
+-->
+  
+<!--
+    <h1><a href="/2016/01/09/considerazioni-sui-siti-statici.html">Considerazioni sui siti statici</a></h1>
+    <p class="author">
+      <span class="date">2016-01-09 22:47:38 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Jan 9, 2016</span>
 
-<span class="c"># set these to execute the script in non-interactive mode, otherwise</span>
-<span class="c"># it runs in interactive mode.</span>
-<span class="nv">user</span><span class="o">=</span><span class="s2">""</span>;
-<span class="nv">password</span><span class="o">=</span><span class="s2">""</span>;
+    <h2>
+      <a class="post-link" href="/2016/01/09/considerazioni-sui-siti-statici.html">Considerazioni sui siti statici</a>
+    </h2>
 
-<span class="c"># interactive mode</span>
-<span class="k">if</span> <span class="o">[[</span> <span class="nv">$user</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">&amp;&amp;</span> <span class="nv">$password</span> <span class="o">==</span> <span class="s2">""</span> <span class="o">]]</span>;  <span class="k">then
-      </span><span class="nb">echo</span> -e <span class="s2">"</span><span class="se">\n</span><span class="s2">username:"</span>;
-      <span class="nb">read </span>user
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      <p>Un tempo erano i siti statici: niente database, niente Javascript né PHP, né niente di simile, solo semplici ipertesti.</p>
 
-      <span class="nb">echo</span> -e <span class="s2">"</span><span class="se">\n</span><span class="s2">password:"</span>;
-      <span class="nb">read</span> -s password
-<span class="k">fi</span>
+<p>Arrivarono poi i database, Javascript, PHP e i loro simili. E furono i siti dinamici. E con loro i CMS.</p>
 
-<span class="c"># retrieving the email feed</span>
-<span class="c"># donloading the feed | isolating lines that starts with &lt;fullcount&gt; and &lt;title&gt; | removing &lt;/title&gt; | transforming &amp;quote in "</span>
-<span class="nv">email</span><span class="o">=</span><span class="k">$(</span>curl -u <span class="nv">$user</span>:<span class="nv">$password</span> --silent <span class="s2">"https://mail.google.com/mail/feed/atom"</span> | egrep -o <span class="s2">"&lt;fullcount&gt;+[0-9]*&lt;/fullcount&gt;|&lt;title&gt;*[[:alpha:],[:punct:],[:space:],[0-9]{0,100}]*&lt;/title&gt;"</span> |  sed s/<span class="se">\&lt;</span>title<span class="se">\&gt;</span>//g| sed s/<span class="se">\&amp;</span>quot<span class="se">\;</span>/<span class="se">\"</span>/g<span class="k">)</span>;
+<p>(Ok, ho semplificato parecchio)</p>
 
+<p>Oggi, nello sfavillante 2016, fa quasi figo dire:</p>
 
-<span class="nv">n_email</span><span class="o">=</span><span class="s2">"Network problem. I'm not able to retrieve the email feed."</span>;
-<span class="c"># getting the number of undread emails</span>
-<span class="k">if</span> <span class="o">[[</span> <span class="nv">$email</span> !<span class="o">=</span> <span class="s2">""</span> <span class="o">]]</span>;  <span class="k">then
-      </span><span class="nv">n_email</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$email</span> | grep -o <span class="s2">"&lt;fullcount&gt;[0-9]*&lt;/fullcount&gt;"</span> | grep -o <span class="o">[</span>0-9]<span class="k">*)</span>;
-<span class="k">fi
+<blockquote>
+  <p>Io mica ho usato un CMS, l’ho fatto statico.</p>
+</blockquote>
 
-</span><span class="nb">echo</span> -e <span class="s2">"(</span><span class="nv">$n_email</span><span class="s2">)"</span>;
+<p>Ok.</p>
 
-<span class="c"># deleting the number of unread emails (&lt;fullcount&gt;NUMBER&lt;/fullcount)</span>
-<span class="nv">email</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="nv">$email</span> | sed <span class="s1">'s/&lt;fullcount&gt;[0-9]*&lt;\/fullcount&gt;//'</span><span class="k">)</span>;
+<p>I siti statici hanno sostanzialmente due vantaggi:</p>
 
+<ul>
+  <li>meno codice che gira, meno codice exploitabile e quindi sulla carta più sicurezza;</li>
+  <li>pagine generate una volta anziché ogni qualvolta un utente la visita, quindi il sito è più veloce.</li>
+</ul>
 
-<span class="c"># printing the titles of the emails one per line</span>
-<span class="k">if</span> <span class="o">[[</span> <span class="nv">$n_email</span> &gt; 0 <span class="o">]]</span>;  <span class="k">then
-      </span><span class="nb">echo</span> <span class="nv">$email</span> | awk <span class="s1">'BEGIN { RS = "" ; FS = "&lt;/title&gt;" } { for (i = 2; i &lt;= NF-1; i++) print "-",$i }'</span>
-      <span class="c"># uncomment the following line to enable the notify</span>
-      <span class="c">#notify-send "$n_email emails to read!"</span>
-<span class="k">fi
+<p>E grazie al razzo.</p>
 
-</span><span class="nb">exit </span>0;</code></pre></figure>
+<p>Anche i principali svantaggi sono due:</p>
 
+<ul>
+  <li>tipicamente manca una GUI per la gestione del sito;</li>
+  <li>se vuoi, dato che il mondo non è “o bianco o nero”, un po’ di dinamicità (soprattutto lato server) ti pigliano i sensi di colpa, oltre ad eventuali difficoltà tecniche.</li>
+</ul>
+
+<p>Cionondimeno spesso sono la soluzione migliore e siccome <em>“fare un sito statico scrivendo tutto il codice HTML a mano anche no”</em>, sono nati i <strong>generatori di siti statici</strong>.</p>
+
+<p>Come ho già scritto qualche post fa, questo blog usa <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> ed è hostato sulle <a href="https://pages.github.com/" title="Github Pages">Github Pages</a>.
+Una cosa che hanno molto spesso i blog, sono i <strong>commenti</strong> e quando questo blog era su <em>Blogger</em>, ce li aveva mentre ora no. Questo perché il sito è <em>statico</em>, mentre i commenti sono una componente di solito <em>dinamica</em> e che richiede inevitabilmente del codice lato server.</p>
+
+    </div>
+-->
+  
+<!--
+    <h1><a href="/2016/01/09/jekyll-e-sistema-di-commenti.html">Jekyll e i sistemi di commenti</a></h1>
+    <p class="author">
+      <span class="date">2016-01-09 22:47:38 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Jan 9, 2016</span>
+
+    <h2>
+      <a class="post-link" href="/2016/01/09/jekyll-e-sistema-di-commenti.html">Jekyll e i sistemi di commenti</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      <p>Uno dei problemi comuni quando si crea un blog con un <em>generatore di siti statici</em> è integrare un sistema di commenti, che è una funzionalità intrinsecamente <em>dinamica</em>.
+In ogni caso non ho per il momento intenzione di dotare questo blog di commenti, ma spinto dalla curiosità ho considerato alcune opzioni.</p>
+
+<h3 id="disqushttpdisquscom"><a href="http://disqus.com/">Disqus</a></h3>
+<p>È la soluzione più adottata da chi ha un blog Jekyll, ma tutti i dati sono memorizzati sui server Disqus. Purtroppo non è software libero, ma bisogna apprezzarne la comodità.</p>
+
+<h3 id="hashoverhttptildehashcompagehashover"><a href="http://tildehash.com/?page=hashover">HashOver</a></h3>
+<p>Interessante, con un buon numero di <a href="https://github.com/jacobwb/hashover-next#notable-features">funzionalità</a>, ma usa PHP. Github Pages non supporta l’esecuzione di PHP.</p>
+
+<h3 id="issohttpsposativorgisso"><a href="https://posativ.org/isso/">Isso</a></h3>
+<p>Supporta Markdown, usa SQLite e Python. Non male e adatto a siti con piccole quantità di commenti, ma non va nella direzione che interessa a me.</p>
+
+<h3 id="staticcomments-pluginhttptheshedhezmattorgjekyll-static-comments"><a href="http://theshed.hezmatt.org/jekyll-static-comments/">StaticComments plugin</a></h3>
+<p>Ingegnoso. Usa PHP e Ruby. Se ho capito come funziona, bisogna aggiungere una directory <code>_comment</code> atta a contenere dei file con le descrizioni <a href="http://yaml.org/" title="YAML">YAML</a> dei commenti; quando un utente lascia un commento, uno script PHP mi manda una email e, se non è spam, in base al suo contenuto devo generare il file con lo YAML e lanciare uno script Ruby che genera i commenti. È faticoso solo a scriverlo.</p>
+
+<h3 id="sfruttare-lissue-tracker-di-githubhttpivanzuzakinfo20110218github-hosted-comments-for-github-hosted-blogshtml"><a href="http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html">Sfruttare l’issue tracker di GitHub</a></h3>
+<p>A dir poco geniale. Richiede di avere un account di Github per commentare, ma poco male. <a href="https://github.com/izuzak/izuzak.github.com/issues/12#issuecomment-71345363">Qualcuno</a> ha aperto un <a href="https://github.com/wireddown/ghpages-ghcomments">repo apposito</a>. Finora la migliore soluzione che ho visto.</p>
+
+<p>Se mai dovessi inserire un sistema di commenti, potrebbe essere quest’ultimo.</p>
 
     </div>
 -->
@@ -1042,81 +1118,6 @@ Più nel dettaglio, il seminario ha affrontato le ragioni che hanno portato alla
     </div>
 -->
   
-<!--
-    <h1><a href="/2015/10/15/reboot.html">Reboot</a></h1>
-    <p class="author">
-      <span class="date">2015-10-15 00:00:00 +0200</span>
-    </p>
--->
-    <span class="post-meta">Oct 15, 2015</span>
-
-    <h2>
-      <a class="post-link" href="/2015/10/15/reboot.html">Reboot</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <p>Ieri sera ho pubblicato un nuovo post e di notte mi sono dedicato alla personalizzazione del blog. Mi pare dunque giusto fare il punto della situazione.</p>
-
-<p>Le ragioni per cui ho smesso di scrivere sono sostanzialmente due: ho fatto meno “smanettamenti” degni di nota e mi è passata la voglia di scrivere.</p>
-
-<p>Vicessitudini recenti mi hanno però ricordato perché avevo aperto il blog: voglia di condividere quel che facevo e quel poco che sapevo, ché magari quella cosa poteva tornare anche utile a qualcun altro, diventando anche degli appunti da riguardare in caso di necessità.</p>
-
-<p>E quindi eccoci. Scriverò come sempre quando mi girerà, ma credo che scriverò.</p>
-
-<h3 id="aspetti-tecnici">Aspetti tecnici</h3>
-<p>Come ho già detto in altre sedi, ho migrato tutto da <strong>Blogger</strong> a <strong><a href="https://pages.github.com/" title="GitHub Pages">GitHub Pages</a></strong>, chiudendo definitivamente il vecchio.
-Grazie a <strong>GitHub Pages</strong> ho potuto mettere in piedi in poco tempo un blog leggero, minimale e hostato gratuitamente, perché di fatto sta in un repository. Creo in locale un nuovo file per il post, poi <code>commit</code> e <code>push</code>. Facile, semplice, comodo e dal contenutissimo uso di banda.</p>
-
-<p>Il blog non fa uso di un CMS ma di <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>, che è proprio l’engine che sta dietro a GitHub Pages. In poche parole è un <em>generatore di pagine web statiche</em>: io scrivo un post in <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> e lui lo converte automaticamente in pagina HTML. Meraviglioso.</p>
-
-<p>L’unico problema è che a causa della migrazione, nei post importati, i link che referenziano altri post sono rotti perché puntano ai vecchi url. Immagino di dover scrivere uno script per correggerli.
-In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Jekyll+GitHub Pages</em>. Consigliatissima.</p>
-
-<p>Un’altra cosa da fare sarà automatizzare nuovamente la condivisione dei post su Twitter e G+.</p>
-
-<p>Comunque man mano sistemerò tutto.</p>
-
-    </div>
--->
-  
-<!--
-    <h1><a href="/2015/10/14/linux-day-2015-manca-poco.html">Linux Day 2015 - manca poco</a></h1>
-    <p class="author">
-      <span class="date">2015-10-14 00:00:00 +0200</span>
-    </p>
--->
-    <span class="post-meta">Oct 14, 2015</span>
-
-    <h2>
-      <a class="post-link" href="/2015/10/14/linux-day-2015-manca-poco.html">Linux Day 2015 - manca poco</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <p>Ciao!</p>
-
-<p>Scrivo nuovamente sul blog dopo eoni per ricordarvi (e ricordarmi, si sa mai mi scordi) che il 24 Ottobre, cioè tra 10 giorni, si terrà il <strong>Linux Day 2015</strong>.</p>
-
-<p>Vi segnalo in particolare, per ovvi motivi, l’evento di <strong>Cagliari</strong>. Qui, come al solito, <a href="http://linuxday.gulch.it/node/65">la giornata di talk</a> si suddividerà in due tracce: <a href="http://linuxday.gulch.it/node/67" title="Traccia Divulgativa">Divulgativa</a> e <a href="http://linuxday.gulch.it/node/68" title="Traccia Tecnica">Tecnica</a>.</p>
-
-<p>Se siete nei paraggi, vi invito dunque a venire e giusto prima di pranzo (12:20) parleremo assieme di <strong>Graph Database</strong> (o meglio, io parlo e voi fate di sì con la testa facendo finta di ascoltarmi).</p>
-
-<p>Ci vediamo al Linux Day!</p>
-
-    </div>
--->
-  
   </ul>
 
 
@@ -1127,7 +1128,7 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
     
       <span class="previous">Previous</span>
     
-    <span class="page_number ">Page: 1 of 11</span>
+    <span class="page_number ">Page: 1 of 12</span>
     
       <a href="/blog/page2/" class="next">Next</a>
     
@@ -1183,6 +1184,10 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
   
     
       <a href="/blog/page11/">11</a>
+    
+  
+    
+      <a href="/blog/page12/">12</a>
     
   
 
@@ -1273,6 +1278,8 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
           
             
             <a class="page-link" href="/about/">About</a>
+            
+          
             
           
             

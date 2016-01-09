@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Conky - Pragha, Quodlibet e la canzone in riproduzione &middot; Mattux >> log</title>
-  <meta name="description" content="In questo angolo di web, dove scrivo cose sparse, senza badare alla benché minima connessione logica tra i post, oggi vediamo l'argomento Conky.Di recente mi...">
+  <title>Considerazioni sui siti statici &middot; Mattux >> log</title>
+  <meta name="description" content="Un tempo erano i siti statici: niente database, niente Javascript né PHP, né niente di simile, solo semplici ipertesti.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://mattux.github.io/2013/09/27/conky-pragha-quodlibet-e-la-canzone-in.html">
+  <link rel="canonical" href="http://mattux.github.io/2016/01/09/considerazioni-sui-siti-statici.html">
   <link rel="alternate" type="application/rss+xml" title="Mattux >> log" href="http://mattux.github.io/feed.xml" />
 </head>
 
@@ -130,15 +130,49 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Conky - Pragha, Quodlibet e la canzone in riproduzione</h1>
+    <h1 class="post-title">Considerazioni sui siti statici</h1>
 <!--
-    <p class="post-meta">Sep 27, 2013 • Matteo Pani</p>
+    <p class="post-meta">Jan 9, 2016</p>
 -->
-    <p class="post-meta">Sep 27, 2013</p>
+    <p class="post-meta">Jan 9, 2016</p>
   </header>
 
   <article class="post-content">
-    <span id="goog_514458146"></span><span id="goog_514458147"></span>In questo angolo di web, dove scrivo cose sparse, senza badare alla benché minima connessione logica tra i post, oggi vediamo l'argomento <a href="http://conky.sourceforge.net/" target="_blank">Conky</a>.<br />Di recente mi sono interessato in particolare alla visualizzazione di artista e titolo della canzone in riproduzione. Ho trovato una soluzione, un po' artigianale (e che non richiede plugin esterni), per <b>Pragha</b> e <b>Quodlibet</b>.<br /><br /><h3>L'idea di fondo</h3>Entrambi i player possono essere lanciati da terminale con una particolare opzione, che mostra lo stato di riproduzione.<br /><br /><b>Pragha</b><br /><pre class="brush:shell; highlight: 1">«mattux@artemide:~»$ pragha -c<br />state: Playing<br />file: /home/mattux/Musica/Fabrizio De André (1967-2003)/1999 - In concerto Live/09 - Il testamento di Tito.mp3<br />title: Il testamento di Tito<br />artist: Fabrizio De André<br />album: In Concerto<br />genre: Other<br />year: 1999<br />track_no: 9<br />comment: <br />length: 498<br />bitrate: 252<br />channels: 2<br />samplerate: 44100 </pre><br /><b>Quodlibet</b><br /><pre class="brush:shell; highlight: 1">«mattux@artemide:~»$ quodlibet --print-playing<br />Fabrizio De André - In Concerto - 9 - Il testamento di Tito<br /></pre>L'idea di fondo è filtrare l'output di questi comandi e visualizzare solo quello che ci interessa, cioè <b>Artista - Titolo</b>.<br /><br /><h3>Pragha</h3>Estrapoliamo l'artista: <br /><pre class="brush:shell;">pragha -c | grep artist | sed s/artist://<br /></pre>Estrapoliamo il titolo della canzone: <br /><pre class="brush:shell;">pragha -c | grep title | sed s/title://<br /></pre>In sostanza quello che stiamo facendo è dire a <i>grep</i> di selezionare solo la riga contenete la parola "<i>artist</i>" e a <i>sed</i> di eliminare, da quella riga, la stringa "<i>artist:</i>". <br />Per il titolo della canzone agiamo in maniera analoga.<br /><br />E in Conky come lo inseriamo? Così:<br /><pre class="brush:shell;">${if_running pragha}<br />  ${exec pragha -c | grep artist | sed s/artist://} -${exec pragha -c | grep title | sed s/title://}<br />${endif}<br /></pre>Possiamo anche inserire un controllo per fare eseguire il comando a Conky soltanto se il player è in esecuzione.<br /><br /><h3>Quodlibet</h3><b>nota:</b> <u>In fondo al post (paragrafo "update" ) ho aggiunto un modo più semplice. Questo metodo rimane comunque valido.</u><br /><br />Possiamo estrapolare tutto con un solo comando: <br /><pre class="brush:shell;">quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $1,$4 }'<br /></pre>Il problema è il trattino da visualizzare a schermo, che io onestamente non saprei come inserire in un comando del genere. Perciò... <br /><br />Estrapoliamo l'artista: <br /><pre class="brush:shell;">quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $1 }'<br /></pre>Estrapoliamo il titolo della canzone: <br /><pre class="brush:shell;">quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $4 }'<br /></pre>Qui ci stiamo affidando ad <i>awk</i>, facendogli stampare rispettivamente la prima e la quarta colonna, usando il trattino come separatore (FS = " - "). <br /><br />In Conky diventa: <br /><pre class="brush:shell;">${if_running quodlibet}<br />  ${exec quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $1 }'} - ${exec quodlibet --print-playing | awk 'BEGIN { FS = " - " } ; { print $4 }' }<br />${endif}<br /></pre><br /><h3>Il risultato</h3>Se non abbiamo sbagliato nulla, a schermo dovremmo avere qualcosa del tipo<br /><a href="http://3.bp.blogspot.com/-A382C5fwpKE/UkXk0dvbKbI/AAAAAAAADNA/ioi_-SU5AV0/s1600/2013-09-27-215735_298x43_scrot.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-A382C5fwpKE/UkXk0dvbKbI/AAAAAAAADNA/ioi_-SU5AV0/s1600/2013-09-27-215735_298x43_scrot.png" /></a> <br />Con entrambi i player.<br /><br /><b>Update</b><br />Riguardo a <b>Quodlibet</b>, ho appena scoperto che l'opzione <i>--print-playing</i> supporta come parametro dei <b>tag</b>. La sintassi è piuttosto semplice:<br /><pre class="brush:shell">quodlibet --print-playing "<tag>"<br /></tag></pre>Si possono anche usare più tag, unendoli con una tilde (~): <br /><pre class="brush:shell">quodlibet --print-playing "<tag1>"<br /></tag1></pre>Ad esempio: <br /><pre class="brush:shell; highlight:1">«mattux@artemide:~»$ quodlibet --print-playing "&lt;artist~title&gt;"<br />Fabrizio De André - Il testamento di Tito<br /></artist></pre>Perciò in Conky diventa, molto più semplicemente: <br /><pre class="brush:shell;">${if_running quodlibet}<br />  ${exec quodlibet --print-playing "&lt;artist~title&gt;" }<br />${endif}<br /></artist></pre>
+    <p>Un tempo erano i siti statici: niente database, niente Javascript né PHP, né niente di simile, solo semplici ipertesti.</p>
+
+<p>Arrivarono poi i database, Javascript, PHP e i loro simili. E furono i siti dinamici. E con loro i CMS.</p>
+
+<p>(Ok, ho semplificato parecchio)</p>
+
+<p>Oggi, nello sfavillante 2016, fa quasi figo dire:</p>
+
+<blockquote>
+  <p>Io mica ho usato un CMS, l’ho fatto statico.</p>
+</blockquote>
+
+<p>Ok.</p>
+
+<p>I siti statici hanno sostanzialmente due vantaggi:</p>
+
+<ul>
+  <li>meno codice che gira, meno codice exploitabile e quindi sulla carta più sicurezza;</li>
+  <li>pagine generate una volta anziché ogni qualvolta un utente la visita, quindi il sito è più veloce.</li>
+</ul>
+
+<p>E grazie al razzo.</p>
+
+<p>Anche i principali svantaggi sono due:</p>
+
+<ul>
+  <li>tipicamente manca una GUI per la gestione del sito;</li>
+  <li>se vuoi, dato che il mondo non è “o bianco o nero”, un po’ di dinamicità (soprattutto lato server) ti pigliano i sensi di colpa, oltre ad eventuali difficoltà tecniche.</li>
+</ul>
+
+<p>Cionondimeno spesso sono la soluzione migliore e siccome <em>“fare un sito statico scrivendo tutto il codice HTML a mano anche no”</em>, sono nati i <strong>generatori di siti statici</strong>.</p>
+
+<p>Come ho già scritto qualche post fa, questo blog usa <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a> ed è hostato sulle <a href="https://pages.github.com/" title="Github Pages">Github Pages</a>.
+Una cosa che hanno molto spesso i blog, sono i <strong>commenti</strong> e quando questo blog era su <em>Blogger</em>, ce li aveva mentre ora no. Questo perché il sito è <em>statico</em>, mentre i commenti sono una componente di solito <em>dinamica</em> e che richiede inevitabilmente del codice lato server.</p>
+
   </article>
 
 </div>

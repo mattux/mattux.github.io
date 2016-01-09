@@ -65,6 +65,8 @@
         
           
         
+          
+        
       </div>
 -->
 
@@ -115,6 +117,8 @@
     
       
     
+      
+    
   </div>
   </div>
 
@@ -133,10 +137,36 @@
 <!--
     
       <li>
-        <span class="post-meta">Jan 7, 2016</span>
+        <span class="post-meta">Jan 9, 2016</span>
 
         <h2>
-          <a class="post-link" href="/2016/01/07/test-code.html">Test syntax highlighting</a>
+          <a class="post-link" href="/2016/01/09/test-code.html">Test syntax highlighting</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jan 9, 2016</span>
+
+        <h2>
+          <a class="post-link" href="/2016/01/09/considerazioni-sui-siti-statici.html">Considerazioni sui siti statici</a>
+        </h2>
+        <p class="post-summary">
+          
+            
+          
+        </p>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jan 9, 2016</span>
+
+        <h2>
+          <a class="post-link" href="/2016/01/09/jekyll-e-sistema-di-commenti.html">Jekyll e i sistemi di commenti</a>
         </h2>
         <p class="post-summary">
           
@@ -855,6 +885,52 @@
   <!-- This loops through the paginated posts -->
   
 <!--
+    <h1><a href="/2010/12/16/integrazione-gtk-in-kde-forse-stavolta.html">Integrazione GTK in KDE, forse stavolta ci siamo davvero</a></h1>
+    <p class="author">
+      <span class="date">2010-12-16 15:36:00 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Dec 16, 2010</span>
+
+    <h2>
+      <a class="post-link" href="/2010/12/16/integrazione-gtk-in-kde-forse-stavolta.html">Integrazione GTK in KDE, forse stavolta ci siamo davvero</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      Torniamo a parlare dell'integrazione delle applicazioni che utilizzano le librerie grafiche GTK in KDE. Avevamo trovato una buona <a href="http://mattuxblog.blogspot.com/2010/10/le-applicazioni-gtk-in-kde.html">soluzione</a>, ma grazie al blog "Pc fai da thé" <a href="http://www.pcfaidate.com/2010/12/installiamo-il-nuovo-oxygen-engine-per.html">ho scoperto</a> che forse abbiamo trovato quella definitiva e per questo dobbiamo ringraziare il team di...KDE O_o<br /><a name='more'></a><br />Eh sì, il team del draghetto ha realizzato un engine GTK, che possiamo anche usare per esempio su GNOME.<br />Ecco come si presenta sul mio pc GIMP:<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/_c9tXAWBZ8s4/TQn9pNFLYPI/AAAAAAAAAEI/es-5Xd4bOsU/s1600/gimp+gtk-qt.png" style="margin-left: auto; margin-right: auto;"><img border="0" height="241" src="http://2.bp.blogspot.com/_c9tXAWBZ8s4/TQn9pNFLYPI/AAAAAAAAAEI/es-5Xd4bOsU/s320/gimp+gtk-qt.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">si integra quasi alla perfezione *-*</td><td class="tr-caption" style="text-align: center;"><br /></td></tr></tbody></table><br />Hanno fatto veramente un ottimo lavoro. Ogni mese ci sarà un rilascio di <i>bug fixing</i>, mentre ogni 6 mesi avremo un rilascio di <i>major-feature</i>.<br /><br />Vediamone l'installazione o meglio, la compilazione.<br /><br />Da <a href="http://download.kde.org/download.php?url=stable/oxygen-gtk/1.0.0/src/oxygen-gtk-1.0.0.tar.bz2">questa pagina</a> scarichiamo il pacchetto .bz2, dopodichè lo scompattiamo e poi apriamo il terminale, posizionandoci nella directory in cui abbiamo scompattato il file.<br />Quindi, digitiamo questi comandi uno alla volta:<br /><blockquote>cd oxygen-gtk<br />mkdir build<br />cd build<br />cmake ../<br />make -j2<br />sudo make install</blockquote><br />Note riguardanti la procedura:<br /><ul><li>se usando <b>cmake</b> da solo non otteniamo il risultato sperato possiamo risolvere così:</li></ul><blockquote>cmake -DCMAKE_INSTALL_PREFIX=`pkg-config --variable=prefix gtk+-2.0` ../</blockquote><ul><li>&nbsp;se usiamo un sistema a <b>64bit</b> è necessario dare <b>cmake</b> così:</li></ul><blockquote>cmake -DLIB_SUFFIX=64 ../</blockquote><br />Sul blog di Hugo Pareira <a href="http://hugo-kde.blogspot.com/2010/11/oxygen-gtk.html">tutte le info</a> a riguardo.
+    </div>
+-->
+  
+<!--
+    <h1><a href="/2010/12/12/un-mese-di-fedora-14.html">Un mese di Fedora 14</a></h1>
+    <p class="author">
+      <span class="date">2010-12-12 22:29:00 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Dec 12, 2010</span>
+
+    <h2>
+      <a class="post-link" href="/2010/12/12/un-mese-di-fedora-14.html">Un mese di Fedora 14</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      In realtà avrei voluto recensire Fedora 14 GNOME a pochissimi giorni dalla sua uscita, ma per una cosa o per l'altra non ne ho avuto l'occasione, per cui ho deciso di imbrattare questo blog con un resoconto veloce (e per nulla approfondito) della convivenza con essa a distanza di un mese circa :)<br /><a name='more'></a><br /><br /><h3>Da dove partiamo? Beh, dall'installazione ovvio.</h3>Velocissima, sul mio portatile la fase di copia dei file sull'hd è durata appena 4 minuti. Il tool di installazione lo vedo sufficentemente semplice (non che sia idiot-proof, intendiamoci) e non ho notato differenze con quella della release precedente.<br /><br />Come guide per l'installazione consiglio <a href="http://www.ealmuno.com/2010/11/04/installare-fedora-14-%E2%80%93-parte-13/">questa</a> e se abbiamo un eee-pc o comunque un netbook, <a href="http://linux4netbook.blogspot.com/2010/11/guida-allinstallazione-di-fedora-14-su.html">questa.</a><br /><br /><h3>Che mi trovo al primo avvio?</h3>Un desktop pulito, gradevole alla vista, praticamente uno GNOME standard.<br />Se cerchiamo GIMP e OpenOffice e non li troviamo, non è necessario prenotare una visita oculistica, non ci sono proprio. Un'altra cosa che manca e che quando uso GNOME voglio fortissimamente voglio è il gconf-editor, che quantomeno mi consente di configurarmi il desktop in maniera <i>quasi</i> umana.<br /><br /><i>Nota che non c'entra un piffero col post</i>: da quasi due settimane ho rimosso il "piedone" e sto usando con grande soddisfazione XFCE (il "topo") :D<br /><br /><h3>Yum, gustoso gestore di pacchetti</h3>Leggo in giro per il web che Yum è lento, che non è sto granché eccetera...sinceramente dissento. Partiamo col dire che Fedora utilizza al posto dei deb, gli rpm, che sono un po' più evoluti (non mi addentro nei dettagli), aggiungiamoci che quando diamo un semplice <i>yum install</i> viene aggiornato l'elenco dei pacchetti, scaricati i suddetti, successivamente un test per scongiurare disastri e infine avviene l'installazione vera e propria.<br />In più, in fase di aggiornamento, sfrutta i cosiddetti <i>delta rpm</i>, che sono dei pacchetti particolari che contengono solo le variazioni tra il pacchetto "nuovo" e quello installato, facendo poi un rebuild del pacchetto. È in grado così di ridurre la dimensione del download sensibilmente, anche il 70% di dati in meno (a me sono capitati anche situazioni con riduzioni del download più alte, anche del 90-95%, ma sono casi rari).<br />Capite quindi che è più lento per esempio di apt anche perché fa più cose, ma nonostante tutto non sbaglia un colpo :D <br /><br />Il front-end grafico incluso nella versione GNOME fa pietà comunque, consiglio l'ottimo <i>Yumex</i>.<br /><br /><h3>Driver Nvidia, ahi ahi ahi</h3>Dunque, il mio portatile monta una Nvidia e Fedora è dotata dei famosi driver opensource Nouveau. Ma per sfruttare meglio la scheda, ho installato i driver proprietari seguendo la <a href="http://www.fedoraonline.it/modules/smartsection/item.php?itemid=266&amp;keywords=installazione+driver+nvidia">guida di fedoraonline</a> riscontrando però un po' di problemi (non mi caricava alcuni moduli e i driver non mi funzionavano a dovere): ho perciò deciso di usare quelli open, installandomi anche il pacchetto per abilitare il 3d. Hanno prestazioni nettamente inferiori ai proprietari ma per l'uso che ne faccio vanno alla grande! Compiz per esempio, va che è un bellezza.<br /><br /><h3>Concludendo...</h3>Ottima. Mi ci sto trovando benissimo, ha riconosciuto praticamente tutto l'hardware del mio portatile senza problemi e tutto funziona a dovere. Non la considero una distribuzione "difficile", ma nemmeno a prova di Homer Simpson. Secondo me con almeno 6 mesi / 1 anno di utilizzo di Ubuntu o Mandriva come prima distribuzione (giusto per citarne due che reputo più user friendly) il passaggio è in sostanza, indolore.
+    </div>
+-->
+  
+<!--
     <h1><a href="/2010/12/07/pdfjam-gruppo-di-script-per-i-pdf.html">PDFjam: gruppo di script per i pdf</a></h1>
     <p class="author">
       <span class="date">2010-12-07 15:47:00 +0100</span>
@@ -923,52 +999,6 @@
     </div>
 -->
   
-<!--
-    <h1><a href="/2010/10/16/le-applicazioni-gtk-in-kde.html">"Oxygeniamo" le applicazioni gtk in KDE</a></h1>
-    <p class="author">
-      <span class="date">2010-10-16 13:09:00 +0200</span>
-    </p>
--->
-    <span class="post-meta">Oct 16, 2010</span>
-
-    <h2>
-      <a class="post-link" href="/2010/10/16/le-applicazioni-gtk-in-kde.html">"Oxygeniamo" le applicazioni gtk in KDE</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <div xmlns="http://www.w3.org/1999/xhtml">Le applicazioni GTK (come GIMP, Pidgin, Firefox, ecc) eseguite su KDE non sono integrate graficamente nell'ambiente desktop. Per chi non cerca questa integrazione a tutti i costi non è un problema, però effetivamente vedere applicazioni come GIMP e Firefox in KDE eseguite affianco a che ne so, Blogilo e Amarok per esempio non è esattamente uno spettacolo per gli occhi.<br /><br /><a name='more'></a>Di "soluzioni" ce ne sarebbero ma quella che secondo me rende meglio è quella realizzata da un utente di <a href="http://kde-look.org/" target="_blank" title="kde-look.org">kde-look.org</a>. In sostanza il suo è, come recita la sua descrizione sul sito, un engine che usa Qt/Oxygen per disegnare i widget. <br />Vi rimando alla pagina del sito in cui trovate il download e le istruzioni per l'installazione.<br /><br /><a href="http://kde-look.org/content/show.php/gtk-oxygen-engine?content=129715" target="_blank" title="[LINK]">[LINK]</a><br /><br />Nota per chi usa Fedora: assicuratevi di avere installato il pacchetto <b>gtk2-devel</b>. <br />Buona "Oxygenazione" :D</div>
-    </div>
--->
-  
-<!--
-    <h1><a href="/2010/09/22/rimanere-aggiornati-con-cloudsn.html">Rimanere aggiornati con CloudSN</a></h1>
-    <p class="author">
-      <span class="date">2010-09-22 15:52:00 +0200</span>
-    </p>
--->
-    <span class="post-meta">Sep 22, 2010</span>
-
-    <h2>
-      <a class="post-link" href="/2010/09/22/rimanere-aggiornati-con-cloudsn.html">Rimanere aggiornati con CloudSN</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      Chi di noi non è abbonato a un certo numero di feed rss e&nbsp; scambia  giornalmente o comunque spessissimo email? Ammettendo che usiamo  appoggiarci a piattaforme web per questo, andare ogni tanto sul sito per  vedere se ci sono novità è un po' una scocciatura, ma un piccolo tool  per il desktop GNOME che ci risparmi la seccatura c'è e si chiama <b>CloudSN</b>.<br /><a name='more'></a><br />Vi spiego la mia situazione. Avendo 2 pc, ho deciso per leggere i feed rss dei miei siti preferiti di usare <a href="http://www.google.com/reader/">Google Reader</a>,  ma non avendo trovato un client desktop dedicato mi sono messo alla  ricerca di un qualche tool per notificarmi la presenza di nuovi feed e  sono capitato in <a href="http://forum.ubuntu-it.org/index.php?topic=393436.0">questa</a> discussione sul forum di ubuntu-it. Ma andiamo alla ciccia. <br />Grazie a questo programmino possiamo venire notificati di aggiornamenti relativi a <b>feed rss</b>, <b>Twitter</b>, <b>Identi.ca</b>, <b>Google Reader</b>, <b>email</b> (pop3 e imap) e <b>GMail</b>.  Una volta installato comparirà una iconcina nel pannello di  sistema ma sa anche integrarsi nell'applet con gli indicators (utile se  usiamo Ubuntu).<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><img border="0" height="320" src="http://3.bp.blogspot.com/_c9tXAWBZ8s4/TJn7TvlUZhI/AAAAAAAAACg/Ox-tE8dMAkg/s320/cloudsn-indicators.png" style="margin-left: auto; margin-right: auto;" width="247" /></td></tr><tr><td class="tr-caption" style="text-align: center;">CloudSN come indicator :D</td><td class="tr-caption" style="text-align: center;"><br /></td></tr></tbody></table><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_c9tXAWBZ8s4/TJn7TvlUZhI/AAAAAAAAACg/Ox-tE8dMAkg/s1600/cloudsn-indicators.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"></a></div><br />Per installarlo su Ubuntu apriamo il terminale e procediamo all'installazione scrivendo questi comandi uno alla volta:<br /><blockquote><pre style="display: inline; margin-top: 0pt;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">sudo add-apt-repository ppa:chuchiperriman/cloudsn<br />sudo apt-get update<br />sudo apt-get install cloudsn </span></pre></blockquote>Infine lo avviamo e lo configuriamo secondo le nostre esigenze :)<br /><br />Ah, se sapete come installarlo su altre distro, scrivetelo nei commenti e aggiornerò il post ;)
-    </div>
--->
-  
   </ul>
 
 
@@ -979,7 +1009,7 @@
     
       <a href="/blog/page9/" class="previous">Previous</a>
     
-    <span class="page_number ">Page: 10 of 11</span>
+    <span class="page_number ">Page: 10 of 12</span>
     
       <a href="/blog/page11/" class="next">Next</a>
     
@@ -1035,6 +1065,10 @@
   
     
       <a href="/blog/page11/">11</a>
+    
+  
+    
+      <a href="/blog/page12/">12</a>
     
   
 
@@ -1125,6 +1159,8 @@
           
             
             <a class="page-link" href="/about/">About</a>
+            
+          
             
           
             
