@@ -5,8 +5,8 @@
     <description>Confondersi tra Halloween e Natale perché 31oct = 25dec</description>
     <link>http://mattux.github.io/</link>
     <atom:link href="http://mattux.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 09 Jan 2016 22:47:38 +0100</pubDate>
-    <lastBuildDate>Sat, 09 Jan 2016 22:47:38 +0100</lastBuildDate>
+    <pubDate>Wed, 13 Jan 2016 16:56:06 +0100</pubDate>
+    <lastBuildDate>Wed, 13 Jan 2016 16:56:06 +0100</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -27,9 +27,9 @@
 &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-        <pubDate>Sat, 09 Jan 2016 22:47:38 +0100</pubDate>
-        <link>http://mattux.github.io/2016/01/09/test-code.html</link>
-        <guid isPermaLink="true">http://mattux.github.io/2016/01/09/test-code.html</guid>
+        <pubDate>Wed, 13 Jan 2016 16:56:06 +0100</pubDate>
+        <link>http://mattux.github.io/2016/01/13/test-code.html</link>
+        <guid isPermaLink="true">http://mattux.github.io/2016/01/13/test-code.html</guid>
         
         <category>coding</category>
         
@@ -73,9 +73,9 @@
 &lt;p&gt;Come ho già scritto qualche post fa, questo blog usa &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; ed è hostato sulle &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;Github Pages&quot;&gt;Github Pages&lt;/a&gt;.
 Una cosa che hanno molto spesso i blog, sono i &lt;strong&gt;commenti&lt;/strong&gt; e quando questo blog era su &lt;em&gt;Blogger&lt;/em&gt;, ce li aveva mentre ora no. Questo perché il sito è &lt;em&gt;statico&lt;/em&gt;, mentre i commenti sono una componente di solito &lt;em&gt;dinamica&lt;/em&gt; e che richiede inevitabilmente del codice lato server.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 09 Jan 2016 22:47:38 +0100</pubDate>
-        <link>http://mattux.github.io/2016/01/09/considerazioni-sui-siti-statici.html</link>
-        <guid isPermaLink="true">http://mattux.github.io/2016/01/09/considerazioni-sui-siti-statici.html</guid>
+        <pubDate>Wed, 13 Jan 2016 16:56:06 +0100</pubDate>
+        <link>http://mattux.github.io/2016/01/13/considerazioni-sui-siti-statici.html</link>
+        <guid isPermaLink="true">http://mattux.github.io/2016/01/13/considerazioni-sui-siti-statici.html</guid>
         
         <category>web</category>
         
@@ -88,29 +88,30 @@ Una cosa che hanno molto spesso i blog, sono i &lt;strong&gt;commenti&lt;/strong
     
       <item>
         <title>Jekyll e i sistemi di commenti</title>
-        <description>&lt;p&gt;Uno dei problemi comuni quando si crea un blog con un &lt;em&gt;generatore di siti statici&lt;/em&gt; è integrare un sistema di commenti, che è una funzionalità intrinsecamente &lt;em&gt;dinamica&lt;/em&gt;.
-In ogni caso non ho per il momento intenzione di dotare questo blog di commenti, ma spinto dalla curiosità ho considerato alcune opzioni.&lt;/p&gt;
+        <description>&lt;p&gt;In un blog i commenti costituiscono una componente che ha un peso non trascurabile. I CMS tipicamente offrono &lt;em&gt;out of the box&lt;/em&gt; un sistema di commenti, mentre i generatori di siti &lt;strong&gt;statici&lt;/strong&gt; come &lt;em&gt;Jekyll&lt;/em&gt; solitamente ne sono sprovvisti, essendo una funzionalità per sua natura &lt;strong&gt;dinamica&lt;/strong&gt; (anche se con un po’ di inventiva si possono generare in maniera statica). Integrarne uno diventa quindi un problema perché è necessario l’utilizzo di codice dedicato e bisogna memorizzare i dati relativi ai commenti stessi.
+Non scordiamoci poi la gestione dello &lt;em&gt;spam&lt;/em&gt;.
+Anche se qui non ho per il momento intenzione di usarne uno, spinto dalla curiosità ho considerato alcune opzioni.&lt;/p&gt;
 
 &lt;h3 id=&quot;disqushttpdisquscom&quot;&gt;&lt;a href=&quot;http://disqus.com/&quot;&gt;Disqus&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;È la soluzione più adottata da chi ha un blog Jekyll, ma tutti i dati sono memorizzati sui server Disqus. Purtroppo non è software libero, ma bisogna apprezzarne la comodità.&lt;/p&gt;
+&lt;p&gt;È la soluzione più adottata da chi ha un blog Jekyll. Tutti i dati sono memorizzati sui server Disqus. Purtroppo non è software libero, ma è la maniera più comoda.&lt;/p&gt;
 
 &lt;h3 id=&quot;hashoverhttptildehashcompagehashover&quot;&gt;&lt;a href=&quot;http://tildehash.com/?page=hashover&quot;&gt;HashOver&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Interessante, con un buon numero di &lt;a href=&quot;https://github.com/jacobwb/hashover-next#notable-features&quot;&gt;funzionalità&lt;/a&gt;, ma usa PHP. Github Pages non supporta l’esecuzione di PHP.&lt;/p&gt;
 
 &lt;h3 id=&quot;issohttpsposativorgisso&quot;&gt;&lt;a href=&quot;https://posativ.org/isso/&quot;&gt;Isso&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Supporta Markdown, usa SQLite e Python. Non male e adatto a siti con piccole quantità di commenti, ma non va nella direzione che interessa a me.&lt;/p&gt;
+&lt;p&gt;Supporta Markdown, usa SQLite e Python. Non male e adatto a siti con piccole quantità di commenti, ma non va nella direzione che interessa a me. E inoltre, se Pages non supporta PHP, figuriamoci se supporta qualche tipo di database o Python.&lt;/p&gt;
 
 &lt;h3 id=&quot;staticcomments-pluginhttptheshedhezmattorgjekyll-static-comments&quot;&gt;&lt;a href=&quot;http://theshed.hezmatt.org/jekyll-static-comments/&quot;&gt;StaticComments plugin&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Ingegnoso. Usa PHP e Ruby. Se ho capito come funziona, bisogna aggiungere una directory &lt;code&gt;_comment&lt;/code&gt; atta a contenere dei file con le descrizioni &lt;a href=&quot;http://yaml.org/&quot; title=&quot;YAML&quot;&gt;YAML&lt;/a&gt; dei commenti; quando un utente lascia un commento, uno script PHP mi manda una email e, se non è spam, in base al suo contenuto devo generare il file con lo YAML e lanciare uno script Ruby che genera i commenti. È faticoso solo a scriverlo.&lt;/p&gt;
+&lt;p&gt;Ingegnosa soluzione per avere un sistema di commenti statico. Usa PHP e Ruby. Se ho capito come funziona, bisogna aggiungere una directory &lt;code&gt;_comment&lt;/code&gt; atta a contenere dei file con le descrizioni &lt;a href=&quot;http://yaml.org/&quot; title=&quot;YAML&quot;&gt;YAML&lt;/a&gt; dei commenti; quando un utente lascia un commento, uno script PHP mi manda una email e, se non è spam, in base al suo contenuto devo generare il file con lo YAML e lanciare uno script Ruby che genera i commenti. Applicabile solo se non sei pigro e hai un bassissimo volume di commenti.&lt;/p&gt;
 
 &lt;h3 id=&quot;sfruttare-lissue-tracker-di-githubhttpivanzuzakinfo20110218github-hosted-comments-for-github-hosted-blogshtml&quot;&gt;&lt;a href=&quot;http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html&quot;&gt;Sfruttare l’issue tracker di GitHub&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;A dir poco geniale. Richiede di avere un account di Github per commentare, ma poco male. &lt;a href=&quot;https://github.com/izuzak/izuzak.github.com/issues/12#issuecomment-71345363&quot;&gt;Qualcuno&lt;/a&gt; ha aperto un &lt;a href=&quot;https://github.com/wireddown/ghpages-ghcomments&quot;&gt;repo apposito&lt;/a&gt;. Finora la migliore soluzione che ho visto.&lt;/p&gt;
 
-&lt;p&gt;Se mai dovessi inserire un sistema di commenti, potrebbe essere quest’ultimo.&lt;/p&gt;
+&lt;p&gt;Se mai dovessi dotare il blog di un sistema di commenti, potrebbe essere quest’ultimo oppure, non proprio entusiasticamente, Disqus.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 09 Jan 2016 22:47:38 +0100</pubDate>
-        <link>http://mattux.github.io/2016/01/09/jekyll-e-sistema-di-commenti.html</link>
-        <guid isPermaLink="true">http://mattux.github.io/2016/01/09/jekyll-e-sistema-di-commenti.html</guid>
+        <pubDate>Wed, 13 Jan 2016 00:00:00 +0100</pubDate>
+        <link>http://mattux.github.io/2016/01/13/jekyll-e-i-sistemi-di-commenti.html</link>
+        <guid isPermaLink="true">http://mattux.github.io/2016/01/13/jekyll-e-i-sistemi-di-commenti.html</guid>
         
         <category>jekyll</category>
         

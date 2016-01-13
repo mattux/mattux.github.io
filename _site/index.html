@@ -137,10 +137,10 @@
 <!--
     
       <li>
-        <span class="post-meta">Jan 9, 2016</span>
+        <span class="post-meta">Jan 13, 2016</span>
 
         <h2>
-          <a class="post-link" href="/2016/01/09/test-code.html">Test syntax highlighting</a>
+          <a class="post-link" href="/2016/01/13/test-code.html">Test syntax highlighting</a>
         </h2>
         <p class="post-summary">
           
@@ -150,10 +150,10 @@
       </li>
     
       <li>
-        <span class="post-meta">Jan 9, 2016</span>
+        <span class="post-meta">Jan 13, 2016</span>
 
         <h2>
-          <a class="post-link" href="/2016/01/09/considerazioni-sui-siti-statici.html">Considerazioni sui siti statici</a>
+          <a class="post-link" href="/2016/01/13/considerazioni-sui-siti-statici.html">Considerazioni sui siti statici</a>
         </h2>
         <p class="post-summary">
           
@@ -163,10 +163,10 @@
       </li>
     
       <li>
-        <span class="post-meta">Jan 9, 2016</span>
+        <span class="post-meta">Jan 13, 2016</span>
 
         <h2>
-          <a class="post-link" href="/2016/01/09/jekyll-e-sistema-di-commenti.html">Jekyll e i sistemi di commenti</a>
+          <a class="post-link" href="/2016/01/13/jekyll-e-i-sistemi-di-commenti.html">Jekyll e i sistemi di commenti</a>
         </h2>
         <p class="post-summary">
           
@@ -885,15 +885,15 @@
   <!-- This loops through the paginated posts -->
   
 <!--
-    <h1><a href="/2016/01/09/test-code.html">Test syntax highlighting</a></h1>
+    <h1><a href="/2016/01/13/test-code.html">Test syntax highlighting</a></h1>
     <p class="author">
-      <span class="date">2016-01-09 22:47:38 +0100</span>
+      <span class="date">2016-01-13 16:56:06 +0100</span>
     </p>
 -->
-    <span class="post-meta">Jan 9, 2016</span>
+    <span class="post-meta">Jan 13, 2016</span>
 
     <h2>
-      <a class="post-link" href="/2016/01/09/test-code.html">Test syntax highlighting</a>
+      <a class="post-link" href="/2016/01/13/test-code.html">Test syntax highlighting</a>
     </h2>
 
     <p class="post-summary">
@@ -923,15 +923,15 @@
 -->
   
 <!--
-    <h1><a href="/2016/01/09/considerazioni-sui-siti-statici.html">Considerazioni sui siti statici</a></h1>
+    <h1><a href="/2016/01/13/considerazioni-sui-siti-statici.html">Considerazioni sui siti statici</a></h1>
     <p class="author">
-      <span class="date">2016-01-09 22:47:38 +0100</span>
+      <span class="date">2016-01-13 16:56:06 +0100</span>
     </p>
 -->
-    <span class="post-meta">Jan 9, 2016</span>
+    <span class="post-meta">Jan 13, 2016</span>
 
     <h2>
-      <a class="post-link" href="/2016/01/09/considerazioni-sui-siti-statici.html">Considerazioni sui siti statici</a>
+      <a class="post-link" href="/2016/01/13/considerazioni-sui-siti-statici.html">Considerazioni sui siti statici</a>
     </h2>
 
     <p class="post-summary">
@@ -980,15 +980,15 @@ Una cosa che hanno molto spesso i blog, sono i <strong>commenti</strong> e quand
 -->
   
 <!--
-    <h1><a href="/2016/01/09/jekyll-e-sistema-di-commenti.html">Jekyll e i sistemi di commenti</a></h1>
+    <h1><a href="/2016/01/13/jekyll-e-i-sistemi-di-commenti.html">Jekyll e i sistemi di commenti</a></h1>
     <p class="author">
-      <span class="date">2016-01-09 22:47:38 +0100</span>
+      <span class="date">2016-01-13 00:00:00 +0100</span>
     </p>
 -->
-    <span class="post-meta">Jan 9, 2016</span>
+    <span class="post-meta">Jan 13, 2016</span>
 
     <h2>
-      <a class="post-link" href="/2016/01/09/jekyll-e-sistema-di-commenti.html">Jekyll e i sistemi di commenti</a>
+      <a class="post-link" href="/2016/01/13/jekyll-e-i-sistemi-di-commenti.html">Jekyll e i sistemi di commenti</a>
     </h2>
 
     <p class="post-summary">
@@ -998,25 +998,26 @@ Una cosa che hanno molto spesso i blog, sono i <strong>commenti</strong> e quand
     </p>
 <!--
     <div class="content">
-      <p>Uno dei problemi comuni quando si crea un blog con un <em>generatore di siti statici</em> è integrare un sistema di commenti, che è una funzionalità intrinsecamente <em>dinamica</em>.
-In ogni caso non ho per il momento intenzione di dotare questo blog di commenti, ma spinto dalla curiosità ho considerato alcune opzioni.</p>
+      <p>In un blog i commenti costituiscono una componente che ha un peso non trascurabile. I CMS tipicamente offrono <em>out of the box</em> un sistema di commenti, mentre i generatori di siti <strong>statici</strong> come <em>Jekyll</em> solitamente ne sono sprovvisti, essendo una funzionalità per sua natura <strong>dinamica</strong> (anche se con un po’ di inventiva si possono generare in maniera statica). Integrarne uno diventa quindi un problema perché è necessario l’utilizzo di codice dedicato e bisogna memorizzare i dati relativi ai commenti stessi.
+Non scordiamoci poi la gestione dello <em>spam</em>.
+Anche se qui non ho per il momento intenzione di usarne uno, spinto dalla curiosità ho considerato alcune opzioni.</p>
 
 <h3 id="disqushttpdisquscom"><a href="http://disqus.com/">Disqus</a></h3>
-<p>È la soluzione più adottata da chi ha un blog Jekyll, ma tutti i dati sono memorizzati sui server Disqus. Purtroppo non è software libero, ma bisogna apprezzarne la comodità.</p>
+<p>È la soluzione più adottata da chi ha un blog Jekyll. Tutti i dati sono memorizzati sui server Disqus. Purtroppo non è software libero, ma è la maniera più comoda.</p>
 
 <h3 id="hashoverhttptildehashcompagehashover"><a href="http://tildehash.com/?page=hashover">HashOver</a></h3>
 <p>Interessante, con un buon numero di <a href="https://github.com/jacobwb/hashover-next#notable-features">funzionalità</a>, ma usa PHP. Github Pages non supporta l’esecuzione di PHP.</p>
 
 <h3 id="issohttpsposativorgisso"><a href="https://posativ.org/isso/">Isso</a></h3>
-<p>Supporta Markdown, usa SQLite e Python. Non male e adatto a siti con piccole quantità di commenti, ma non va nella direzione che interessa a me.</p>
+<p>Supporta Markdown, usa SQLite e Python. Non male e adatto a siti con piccole quantità di commenti, ma non va nella direzione che interessa a me. E inoltre, se Pages non supporta PHP, figuriamoci se supporta qualche tipo di database o Python.</p>
 
 <h3 id="staticcomments-pluginhttptheshedhezmattorgjekyll-static-comments"><a href="http://theshed.hezmatt.org/jekyll-static-comments/">StaticComments plugin</a></h3>
-<p>Ingegnoso. Usa PHP e Ruby. Se ho capito come funziona, bisogna aggiungere una directory <code>_comment</code> atta a contenere dei file con le descrizioni <a href="http://yaml.org/" title="YAML">YAML</a> dei commenti; quando un utente lascia un commento, uno script PHP mi manda una email e, se non è spam, in base al suo contenuto devo generare il file con lo YAML e lanciare uno script Ruby che genera i commenti. È faticoso solo a scriverlo.</p>
+<p>Ingegnosa soluzione per avere un sistema di commenti statico. Usa PHP e Ruby. Se ho capito come funziona, bisogna aggiungere una directory <code>_comment</code> atta a contenere dei file con le descrizioni <a href="http://yaml.org/" title="YAML">YAML</a> dei commenti; quando un utente lascia un commento, uno script PHP mi manda una email e, se non è spam, in base al suo contenuto devo generare il file con lo YAML e lanciare uno script Ruby che genera i commenti. Applicabile solo se non sei pigro e hai un bassissimo volume di commenti.</p>
 
 <h3 id="sfruttare-lissue-tracker-di-githubhttpivanzuzakinfo20110218github-hosted-comments-for-github-hosted-blogshtml"><a href="http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html">Sfruttare l’issue tracker di GitHub</a></h3>
 <p>A dir poco geniale. Richiede di avere un account di Github per commentare, ma poco male. <a href="https://github.com/izuzak/izuzak.github.com/issues/12#issuecomment-71345363">Qualcuno</a> ha aperto un <a href="https://github.com/wireddown/ghpages-ghcomments">repo apposito</a>. Finora la migliore soluzione che ho visto.</p>
 
-<p>Se mai dovessi inserire un sistema di commenti, potrebbe essere quest’ultimo.</p>
+<p>Se mai dovessi dotare il blog di un sistema di commenti, potrebbe essere quest’ultimo oppure, non proprio entusiasticamente, Disqus.</p>
 
     </div>
 -->
