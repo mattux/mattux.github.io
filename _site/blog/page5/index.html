@@ -65,8 +65,6 @@
         
           
         
-          
-        
       </div>
 -->
 
@@ -117,8 +115,6 @@
     
       
     
-      
-    
   </div>
   </div>
 
@@ -135,32 +131,6 @@
 
   <ul class="post-list">
 <!--
-    
-      <li>
-        <span class="post-meta">Jan 13, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/2016/01/13/test-code.html">Test syntax highlighting</a>
-        </h2>
-        <p class="post-summary">
-          
-            
-          
-        </p>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 13, 2016</span>
-
-        <h2>
-          <a class="post-link" href="/2016/01/13/considerazioni-sui-siti-statici.html">Considerazioni sui siti statici</a>
-        </h2>
-        <p class="post-summary">
-          
-            
-          
-        </p>
-      </li>
     
       <li>
         <span class="post-meta">Jan 13, 2016</span>
@@ -885,52 +855,6 @@
   <!-- This loops through the paginated posts -->
   
 <!--
-    <h1><a href="/2012/04/28/google-cloud-sql.html">Google Cloud SQL</a></h1>
-    <p class="author">
-      <span class="date">2012-04-28 17:45:00 +0200</span>
-    </p>
--->
-    <span class="post-meta">Apr 28, 2012</span>
-
-    <h2>
-      <a class="post-link" href="/2012/04/28/google-cloud-sql.html">Google Cloud SQL</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-4EOxCkO-PSs/T5mNGwz_PKI/AAAAAAAAAyI/jwgvKDwbLgE/s1600/google+cloud+sql.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-4EOxCkO-PSs/T5mNGwz_PKI/AAAAAAAAAyI/jwgvKDwbLgE/s1600/google+cloud+sql.png" /></a></div>Quest'oggi parliamo di database :)<br />Google Cloud SQL è un servizio offerto da Google che consente di avere delle istanze cloud di database MySQL.<br />È molto comodo, efficiente ed affidabile. Per ora è disponibile soltanto in limited preview per sviluppatori, quindi bisogna fare richiesta di attivazione del servizio, con tempi che possono arrivare anche alle due settimane.<br /><br /><br /><a name='more'></a>È possibile interagire direttamente col database ed attraverso la creazione di applicazioni in Java e Python. <br />Il servizio consente perciò di mettere in piedi applicazioni web motorizzate Google, cloud anche per quel che riguarda il database.<br /><br />La figata è che ci si ritrova ad avere a che fare con un database MySQL quasi senza che uno si accorga che non sta in locale, ma memorizzato chissà dove.<br /><br />Io ci ho smanettato ed ho concluso che è senz'altro un'ottimo servizio, efficiente ed affidabile. Ho anche creato un <a href="http://deseb-test.appspot.com/">prototipo di applicazione</a> che sfrutta un database Google Cloud SQL. Non fa granché, però non si chiama prototipo per caso :)<br />&nbsp; <br />Per approfondire il discorso, vi rimando alla <a href="https://developers.google.com/cloud-sql/">documentazione ufficiale</a> ed alle <a href="http://www.slideshare.net/mattux/valutazione-sperimentale-di-un-database-relazionale-in-ambiente-cloud">slide</a> che ho realizzato per la presentazione della mia tesi di laurea¹, che verte proprio su questo argomento.<br /><br /><b>Update</b>: Dal 12 giugno il servizio non sarà più gratuito, ma a pagamento. Maggiori dettagli <a href="https://developers.google.com/cloud-sql/docs/billing" target="_blank">qui</a>.<br /><br /><br />¹ <span style="font-size: x-small;">Sì, finalmente mi sono laureato :D Questa è la ragione per cui non scrivo sul blog da febbraio, ero un <i>tantinello</i> impegnato.</span>
-    </div>
--->
-  
-<!--
-    <h1><a href="/2012/02/25/reisub-quando-il-gioco-si-fa-duro-i.html">REISUB: quando il gioco si fa duro, i duri riavviano così</a></h1>
-    <p class="author">
-      <span class="date">2012-02-25 15:35:00 +0100</span>
-    </p>
--->
-    <span class="post-meta">Feb 25, 2012</span>
-
-    <h2>
-      <a class="post-link" href="/2012/02/25/reisub-quando-il-gioco-si-fa-duro-i.html">REISUB: quando il gioco si fa duro, i duri riavviano così</a>
-    </h2>
-
-    <p class="post-summary">
-      
-        
-      
-    </p>
-<!--
-    <div class="content">
-      <div class="separator" style="clear: both; text-align: center;"></div><a href="http://3.bp.blogspot.com/-Cs2-rrWTXkM/T0grlhbDI3I/AAAAAAAAAs0/f2tTbt1JY_c/s1600/reboot.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-Cs2-rrWTXkM/T0grlhbDI3I/AAAAAAAAAs0/f2tTbt1JY_c/s1600/reboot.png" /></a>Ieri una collega (che ringrazio :D), mi ha insegnato un modo per riavviare il pc quando linux è totalmente bloccato e non risponde più ad input di alcun tipo.<br />In sostanza, si tratta di effettuare una potentissima combinazione di tasti:<br /><br /><b>CTRL + ALT + SHIFT + CANC + RSist</b> da tenere premuti mentre si digita la parola <b>REISUB</b>.<br /><br /><a name='more'></a>Perché funziona?<br /><br /><b>CTRL + ALT + SHIFT + CANC + RSist</b> serve per comunicare direttamente col kernel, dicendogli questo:<br /><br /><b>R</b> -&gt; Passa alla modalita XLATE, per la tastiera;<br /><b>E</b> -&gt; Manda un segnale di SIGTERM a tutti i processi tranne init;<br /><b>I</b> -&gt;&nbsp; Manda un segnale di SIGKILL a tutti i processi tranne init;<br /><b>S</b> -&gt; Sincronizza tutti i filesystem montati;<br /><b>U</b> -&gt; Rimonta tutti i filesystem in modalità read-only;<br /><b>B</b> -&gt; Fai un reboot del sistema, senza smontare o sincronizzare i filesystem.<br /><br />Ulteriori informazioni le troviamo nella <a href="http://en.wikipedia.org/wiki/Magic_SysRq_key">pagina di wikipedia dedicata</a>.<br /><br />Credo che questa combinazione di tasti mi salverà il fondoschiena parecchie volte.
-    </div>
--->
-  
-<!--
     <h1><a href="/2012/01/29/saltare-dal-top-al-footer-e-viceversa.html">Saltare dal top al footer e viceversa in un click</a></h1>
     <p class="author">
       <span class="date">2012-01-29 15:28:00 +0100</span>
@@ -999,6 +923,52 @@
     </div>
 -->
   
+<!--
+    <h1><a href="/2011/11/12/prime-impressioni-su-fedora-16-xfce.html">Prime impressioni su Fedora 16 Xfce</a></h1>
+    <p class="author">
+      <span class="date">2011-11-12 15:12:00 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Nov 12, 2011</span>
+
+    <h2>
+      <a class="post-link" href="/2011/11/12/prime-impressioni-su-fedora-16-xfce.html">Prime impressioni su Fedora 16 Xfce</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      <div class="" style="clear: both; text-align: left;"><a href="http://1.bp.blogspot.com/-Z62E5b2mrYY/Trv0waW4API/AAAAAAAAAdw/NhUvrAD2BSg/s1600/fedora_16_xfce.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="248" src="http://1.bp.blogspot.com/-Z62E5b2mrYY/Trv0waW4API/AAAAAAAAAdw/NhUvrAD2BSg/s320/fedora_16_xfce.png" width="320" /></a>Nonostante l'<a href="http://anonimoconiglio.blogspot.com/2011/08/labisso-di-hype.html">hype</a> non troppo elevato, da ieri è disponibile la release 16 di Fedora. <br />Dato che sul portatile ormai mi sono accasato su Xfce, ho scaricato direttamente la variante che monta il DE del sorcio.<br />Sono tante le <a href="http://docs.fedoraproject.org/it-IT/Fedora/16/html/Release_Notes/index.html">novità per questo rilascio</a> e tutte di sostanza, a dimostrazione che Fedora è una distribuzione da tenere d'occhio, se non altro perché include sempre soluzioni nuove che verranno (forse) adottate solo successivamente da altre distro.</div><div class="" style="clear: both; text-align: left;"></div><a name='more'></a><br /><h3>            Pronti, partenza via</h3><div class="" style="clear: both; text-align: left;">La prima novità è il passaggio totale al nuovo sistema di boot <a href="http://freedesktop.org/wiki/Software/systemd/">systemd</a>. L'avvio è decisamente veloce, sicuramente molto più rapido rispetto a Fedora 15.</div><div class="" style="clear: both; text-align: left;">In compenso, ho riscontrato qualche problemino nello spegnimento, ma niente di grave: in pratica rimane inchiodato alla schermata col logo di Fedora, ma mi basta tenere premuto il tasto di accensione del pc per farlo spegnere regolarmente.</div><div class="" style="clear: both; text-align: left;"><br /><br /></div><div class="" style="clear: both; text-align: left;"></div><h3>            Il Desktop</h3>Parliamo di un desktop Xfce standard, senza modifiche rilevanti (molto bello il wallpaper di default). Ho riscontrato un'elevata reattività generale, cosa non presente a mio giudizio nella precedente release.<br />Come applicazioni installate troviamo veramente di tutto, ad occhio non ci sono gravi mancanze. In particolare, come player video è stato scelto <a href="http://goodies.xfce.org/projects/applications/parole">Parole</a> (da me rimpiazzato con VLC) e come player audio invece abbiamo <a href="https://en.wikipedia.org/wiki/Quod_Libet_%28software%29">Quod Libet</a>. Come strumenti per l'ufficio troviamo Abiword e Gnumeric, ma io ho subito installato LibreOffice.<br /><br /><br /><h3>          Non è tutto rose e fiori</h3>Ci sono anche le spine, anzi <b>una</b> spina, ma bella appuntita: <b>il power manager di Xfce è buggato</b>. Non riesco a capacitarmi di come sia stato possibile il rilascio di una iso con un bug del genere. Il sistema operativo funziona perfettamente, ma non è possibile gestire le impostazioni energetiche, come la luminosità del monitor dopo <i>n</i> minuti di inattività, associare al pulsante fisico di accensione un'azione (spegnimento, ibernazione, uscita, ecc.) e il resto. È stato immediatamente <a href="https://bugzilla.redhat.com/show_bug.cgi?id=736727">aperto un bug su Bugzilla</a> e nella giornata di oggi <b>è stato rilasciato l'update che corregge il bug</b>, disponibile nei repository stable; basta aggiornare il sistema e tutto si risolve :)<br /><br /><br /><h3>         Insomma...</h3>La spin Xfce è una buona scelta, il sistema è reattivo e funziona senza particolari problemi (a parte quel grosso bug del gestore energetico), ma poteva essere moooolto più curata, spero sinceramente che lo sia la prossima release.<br /><br /><br />Buona Fedora Xfce :)
+    </div>
+-->
+  
+<!--
+    <h1><a href="/2011/11/11/due-piccole-novita-per-il-blog.html">Due piccole novità per il blog</a></h1>
+    <p class="author">
+      <span class="date">2011-11-11 23:09:00 +0100</span>
+    </p>
+-->
+    <span class="post-meta">Nov 11, 2011</span>
+
+    <h2>
+      <a class="post-link" href="/2011/11/11/due-piccole-novita-per-il-blog.html">Due piccole novità per il blog</a>
+    </h2>
+
+    <p class="post-summary">
+      
+        
+      
+    </p>
+<!--
+    <div class="content">
+      <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-Ikj0IGTKdiw/Tr2dOMWVn4I/AAAAAAAAAfQ/urOOQg6lTak/s1600/logo+blog+nospace.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-Ikj0IGTKdiw/Tr2dOMWVn4I/AAAAAAAAAfQ/urOOQg6lTak/s1600/logo+blog+nospace.png" /></a></div>Come da titolo, da stasera ci sono due piccole novità per questo piccolo angolo di web.<br />La <b>prima</b> l'avrete senz'altro notata: <b>una nuova testata</b>. Insomma, dopo vari tentativi ho fatto una scritta con GIMP che desse un'identità al blog. Se vi state chiedendo dov'è finito il riferimento a GNU/Linux (prima c'era un pinguino in background), beh, sta dentro la 'b': la parola "Linux" scritta in binario con codifica ASCII.<br /><br /><a name='more'></a><br />La <b>seconda</b> invece, è la seguente: mi è saltato in mente di fare una <b>pagina Google+ del blog</b>, per dare la possibilità a più persone di rimanere aggiornati sui post che finiscono qua dentro.<br />Per accedervi potete andare a <a href="https://plus.google.com/u/0/b/116514234298958416545/">questo link</a>, ma ho prontamente aggiornato il social link, quindi potete anche cliccare sulla "G" qua a destra (a breve credo che aggiornerò anche le icone).<br /><br />Ah giusto, visto che non ho trovato servizi di sincronizzazione adatti, faccio un po' fatica ad aggiornare tempestivamente anche il mio account identi.ca, ragion per cui ho rimosso il social link.<br /><br />Per ora è tutto, a presto :)
+    </div>
+-->
+  
   </ul>
 
 
@@ -1009,7 +979,7 @@
     
       <a href="/blog/page4/" class="previous">Previous</a>
     
-    <span class="page_number ">Page: 5 of 12</span>
+    <span class="page_number ">Page: 5 of 11</span>
     
       <a href="/blog/page6/" class="next">Next</a>
     
@@ -1065,10 +1035,6 @@
   
     
       <a href="/blog/page11/">11</a>
-    
-  
-    
-      <a href="/blog/page12/">12</a>
     
   
 
@@ -1159,8 +1125,6 @@
           
             
             <a class="page-link" href="/about/">About</a>
-            
-          
             
           
             

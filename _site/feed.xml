@@ -5,86 +5,9 @@
     <description>Confondersi tra Halloween e Natale perché 31oct = 25dec</description>
     <link>http://mattux.github.io/</link>
     <atom:link href="http://mattux.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 13 Jan 2016 16:56:06 +0100</pubDate>
-    <lastBuildDate>Wed, 13 Jan 2016 16:56:06 +0100</lastBuildDate>
+    <pubDate>Wed, 13 Jan 2016 17:18:29 +0100</pubDate>
+    <lastBuildDate>Wed, 13 Jan 2016 17:18:29 +0100</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
-    
-      <item>
-        <title>Test syntax highlighting</title>
-        <description>&lt;p&gt;Test di prova con del codice&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;All&#39;ombra dell&#39;ultimo sole s&#39;era assopito un pescatore e aveva un&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;          solco lungo il viso come una specia di sorriso&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-</description>
-        <pubDate>Wed, 13 Jan 2016 16:56:06 +0100</pubDate>
-        <link>http://mattux.github.io/2016/01/13/test-code.html</link>
-        <guid isPermaLink="true">http://mattux.github.io/2016/01/13/test-code.html</guid>
-        
-        <category>coding</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Considerazioni sui siti statici</title>
-        <description>&lt;p&gt;Un tempo erano i siti statici: niente database, niente Javascript né PHP, né niente di simile, solo semplici ipertesti.&lt;/p&gt;
-
-&lt;p&gt;Arrivarono poi i database, Javascript, PHP e i loro simili. E furono i siti dinamici. E con loro i CMS.&lt;/p&gt;
-
-&lt;p&gt;(Ok, ho semplificato parecchio)&lt;/p&gt;
-
-&lt;p&gt;Oggi, nello sfavillante 2016, fa quasi figo dire:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Io mica ho usato un CMS, l’ho fatto statico.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ok.&lt;/p&gt;
-
-&lt;p&gt;I siti statici hanno sostanzialmente due vantaggi:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;meno codice che gira, meno codice exploitabile e quindi sulla carta più sicurezza;&lt;/li&gt;
-  &lt;li&gt;pagine generate una volta anziché ogni qualvolta un utente la visita, quindi il sito è più veloce.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;E grazie al razzo.&lt;/p&gt;
-
-&lt;p&gt;Anche i principali svantaggi sono due:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;tipicamente manca una GUI per la gestione del sito;&lt;/li&gt;
-  &lt;li&gt;se vuoi, dato che il mondo non è “o bianco o nero”, un po’ di dinamicità (soprattutto lato server) ti pigliano i sensi di colpa, oltre ad eventuali difficoltà tecniche.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Cionondimeno spesso sono la soluzione migliore e siccome &lt;em&gt;“fare un sito statico scrivendo tutto il codice HTML a mano anche no”&lt;/em&gt;, sono nati i &lt;strong&gt;generatori di siti statici&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Come ho già scritto qualche post fa, questo blog usa &lt;a href=&quot;http://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; ed è hostato sulle &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;Github Pages&quot;&gt;Github Pages&lt;/a&gt;.
-Una cosa che hanno molto spesso i blog, sono i &lt;strong&gt;commenti&lt;/strong&gt; e quando questo blog era su &lt;em&gt;Blogger&lt;/em&gt;, ce li aveva mentre ora no. Questo perché il sito è &lt;em&gt;statico&lt;/em&gt;, mentre i commenti sono una componente di solito &lt;em&gt;dinamica&lt;/em&gt; e che richiede inevitabilmente del codice lato server.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 13 Jan 2016 16:56:06 +0100</pubDate>
-        <link>http://mattux.github.io/2016/01/13/considerazioni-sui-siti-statici.html</link>
-        <guid isPermaLink="true">http://mattux.github.io/2016/01/13/considerazioni-sui-siti-statici.html</guid>
-        
-        <category>web</category>
-        
-        <category>blog</category>
-        
-        <category>jekyll</category>
-        
-        
-      </item>
     
       <item>
         <title>Jekyll e i sistemi di commenti</title>
@@ -302,6 +225,40 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata &lt;em
         <category>utilità</category>
         
         <category>script</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Desert - Schema di colore per Geany</title>
+        <description>Post molto breve, giusto per segnalarvi il fatto che ho realizzato un porting per &lt;b&gt;Geany&lt;/b&gt; di &lt;b&gt;Desert&lt;/b&gt;, lo schema di colore che uso su &lt;b&gt;GVim&lt;/b&gt;. &lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;table align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;margin-left: auto; margin-right: auto; text-align: center;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://3.bp.blogspot.com/-2grwixbpVps/UyTo-rRdIWI/AAAAAAAADrM/b_zrKJyhiS4/s1600/Istantanea+-+16032014+-+00%253A53%253A09.png&quot; imageanchor=&quot;1&quot; style=&quot;margin-left: auto; margin-right: auto;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://3.bp.blogspot.com/-2grwixbpVps/UyTo-rRdIWI/AAAAAAAADrM/b_zrKJyhiS4/s1600/Istantanea+-+16032014+-+00%253A53%253A09.png&quot; height=&quot;338&quot; width=&quot;400&quot; /&gt;&amp;nbsp;&lt;/a&gt;&lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;Stralcio di codice in OCaml (cifrario di Vigenère)&lt;/td&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;&lt;br /&gt;&lt;/td&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;&lt;br /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;br /&gt;Ho creato un &lt;a href=&quot;https://github.com/mattux/geany-csx&quot;&gt;repo su github&lt;/a&gt; per i miei schemi di colore per Geany. Per ora c&#39;è solo questo, ma chissà :D </description>
+        <pubDate>Sun, 16 Mar 2014 01:04:00 +0100</pubDate>
+        <link>http://mattux.github.io/2014/03/16/desert-schema-di-colore-per-geany.html</link>
+        <guid isPermaLink="true">http://mattux.github.io/2014/03/16/desert-schema-di-colore-per-geany.html</guid>
+        
+        <category>programmazione</category>
+        
+        <category>geany</category>
+        
+        <category>github</category>
+        
+        <category>color-schemes</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Conky - Pragha, Quodlibet e la canzone in riproduzione</title>
+        <description>&lt;span id=&quot;goog_514458146&quot;&gt;&lt;/span&gt;&lt;span id=&quot;goog_514458147&quot;&gt;&lt;/span&gt;In questo angolo di web, dove scrivo cose sparse, senza badare alla benché minima connessione logica tra i post, oggi vediamo l&#39;argomento &lt;a href=&quot;http://conky.sourceforge.net/&quot; target=&quot;_blank&quot;&gt;Conky&lt;/a&gt;.&lt;br /&gt;Di recente mi sono interessato in particolare alla visualizzazione di artista e titolo della canzone in riproduzione. Ho trovato una soluzione, un po&#39; artigianale (e che non richiede plugin esterni), per &lt;b&gt;Pragha&lt;/b&gt; e &lt;b&gt;Quodlibet&lt;/b&gt;.&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;L&#39;idea di fondo&lt;/h3&gt;Entrambi i player possono essere lanciati da terminale con una particolare opzione, che mostra lo stato di riproduzione.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Pragha&lt;/b&gt;&lt;br /&gt;&lt;pre class=&quot;brush:shell; highlight: 1&quot;&gt;«mattux@artemide:~»$ pragha -c&lt;br /&gt;state: Playing&lt;br /&gt;file: /home/mattux/Musica/Fabrizio De André (1967-2003)/1999 - In concerto Live/09 - Il testamento di Tito.mp3&lt;br /&gt;title: Il testamento di Tito&lt;br /&gt;artist: Fabrizio De André&lt;br /&gt;album: In Concerto&lt;br /&gt;genre: Other&lt;br /&gt;year: 1999&lt;br /&gt;track_no: 9&lt;br /&gt;comment: &lt;br /&gt;length: 498&lt;br /&gt;bitrate: 252&lt;br /&gt;channels: 2&lt;br /&gt;samplerate: 44100 &lt;/pre&gt;&lt;br /&gt;&lt;b&gt;Quodlibet&lt;/b&gt;&lt;br /&gt;&lt;pre class=&quot;brush:shell; highlight: 1&quot;&gt;«mattux@artemide:~»$ quodlibet --print-playing&lt;br /&gt;Fabrizio De André - In Concerto - 9 - Il testamento di Tito&lt;br /&gt;&lt;/pre&gt;L&#39;idea di fondo è filtrare l&#39;output di questi comandi e visualizzare solo quello che ci interessa, cioè &lt;b&gt;Artista - Titolo&lt;/b&gt;.&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Pragha&lt;/h3&gt;Estrapoliamo l&#39;artista: &lt;br /&gt;&lt;pre class=&quot;brush:shell;&quot;&gt;pragha -c | grep artist | sed s/artist://&lt;br /&gt;&lt;/pre&gt;Estrapoliamo il titolo della canzone: &lt;br /&gt;&lt;pre class=&quot;brush:shell;&quot;&gt;pragha -c | grep title | sed s/title://&lt;br /&gt;&lt;/pre&gt;In sostanza quello che stiamo facendo è dire a &lt;i&gt;grep&lt;/i&gt; di selezionare solo la riga contenete la parola &quot;&lt;i&gt;artist&lt;/i&gt;&quot; e a &lt;i&gt;sed&lt;/i&gt; di eliminare, da quella riga, la stringa &quot;&lt;i&gt;artist:&lt;/i&gt;&quot;. &lt;br /&gt;Per il titolo della canzone agiamo in maniera analoga.&lt;br /&gt;&lt;br /&gt;E in Conky come lo inseriamo? Così:&lt;br /&gt;&lt;pre class=&quot;brush:shell;&quot;&gt;${if_running pragha}&lt;br /&gt;  ${exec pragha -c | grep artist | sed s/artist://} -${exec pragha -c | grep title | sed s/title://}&lt;br /&gt;${endif}&lt;br /&gt;&lt;/pre&gt;Possiamo anche inserire un controllo per fare eseguire il comando a Conky soltanto se il player è in esecuzione.&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Quodlibet&lt;/h3&gt;&lt;b&gt;nota:&lt;/b&gt; &lt;u&gt;In fondo al post (paragrafo &quot;update&quot; ) ho aggiunto un modo più semplice. Questo metodo rimane comunque valido.&lt;/u&gt;&lt;br /&gt;&lt;br /&gt;Possiamo estrapolare tutto con un solo comando: &lt;br /&gt;&lt;pre class=&quot;brush:shell;&quot;&gt;quodlibet --print-playing | awk &#39;BEGIN { FS = &quot; - &quot; } ; { print $1,$4 }&#39;&lt;br /&gt;&lt;/pre&gt;Il problema è il trattino da visualizzare a schermo, che io onestamente non saprei come inserire in un comando del genere. Perciò... &lt;br /&gt;&lt;br /&gt;Estrapoliamo l&#39;artista: &lt;br /&gt;&lt;pre class=&quot;brush:shell;&quot;&gt;quodlibet --print-playing | awk &#39;BEGIN { FS = &quot; - &quot; } ; { print $1 }&#39;&lt;br /&gt;&lt;/pre&gt;Estrapoliamo il titolo della canzone: &lt;br /&gt;&lt;pre class=&quot;brush:shell;&quot;&gt;quodlibet --print-playing | awk &#39;BEGIN { FS = &quot; - &quot; } ; { print $4 }&#39;&lt;br /&gt;&lt;/pre&gt;Qui ci stiamo affidando ad &lt;i&gt;awk&lt;/i&gt;, facendogli stampare rispettivamente la prima e la quarta colonna, usando il trattino come separatore (FS = &quot; - &quot;). &lt;br /&gt;&lt;br /&gt;In Conky diventa: &lt;br /&gt;&lt;pre class=&quot;brush:shell;&quot;&gt;${if_running quodlibet}&lt;br /&gt;  ${exec quodlibet --print-playing | awk &#39;BEGIN { FS = &quot; - &quot; } ; { print $1 }&#39;} - ${exec quodlibet --print-playing | awk &#39;BEGIN { FS = &quot; - &quot; } ; { print $4 }&#39; }&lt;br /&gt;${endif}&lt;br /&gt;&lt;/pre&gt;&lt;br /&gt;&lt;h3&gt;Il risultato&lt;/h3&gt;Se non abbiamo sbagliato nulla, a schermo dovremmo avere qualcosa del tipo&lt;br /&gt;&lt;a href=&quot;http://3.bp.blogspot.com/-A382C5fwpKE/UkXk0dvbKbI/AAAAAAAADNA/ioi_-SU5AV0/s1600/2013-09-27-215735_298x43_scrot.png&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://3.bp.blogspot.com/-A382C5fwpKE/UkXk0dvbKbI/AAAAAAAADNA/ioi_-SU5AV0/s1600/2013-09-27-215735_298x43_scrot.png&quot; /&gt;&lt;/a&gt; &lt;br /&gt;Con entrambi i player.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Update&lt;/b&gt;&lt;br /&gt;Riguardo a &lt;b&gt;Quodlibet&lt;/b&gt;, ho appena scoperto che l&#39;opzione &lt;i&gt;--print-playing&lt;/i&gt; supporta come parametro dei &lt;b&gt;tag&lt;/b&gt;. La sintassi è piuttosto semplice:&lt;br /&gt;&lt;pre class=&quot;brush:shell&quot;&gt;quodlibet --print-playing &quot;&lt;tag&gt;&quot;&lt;br /&gt;&lt;/tag&gt;&lt;/pre&gt;Si possono anche usare più tag, unendoli con una tilde (~): &lt;br /&gt;&lt;pre class=&quot;brush:shell&quot;&gt;quodlibet --print-playing &quot;&lt;tag1&gt;&quot;&lt;br /&gt;&lt;/tag1&gt;&lt;/pre&gt;Ad esempio: &lt;br /&gt;&lt;pre class=&quot;brush:shell; highlight:1&quot;&gt;«mattux@artemide:~»$ quodlibet --print-playing &quot;&amp;lt;artist~title&amp;gt;&quot;&lt;br /&gt;Fabrizio De André - Il testamento di Tito&lt;br /&gt;&lt;/artist&gt;&lt;/pre&gt;Perciò in Conky diventa, molto più semplicemente: &lt;br /&gt;&lt;pre class=&quot;brush:shell;&quot;&gt;${if_running quodlibet}&lt;br /&gt;  ${exec quodlibet --print-playing &quot;&amp;lt;artist~title&amp;gt;&quot; }&lt;br /&gt;${endif}&lt;br /&gt;&lt;/artist&gt;&lt;/pre&gt;</description>
+        <pubDate>Fri, 27 Sep 2013 22:18:00 +0200</pubDate>
+        <link>http://mattux.github.io/2013/09/27/conky-pragha-quodlibet-e-la-canzone-in.html</link>
+        <guid isPermaLink="true">http://mattux.github.io/2013/09/27/conky-pragha-quodlibet-e-la-canzone-in.html</guid>
+        
+        <category>personalizzazione</category>
+        
+        <category>GNU/linux</category>
+        
+        <category>conky</category>
         
         
       </item>
