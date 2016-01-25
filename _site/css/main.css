@@ -216,7 +216,6 @@ pre code {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
   padding: 30px 0; }
 
 .footer-heading {
@@ -340,6 +339,9 @@ pre code {
 .pagination {
   text-align: center;
   padding-top: 40px; }
+  .pagination a, .pagination span {
+    margin-right: 10px;
+    margin-left: 10px; }
 
 .highlight, pre, pre code {
   background: #1d1f21;

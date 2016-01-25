@@ -111,7 +111,7 @@ font-size: $base-font-size * 0.9;
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    // border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 
 }
@@ -300,4 +300,10 @@ font-size: $base-font-size * 0.9;
 .pagination {
     text-align:center;
     padding-top:40px;
+
+    a, span {
+      margin-right:10px;
+      margin-left:10px;
+    }
+
 }

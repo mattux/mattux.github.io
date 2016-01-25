@@ -10,7 +10,7 @@
   <meta name="description" content="Confondersi tra Halloween e Natale perché 31oct = 25dec">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://mattux.github.io/">
+  <link rel="canonical" href="http://mattux.github.io/page5/">
   <link rel="alternate" type="application/rss+xml" title="Mattux >> log" href="http://mattux.github.io/feed.xml" />
 </head>
 
@@ -855,15 +855,15 @@
   <!-- This loops through the paginated posts -->
   
 <!--
-    <h1><a href="/2016/01/13/jekyll-e-i-sistemi-di-commenti.html">Jekyll e i sistemi di commenti</a></h1>
+    <h1><a href="/2012/01/29/saltare-dal-top-al-footer-e-viceversa.html">Saltare dal top al footer e viceversa in un click</a></h1>
     <p class="author">
-      <span class="date">2016-01-13 00:00:00 +0100</span>
+      <span class="date">2012-01-29 15:28:00 +0100</span>
     </p>
 -->
-    <span class="post-meta">Jan 13, 2016</span>
+    <span class="post-meta">Jan 29, 2012</span>
 
     <h2>
-      <a class="post-link" href="/2016/01/13/jekyll-e-i-sistemi-di-commenti.html">Jekyll e i sistemi di commenti</a>
+      <a class="post-link" href="/2012/01/29/saltare-dal-top-al-footer-e-viceversa.html">Saltare dal top al footer e viceversa in un click</a>
     </h2>
 
     <p class="post-summary">
@@ -873,40 +873,20 @@
     </p>
 <!--
     <div class="content">
-      <p>In un blog i commenti costituiscono una componente che ha un peso non trascurabile. I CMS tipicamente offrono <em>out of the box</em> un sistema di commenti, mentre i generatori di siti <strong>statici</strong> come <em>Jekyll</em> solitamente ne sono sprovvisti, essendo una funzionalità per sua natura <strong>dinamica</strong> (anche se con un po’ di inventiva si possono generare in maniera statica). Integrarne uno diventa quindi un problema perché è necessario l’utilizzo di codice dedicato e bisogna memorizzare i dati relativi ai commenti stessi.
-Non scordiamoci poi la gestione dello <em>spam</em>.
-Anche se qui non ho per il momento intenzione di usarne uno, spinto dalla curiosità ho considerato alcune opzioni.</p>
-
-<h3 id="disqushttpdisquscom"><a href="http://disqus.com/">Disqus</a></h3>
-<p>È la soluzione più adottata da chi ha un blog Jekyll. Tutti i dati sono memorizzati sui server Disqus. Purtroppo non è software libero, ma è la maniera più comoda.</p>
-
-<h3 id="hashoverhttptildehashcompagehashover"><a href="http://tildehash.com/?page=hashover">HashOver</a></h3>
-<p>Interessante, con un buon numero di <a href="https://github.com/jacobwb/hashover-next#notable-features">funzionalità</a>, ma usa PHP. Github Pages non supporta l’esecuzione di PHP.</p>
-
-<h3 id="issohttpsposativorgisso"><a href="https://posativ.org/isso/">Isso</a></h3>
-<p>Supporta Markdown, usa SQLite e Python. Non male e adatto a siti con piccole quantità di commenti, ma non va nella direzione che interessa a me. E inoltre, se Pages non supporta PHP, figuriamoci se supporta qualche tipo di database o Python.</p>
-
-<h3 id="staticcomments-pluginhttptheshedhezmattorgjekyll-static-comments"><a href="http://theshed.hezmatt.org/jekyll-static-comments/">StaticComments plugin</a></h3>
-<p>Ingegnosa soluzione per avere un sistema di commenti statico. Usa PHP e Ruby. Se ho capito come funziona, bisogna aggiungere una directory <code>_comment</code> atta a contenere dei file con le descrizioni <a href="http://yaml.org/" title="YAML">YAML</a> dei commenti; quando un utente lascia un commento, uno script PHP mi manda una email e, se non è spam, in base al suo contenuto devo generare il file con lo YAML e lanciare uno script Ruby che genera i commenti. Applicabile solo se non sei pigro e hai un bassissimo volume di commenti.</p>
-
-<h3 id="sfruttare-lissue-tracker-di-githubhttpivanzuzakinfo20110218github-hosted-comments-for-github-hosted-blogshtml"><a href="http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html">Sfruttare l’issue tracker di GitHub</a></h3>
-<p>A dir poco geniale. Richiede di avere un account di Github per commentare, ma poco male. <a href="https://github.com/izuzak/izuzak.github.com/issues/12#issuecomment-71345363">Qualcuno</a> ha aperto un <a href="https://github.com/wireddown/ghpages-ghcomments">repo apposito</a>. Finora la migliore soluzione che ho visto.</p>
-
-<p>Se mai dovessi dotare il blog di un sistema di commenti, potrebbe essere quest’ultimo oppure, non proprio entusiasticamente, Disqus.</p>
-
+      <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-voDH-sjtURM/TyUx24yf05I/AAAAAAAAAsU/ZYo074I7UqY/s1600/link.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-voDH-sjtURM/TyUx24yf05I/AAAAAAAAAsU/ZYo074I7UqY/s1600/link.png" /></a></div>Titolo criptico, ma ve lo spiego subito. In una pagina web, il <b>top</b> è, come dice il termine stesso il bordo superiore, mentre il <b>footer</b> è la sua parte inferiore. Siccome può essere utile passare dall'uno all'altro, tempo fa decisi di renderlo possibile. Come? Mediante <b>link interni</b>, cioè link che consentono di spostarci all'interno dello stesso documento ipertestuale.<br /><br /><a name='more'></a>Senza dilungarci troppo, perché stiamo parlando di questo? Perché, come avrete notato, ho fatto un restyling dei link interni che consentono di saltare direttamente al footer e di tornare in alto. Vediamo come si fa ad ottenere il mio stesso risultato.<br /><br /><h3>            HTML</h3><pre class="brush:html"><a class="anchor_mt" href="http://draft.blogger.com/blogger.g?blogID=1607064176246964751#footer"><br /> <div class="anchor_mt" id="top_mt" name="top_mt"><br />Footer<br /><br />▼<br /> </div><br /></a><br /></pre><pre class="brush:html"><a class="anchor_mt" href="http://draft.blogger.com/blogger.g?blogID=1607064176246964751#"><br /> <div class="anchor_mt" id="footer_mt" name="footer_mt"><br />▲<br /><br />Top<br /> </div><br /></a>&nbsp;</pre>Dunque, creiamo due <b>div</b>, contenenti le scritte "Footer" e "Top" e con i due simboli Unicode ▼ e ▲. I div poi, li incapsuliamo dentro il tag <b>a, </b>in modo da usare come collegamento tutto il div, più facile da cliccare rispetto a del semplice testo. Per creare un link interno, basta indicare, nell'attributo <i>href</i> l'<i>id</i> della destinazione: in un caso sarà "footer" (<b>href="#footer"</b>), nell'altro sara "#" (<b>href="#</b><b>"</b>, cioè vuoto, il browser tornerà in alto). <br /><br />Due note:<br /><ol><li>Dobbiamo assicurarci che nel nostro sito/blog il footer abbia l'attributo <i>id="footer"</i>, altrimenti la cosa non funge.</li><li>Blogger, in fase di pubblicazione del post, interpreta i due id inserendo un riferimento assoluto, per questo il codice differisce leggermente da quello che ho scritto.</li></ol><br /><h3>        CSS</h3>Per impostare posizione e aspetto ci affidiamo al css:<br /><pre class="brush:css">div.anchor_mt { margin: auto; width:70px; height:35px; <br /><br />text-align:center;<br />padding:1px 3px 1px 3px;<br />background:#444444;<br /><br />-moz-transition: all .3s ease-in-out;<br />-webkit-transition: all .3s ease-in-out;<br />-o-transition: all .3s ease-in-out;<br />transition: all .3s ease-in-out;<br /><br />position:fixed;<br />display:block;<br />line-height:1.3;<br />z-index:90;<br />}<br /><br />a.anchor_mt { color:white; text-decoration:none; font-weight:bold;}<br />a.anchor_mt:hover { color:#CCE8EE; }<br /><br />div#top_mt { margin-top:0;  top:-18px; left:50%; <br /><br />margin-left:-35px;<br /><br />border-bottom-left-radius:5px; border-bottom-right-radius:5px;<br />box-shadow:0px 2px 6px #999999;<br />}<br /><br />div#top_mt:hover { top:0px;}<br /><br /><br />div#footer_mt { margin-bottom:0; bottom:-18px; left:50%; <br /><br />margin-left:-35px;<br /><br />border-top-left-radius:5px; border-top-right-radius:5px;<br />box-shadow:0px -2px 6px #999;<br />}<br /><br />div#footer_mt:hover { bottom:0px;}<br /></pre>Tralasciando le piccolezze estetiche, vediamo giusto come definire il comportamento che ho scelto.<br /><br /><i>div della classe <b>anchor_mt</b></i>, cioè i div che costituiscono i nostri link interni:<br /><ul><li>stanno in posizione <i>fixed</i>, cioè fissa, vale a dire tengono la loro posizione indipendentemente da tutto;</li><li>hanno una dimensione fissa (width:70px; height:35px;) e asseconderanno gli eventi su di essi usando delle transizioni (righe dalla 7 alla 10).</li><li>vengono sempre visualizzati davanti al contenuto della pagina (z-index:90);</li></ul><ul></ul><br /><i>div con id <b>top_mt</b></i>, cioè il div che sta nel bordo superiore della pagina:<br /><ul><li>sta 18 pixel fuori dalla pagina (top:-18px;), tenendo a vista soltanto il simbolo ▼;&nbsp;</li><li>è centrato (left:50%; margin-left:-35px;), i px di margine sinistro devono essere la metà della lunghezza (nel mio caso pari a 70px);</li><li>sull'evento <i>hover</i>, cioè quando la freccina del mouse ci passa sopra, fa coincidere il suo bordo superiore con quello della pagina (top:0px;), abbassandosi&nbsp; e mostrando la scritta "Footer", che spiega a che serve quell'affare su cui l'utente ha sovrapposto il pointer del mouse.</li></ul>&nbsp;<i>&nbsp;</i><br /><i>div con id <b>footer_mt</b></i>, cioè il div che sta nel bordo superiore della pagina:<br /><ul><li>analogo al precedente ma invertendo il comportamento.</li></ul><br />Questo è grosso modo tutto, spero di essere riuscito a spiegarmi, ma in caso contrario, nei commenti potete chiedere tutti i chiarimenti del caso :)
     </div>
 -->
   
 <!--
-    <h1><a href="/2015/12/24/i-miei-font-preferiti-per-programmare.html">I miei font preferiti per programmare</a></h1>
+    <h1><a href="/2012/01/15/script-bash-per-sapere-il-numero-di.html">Script bash per sapere il numero di email non lette su GMail</a></h1>
     <p class="author">
-      <span class="date">2015-12-24 00:00:00 +0100</span>
+      <span class="date">2012-01-15 01:38:00 +0100</span>
     </p>
 -->
-    <span class="post-meta">Dec 24, 2015</span>
+    <span class="post-meta">Jan 15, 2012</span>
 
     <h2>
-      <a class="post-link" href="/2015/12/24/i-miei-font-preferiti-per-programmare.html">I miei font preferiti per programmare</a>
+      <a class="post-link" href="/2012/01/15/script-bash-per-sapere-il-numero-di.html">Script bash per sapere il numero di email non lette su GMail</a>
     </h2>
 
     <p class="post-summary">
@@ -916,58 +896,20 @@ Anche se qui non ho per il momento intenzione di usarne uno, spinto dalla curios
     </p>
 <!--
     <div class="content">
-      <p>Tempo addietro abbiamo parlato della mia fissa per gli schemi di colore. Stavolta parliamo di font e più precisamente dei font che preferisco usare per scrivere codice e che uso di consueto negli editor testuali. Non posso dirvi come rendono su display ad altissima risoluzione, ma su monitor “normali” rendono piuttosto bene, anche se il risultato è variabile in base all’OS e all’editor.</p>
-
-<p>In ordine sparso:</p>
-
-<ul>
-  <li>
-    <p><a href="https://damieng.com/envy-code-r" title="Envy Code R">Envy Code R</a>:
-l’ho usato per anni, ovunque. Forse un po’ particolare, ma con una bellissima leggibilità. Le ‘w’ e le ‘m’ possono apparire un po’ “impastate” se la resa non è ottimale;</p>
-  </li>
-  <li>
-    <p><a href="https://github.com/andreberg/Meslo-Font" title="Meslo LG">Meslo LG</a>:
-attualmente il mio preferito. Quasi non sembra un monospaziato. Ha una bella leggibilità anche a piccole dimensioni;</p>
-  </li>
-  <li>
-    <p><a href="http://quoteunquoteapps.com/courierprime/" title="Courier Prime Code">Courier Prime Code</a>:
-rivisitazione in chiave moderna di Courier ma che mantiene comunque un aspetto classico. Davvero bello;</p>
-  </li>
-  <li>
-    <p><a href="https://github.com/adobe-fonts/source-code-pro" title="Source Code Pro">Source Code Pro</a>:
-il famoso font di Adobe per i programmatori. All’inizio non mi piaceva, poi pian piano mi ha convinto;</p>
-  </li>
-  <li>
-    <p><a href="http://sourcefoundry.org/hack/">Hack</a>:
-è quasi elegante. Me l’ha segnalato qualche mese fa un amico (grazie!);</p>
-  </li>
-  <li>
-    <p><a href="http://www.levien.com/type/myfonts/inconsolata.html" title="Inconsolata">Inconsolata</a>:
-abbastanza famoso anche lui. Spesso mi salva in situazioni in cui altri font non hanno una resa abbastanza buona;</p>
-  </li>
-  <li>
-    <p><a href="http://www.carrois.com/fira-4-1/#download" title="Fira Sans Mono">Fira Sans Mono</a>:
-trovo che il font monospaziato di Mozilla abbia una leggibilità pazzesca, è praticamente impossibile confondere due caratteri tra loro. Molto bello il corsivo;</p>
-  </li>
-  <li>
-    <p><a href="http://www.fontsquirrel.com/fonts/cousine" title="Cousine">Cousine</a>:
-non so se un font si possa definire equilibrato, ma nel caso, lo è di certo. Come per <em>Inconsolata</em>, ho sempre riscontrato una resa a schermo ottima.</p>
-  </li>
-</ul>
-
+      <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-MGNsJd3_ldM/TxITMgJcAQI/AAAAAAAAAp8/sD-A1N_-xJM/s1600/bash_gmail.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="164" src="http://1.bp.blogspot.com/-MGNsJd3_ldM/TxITMgJcAQI/AAAAAAAAAp8/sD-A1N_-xJM/s200/bash_gmail.png" width="200" /></a></div>Qualche tempo fa, in preda ad un impeto di nerditudo ho pensato: "Come  posso controllare il numero di email non lette sul mio account GMail con  uno script Bash?".  Mi sono subito messo alla ricerca di una soluzione e l'ho trovata, ma  non funzionava, quindi l'ho aggiustata (semplificandola parecchio peraltro) in modo che facesse ciò che mi  serviva. Purtroppo non trovo più il link, perciò non posso dare i giusti  meriti a chi ha scritto lo script sul quale mi sono basato, però credo sia altrettanto giusto che sappiate che non è tutta farina del mio sacco.<br /><br /><a name='more'></a>Allora, io direi che è meglio se vediamo prima tutto il codice, così lo analizziamo.<br /><pre class="brush:bash">#! /bin/bash<br /><br />echo -e "\nnome utente:";<br />read nome<br /><br />echo -e "\npassword:";<br />read -s pwd<br /><br />mail=$(curl -u $nome:$pwd --silent "https://mail.google.com/mail/feed/atom" | sed -n '/&lt;fullcount&gt;/p' | tr "&lt;fullcount&gt;,&lt;/fullcount&gt;" " ");<br /><br />echo -e "\n---------------------------------\nEmail non lette: $mail\n---------------------------------\n";<br />    <br />exit 0;<br /><br /> </pre>Innanzitutto, vengono richiesti il nome utente e la password mediante il comando read. Il parametro <b>-s</b> della read sta per silent, cioè non mostra ciò che si scrive durante la digitazione.<br /><br />Inizia ora la parte interessante, che si concentra nella riga 9 del codice appena mostrato, che vediamo passo passo.<br /><pre class="brush:bash">mail=$(curl -u $nome:$pwd --silent "https://mail.google.com/mail/feed/atom"<br /><br /></pre>Lo scopo è far sì che la variabile mail contenga il numero di email non lette. Per prelevare il feed atom della casella di posta sfruttiamo <b>curl</b> e visto che è richiesta una autenticazione, usiamo il parametro <b>-u</b>, cui seguono ovviamente nome utente e password; con <b>--silent</b> non viene mostrato niente a schermo.<br /><br />Quel che otteniamo grazie a curl è qualcosa del genere:<br /><pre class="brush:xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br /><br />&lt;feed version="0.3" xmlns="http://purl.org/atom/ns#"&gt;<br /><br />&lt;title&gt;Gmail - Inbox for andovais@gmail.com&lt;/title&gt;<br /><br />&lt;tagline&gt;New messages in your Gmail Inbox&lt;/tagline&gt;<br /><br />&lt;fullcount&gt;0&lt;/fullcount&gt;<br /><br />&lt;link rel="alternate" href="http://mail.google.com/mail" type="text/html" /&gt;<br /><br />&lt;modified&gt;2012-01-14T23:40:54Z&lt;/modified&gt;<br /><br />&lt;/feed&gt;</pre>La riga 9 contiene il numero di email non lette. Dobbiamo&nbsp; isolare lei e poi isolare il numeretto che contiene. Qui entra in scena <b>sed</b>.<br /><pre class="brush:bash">sed -n '/&lt;fullcount&gt;/p'</pre>Grazie alla pipe diamo il feed in pasto al nostro amico sed e gli diciamo di stampare la riga contenente il pattern "&lt;fullcount&gt;", col parametro <b>-n </b>gli diciamo di stampare <b>solo</b> quella. Otteniamo qualcosa del tipo:<br /><blockquote class="tr_bq">&lt;fullcount&gt;0&lt;/fullcount&gt;</blockquote>Sempre grazie ad una pipe, dirigiamo l'output al suo ultimo lido: <b>tr</b>. <br /><pre class="brush:bash">&nbsp;tr "&lt;fullcount&gt;,&lt;/fullcount&gt;" " "</pre>Con tr convertiamo i tag xml in spazi vuoti, lasciando solo soletto il numero che stava lì in mezzo.<br />Adesso quindi la variabile $mail contiene il numero di email non lette&nbsp; (nel mio caso zero), ne stampiamo a video il contenuto et voilà :D<br /><br />Spero di essere stato abbastanza chiaro e di non aver scritto boiate, soprattutto su sed, che praticamente non conosco. Sicuramente esiste una soluzione migliore, ma questa funziona e ciò mi basta :)<br /><br /><br />p.s. L'immagine del post utilizza un icona di  <b>DsynFLO Creations</b>, che potete trovare <a href="http://www.iconspedia.com/icon/android-gmail-16-32.html">qui</a>.<br /><code></code><br /><code><code></code></code>
     </div>
 -->
   
 <!--
-    <h1><a href="/2015/11/10/linuxday-2015-e-andata.html">Linux Day 2015 - E anche quest'anno è andata</a></h1>
+    <h1><a href="/2011/12/28/veromix-plasmoide-per-regolare-laudio.html">Veromix, plasmoide per regolare l'audio</a></h1>
     <p class="author">
-      <span class="date">2015-11-10 00:00:00 +0100</span>
+      <span class="date">2011-12-28 15:04:00 +0100</span>
     </p>
 -->
-    <span class="post-meta">Nov 10, 2015</span>
+    <span class="post-meta">Dec 28, 2011</span>
 
     <h2>
-      <a class="post-link" href="/2015/11/10/linuxday-2015-e-andata.html">Linux Day 2015 - E anche quest'anno è andata</a>
+      <a class="post-link" href="/2011/12/28/veromix-plasmoide-per-regolare-laudio.html">Veromix, plasmoide per regolare l'audio</a>
     </h2>
 
     <p class="post-summary">
@@ -977,33 +919,20 @@ non so se un font si possa definire equilibrato, ma nel caso, lo è di certo. Co
     </p>
 <!--
     <div class="content">
-      <p>Circa due settimane fa, come ben sappiamo, si è tenuto il <strong>Linux Day</strong>. In quel di <strong>Cagliari</strong>, stavolta solo (si fa per dire) seminari, per mancanza di spazi da adibire a install corner, aree demo et similia. Ciononostante, è stata veramente una bella giornata.</p>
-
-<p>L’affluenza è stata in linea con le aspettative e forse, in alcuni momenti della giornata (poco prima e appena dopo pranzo), anche superiori. E magari non sembra, ma sono cose belle. Questo grazie anche alla presenza degli studenti delle scuole superiori, che ogni anno invitiamo. Purtroppo alcuni di loro hanno movimentato lo svolgimento dei seminari, disturbando al punto che mi sono reso protagonista di un siparietto durante il mio talk in cui mi fermo, batto due volte col piede sulla pedana guardando <em>brutto</em> i ragazzi, che capiscono e si zittiscono, per fortuna.</p>
-
-<p>Effettivamente faccio paura.</p>
-
-<p><img src="https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/p720x720/12143084_10153416635562326_7780239441049279199_n.jpg?oh=0acd1c0d04ef08c2cca4f70b279841f3&amp;oe=56C1AD8D" alt="Talk" title="Paura, eh?" /></p>
-
-<p>Come anticipato nello scorso post, ho parlato di <a href="http://linuxday.gulch.it/slides/2015/traccia-tecnica/dbms.pdf" title="Graph Database">Graph Database</a>, un tipo di database la cui adozione è in forte crescita e a cui mi sono avvicinato poco più di un anno fa. Addirittura qualcuno stima che tra 3-4 anni ci sarà un vero e proprio boom; <a href="https://www.google.it/trends/explore#q=graph%20database">qualcosa</a> mi dice che costoro ci hanno preso in pieno, visto anche l’interesse che il talk ha suscitato nei presenti.
-Più nel dettaglio, il seminario ha affrontato le ragioni che hanno portato alla loro nascita e gli aspetti teorici di base, introducendo infine <a href="http://neo4j.com">Neo4j</a>, il più popolare Graph-DBMS.</p>
-
-<p>A <a href="http://linuxday.gulch.it/node/67" title="Materiale traccia divulgativa">questo link</a>, il materiale dei seminari della traccia divulgativa, a <a href="http://linuxday.gulch.it/node/68" title="&quot;Materiale traccia tecnica">quest’altro</a>, il materiale della traccia tecnica. Letture (ovviamente) consigliatissime.
-<a href="http://linuxday.gulch.it/album/2015/">Qui</a>, le nostre foto della manifestazione.</p>
-
+      <div class="separator" style="clear: both; text-align: center;"></div><a href="http://4.bp.blogspot.com/-g1o42N-dyt8/TvsThKEEYLI/AAAAAAAAAnQ/m8gb04FB6wE/s1600/plasma_audio.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-g1o42N-dyt8/TvsThKEEYLI/AAAAAAAAAnQ/m8gb04FB6wE/s1600/plasma_audio.png" /></a>Stanco della troppo minimale applet di kmix, sono andato alla ricerca di qualche plasmoide più attrezzato, di quelli che un altro po' e ti fanno pure il caffè (anzi, il <b>k</b>affè XD) e mi sono imbattuto in <b>Veromix</b>, che si è subito guadagnato un posto nel mio pannello principale.<br />Il suo pregio è dunque quello di consentire una regolazione dell'audio in maniera completa, comodamente da un pannello di Plasma, diventando sostanzialmente un sostituto del tool di regolazione del volume di Pulseaudio.<br /><br /><a name='more'></a>Partiamo con il <a href="http://kde-look.org/content/show.php/Veromix+-+volume+control+%2B+soundmenu?content=116676">link della pagina relativa su kde-look.org</a>, grazie alla qualche possiamo farci un'idea di cosa ci possa offrire.<br /><br />In questo momento, sul mio pc si presenta così:<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-ISxnwRtecew/TvsZcYeNqiI/AAAAAAAAAoA/oEq-cYnhuVo/s1600/veromix.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="247" src="http://3.bp.blogspot.com/-ISxnwRtecew/TvsZcYeNqiI/AAAAAAAAAoA/oEq-cYnhuVo/s320/veromix.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Ascolto tantissimo De Andrè :D</td></tr></tbody></table><br /><div class="separator" style="clear: both; text-align: center;"></div>Da questa immagine vediamo la cosa più importante, che poi è il succo del discorso: è possibile <b>regolare</b> separatamente <b>ogni flusso audio</b>, in uscita e in ingresso, in maniera veramente comoda .<br />Veromix è anche in grado di oltrepassare la soglia del 100% (esattamente come l'applicazione desktop di regolazione di Pulseaudio), arrivando ad una percentuale che impostiamo noi. Per fare un esempio, se io ritengo che nonostante il volume sia al massimo, l'audio è troppo basso, posso impostare il limite a che ne so, 150%: a questo punto la soglia estrema è decisamente più alta, ma bisogna tener conto che alzando ulteriormente il volume verso il nuovo valore, i suoni usciranno dalle casse (o dalle cuffie) molto probabilmente distorti. Di default il massimo mi pare che sia proprio 150%.<br /><br />Veromix è anche abbastanza configurabile:<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-ZzYMuuE6jf8/TvsZHNG75AI/AAAAAAAAAn0/Lq9uPrmDk8U/s1600/veromix1.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="196" src="http://2.bp.blogspot.com/-ZzYMuuE6jf8/TvsZHNG75AI/AAAAAAAAAn0/Lq9uPrmDk8U/s320/veromix1.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">La buona configurabilità ci piace sempre tanto</td></tr></tbody></table><br />Insomma, senza farla tanto lunga, <b>Veromix è comodo e figo</b>, un plasmoide da provare :)
     </div>
 -->
   
 <!--
-    <h1><a href="/2015/10/15/reboot.html">Reboot</a></h1>
+    <h1><a href="/2011/11/12/prime-impressioni-su-fedora-16-xfce.html">Prime impressioni su Fedora 16 Xfce</a></h1>
     <p class="author">
-      <span class="date">2015-10-15 00:00:00 +0200</span>
+      <span class="date">2011-11-12 15:12:00 +0100</span>
     </p>
 -->
-    <span class="post-meta">Oct 15, 2015</span>
+    <span class="post-meta">Nov 12, 2011</span>
 
     <h2>
-      <a class="post-link" href="/2015/10/15/reboot.html">Reboot</a>
+      <a class="post-link" href="/2011/11/12/prime-impressioni-su-fedora-16-xfce.html">Prime impressioni su Fedora 16 Xfce</a>
     </h2>
 
     <p class="post-summary">
@@ -1013,40 +942,20 @@ Più nel dettaglio, il seminario ha affrontato le ragioni che hanno portato alla
     </p>
 <!--
     <div class="content">
-      <p>Ieri sera ho pubblicato un nuovo post e di notte mi sono dedicato alla personalizzazione del blog. Mi pare dunque giusto fare il punto della situazione.</p>
-
-<p>Le ragioni per cui ho smesso di scrivere sono sostanzialmente due: ho fatto meno “smanettamenti” degni di nota e mi è passata la voglia di scrivere.</p>
-
-<p>Vicessitudini recenti mi hanno però ricordato perché avevo aperto il blog: voglia di condividere quel che facevo e quel poco che sapevo, ché magari quella cosa poteva tornare anche utile a qualcun altro, diventando anche degli appunti da riguardare in caso di necessità.</p>
-
-<p>E quindi eccoci. Scriverò come sempre quando mi girerà, ma credo che scriverò.</p>
-
-<h3 id="aspetti-tecnici">Aspetti tecnici</h3>
-<p>Come ho già detto in altre sedi, ho migrato tutto da <strong>Blogger</strong> a <strong><a href="https://pages.github.com/" title="GitHub Pages">GitHub Pages</a></strong>, chiudendo definitivamente il vecchio.
-Grazie a <strong>GitHub Pages</strong> ho potuto mettere in piedi in poco tempo un blog leggero, minimale e hostato gratuitamente, perché di fatto sta in un repository. Creo in locale un nuovo file per il post, poi <code>commit</code> e <code>push</code>. Facile, semplice, comodo e dal contenutissimo uso di banda.</p>
-
-<p>Il blog non fa uso di un CMS ma di <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>, che è proprio l’engine che sta dietro a GitHub Pages. In poche parole è un <em>generatore di pagine web statiche</em>: io scrivo un post in <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> e lui lo converte automaticamente in pagina HTML. Meraviglioso.</p>
-
-<p>L’unico problema è che a causa della migrazione, nei post importati, i link che referenziano altri post sono rotti perché puntano ai vecchi url. Immagino di dover scrivere uno script per correggerli.
-In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Jekyll+GitHub Pages</em>. Consigliatissima.</p>
-
-<p>Un’altra cosa da fare sarà automatizzare nuovamente la condivisione dei post su Twitter e G+.</p>
-
-<p>Comunque man mano sistemerò tutto.</p>
-
+      <div class="" style="clear: both; text-align: left;"><a href="http://1.bp.blogspot.com/-Z62E5b2mrYY/Trv0waW4API/AAAAAAAAAdw/NhUvrAD2BSg/s1600/fedora_16_xfce.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="248" src="http://1.bp.blogspot.com/-Z62E5b2mrYY/Trv0waW4API/AAAAAAAAAdw/NhUvrAD2BSg/s320/fedora_16_xfce.png" width="320" /></a>Nonostante l'<a href="http://anonimoconiglio.blogspot.com/2011/08/labisso-di-hype.html">hype</a> non troppo elevato, da ieri è disponibile la release 16 di Fedora. <br />Dato che sul portatile ormai mi sono accasato su Xfce, ho scaricato direttamente la variante che monta il DE del sorcio.<br />Sono tante le <a href="http://docs.fedoraproject.org/it-IT/Fedora/16/html/Release_Notes/index.html">novità per questo rilascio</a> e tutte di sostanza, a dimostrazione che Fedora è una distribuzione da tenere d'occhio, se non altro perché include sempre soluzioni nuove che verranno (forse) adottate solo successivamente da altre distro.</div><div class="" style="clear: both; text-align: left;"></div><a name='more'></a><br /><h3>            Pronti, partenza via</h3><div class="" style="clear: both; text-align: left;">La prima novità è il passaggio totale al nuovo sistema di boot <a href="http://freedesktop.org/wiki/Software/systemd/">systemd</a>. L'avvio è decisamente veloce, sicuramente molto più rapido rispetto a Fedora 15.</div><div class="" style="clear: both; text-align: left;">In compenso, ho riscontrato qualche problemino nello spegnimento, ma niente di grave: in pratica rimane inchiodato alla schermata col logo di Fedora, ma mi basta tenere premuto il tasto di accensione del pc per farlo spegnere regolarmente.</div><div class="" style="clear: both; text-align: left;"><br /><br /></div><div class="" style="clear: both; text-align: left;"></div><h3>            Il Desktop</h3>Parliamo di un desktop Xfce standard, senza modifiche rilevanti (molto bello il wallpaper di default). Ho riscontrato un'elevata reattività generale, cosa non presente a mio giudizio nella precedente release.<br />Come applicazioni installate troviamo veramente di tutto, ad occhio non ci sono gravi mancanze. In particolare, come player video è stato scelto <a href="http://goodies.xfce.org/projects/applications/parole">Parole</a> (da me rimpiazzato con VLC) e come player audio invece abbiamo <a href="https://en.wikipedia.org/wiki/Quod_Libet_%28software%29">Quod Libet</a>. Come strumenti per l'ufficio troviamo Abiword e Gnumeric, ma io ho subito installato LibreOffice.<br /><br /><br /><h3>          Non è tutto rose e fiori</h3>Ci sono anche le spine, anzi <b>una</b> spina, ma bella appuntita: <b>il power manager di Xfce è buggato</b>. Non riesco a capacitarmi di come sia stato possibile il rilascio di una iso con un bug del genere. Il sistema operativo funziona perfettamente, ma non è possibile gestire le impostazioni energetiche, come la luminosità del monitor dopo <i>n</i> minuti di inattività, associare al pulsante fisico di accensione un'azione (spegnimento, ibernazione, uscita, ecc.) e il resto. È stato immediatamente <a href="https://bugzilla.redhat.com/show_bug.cgi?id=736727">aperto un bug su Bugzilla</a> e nella giornata di oggi <b>è stato rilasciato l'update che corregge il bug</b>, disponibile nei repository stable; basta aggiornare il sistema e tutto si risolve :)<br /><br /><br /><h3>         Insomma...</h3>La spin Xfce è una buona scelta, il sistema è reattivo e funziona senza particolari problemi (a parte quel grosso bug del gestore energetico), ma poteva essere moooolto più curata, spero sinceramente che lo sia la prossima release.<br /><br /><br />Buona Fedora Xfce :)
     </div>
 -->
   
 <!--
-    <h1><a href="/2015/10/14/linux-day-2015-manca-poco.html">Linux Day 2015 - manca poco</a></h1>
+    <h1><a href="/2011/11/11/due-piccole-novita-per-il-blog.html">Due piccole novità per il blog</a></h1>
     <p class="author">
-      <span class="date">2015-10-14 00:00:00 +0200</span>
+      <span class="date">2011-11-11 23:09:00 +0100</span>
     </p>
 -->
-    <span class="post-meta">Oct 14, 2015</span>
+    <span class="post-meta">Nov 11, 2011</span>
 
     <h2>
-      <a class="post-link" href="/2015/10/14/linux-day-2015-manca-poco.html">Linux Day 2015 - manca poco</a>
+      <a class="post-link" href="/2011/11/11/due-piccole-novita-per-il-blog.html">Due piccole novità per il blog</a>
     </h2>
 
     <p class="post-summary">
@@ -1056,16 +965,7 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
     </p>
 <!--
     <div class="content">
-      <p>Ciao!</p>
-
-<p>Scrivo nuovamente sul blog dopo eoni per ricordarvi (e ricordarmi, si sa mai mi scordi) che il 24 Ottobre, cioè tra 10 giorni, si terrà il <strong>Linux Day 2015</strong>.</p>
-
-<p>Vi segnalo in particolare, per ovvi motivi, l’evento di <strong>Cagliari</strong>. Qui, come al solito, <a href="http://linuxday.gulch.it/node/65">la giornata di talk</a> si suddividerà in due tracce: <a href="http://linuxday.gulch.it/node/67" title="Traccia Divulgativa">Divulgativa</a> e <a href="http://linuxday.gulch.it/node/68" title="Traccia Tecnica">Tecnica</a>.</p>
-
-<p>Se siete nei paraggi, vi invito dunque a venire e giusto prima di pranzo (12:20) parleremo assieme di <strong>Graph Database</strong> (o meglio, io parlo e voi fate di sì con la testa facendo finta di ascoltarmi).</p>
-
-<p>Ci vediamo al Linux Day!</p>
-
+      <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-Ikj0IGTKdiw/Tr2dOMWVn4I/AAAAAAAAAfQ/urOOQg6lTak/s1600/logo+blog+nospace.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-Ikj0IGTKdiw/Tr2dOMWVn4I/AAAAAAAAAfQ/urOOQg6lTak/s1600/logo+blog+nospace.png" /></a></div>Come da titolo, da stasera ci sono due piccole novità per questo piccolo angolo di web.<br />La <b>prima</b> l'avrete senz'altro notata: <b>una nuova testata</b>. Insomma, dopo vari tentativi ho fatto una scritta con GIMP che desse un'identità al blog. Se vi state chiedendo dov'è finito il riferimento a GNU/Linux (prima c'era un pinguino in background), beh, sta dentro la 'b': la parola "Linux" scritta in binario con codifica ASCII.<br /><br /><a name='more'></a><br />La <b>seconda</b> invece, è la seguente: mi è saltato in mente di fare una <b>pagina Google+ del blog</b>, per dare la possibilità a più persone di rimanere aggiornati sui post che finiscono qua dentro.<br />Per accedervi potete andare a <a href="https://plus.google.com/u/0/b/116514234298958416545/">questo link</a>, ma ho prontamente aggiornato il social link, quindi potete anche cliccare sulla "G" qua a destra (a breve credo che aggiornerò anche le icone).<br /><br />Ah giusto, visto che non ho trovato servizi di sincronizzazione adatti, faccio un po' fatica ad aggiornare tempestivamente anche il mio account identi.ca, ragion per cui ho rimosso il social link.<br /><br />Per ora è tutto, a presto :)
     </div>
 -->
   
@@ -1077,11 +977,11 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
 <!--
   <div class="pagination">
     
-      <span class="previous">Previous</span>
+      <a href="/page4/" class="previous">Previous</a>
     
-    <span class="page_number ">Page: 1 of 11</span>
+    <span class="page_number ">Page: 5 of 11</span>
     
-      <a href="/page2/" class="next">Next</a>
+      <a href="/page6/" class="next">Next</a>
     
 -->
 
@@ -1089,12 +989,12 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
   
 <div class="pagination">
   
-    <span>&laquo; Prev</span>
+    <a href="/page4/">&laquo; Prev</a>
   
 
   <!-- 
     
-      <em>1</em>
+      <a href="/page4/">1</a>
     
   
     
@@ -1110,7 +1010,7 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
     
   
     
-      <a href="/page5/">5</a>
+      <em>5</em>
     
   
     
@@ -1139,7 +1039,7 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
    -->
 
   
-    <a href="/page2/">Next &raquo;</a>
+    <a href="/page6/">Next &raquo;</a>
   
   </div>
   

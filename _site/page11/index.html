@@ -10,7 +10,7 @@
   <meta name="description" content="Confondersi tra Halloween e Natale perché 31oct = 25dec">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://mattux.github.io/">
+  <link rel="canonical" href="http://mattux.github.io/page11/">
   <link rel="alternate" type="application/rss+xml" title="Mattux >> log" href="http://mattux.github.io/feed.xml" />
 </head>
 
@@ -855,15 +855,15 @@
   <!-- This loops through the paginated posts -->
   
 <!--
-    <h1><a href="/2016/01/13/jekyll-e-i-sistemi-di-commenti.html">Jekyll e i sistemi di commenti</a></h1>
+    <h1><a href="/2010/09/18/rollover-di-immagini-in-css.html">Rollover di immagini in css</a></h1>
     <p class="author">
-      <span class="date">2016-01-13 00:00:00 +0100</span>
+      <span class="date">2010-09-18 12:51:00 +0200</span>
     </p>
 -->
-    <span class="post-meta">Jan 13, 2016</span>
+    <span class="post-meta">Sep 18, 2010</span>
 
     <h2>
-      <a class="post-link" href="/2016/01/13/jekyll-e-i-sistemi-di-commenti.html">Jekyll e i sistemi di commenti</a>
+      <a class="post-link" href="/2010/09/18/rollover-di-immagini-in-css.html">Rollover di immagini in css</a>
     </h2>
 
     <p class="post-summary">
@@ -873,40 +873,20 @@
     </p>
 <!--
     <div class="content">
-      <p>In un blog i commenti costituiscono una componente che ha un peso non trascurabile. I CMS tipicamente offrono <em>out of the box</em> un sistema di commenti, mentre i generatori di siti <strong>statici</strong> come <em>Jekyll</em> solitamente ne sono sprovvisti, essendo una funzionalità per sua natura <strong>dinamica</strong> (anche se con un po’ di inventiva si possono generare in maniera statica). Integrarne uno diventa quindi un problema perché è necessario l’utilizzo di codice dedicato e bisogna memorizzare i dati relativi ai commenti stessi.
-Non scordiamoci poi la gestione dello <em>spam</em>.
-Anche se qui non ho per il momento intenzione di usarne uno, spinto dalla curiosità ho considerato alcune opzioni.</p>
-
-<h3 id="disqushttpdisquscom"><a href="http://disqus.com/">Disqus</a></h3>
-<p>È la soluzione più adottata da chi ha un blog Jekyll. Tutti i dati sono memorizzati sui server Disqus. Purtroppo non è software libero, ma è la maniera più comoda.</p>
-
-<h3 id="hashoverhttptildehashcompagehashover"><a href="http://tildehash.com/?page=hashover">HashOver</a></h3>
-<p>Interessante, con un buon numero di <a href="https://github.com/jacobwb/hashover-next#notable-features">funzionalità</a>, ma usa PHP. Github Pages non supporta l’esecuzione di PHP.</p>
-
-<h3 id="issohttpsposativorgisso"><a href="https://posativ.org/isso/">Isso</a></h3>
-<p>Supporta Markdown, usa SQLite e Python. Non male e adatto a siti con piccole quantità di commenti, ma non va nella direzione che interessa a me. E inoltre, se Pages non supporta PHP, figuriamoci se supporta qualche tipo di database o Python.</p>
-
-<h3 id="staticcomments-pluginhttptheshedhezmattorgjekyll-static-comments"><a href="http://theshed.hezmatt.org/jekyll-static-comments/">StaticComments plugin</a></h3>
-<p>Ingegnosa soluzione per avere un sistema di commenti statico. Usa PHP e Ruby. Se ho capito come funziona, bisogna aggiungere una directory <code>_comment</code> atta a contenere dei file con le descrizioni <a href="http://yaml.org/" title="YAML">YAML</a> dei commenti; quando un utente lascia un commento, uno script PHP mi manda una email e, se non è spam, in base al suo contenuto devo generare il file con lo YAML e lanciare uno script Ruby che genera i commenti. Applicabile solo se non sei pigro e hai un bassissimo volume di commenti.</p>
-
-<h3 id="sfruttare-lissue-tracker-di-githubhttpivanzuzakinfo20110218github-hosted-comments-for-github-hosted-blogshtml"><a href="http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html">Sfruttare l’issue tracker di GitHub</a></h3>
-<p>A dir poco geniale. Richiede di avere un account di Github per commentare, ma poco male. <a href="https://github.com/izuzak/izuzak.github.com/issues/12#issuecomment-71345363">Qualcuno</a> ha aperto un <a href="https://github.com/wireddown/ghpages-ghcomments">repo apposito</a>. Finora la migliore soluzione che ho visto.</p>
-
-<p>Se mai dovessi dotare il blog di un sistema di commenti, potrebbe essere quest’ultimo oppure, non proprio entusiasticamente, Disqus.</p>
-
+      <div xmlns="http://www.w3.org/1999/xhtml">Come probabilmente avrete notato, da un po' di tempo sono comparse delle icone bianche che fanno riferimento ai miei account pubblici su alcuni social network e al feed rss di questo blog. Passando la freccetta del mouse sopra di essi vedrete che il logo contenuto nell'icona "diventa blu". In realtà sono due immagini diverse, ma carico un'altra immagine al verificarsi di questo evento, vale a dire effettuo quello che viene definito <b>rollover</b>.<br /><a name='more'></a><br />Ovviamente per farlo ci servono delle icone, per il momento sto usando le <a href="http://webtreats.mysitemyway.com/1540-infocus-simple-white-sidebar-social-media-icons/" target="_blank">inFocus</a>. Nel dettaglio, un esempio di codice necessario a ottenere questo effetto per realizzare un riferimento carino al nostro account di Twitter.<br /><br /><br /><b><i>HTML:</i></b><br /><blockquote>&lt;a href="<span style="color: maroon;"><i>URL_ACCOUNT_TWITTER</i></span>" id="twitter" title="Seguimi su Twitter" alt="Seguimi su Twitter" /&gt;&lt;/a&gt;</blockquote><b><i>CSS:</i></b><br /><blockquote>#twitter {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER</i></span>');;<br />width: 56px;<br />height: 56px;<br />display:block;<br />} </blockquote>Come potete vedere nell'HTML, il link è "vuoto", infatti non abbiamo un testo relativo, ma come invece si può notare osservando il codice css, un'immagine di sfondo (attributo <b>background</b>), di cui abbiamo anche impostato le dimensioni (attributi <b>width</b> e <b>height</b>), indicando di trattarlo come blocco (scrivendo <b>display:block;</b>).<br />Ora dobbiamo agire sull'effetto <i>hover</i>. La cosa è abbastanza semplice: <br /><blockquote>#twitter:hover {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER_HOVER</i></span>');;<br />} </blockquote>scrivendo <i>:hover</i> indichiamo appunto che questa regola vale quando il cursore del mouse ci passa sopra. C'è però un problema: la prima volta che l'utente passerà la freccetta del mouse sopra alla nostra icona vedrà un brutto effetto causato dal fatto che l'immagine viene caricata in cache solo quando l'evento <i>:hover</i> si verifica. Come ovviare? Semplice!<br />Quello che possiamo fare è realizzare noi un'immagine che contiene entrambe le immagini, una a destra e una a sinistra. Per esempio: <br /><div align="center"></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/_c9tXAWBZ8s4/TURkJJtxxcI/AAAAAAAAAFY/4_0jJx4PK5I/s1600/twitter.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/_c9tXAWBZ8s4/TURkJJtxxcI/AAAAAAAAAFY/4_0jJx4PK5I/s1600/twitter.png" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">l'icona per twitter :)</td><td class="tr-caption" style="text-align: center;"><br /></td></tr></tbody></table>e poi diciamo: "Senti bello, di default caricami la parte di sinistra, ma sull'effetto hover, quella di destra!". Come lo traduciamo in css? Vediamolo subito:<br /><blockquote>#twitter {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER</i></span>') <b>no-repeat left top</b>;;<br />width: 56px;<br />height: 56px;<br />display:block;<br />} </blockquote><blockquote>#twitter:hover {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER</i></span>') <b>no-repeat right top</b>;;<br />} </blockquote>Con i valori <b>no-repeat left top/no-repeat left top </b>indichiamo di non ripetere lo sfondo e poi il discorso sinistra-destra. Semplice no? Provate e ditemi se non è una figata :D</div>
     </div>
 -->
   
 <!--
-    <h1><a href="/2015/12/24/i-miei-font-preferiti-per-programmare.html">I miei font preferiti per programmare</a></h1>
+    <h1><a href="/2010/09/12/terminale-ls-colorato.html">Terminale: ls colorato</a></h1>
     <p class="author">
-      <span class="date">2015-12-24 00:00:00 +0100</span>
+      <span class="date">2010-09-12 08:00:00 +0200</span>
     </p>
 -->
-    <span class="post-meta">Dec 24, 2015</span>
+    <span class="post-meta">Sep 12, 2010</span>
 
     <h2>
-      <a class="post-link" href="/2015/12/24/i-miei-font-preferiti-per-programmare.html">I miei font preferiti per programmare</a>
+      <a class="post-link" href="/2010/09/12/terminale-ls-colorato.html">Terminale: ls colorato</a>
     </h2>
 
     <p class="post-summary">
@@ -916,58 +896,20 @@ Anche se qui non ho per il momento intenzione di usarne uno, spinto dalla curios
     </p>
 <!--
     <div class="content">
-      <p>Tempo addietro abbiamo parlato della mia fissa per gli schemi di colore. Stavolta parliamo di font e più precisamente dei font che preferisco usare per scrivere codice e che uso di consueto negli editor testuali. Non posso dirvi come rendono su display ad altissima risoluzione, ma su monitor “normali” rendono piuttosto bene, anche se il risultato è variabile in base all’OS e all’editor.</p>
-
-<p>In ordine sparso:</p>
-
-<ul>
-  <li>
-    <p><a href="https://damieng.com/envy-code-r" title="Envy Code R">Envy Code R</a>:
-l’ho usato per anni, ovunque. Forse un po’ particolare, ma con una bellissima leggibilità. Le ‘w’ e le ‘m’ possono apparire un po’ “impastate” se la resa non è ottimale;</p>
-  </li>
-  <li>
-    <p><a href="https://github.com/andreberg/Meslo-Font" title="Meslo LG">Meslo LG</a>:
-attualmente il mio preferito. Quasi non sembra un monospaziato. Ha una bella leggibilità anche a piccole dimensioni;</p>
-  </li>
-  <li>
-    <p><a href="http://quoteunquoteapps.com/courierprime/" title="Courier Prime Code">Courier Prime Code</a>:
-rivisitazione in chiave moderna di Courier ma che mantiene comunque un aspetto classico. Davvero bello;</p>
-  </li>
-  <li>
-    <p><a href="https://github.com/adobe-fonts/source-code-pro" title="Source Code Pro">Source Code Pro</a>:
-il famoso font di Adobe per i programmatori. All’inizio non mi piaceva, poi pian piano mi ha convinto;</p>
-  </li>
-  <li>
-    <p><a href="http://sourcefoundry.org/hack/">Hack</a>:
-è quasi elegante. Me l’ha segnalato qualche mese fa un amico (grazie!);</p>
-  </li>
-  <li>
-    <p><a href="http://www.levien.com/type/myfonts/inconsolata.html" title="Inconsolata">Inconsolata</a>:
-abbastanza famoso anche lui. Spesso mi salva in situazioni in cui altri font non hanno una resa abbastanza buona;</p>
-  </li>
-  <li>
-    <p><a href="http://www.carrois.com/fira-4-1/#download" title="Fira Sans Mono">Fira Sans Mono</a>:
-trovo che il font monospaziato di Mozilla abbia una leggibilità pazzesca, è praticamente impossibile confondere due caratteri tra loro. Molto bello il corsivo;</p>
-  </li>
-  <li>
-    <p><a href="http://www.fontsquirrel.com/fonts/cousine" title="Cousine">Cousine</a>:
-non so se un font si possa definire equilibrato, ma nel caso, lo è di certo. Come per <em>Inconsolata</em>, ho sempre riscontrato una resa a schermo ottima.</p>
-  </li>
-</ul>
-
+      Come mi capita spesso (anzi, spessissimo) oggi ho aperto il mio amato terminale e con mia sorpresa, il comando <b>ls</b> scriveva tutto dello stesso colore. Non sia mai! Ma facciamo un passo indietro: che è 'sto comando ls?<br /><a name='more'></a><br />Ordunque, <b>ls</b> (che sta per "list") è a dir poco fondamentale e ci consente di visualizzare il contenuto di una directory (per saperne di più scrivete nel terminale <b>man ls</b>). Una bella comodità è che a seconda del tipo di oggetto (file, directory, link simbolici, ecc) colora il testo in modo diverso, in modo da facilitarci la lettura del contenuto della directory, grazie all'opzione <b>--color</b>, che può valere "<b>always</b>", "<b>never</b>", "<b>auto</b>".<br /><br />Per qualche strana ragione però la funzionalità potrebbe essere disattivata. Come riabilitarla? Beh, io ho fatto così:<br /><ul><li>siccome voglio questa opzione sempre attivata, mi serve il comando <b>ls --color=always</b></li><li>siccome voglio creare un <i>alias</i>¹ del comando che ho scritto su scriverò <b>alias='ls --color=always'</b></li><li>siccome voglio che l'alias sia definitivo per il mio utente devo mettere il comando nel file <i>.bashrc</i><b> </b>che sta nella mia home</li></ul><br /><br />In soldoni, andiamo nella nostra home e apriamo il file <i>.bashrc, quindi&nbsp;</i>cerchiamo queste righe<span id="goog_280888175"></span>²<span id="goog_280888176"></span>:<br /><br /><blockquote># enable color support of ls and also add handy aliases<br />if [ -x /usr/bin/dircolors ]; then</blockquote><br />appena sotto scriviamo questo:<br /><br /><blockquote>alias='ls --color=always'</blockquote><br />&nbsp;Chiudiamo il file e dalla prossima sessione avremo ls colorato!<br /><hr id="note" /><br />¹ <span style="font-size: small;"><a href="http://mattuxblog.blogspot.com/2010/09/diamo-un-nome-ai-comandi-grazie-agli.html">giusto ieri ho scritto un articolo a riguardo :)</a></span><br />² <span class="Apple-style-span" style="font-size: small;"><span class="Apple-style-span">se non le trovate inseritele in fondo al file e buonanotte al secchio :)</span></span>
     </div>
 -->
   
 <!--
-    <h1><a href="/2015/11/10/linuxday-2015-e-andata.html">Linux Day 2015 - E anche quest'anno è andata</a></h1>
+    <h1><a href="/2010/09/11/diamo-un-nome-ai-comandi-grazie-agli.html">Diamo un nome ai comandi grazie agli alias</a></h1>
     <p class="author">
-      <span class="date">2015-11-10 00:00:00 +0100</span>
+      <span class="date">2010-09-11 10:00:00 +0200</span>
     </p>
 -->
-    <span class="post-meta">Nov 10, 2015</span>
+    <span class="post-meta">Sep 11, 2010</span>
 
     <h2>
-      <a class="post-link" href="/2015/11/10/linuxday-2015-e-andata.html">Linux Day 2015 - E anche quest'anno è andata</a>
+      <a class="post-link" href="/2010/09/11/diamo-un-nome-ai-comandi-grazie-agli.html">Diamo un nome ai comandi grazie agli alias</a>
     </h2>
 
     <p class="post-summary">
@@ -977,33 +919,20 @@ non so se un font si possa definire equilibrato, ma nel caso, lo è di certo. Co
     </p>
 <!--
     <div class="content">
-      <p>Circa due settimane fa, come ben sappiamo, si è tenuto il <strong>Linux Day</strong>. In quel di <strong>Cagliari</strong>, stavolta solo (si fa per dire) seminari, per mancanza di spazi da adibire a install corner, aree demo et similia. Ciononostante, è stata veramente una bella giornata.</p>
-
-<p>L’affluenza è stata in linea con le aspettative e forse, in alcuni momenti della giornata (poco prima e appena dopo pranzo), anche superiori. E magari non sembra, ma sono cose belle. Questo grazie anche alla presenza degli studenti delle scuole superiori, che ogni anno invitiamo. Purtroppo alcuni di loro hanno movimentato lo svolgimento dei seminari, disturbando al punto che mi sono reso protagonista di un siparietto durante il mio talk in cui mi fermo, batto due volte col piede sulla pedana guardando <em>brutto</em> i ragazzi, che capiscono e si zittiscono, per fortuna.</p>
-
-<p>Effettivamente faccio paura.</p>
-
-<p><img src="https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/p720x720/12143084_10153416635562326_7780239441049279199_n.jpg?oh=0acd1c0d04ef08c2cca4f70b279841f3&amp;oe=56C1AD8D" alt="Talk" title="Paura, eh?" /></p>
-
-<p>Come anticipato nello scorso post, ho parlato di <a href="http://linuxday.gulch.it/slides/2015/traccia-tecnica/dbms.pdf" title="Graph Database">Graph Database</a>, un tipo di database la cui adozione è in forte crescita e a cui mi sono avvicinato poco più di un anno fa. Addirittura qualcuno stima che tra 3-4 anni ci sarà un vero e proprio boom; <a href="https://www.google.it/trends/explore#q=graph%20database">qualcosa</a> mi dice che costoro ci hanno preso in pieno, visto anche l’interesse che il talk ha suscitato nei presenti.
-Più nel dettaglio, il seminario ha affrontato le ragioni che hanno portato alla loro nascita e gli aspetti teorici di base, introducendo infine <a href="http://neo4j.com">Neo4j</a>, il più popolare Graph-DBMS.</p>
-
-<p>A <a href="http://linuxday.gulch.it/node/67" title="Materiale traccia divulgativa">questo link</a>, il materiale dei seminari della traccia divulgativa, a <a href="http://linuxday.gulch.it/node/68" title="&quot;Materiale traccia tecnica">quest’altro</a>, il materiale della traccia tecnica. Letture (ovviamente) consigliatissime.
-<a href="http://linuxday.gulch.it/album/2015/">Qui</a>, le nostre foto della manifestazione.</p>
-
+      Nonostante ci siano applicazioni grafiche che ci consentono di fare praticamente tutto quello che ci passa per la testa, il terminale è a volte la soluzione ideale (quando non siamo costretti ad usarlo), per potenza, velocità e perché no, semplicità :)<br />Ma usare spesso lunghi comandi è certamente scomodo e soprattutto se siamo pigri ci viene incontro il meccanismo degli <b>alias</b>.<br /><a name='more'></a>In sostanza è come dire: "Da adesso questa roba qua la chiamo in questo modo qui".<br /><br />Prendiamo ad esempio il comando <b>rm</b>, che rimuove un file, ma lo fa senza chiedere conferma, a meno che non usiamo l'opzione <b>-i</b>, cioè così:<br /><blockquote>rm -i file_da_cancellare</blockquote><br />per fare in modo che ogni volta che uso <b>rm</b> il sistema utilizzi <b>rm -i</b> faremo in questa maniera:<br /><blockquote>alias rm = 'rm -i'</blockquote><br />&nbsp;e se vogliamo rimuovere l'alias scriveremo:<br /><blockquote>unalias rm</blockquote><br /><b>Attenzione</b>: in questo modo l'alias funziona solo per la sessione di terminale corrente, per renderlo definitivo dobbiamo scrivere il comando per definire l'alias nel file <i>.bashrc</i> che sta nella nostra home.
     </div>
 -->
   
 <!--
-    <h1><a href="/2015/10/15/reboot.html">Reboot</a></h1>
+    <h1><a href="/2010/08/18/gnulinux-convertire-immagini-bincue-in.html">GNU/Linux: Convertire immagini bin/cue in iso</a></h1>
     <p class="author">
-      <span class="date">2015-10-15 00:00:00 +0200</span>
+      <span class="date">2010-08-18 15:37:00 +0200</span>
     </p>
 -->
-    <span class="post-meta">Oct 15, 2015</span>
+    <span class="post-meta">Aug 18, 2010</span>
 
     <h2>
-      <a class="post-link" href="/2015/10/15/reboot.html">Reboot</a>
+      <a class="post-link" href="/2010/08/18/gnulinux-convertire-immagini-bincue-in.html">GNU/Linux: Convertire immagini bin/cue in iso</a>
     </h2>
 
     <p class="post-summary">
@@ -1013,40 +942,20 @@ Più nel dettaglio, il seminario ha affrontato le ragioni che hanno portato alla
     </p>
 <!--
     <div class="content">
-      <p>Ieri sera ho pubblicato un nuovo post e di notte mi sono dedicato alla personalizzazione del blog. Mi pare dunque giusto fare il punto della situazione.</p>
-
-<p>Le ragioni per cui ho smesso di scrivere sono sostanzialmente due: ho fatto meno “smanettamenti” degni di nota e mi è passata la voglia di scrivere.</p>
-
-<p>Vicessitudini recenti mi hanno però ricordato perché avevo aperto il blog: voglia di condividere quel che facevo e quel poco che sapevo, ché magari quella cosa poteva tornare anche utile a qualcun altro, diventando anche degli appunti da riguardare in caso di necessità.</p>
-
-<p>E quindi eccoci. Scriverò come sempre quando mi girerà, ma credo che scriverò.</p>
-
-<h3 id="aspetti-tecnici">Aspetti tecnici</h3>
-<p>Come ho già detto in altre sedi, ho migrato tutto da <strong>Blogger</strong> a <strong><a href="https://pages.github.com/" title="GitHub Pages">GitHub Pages</a></strong>, chiudendo definitivamente il vecchio.
-Grazie a <strong>GitHub Pages</strong> ho potuto mettere in piedi in poco tempo un blog leggero, minimale e hostato gratuitamente, perché di fatto sta in un repository. Creo in locale un nuovo file per il post, poi <code>commit</code> e <code>push</code>. Facile, semplice, comodo e dal contenutissimo uso di banda.</p>
-
-<p>Il blog non fa uso di un CMS ma di <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>, che è proprio l’engine che sta dietro a GitHub Pages. In poche parole è un <em>generatore di pagine web statiche</em>: io scrivo un post in <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> e lui lo converte automaticamente in pagina HTML. Meraviglioso.</p>
-
-<p>L’unico problema è che a causa della migrazione, nei post importati, i link che referenziano altri post sono rotti perché puntano ai vecchi url. Immagino di dover scrivere uno script per correggerli.
-In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Jekyll+GitHub Pages</em>. Consigliatissima.</p>
-
-<p>Un’altra cosa da fare sarà automatizzare nuovamente la condivisione dei post su Twitter e G+.</p>
-
-<p>Comunque man mano sistemerò tutto.</p>
-
+      Qualche giorno fa mi è capitato di dover convertire l'immagine di un cd da bin/cue in iso e mi è venuto in soccorso un comodo tool da terminale. Il suo nome è <b>bchunk</b>. Utilizzarlo è molto semplice:<br /><div style="text-align: left;"><br /></div><div style="text-align: center;"><b><i style="font-family: &quot;Courier New&quot;,Courier,monospace;">bchunk file.bin file.cue nome_file_risultante.iso</i></b></div><div style="text-align: left;"><b><br /></b></div><div style="text-align: left;">Una volta lanciato il comando in pochissimo tempo avremo l'immagine in formato iso :D</div><div style="text-align: left;"><br /></div>
     </div>
 -->
   
 <!--
-    <h1><a href="/2015/10/14/linux-day-2015-manca-poco.html">Linux Day 2015 - manca poco</a></h1>
+    <h1><a href="/2010/08/07/gnulinux-skype-non-squilla-quando-ci.html">GNU/Linux: Skype non squilla quando ci chiamano? Aggiriamo il problema!</a></h1>
     <p class="author">
-      <span class="date">2015-10-14 00:00:00 +0200</span>
+      <span class="date">2010-08-07 11:31:00 +0200</span>
     </p>
 -->
-    <span class="post-meta">Oct 14, 2015</span>
+    <span class="post-meta">Aug 7, 2010</span>
 
     <h2>
-      <a class="post-link" href="/2015/10/14/linux-day-2015-manca-poco.html">Linux Day 2015 - manca poco</a>
+      <a class="post-link" href="/2010/08/07/gnulinux-skype-non-squilla-quando-ci.html">GNU/Linux: Skype non squilla quando ci chiamano? Aggiriamo il problema!</a>
     </h2>
 
     <p class="post-summary">
@@ -1056,16 +965,7 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
     </p>
 <!--
     <div class="content">
-      <p>Ciao!</p>
-
-<p>Scrivo nuovamente sul blog dopo eoni per ricordarvi (e ricordarmi, si sa mai mi scordi) che il 24 Ottobre, cioè tra 10 giorni, si terrà il <strong>Linux Day 2015</strong>.</p>
-
-<p>Vi segnalo in particolare, per ovvi motivi, l’evento di <strong>Cagliari</strong>. Qui, come al solito, <a href="http://linuxday.gulch.it/node/65">la giornata di talk</a> si suddividerà in due tracce: <a href="http://linuxday.gulch.it/node/67" title="Traccia Divulgativa">Divulgativa</a> e <a href="http://linuxday.gulch.it/node/68" title="Traccia Tecnica">Tecnica</a>.</p>
-
-<p>Se siete nei paraggi, vi invito dunque a venire e giusto prima di pranzo (12:20) parleremo assieme di <strong>Graph Database</strong> (o meglio, io parlo e voi fate di sì con la testa facendo finta di ascoltarmi).</p>
-
-<p>Ci vediamo al Linux Day!</p>
-
+      Ho notato che skype non emetteva alcun suono quando mi chiamavano, nonostante il file che dovesse riprodurre esiste. La cosa non è di per sé grave, per cui non mi sono adoperato per risolvere il problema. Qualche giorno fa però ho deciso di porvi rimedio.<br />Questo che illustrerò è solo un modo per aggirarlo, non per risolvere di fatto il problema.<br />&nbsp;In sostanza possiamo dire a skype di eseguire un comando per ogni evento quindi anche quando ci chiamano, ma poniamo fine ai preamboli e mettiamoci all'opera!<br /><a name='more'></a><br />Non so se conoscete <b>mplayer</b>,&nbsp; il famoso riproduttore multimediale. Beh, di suo è un programma a riga di comando, ma sono disponibili interfacce grafiche. A noi non serve però l'interfaccia grafica, ma la riga di comando per riprodurre l'audio, che è<br /><div style="text-align: center;"><br /></div><div style="text-align: center;"><span style="font-family: 'Courier New', Courier, monospace;"><i><b>mplayer /directory/che/contiene/il/file.estensione </b></i></span></div><div style="text-align: center;"><br /></div><div style="text-align: left;"><span style="font-family: 'Trebuchet MS', sans-serif;">Ora </span>dobbiamo dire a skype di eseguire questo comando quando ci chiamano.</div><ol><li>Aprite Skype</li><li>Cliccate sul simbolo di Skype in basso a sinistra <span id="goog_1568598837"></span><span id="goog_1568598838"></span></li><li>Cliccate su Opzioni -&gt; Notifiche -&gt;Vista avanzata</li><li>Cliccate su "Suoneria chiamata in ingresso"</li></ol>A questo punto&nbsp; alla voce "Esegui lo script seguente" inserite il comando<br /><div style="text-align: center;"><br /></div><div style="text-align: center;"><span style="font-family: 'Courier New', Courier, monospace;"><i><b>mplayer /usr/share/skype/sounds/CallRingingIn.wav&nbsp; </b></i></span></div><br />oppure fate seguire a 'mplayer' il riferimento al suono che decidete di far riprodurre. Ovviamente vale anche per gli altri eventi.
     </div>
 -->
   
@@ -1077,11 +977,11 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
 <!--
   <div class="pagination">
     
-      <span class="previous">Previous</span>
+      <a href="/page10/" class="previous">Previous</a>
     
-    <span class="page_number ">Page: 1 of 11</span>
+    <span class="page_number ">Page: 11 of 11</span>
     
-      <a href="/page2/" class="next">Next</a>
+      <span class="next ">Next</span>
     
 -->
 
@@ -1089,12 +989,12 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
   
 <div class="pagination">
   
-    <span>&laquo; Prev</span>
+    <a href="/page10/">&laquo; Prev</a>
   
 
   <!-- 
     
-      <em>1</em>
+      <a href="/page10/">1</a>
     
   
     
@@ -1134,12 +1034,12 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
     
   
     
-      <a href="/page11/">11</a>
+      <em>11</em>
     
    -->
 
   
-    <a href="/page2/">Next &raquo;</a>
+    <span>Next &raquo;</span>
   
   </div>
   

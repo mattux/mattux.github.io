@@ -10,7 +10,7 @@
   <meta name="description" content="Confondersi tra Halloween e Natale perché 31oct = 25dec">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://mattux.github.io/">
+  <link rel="canonical" href="http://mattux.github.io/page10/">
   <link rel="alternate" type="application/rss+xml" title="Mattux >> log" href="http://mattux.github.io/feed.xml" />
 </head>
 
@@ -855,15 +855,15 @@
   <!-- This loops through the paginated posts -->
   
 <!--
-    <h1><a href="/2016/01/13/jekyll-e-i-sistemi-di-commenti.html">Jekyll e i sistemi di commenti</a></h1>
+    <h1><a href="/2010/12/07/pdfjam-gruppo-di-script-per-i-pdf.html">PDFjam: gruppo di script per i pdf</a></h1>
     <p class="author">
-      <span class="date">2016-01-13 00:00:00 +0100</span>
+      <span class="date">2010-12-07 15:47:00 +0100</span>
     </p>
 -->
-    <span class="post-meta">Jan 13, 2016</span>
+    <span class="post-meta">Dec 7, 2010</span>
 
     <h2>
-      <a class="post-link" href="/2016/01/13/jekyll-e-i-sistemi-di-commenti.html">Jekyll e i sistemi di commenti</a>
+      <a class="post-link" href="/2010/12/07/pdfjam-gruppo-di-script-per-i-pdf.html">PDFjam: gruppo di script per i pdf</a>
     </h2>
 
     <p class="post-summary">
@@ -873,40 +873,20 @@
     </p>
 <!--
     <div class="content">
-      <p>In un blog i commenti costituiscono una componente che ha un peso non trascurabile. I CMS tipicamente offrono <em>out of the box</em> un sistema di commenti, mentre i generatori di siti <strong>statici</strong> come <em>Jekyll</em> solitamente ne sono sprovvisti, essendo una funzionalità per sua natura <strong>dinamica</strong> (anche se con un po’ di inventiva si possono generare in maniera statica). Integrarne uno diventa quindi un problema perché è necessario l’utilizzo di codice dedicato e bisogna memorizzare i dati relativi ai commenti stessi.
-Non scordiamoci poi la gestione dello <em>spam</em>.
-Anche se qui non ho per il momento intenzione di usarne uno, spinto dalla curiosità ho considerato alcune opzioni.</p>
-
-<h3 id="disqushttpdisquscom"><a href="http://disqus.com/">Disqus</a></h3>
-<p>È la soluzione più adottata da chi ha un blog Jekyll. Tutti i dati sono memorizzati sui server Disqus. Purtroppo non è software libero, ma è la maniera più comoda.</p>
-
-<h3 id="hashoverhttptildehashcompagehashover"><a href="http://tildehash.com/?page=hashover">HashOver</a></h3>
-<p>Interessante, con un buon numero di <a href="https://github.com/jacobwb/hashover-next#notable-features">funzionalità</a>, ma usa PHP. Github Pages non supporta l’esecuzione di PHP.</p>
-
-<h3 id="issohttpsposativorgisso"><a href="https://posativ.org/isso/">Isso</a></h3>
-<p>Supporta Markdown, usa SQLite e Python. Non male e adatto a siti con piccole quantità di commenti, ma non va nella direzione che interessa a me. E inoltre, se Pages non supporta PHP, figuriamoci se supporta qualche tipo di database o Python.</p>
-
-<h3 id="staticcomments-pluginhttptheshedhezmattorgjekyll-static-comments"><a href="http://theshed.hezmatt.org/jekyll-static-comments/">StaticComments plugin</a></h3>
-<p>Ingegnosa soluzione per avere un sistema di commenti statico. Usa PHP e Ruby. Se ho capito come funziona, bisogna aggiungere una directory <code>_comment</code> atta a contenere dei file con le descrizioni <a href="http://yaml.org/" title="YAML">YAML</a> dei commenti; quando un utente lascia un commento, uno script PHP mi manda una email e, se non è spam, in base al suo contenuto devo generare il file con lo YAML e lanciare uno script Ruby che genera i commenti. Applicabile solo se non sei pigro e hai un bassissimo volume di commenti.</p>
-
-<h3 id="sfruttare-lissue-tracker-di-githubhttpivanzuzakinfo20110218github-hosted-comments-for-github-hosted-blogshtml"><a href="http://ivanzuzak.info/2011/02/18/github-hosted-comments-for-github-hosted-blogs.html">Sfruttare l’issue tracker di GitHub</a></h3>
-<p>A dir poco geniale. Richiede di avere un account di Github per commentare, ma poco male. <a href="https://github.com/izuzak/izuzak.github.com/issues/12#issuecomment-71345363">Qualcuno</a> ha aperto un <a href="https://github.com/wireddown/ghpages-ghcomments">repo apposito</a>. Finora la migliore soluzione che ho visto.</p>
-
-<p>Se mai dovessi dotare il blog di un sistema di commenti, potrebbe essere quest’ultimo oppure, non proprio entusiasticamente, Disqus.</p>
-
+      Avete bisogno di unire dei pdf? Volete ruotarne il senso delle pagine? Stamparne <i>n</i> pagine per foglio? Donne è arrivato l'arrot...aehm no scusate mi sono confuso XD<br />Dicevo, se avete bisogno di "giocare" con le pagine dei pdf che avete sotto mano, <b>PDFjam</b> potrebbe essere la risposta.<br /><a name='more'></a><br />Di cosa si tratta? In sostanza di una collezione di script (ebbene sì, dobbiamo lavorare di terminale, ma nulla di tragico) che fanno un bel numero di cose che vedremo più avanti nel post. Innanzitutto vediamo quali sono questi script:<br /><ul><li><b>pdfnup</b></li><li><b>pdfjoin</b> </li><li><b>pdf90</b>,<b> pdf180</b>,<b> pdf270</b></li><li><b>pdfflip</b></li><li><b>pdfbook</b></li><li><b></b><b>pdfjam-pocketmode</b></li><li><b>pdfjam-slides6up</b>, <b>pdfjam-slides3up</b></li></ul><br />Per avere tutto questo popò di roba, potete tranquillamente andare <a href="http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam">qui</a> e fare l'installazione a manina, ma credo che ci sia nei repository di un po' tutte le distribuzioni.<br /><br />Per Ubuntu nel terminale diamo un bel<br /><blockquote>sudo apt-get install pdfjam</blockquote>E per Fedora diamo (ovviamente da root):<br /><blockquote>yum install pdfjam</blockquote><br />Fatto?&nbsp; Bene, ora che abbiamo tutto analizziamo gli script uno alla volta.<br /><br /><h3>pdfnup</h3>Consente di creare, a partire da un pdf, un altro pdf che racchiude <i>n</i> pagine per foglio, con possibilità di scalarle, decidere lo spazio tra l'una e l'altra. Ma non solo. <br /><br />Per esempio, io per risparmiare carta, inchiostro e avere un malloppo meno ingombrante, di solito stampo le slide delle lezioni dei miei docenti dell'Università mettendo 6 pagine per foglio.<br />Per fare ciò, aprendo il terminale e poi scrivendo qualcosa del genere<br /><blockquote>pdfnup <span style="color: #660000;">--nup 2x3</span> FILE.pdf</blockquote>ci ritroviamo nella stessa directory di quella del file di origine, un secondo pdf che ha in ogni "foglio" 6 pagine! Però potrebbero risultarci un po' troppo attaccate. Risolviamo così:<br /><blockquote>pdfnup --nup 2x3 <span style="color: #660000;">--delta "0.2cm 0.3cm"</span> FILE.pdf</blockquote>&nbsp;Se poi vogliamo spostare tutto un po' più a destra perché ce le vogliamo rilegare:<br /><blockquote>pdfnup --nup 2x3 --delta "0.2cm 0.3cm"<span style="color: #660000;"> --offset "0.5cm 0cm"</span> FILE.pdf</blockquote><br />Riassumendo queste opzioni:<br /><br /><b>--nup</b><br /><i>parametro</i>: MxN<br /><i>effetto</i>: dispone le slide in M colonne ed N righe<br /><br /><b>--delta</b> <br /><i>parametro</i>: "Ncm Mcm"<br /><i>effetto</i>: distanzia tra loro le slide orizzontalmente di N centimetri e verticalmente di M centimetri<br /><br /><b>--offset</b><br /><i>parametro</i>: "Ncm Mcm"<br /><i>effetto</i><b>: </b>sposta le slide orizzontalmente di N centimetri e verticalmente di M centimetri<br /><br /><br />E se vogliamo riunire più file in un unico pdf con le stesse caratteristiche possiamo scrivere ad esempio: <br /><blockquote>&nbsp;pdfnup --nup 2x3 --delta "0.2cm 0.3cm" --offset "0.5cm 0" <span style="color: #660000;">--outfile RISULTANTE.pdf</span> FILE1.pdf FILE2.pdf FILE3.pdf </blockquote>Quindi:<br /><br /><b>--outfile</b><br /><i>parametro</i>: nome o indirizzo(relativo o assoluto) del file risultante<br /><i>effetto</i>: assegna un nome al file risultante (di default usa l'ultimo tra quelli dei file in input e aggiunge il suffisso -nup)<br /><br />Infine, <b>&nbsp;</b><br /><b>--scale</b><br /><i>parametro</i>: un numero N della forma <i>x.xx</i><br /><i>effetto</i>: nel pdf risultante abbiamo tutte le pagine scalate <br /><blockquote>pdfnup <span style="color: #660000;">--scale 0.5</span> FILE.pdf</blockquote>dove 0 corrisponde allo 0% mentre 1 al 100% (quindi 0.5 al 50%) della dimensione originaria.<br /><br />Faccio notare che di opzioni ce ne sono altre e che possono essere combinate come più ci aggrada.<br /><br /><br /><h3>pdfjoin</h3>Unisce i file, dandoci un file pdf composto dalle pagine del primo file seguito da quelle del secondo:<br /><blockquote>pdfjoin FILE1.pdf FILE2.pdf --outfile risultante.pdf</blockquote><br /><br /><h3>pdf90, pdf180, pdf270</h3>Ci danno un pdf risultante in cui le pagine sono ruotate di 90°, 180° o 270° in senso antiorario. La sintassi è banale:<br /><blockquote>pdf90 FILE1.pdf<br /><br />pdf180 FILE1.pdf<br /><br />pdf270 FILE.pdf</blockquote><br />E se diamo<br /><blockquote>pdf90 FILE1 FILE2 --outfile risultante.pdf<br /><br />pdf180 FILE1 FILE2 --outfile risultante.pdf<br /><br />pdf270 FILE1 FILE2 --outfile risultante.pdf</blockquote>otteniamo che risultante.pdf è l'unione di FILE1.pdf e FILE2.pdf ma ruotati di 90°/180°/270°<br /><br /><br /><h3>pdfflip</h3>Ci da un pdf risultante con le pagine invertite con un effetto a specchio.<br /><blockquote>pdfflip FILE1.pdf<br /><br />pdfflip FILE1 FILE2 --outfile risultante.pdf</blockquote><br />Avete capito come funziona il meccanismo no? Ma andiamo avanti.<br />&nbsp; <br /><br /><h3>pdfbook</h3>Avete presente i libri fotocopiati? Ecco, ci fa un pdf con quell'aspetto lì:<br /><blockquote>pdfbook FILE1.pdf</blockquote>E se abbiamo più file pdf sparsi:<br /><blockquote>pdfbook FILE1.pdf FILE2.pdf --outfile risultante.pdf</blockquote><br /><br /><h3>pdfjam-pocketmode</h3>Prende le prime 8 pagine del pdf e crea un pdf risultante in cui le pagine costituiscono un <a href="http://en.wikipedia.org/wiki/Booklet">booklet</a>:<br /><blockquote>pdfjam-pocketmode FILE1.pdf --outfile risultante.pdf</blockquote><br /><br /><h3>pdfjam-slides6up e pdfjam-slides3up</h3>Creano un pdf risultante dove abbiamo rispettivamente 6 e 3 slide per pagina (quello che abbiamo visto si può fare anche con pdfnup, che preferisco a questi perché posso impostare più parametri). Dunque:<br /><blockquote>pdfjam-slides6up FILE1.pdf<br /><br />pdfjam-slides3up FILE1.pdf</blockquote>ma anche<br /><blockquote>pdfjam-slides6up FILE1.pdf FILE2.pdf --outfile risultante.pdf<br /><br />pdfjam-slides3up FILE1.pdf FILE2.pdf --outfile risultante.pdf</blockquote>&nbsp; <br /><br />Ooooh, li abbiamo visti tutti! Solo una precisazione. Questi script scrivono qualcosa in output e se osserviamo attentamente il comando effettivo che viene lanciato, beh lanciano tutti <b>pdfjam</b>, utilizzando di volta in volta parametri giusti. Sono in sostanza dei <i>wrapper</i>, che in italiano potremmo tradurre come <i>adattatori</i>.<br />Spero che abbiate capito tutto. Il post è finito, andate in pace XD
     </div>
 -->
   
 <!--
-    <h1><a href="/2015/12/24/i-miei-font-preferiti-per-programmare.html">I miei font preferiti per programmare</a></h1>
+    <h1><a href="/2010/12/03/ease-semplice-programma-per-creare.html">Ease, semplice programma per creare presentazioni</a></h1>
     <p class="author">
-      <span class="date">2015-12-24 00:00:00 +0100</span>
+      <span class="date">2010-12-03 09:03:00 +0100</span>
     </p>
 -->
-    <span class="post-meta">Dec 24, 2015</span>
+    <span class="post-meta">Dec 3, 2010</span>
 
     <h2>
-      <a class="post-link" href="/2015/12/24/i-miei-font-preferiti-per-programmare.html">I miei font preferiti per programmare</a>
+      <a class="post-link" href="/2010/12/03/ease-semplice-programma-per-creare.html">Ease, semplice programma per creare presentazioni</a>
     </h2>
 
     <p class="post-summary">
@@ -916,58 +896,20 @@ Anche se qui non ho per il momento intenzione di usarne uno, spinto dalla curios
     </p>
 <!--
     <div class="content">
-      <p>Tempo addietro abbiamo parlato della mia fissa per gli schemi di colore. Stavolta parliamo di font e più precisamente dei font che preferisco usare per scrivere codice e che uso di consueto negli editor testuali. Non posso dirvi come rendono su display ad altissima risoluzione, ma su monitor “normali” rendono piuttosto bene, anche se il risultato è variabile in base all’OS e all’editor.</p>
-
-<p>In ordine sparso:</p>
-
-<ul>
-  <li>
-    <p><a href="https://damieng.com/envy-code-r" title="Envy Code R">Envy Code R</a>:
-l’ho usato per anni, ovunque. Forse un po’ particolare, ma con una bellissima leggibilità. Le ‘w’ e le ‘m’ possono apparire un po’ “impastate” se la resa non è ottimale;</p>
-  </li>
-  <li>
-    <p><a href="https://github.com/andreberg/Meslo-Font" title="Meslo LG">Meslo LG</a>:
-attualmente il mio preferito. Quasi non sembra un monospaziato. Ha una bella leggibilità anche a piccole dimensioni;</p>
-  </li>
-  <li>
-    <p><a href="http://quoteunquoteapps.com/courierprime/" title="Courier Prime Code">Courier Prime Code</a>:
-rivisitazione in chiave moderna di Courier ma che mantiene comunque un aspetto classico. Davvero bello;</p>
-  </li>
-  <li>
-    <p><a href="https://github.com/adobe-fonts/source-code-pro" title="Source Code Pro">Source Code Pro</a>:
-il famoso font di Adobe per i programmatori. All’inizio non mi piaceva, poi pian piano mi ha convinto;</p>
-  </li>
-  <li>
-    <p><a href="http://sourcefoundry.org/hack/">Hack</a>:
-è quasi elegante. Me l’ha segnalato qualche mese fa un amico (grazie!);</p>
-  </li>
-  <li>
-    <p><a href="http://www.levien.com/type/myfonts/inconsolata.html" title="Inconsolata">Inconsolata</a>:
-abbastanza famoso anche lui. Spesso mi salva in situazioni in cui altri font non hanno una resa abbastanza buona;</p>
-  </li>
-  <li>
-    <p><a href="http://www.carrois.com/fira-4-1/#download" title="Fira Sans Mono">Fira Sans Mono</a>:
-trovo che il font monospaziato di Mozilla abbia una leggibilità pazzesca, è praticamente impossibile confondere due caratteri tra loro. Molto bello il corsivo;</p>
-  </li>
-  <li>
-    <p><a href="http://www.fontsquirrel.com/fonts/cousine" title="Cousine">Cousine</a>:
-non so se un font si possa definire equilibrato, ma nel caso, lo è di certo. Come per <em>Inconsolata</em>, ho sempre riscontrato una resa a schermo ottima.</p>
-  </li>
-</ul>
-
+      Ho scoperto di recente un programma molto carino per creare delle semplici presentazioni. Il suo nome è <b>Ease</b>.<br />Oggi ho trovato un po' di tempo per provarlo e mi ha fatto da subito una buona impressione. Vediamo come installarlo.<br /><a name='more'></a><br />Anzitutto andiamo nella pagina <a href="http://www.ease-project.org/download.html">download</a> del suo sito ufficiale e notiamo subito che per Ubuntu possiamo usare una comoda fonte sofware dedicata, ma per tutti gli altri? Beh, ad esempio per Debian ci viene in soccorso il Picchio con un suo <a href="http://picchiopc.wordpress.com/2010/11/14/ease-su-debian-ma-anche-si/">post</a>. Siccome però ora sto usando Fedora vediamo come fare in questo caso. Il discorso cambia di poco comunque: va compilato.<br /><br /><b>[EDIT 13/02/2011]</b>: <i>Ease è ora nei repository di Fedora 14! quindi basta un semplicissimo</i><br /><blockquote><i>yum install ease</i></blockquote><i>quello che ho scritto tempo fa e che sta qua sotto rimane comunque valido.</i><b>[/EDIT]</b> <br /><br /><br />Nella pagina dei <a href="http://www.ease-project.org/download.html">download</a> clicchiamo sul bottone giallo scaricandoci i sorgenti di Ease e nel frattempo notiamo che richiede i seguenti pacchetti:<br /><ul><li>clutter-gtk-0.10</li><li>clutter-gst-1.0</li><li>libarchive</li><li>gee-1.0</li><li>json-glib-1.0</li><li>unique-1.0</li><li>gmodule-2.0</li><li>rest-0.6</li><li>rest-extras-0.6</li></ul>Ora decomprimiamo il file scaricato in una directory a nostra scelta. Apriamo il nostro amato terminale e diamo un bel:<br /><blockquote>yum install clutter-gtk-devel clutter-gst-devel libgee-devel json-glib-devel libarchive-devel poppler-glib-devel rest-devel unique-devel</blockquote><b>Nota</b>: <i>poppler-devel non lo richiede nel sito ma a me lo richiede durante la compilazione, gmodule invece no. Se avete problemi in questo senso fatemi sapere</i>.<br /><br />Ora che abbiamo tutto ciò che ci serve, sempre da terminale, posizioniamoci nella directory in cui abbiamo precedentemente decompresso il file, quindi diamo, uno alla volta:<br /><blockquote>./configure<br />make<br />make install</blockquote><br />Et voilà! Ecco come si presenta il "ragazzo" :D<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/_c9tXAWBZ8s4/TPLcSX7fs2I/AAAAAAAAADc/V9m-3cz1GM4/s1600/ease.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="200" src="http://3.bp.blogspot.com/_c9tXAWBZ8s4/TPLcSX7fs2I/AAAAAAAAADc/V9m-3cz1GM4/s320/ease.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">interfaccia molto semplice e pulita :)</td></tr></tbody></table><br /><br />È un programma per ora piuttosto scarno, ma per fare qualcosa di non troppo complesso può andare bene (tra l'altro consente di inserire delle transizioni molto carine), non legge i .ppt purtroppo e salva in PDF, Postscript e HTML. Pecca ancora di poca stabilità però, purtroppo durante le mie prove si è chiuso inaspettatamente troppe volte, se decidete di usarlo salvate spesso!
     </div>
 -->
   
 <!--
-    <h1><a href="/2015/11/10/linuxday-2015-e-andata.html">Linux Day 2015 - E anche quest'anno è andata</a></h1>
+    <h1><a href="/2010/11/02/e-arrivata-fedora-14.html">È arrivata Fedora 14</a></h1>
     <p class="author">
-      <span class="date">2015-11-10 00:00:00 +0100</span>
+      <span class="date">2010-11-02 15:05:00 +0100</span>
     </p>
 -->
-    <span class="post-meta">Nov 10, 2015</span>
+    <span class="post-meta">Nov 2, 2010</span>
 
     <h2>
-      <a class="post-link" href="/2015/11/10/linuxday-2015-e-andata.html">Linux Day 2015 - E anche quest'anno è andata</a>
+      <a class="post-link" href="/2010/11/02/e-arrivata-fedora-14.html">È arrivata Fedora 14</a>
     </h2>
 
     <p class="post-summary">
@@ -977,33 +919,20 @@ non so se un font si possa definire equilibrato, ma nel caso, lo è di certo. Co
     </p>
 <!--
     <div class="content">
-      <p>Circa due settimane fa, come ben sappiamo, si è tenuto il <strong>Linux Day</strong>. In quel di <strong>Cagliari</strong>, stavolta solo (si fa per dire) seminari, per mancanza di spazi da adibire a install corner, aree demo et similia. Ciononostante, è stata veramente una bella giornata.</p>
-
-<p>L’affluenza è stata in linea con le aspettative e forse, in alcuni momenti della giornata (poco prima e appena dopo pranzo), anche superiori. E magari non sembra, ma sono cose belle. Questo grazie anche alla presenza degli studenti delle scuole superiori, che ogni anno invitiamo. Purtroppo alcuni di loro hanno movimentato lo svolgimento dei seminari, disturbando al punto che mi sono reso protagonista di un siparietto durante il mio talk in cui mi fermo, batto due volte col piede sulla pedana guardando <em>brutto</em> i ragazzi, che capiscono e si zittiscono, per fortuna.</p>
-
-<p>Effettivamente faccio paura.</p>
-
-<p><img src="https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/p720x720/12143084_10153416635562326_7780239441049279199_n.jpg?oh=0acd1c0d04ef08c2cca4f70b279841f3&amp;oe=56C1AD8D" alt="Talk" title="Paura, eh?" /></p>
-
-<p>Come anticipato nello scorso post, ho parlato di <a href="http://linuxday.gulch.it/slides/2015/traccia-tecnica/dbms.pdf" title="Graph Database">Graph Database</a>, un tipo di database la cui adozione è in forte crescita e a cui mi sono avvicinato poco più di un anno fa. Addirittura qualcuno stima che tra 3-4 anni ci sarà un vero e proprio boom; <a href="https://www.google.it/trends/explore#q=graph%20database">qualcosa</a> mi dice che costoro ci hanno preso in pieno, visto anche l’interesse che il talk ha suscitato nei presenti.
-Più nel dettaglio, il seminario ha affrontato le ragioni che hanno portato alla loro nascita e gli aspetti teorici di base, introducendo infine <a href="http://neo4j.com">Neo4j</a>, il più popolare Graph-DBMS.</p>
-
-<p>A <a href="http://linuxday.gulch.it/node/67" title="Materiale traccia divulgativa">questo link</a>, il materiale dei seminari della traccia divulgativa, a <a href="http://linuxday.gulch.it/node/68" title="&quot;Materiale traccia tecnica">quest’altro</a>, il materiale della traccia tecnica. Letture (ovviamente) consigliatissime.
-<a href="http://linuxday.gulch.it/album/2015/">Qui</a>, le nostre foto della manifestazione.</p>
-
+      <div style="margin: 12px 0px; text-indent: 0px;"><a href="http://4.bp.blogspot.com/_c9tXAWBZ8s4/TNAYhuE-dFI/AAAAAAAAAC4/2jqdoL_13-A/s1600/fedora_vert-logo.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/_c9tXAWBZ8s4/TNAYhuE-dFI/AAAAAAAAAC4/2jqdoL_13-A/s1600/fedora_vert-logo.png" /></a>Post veloce per informarvi che è stata rilasciata (puntalissimi) alle 15:00 (ora italiana) di oggi Fedora 14. Degno di nota anche il <a href="http://fedoraproject.org/">nuovo sito</a>, veramente molto bello :)<br /><span style="color: blue; text-decoration: underline;"><br /></span><a href="https://fedoraproject.org/wiki/Releases/14/FeatureList">Qui</a> l'elenco delle nuove features.<br /><br />Per scaricarla, potete andare <a href="http://fedoraproject.org/it/get-fedora-options">qua</a><a href="http://fedoraproject.org/it/get-fedora-options"><span style="color: blue; text-decoration: underline;"></span></a>, anche se io consiglio sempre di farlo via <span style="color: blue; text-decoration: underline;"></span><a href="http://torrent.fedoraproject.org/">torrent</a>, soprattutto il giorno del rilascio (capito? usate i torrent!).<br /><br /><br />Io appena possibile mi scaricherò la iso visto che ho una mezza idea di metterla sul portatile (ma forse la levo dal fisso) e probabilmente a breve ne scriverò una recensione.<br />Buona Fedora! :D</div>
     </div>
 -->
   
 <!--
-    <h1><a href="/2015/10/15/reboot.html">Reboot</a></h1>
+    <h1><a href="/2010/10/16/le-applicazioni-gtk-in-kde.html">"Oxygeniamo" le applicazioni gtk in KDE</a></h1>
     <p class="author">
-      <span class="date">2015-10-15 00:00:00 +0200</span>
+      <span class="date">2010-10-16 13:09:00 +0200</span>
     </p>
 -->
-    <span class="post-meta">Oct 15, 2015</span>
+    <span class="post-meta">Oct 16, 2010</span>
 
     <h2>
-      <a class="post-link" href="/2015/10/15/reboot.html">Reboot</a>
+      <a class="post-link" href="/2010/10/16/le-applicazioni-gtk-in-kde.html">"Oxygeniamo" le applicazioni gtk in KDE</a>
     </h2>
 
     <p class="post-summary">
@@ -1013,40 +942,20 @@ Più nel dettaglio, il seminario ha affrontato le ragioni che hanno portato alla
     </p>
 <!--
     <div class="content">
-      <p>Ieri sera ho pubblicato un nuovo post e di notte mi sono dedicato alla personalizzazione del blog. Mi pare dunque giusto fare il punto della situazione.</p>
-
-<p>Le ragioni per cui ho smesso di scrivere sono sostanzialmente due: ho fatto meno “smanettamenti” degni di nota e mi è passata la voglia di scrivere.</p>
-
-<p>Vicessitudini recenti mi hanno però ricordato perché avevo aperto il blog: voglia di condividere quel che facevo e quel poco che sapevo, ché magari quella cosa poteva tornare anche utile a qualcun altro, diventando anche degli appunti da riguardare in caso di necessità.</p>
-
-<p>E quindi eccoci. Scriverò come sempre quando mi girerà, ma credo che scriverò.</p>
-
-<h3 id="aspetti-tecnici">Aspetti tecnici</h3>
-<p>Come ho già detto in altre sedi, ho migrato tutto da <strong>Blogger</strong> a <strong><a href="https://pages.github.com/" title="GitHub Pages">GitHub Pages</a></strong>, chiudendo definitivamente il vecchio.
-Grazie a <strong>GitHub Pages</strong> ho potuto mettere in piedi in poco tempo un blog leggero, minimale e hostato gratuitamente, perché di fatto sta in un repository. Creo in locale un nuovo file per il post, poi <code>commit</code> e <code>push</code>. Facile, semplice, comodo e dal contenutissimo uso di banda.</p>
-
-<p>Il blog non fa uso di un CMS ma di <a href="http://jekyllrb.com/" title="Jekyll">Jekyll</a>, che è proprio l’engine che sta dietro a GitHub Pages. In poche parole è un <em>generatore di pagine web statiche</em>: io scrivo un post in <a href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a> e lui lo converte automaticamente in pagina HTML. Meraviglioso.</p>
-
-<p>L’unico problema è che a causa della migrazione, nei post importati, i link che referenziano altri post sono rotti perché puntano ai vecchi url. Immagino di dover scrivere uno script per correggerli.
-In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Jekyll+GitHub Pages</em>. Consigliatissima.</p>
-
-<p>Un’altra cosa da fare sarà automatizzare nuovamente la condivisione dei post su Twitter e G+.</p>
-
-<p>Comunque man mano sistemerò tutto.</p>
-
+      <div xmlns="http://www.w3.org/1999/xhtml">Le applicazioni GTK (come GIMP, Pidgin, Firefox, ecc) eseguite su KDE non sono integrate graficamente nell'ambiente desktop. Per chi non cerca questa integrazione a tutti i costi non è un problema, però effetivamente vedere applicazioni come GIMP e Firefox in KDE eseguite affianco a che ne so, Blogilo e Amarok per esempio non è esattamente uno spettacolo per gli occhi.<br /><br /><a name='more'></a>Di "soluzioni" ce ne sarebbero ma quella che secondo me rende meglio è quella realizzata da un utente di <a href="http://kde-look.org/" target="_blank" title="kde-look.org">kde-look.org</a>. In sostanza il suo è, come recita la sua descrizione sul sito, un engine che usa Qt/Oxygen per disegnare i widget. <br />Vi rimando alla pagina del sito in cui trovate il download e le istruzioni per l'installazione.<br /><br /><a href="http://kde-look.org/content/show.php/gtk-oxygen-engine?content=129715" target="_blank" title="[LINK]">[LINK]</a><br /><br />Nota per chi usa Fedora: assicuratevi di avere installato il pacchetto <b>gtk2-devel</b>. <br />Buona "Oxygenazione" :D</div>
     </div>
 -->
   
 <!--
-    <h1><a href="/2015/10/14/linux-day-2015-manca-poco.html">Linux Day 2015 - manca poco</a></h1>
+    <h1><a href="/2010/09/22/rimanere-aggiornati-con-cloudsn.html">Rimanere aggiornati con CloudSN</a></h1>
     <p class="author">
-      <span class="date">2015-10-14 00:00:00 +0200</span>
+      <span class="date">2010-09-22 15:52:00 +0200</span>
     </p>
 -->
-    <span class="post-meta">Oct 14, 2015</span>
+    <span class="post-meta">Sep 22, 2010</span>
 
     <h2>
-      <a class="post-link" href="/2015/10/14/linux-day-2015-manca-poco.html">Linux Day 2015 - manca poco</a>
+      <a class="post-link" href="/2010/09/22/rimanere-aggiornati-con-cloudsn.html">Rimanere aggiornati con CloudSN</a>
     </h2>
 
     <p class="post-summary">
@@ -1056,16 +965,7 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
     </p>
 <!--
     <div class="content">
-      <p>Ciao!</p>
-
-<p>Scrivo nuovamente sul blog dopo eoni per ricordarvi (e ricordarmi, si sa mai mi scordi) che il 24 Ottobre, cioè tra 10 giorni, si terrà il <strong>Linux Day 2015</strong>.</p>
-
-<p>Vi segnalo in particolare, per ovvi motivi, l’evento di <strong>Cagliari</strong>. Qui, come al solito, <a href="http://linuxday.gulch.it/node/65">la giornata di talk</a> si suddividerà in due tracce: <a href="http://linuxday.gulch.it/node/67" title="Traccia Divulgativa">Divulgativa</a> e <a href="http://linuxday.gulch.it/node/68" title="Traccia Tecnica">Tecnica</a>.</p>
-
-<p>Se siete nei paraggi, vi invito dunque a venire e giusto prima di pranzo (12:20) parleremo assieme di <strong>Graph Database</strong> (o meglio, io parlo e voi fate di sì con la testa facendo finta di ascoltarmi).</p>
-
-<p>Ci vediamo al Linux Day!</p>
-
+      Chi di noi non è abbonato a un certo numero di feed rss e&nbsp; scambia  giornalmente o comunque spessissimo email? Ammettendo che usiamo  appoggiarci a piattaforme web per questo, andare ogni tanto sul sito per  vedere se ci sono novità è un po' una scocciatura, ma un piccolo tool  per il desktop GNOME che ci risparmi la seccatura c'è e si chiama <b>CloudSN</b>.<br /><a name='more'></a><br />Vi spiego la mia situazione. Avendo 2 pc, ho deciso per leggere i feed rss dei miei siti preferiti di usare <a href="http://www.google.com/reader/">Google Reader</a>,  ma non avendo trovato un client desktop dedicato mi sono messo alla  ricerca di un qualche tool per notificarmi la presenza di nuovi feed e  sono capitato in <a href="http://forum.ubuntu-it.org/index.php?topic=393436.0">questa</a> discussione sul forum di ubuntu-it. Ma andiamo alla ciccia. <br />Grazie a questo programmino possiamo venire notificati di aggiornamenti relativi a <b>feed rss</b>, <b>Twitter</b>, <b>Identi.ca</b>, <b>Google Reader</b>, <b>email</b> (pop3 e imap) e <b>GMail</b>.  Una volta installato comparirà una iconcina nel pannello di  sistema ma sa anche integrarsi nell'applet con gli indicators (utile se  usiamo Ubuntu).<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><img border="0" height="320" src="http://3.bp.blogspot.com/_c9tXAWBZ8s4/TJn7TvlUZhI/AAAAAAAAACg/Ox-tE8dMAkg/s320/cloudsn-indicators.png" style="margin-left: auto; margin-right: auto;" width="247" /></td></tr><tr><td class="tr-caption" style="text-align: center;">CloudSN come indicator :D</td><td class="tr-caption" style="text-align: center;"><br /></td></tr></tbody></table><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_c9tXAWBZ8s4/TJn7TvlUZhI/AAAAAAAAACg/Ox-tE8dMAkg/s1600/cloudsn-indicators.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"></a></div><br />Per installarlo su Ubuntu apriamo il terminale e procediamo all'installazione scrivendo questi comandi uno alla volta:<br /><blockquote><pre style="display: inline; margin-top: 0pt;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">sudo add-apt-repository ppa:chuchiperriman/cloudsn<br />sudo apt-get update<br />sudo apt-get install cloudsn </span></pre></blockquote>Infine lo avviamo e lo configuriamo secondo le nostre esigenze :)<br /><br />Ah, se sapete come installarlo su altre distro, scrivetelo nei commenti e aggiornerò il post ;)
     </div>
 -->
   
@@ -1077,11 +977,11 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
 <!--
   <div class="pagination">
     
-      <span class="previous">Previous</span>
+      <a href="/page9/" class="previous">Previous</a>
     
-    <span class="page_number ">Page: 1 of 11</span>
+    <span class="page_number ">Page: 10 of 11</span>
     
-      <a href="/page2/" class="next">Next</a>
+      <a href="/page11/" class="next">Next</a>
     
 -->
 
@@ -1089,12 +989,12 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
   
 <div class="pagination">
   
-    <span>&laquo; Prev</span>
+    <a href="/page9/">&laquo; Prev</a>
   
 
   <!-- 
     
-      <em>1</em>
+      <a href="/page9/">1</a>
     
   
     
@@ -1130,7 +1030,7 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
     
   
     
-      <a href="/page10/">10</a>
+      <em>10</em>
     
   
     
@@ -1139,7 +1039,7 @@ In ogni caso, per il momento sono veramente soddisfatto dell’accoppiata <em>Je
    -->
 
   
-    <a href="/page2/">Next &raquo;</a>
+    <a href="/page11/">Next &raquo;</a>
   
   </div>
   
