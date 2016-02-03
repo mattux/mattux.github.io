@@ -20,3 +20,5 @@ Più nel dettaglio, il seminario ha affrontato le ragioni che hanno portato alla
 
 A [questo link](http://linuxday.gulch.it/node/67 "Materiale traccia divulgativa"), il materiale dei seminari della traccia divulgativa, a [quest'altro](http://linuxday.gulch.it/node/68 ""Materiale traccia tecnica"), il materiale della traccia tecnica. Letture (ovviamente) consigliatissime.
 [Qui](http://linuxday.gulch.it/album/2015/), le nostre foto della manifestazione.
+
+*Photo Courtesy of GULCh*

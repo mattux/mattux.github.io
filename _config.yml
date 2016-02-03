@@ -9,7 +9,6 @@ twitter_username: _mattux_
 github_username:  mattux
 paginate: 5
 paginate_path: "/page:num/"
-highlighter: pygments
 
 gems :
   - jekyll-paginate
