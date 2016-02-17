@@ -1,7 +1,7 @@
 # Site settings
 email:
 title: Mattux >> log
-description: Confondersi tra Halloween e Natale perché 31oct = 25dec
+description: So contare fino a 31 usando una mano sola.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mattux.github.io" # the base hostname & protocol for your site
 base_hostname: "mattux.github.io"
