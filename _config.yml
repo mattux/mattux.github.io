@@ -4,7 +4,9 @@ title: Mattux >> log
 description: Confondersi tra Halloween e Natale perché 31oct = 25dec
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mattux.github.io" # the base hostname & protocol for your site
-local: "http://127.0.0.1:4000"
+base_hostname: "mattux.github.io"
+local_url: "http://127.0.0.1:4000"
+local: "127.0.0.1:4000"
 twitter_username: _mattux_
 github_username:  mattux
 paginate: 5

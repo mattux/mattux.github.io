@@ -2,6 +2,7 @@
 layout: post
 published: true
 title: Jekyll e i sistemi di commenti
+comments: true
 tags:
 - jekyll
 - blog
