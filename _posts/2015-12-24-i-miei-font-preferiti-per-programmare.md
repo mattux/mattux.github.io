@@ -2,6 +2,7 @@
 layout: post
 published: true
 title: I miei font preferiti per programmare
+comments: true
 tags:
 - coding
 - font

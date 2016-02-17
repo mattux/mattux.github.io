@@ -2,6 +2,7 @@
 layout: post
 published: true
 title: Linux Day 2015 - E anche quest'anno è andata
+comments: true
 tags:
 - linuxday
 - seminari
