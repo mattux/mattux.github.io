@@ -10,7 +10,7 @@ tags:
 
 Circa due settimane fa, ho letto [questo post](https://okpanico.wordpress.com/2016/02/03/attenti-al-falso-amico-con-python/) e poi [quest'altro post](https://okpanico.wordpress.com/2016/02/05/ancora-wallis/) del buon *Juhan* (blog da seguire, il suo) e niente, quando vedo qualche curiosità matematica, mi incanto come un bimbo (non sempre capisco tutto, ma ci provo).
 
-E se c'è un linguaggio che ho studiato male all'Università, questo è **Ocaml**. È allo stesso tempo però un linguaggio che mi ha sempre affascinato e sembra che non lo usi quasi nessuno, ma [non è proprio così](https://github.com/search?utf8=%E2%9C%93&q=language%3AOCaml&type=Repositories&ref=advsearch&l=OCaml&l=).
+E se c'è un linguaggio che ho studiato male all'Università, questo è **OCaml**. È allo stesso tempo però un linguaggio che mi ha sempre affascinato e sembra che non lo usi quasi nessuno, ma [non è proprio così](https://github.com/search?utf8=%E2%9C%93&q=language%3AOCaml&type=Repositories&ref=advsearch&l=OCaml&l=).
 
 
 Dunque, riassumendo, **il prodotto di Wallis** è questo:
