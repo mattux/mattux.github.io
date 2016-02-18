@@ -1,5 +1,4 @@
 # Mattux >> log
-===
 
 Blog powered by:
 - [Jekyll](http://http://jekyllrb.com/)
