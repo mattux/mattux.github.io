@@ -72,7 +72,6 @@ Printf.printf "\n1.5707963267948966192313216 (valore reale)\n\n";;
 
 Printf.printf "%.20f (Tail Recursive)" (2. *. wallis (float_of_string Sys.argv.(1)));;
 Printf.printf "\n3.1415926535897932384626433 (valore reale)\n\n";;
-*)
 {% endhighlight %}
 
 Ricompilo e mando in esecuzione:
