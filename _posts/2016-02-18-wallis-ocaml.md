@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Il prodotto di Wallis in Ocaml e la ricorsione in coda
+title: Il prodotto di Wallis in OCaml e la ricorsione in coda
 comments: true
 tags:
 - ocaml
