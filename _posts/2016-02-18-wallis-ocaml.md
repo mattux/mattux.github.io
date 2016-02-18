@@ -23,7 +23,7 @@ $$
 
 Per l'implementazione è sicuramente più pratica la forma compatta.
 
-Ora come ora in Ocaml sono una schiappa, ma non è stato difficile trovare una soluzione:
+Ora come ora in OCaml sono una schiappa, ma non è stato difficile trovare una soluzione:
 
 {% highlight ocaml linenos %}
 (* calcola 4n^2 *)
