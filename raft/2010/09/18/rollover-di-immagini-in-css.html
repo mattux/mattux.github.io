@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Rollover di immagini in css &middot; Mattux >> log</title>
+  <meta name="description" content="Come probabilmente avrete notato, da un po' di tempo sono comparse delle icone bianche che fanno riferimento ai miei account pubblici su alcuni social networ...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://mattux.github.io/2010/09/18/rollover-di-immagini-in-css.html">
+  <link rel="alternate" type="application/rss+xml" title="Mattux >> log" href="http://mattux.github.io/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+      <a class="site-title" href="/">Mattux >> log</a>
+      <p class="site-description">So contare fino a 31 usando una mano sola.</p>
+
+  </div>
+  <div class="wrapper">
+<!--
+    <p class="text">So contare fino a 31 usando una mano sola.</p>
+-->
+  <div class="trigger">
+    <span class="rss-subscribe"><a href="/feed.xml">RSS</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://plus.google.com/b/116514234298958416545/116514234298958416545/">Google+</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/mattux/">GitHub</a></span>
+    &nbsp;·&nbsp;
+    
+      
+      <a class="page-link" href="/about/">About</a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Rollover di immagini in css</h1>
+<!--
+    <p class="post-meta">Sep 18, 2010 • Matteo Pani</p>
+-->
+    <p class="post-meta">Sep 18, 2010</p>
+
+    <!-- MATHJAX -->
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  </header>
+
+  <article class="post-content">
+    <div xmlns="http://www.w3.org/1999/xhtml">Come probabilmente avrete notato, da un po' di tempo sono comparse delle icone bianche che fanno riferimento ai miei account pubblici su alcuni social network e al feed rss di questo blog. Passando la freccetta del mouse sopra di essi vedrete che il logo contenuto nell'icona "diventa blu". In realtà sono due immagini diverse, ma carico un'altra immagine al verificarsi di questo evento, vale a dire effettuo quello che viene definito <b>rollover</b>.<br /><a name='more'></a><br />Ovviamente per farlo ci servono delle icone, per il momento sto usando le <a href="http://webtreats.mysitemyway.com/1540-infocus-simple-white-sidebar-social-media-icons/" target="_blank">inFocus</a>. Nel dettaglio, un esempio di codice necessario a ottenere questo effetto per realizzare un riferimento carino al nostro account di Twitter.<br /><br /><br /><b><i>HTML:</i></b><br /><blockquote>&lt;a href="<span style="color: maroon;"><i>URL_ACCOUNT_TWITTER</i></span>" id="twitter" title="Seguimi su Twitter" alt="Seguimi su Twitter" /&gt;&lt;/a&gt;</blockquote><b><i>CSS:</i></b><br /><blockquote>#twitter {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER</i></span>');;<br />width: 56px;<br />height: 56px;<br />display:block;<br />} </blockquote>Come potete vedere nell'HTML, il link è "vuoto", infatti non abbiamo un testo relativo, ma come invece si può notare osservando il codice css, un'immagine di sfondo (attributo <b>background</b>), di cui abbiamo anche impostato le dimensioni (attributi <b>width</b> e <b>height</b>), indicando di trattarlo come blocco (scrivendo <b>display:block;</b>).<br />Ora dobbiamo agire sull'effetto <i>hover</i>. La cosa è abbastanza semplice: <br /><blockquote>#twitter:hover {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER_HOVER</i></span>');;<br />} </blockquote>scrivendo <i>:hover</i> indichiamo appunto che questa regola vale quando il cursore del mouse ci passa sopra. C'è però un problema: la prima volta che l'utente passerà la freccetta del mouse sopra alla nostra icona vedrà un brutto effetto causato dal fatto che l'immagine viene caricata in cache solo quando l'evento <i>:hover</i> si verifica. Come ovviare? Semplice!<br />Quello che possiamo fare è realizzare noi un'immagine che contiene entrambe le immagini, una a destra e una a sinistra. Per esempio: <br /><div align="center"></div><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/_c9tXAWBZ8s4/TURkJJtxxcI/AAAAAAAAAFY/4_0jJx4PK5I/s1600/twitter.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/_c9tXAWBZ8s4/TURkJJtxxcI/AAAAAAAAAFY/4_0jJx4PK5I/s1600/twitter.png" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">l'icona per twitter :)</td><td class="tr-caption" style="text-align: center;"><br /></td></tr></tbody></table>e poi diciamo: "Senti bello, di default caricami la parte di sinistra, ma sull'effetto hover, quella di destra!". Come lo traduciamo in css? Vediamolo subito:<br /><blockquote>#twitter {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER</i></span>') <b>no-repeat left top</b>;;<br />width: 56px;<br />height: 56px;<br />display:block;<br />} </blockquote><blockquote>#twitter:hover {<br />background: url('<span style="color: maroon;"><i>URL_ICONA_TWITTER</i></span>') <b>no-repeat right top</b>;;<br />} </blockquote>Con i valori <b>no-repeat left top/no-repeat left top </b>indichiamo di non ripetere lo sfondo e poi il discorso sinistra-destra. Semplice no? Provate e ditemi se non è una figata :D</div>
+  </article>
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+  <p class="footer-msg">Made with <a href="http://jekyllrb.com/">Jekyll</a> and ♥. Blog posts are under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a>.</p>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

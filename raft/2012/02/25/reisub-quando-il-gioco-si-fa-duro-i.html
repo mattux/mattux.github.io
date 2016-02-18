@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>REISUB: quando il gioco si fa duro, i duri riavviano così &middot; Mattux >> log</title>
+  <meta name="description" content="Ieri una collega (che ringrazio :D), mi ha insegnato un modo per riavviare il pc quando linux è totalmente bloccato e non risponde più ad input di alcun tipo...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://mattux.github.io/2012/02/25/reisub-quando-il-gioco-si-fa-duro-i.html">
+  <link rel="alternate" type="application/rss+xml" title="Mattux >> log" href="http://mattux.github.io/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+      <a class="site-title" href="/">Mattux >> log</a>
+      <p class="site-description">So contare fino a 31 usando una mano sola.</p>
+
+  </div>
+  <div class="wrapper">
+<!--
+    <p class="text">So contare fino a 31 usando una mano sola.</p>
+-->
+  <div class="trigger">
+    <span class="rss-subscribe"><a href="/feed.xml">RSS</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://plus.google.com/b/116514234298958416545/116514234298958416545/">Google+</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/mattux/">GitHub</a></span>
+    &nbsp;·&nbsp;
+    
+      
+      <a class="page-link" href="/about/">About</a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">REISUB: quando il gioco si fa duro, i duri riavviano così</h1>
+<!--
+    <p class="post-meta">Feb 25, 2012 • Matteo Pani</p>
+-->
+    <p class="post-meta">Feb 25, 2012</p>
+
+    <!-- MATHJAX -->
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  </header>
+
+  <article class="post-content">
+    <div class="separator" style="clear: both; text-align: center;"></div><a href="http://3.bp.blogspot.com/-Cs2-rrWTXkM/T0grlhbDI3I/AAAAAAAAAs0/f2tTbt1JY_c/s1600/reboot.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-Cs2-rrWTXkM/T0grlhbDI3I/AAAAAAAAAs0/f2tTbt1JY_c/s1600/reboot.png" /></a>Ieri una collega (che ringrazio :D), mi ha insegnato un modo per riavviare il pc quando linux è totalmente bloccato e non risponde più ad input di alcun tipo.<br />In sostanza, si tratta di effettuare una potentissima combinazione di tasti:<br /><br /><b>CTRL + ALT + SHIFT + CANC + RSist</b> da tenere premuti mentre si digita la parola <b>REISUB</b>.<br /><br /><a name='more'></a>Perché funziona?<br /><br /><b>CTRL + ALT + SHIFT + CANC + RSist</b> serve per comunicare direttamente col kernel, dicendogli questo:<br /><br /><b>R</b> -&gt; Passa alla modalita XLATE, per la tastiera;<br /><b>E</b> -&gt; Manda un segnale di SIGTERM a tutti i processi tranne init;<br /><b>I</b> -&gt;&nbsp; Manda un segnale di SIGKILL a tutti i processi tranne init;<br /><b>S</b> -&gt; Sincronizza tutti i filesystem montati;<br /><b>U</b> -&gt; Rimonta tutti i filesystem in modalità read-only;<br /><b>B</b> -&gt; Fai un reboot del sistema, senza smontare o sincronizzare i filesystem.<br /><br />Ulteriori informazioni le troviamo nella <a href="http://en.wikipedia.org/wiki/Magic_SysRq_key">pagina di wikipedia dedicata</a>.<br /><br />Credo che questa combinazione di tasti mi salverà il fondoschiena parecchie volte.
+  </article>
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+  <p class="footer-msg">Made with <a href="http://jekyllrb.com/">Jekyll</a> and ♥. Blog posts are under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a>.</p>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

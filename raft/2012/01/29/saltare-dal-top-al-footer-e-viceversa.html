@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Saltare dal top al footer e viceversa in un click &middot; Mattux >> log</title>
+  <meta name="description" content="Titolo criptico, ma ve lo spiego subito. In una pagina web, il top è, come dice il termine stesso il bordo superiore, mentre il footer è la sua parte inferio...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://mattux.github.io/2012/01/29/saltare-dal-top-al-footer-e-viceversa.html">
+  <link rel="alternate" type="application/rss+xml" title="Mattux >> log" href="http://mattux.github.io/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+      <a class="site-title" href="/">Mattux >> log</a>
+      <p class="site-description">So contare fino a 31 usando una mano sola.</p>
+
+  </div>
+  <div class="wrapper">
+<!--
+    <p class="text">So contare fino a 31 usando una mano sola.</p>
+-->
+  <div class="trigger">
+    <span class="rss-subscribe"><a href="/feed.xml">RSS</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://plus.google.com/b/116514234298958416545/116514234298958416545/">Google+</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/mattux/">GitHub</a></span>
+    &nbsp;·&nbsp;
+    
+      
+      <a class="page-link" href="/about/">About</a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Saltare dal top al footer e viceversa in un click</h1>
+<!--
+    <p class="post-meta">Jan 29, 2012 • Matteo Pani</p>
+-->
+    <p class="post-meta">Jan 29, 2012</p>
+
+    <!-- MATHJAX -->
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  </header>
+
+  <article class="post-content">
+    <div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-voDH-sjtURM/TyUx24yf05I/AAAAAAAAAsU/ZYo074I7UqY/s1600/link.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-voDH-sjtURM/TyUx24yf05I/AAAAAAAAAsU/ZYo074I7UqY/s1600/link.png" /></a></div>Titolo criptico, ma ve lo spiego subito. In una pagina web, il <b>top</b> è, come dice il termine stesso il bordo superiore, mentre il <b>footer</b> è la sua parte inferiore. Siccome può essere utile passare dall'uno all'altro, tempo fa decisi di renderlo possibile. Come? Mediante <b>link interni</b>, cioè link che consentono di spostarci all'interno dello stesso documento ipertestuale.<br /><br /><a name='more'></a>Senza dilungarci troppo, perché stiamo parlando di questo? Perché, come avrete notato, ho fatto un restyling dei link interni che consentono di saltare direttamente al footer e di tornare in alto. Vediamo come si fa ad ottenere il mio stesso risultato.<br /><br /><h3>            HTML</h3><pre class="brush:html"><a class="anchor_mt" href="http://draft.blogger.com/blogger.g?blogID=1607064176246964751#footer"><br /> <div class="anchor_mt" id="top_mt" name="top_mt"><br />Footer<br /><br />▼<br /> </div><br /></a><br /></pre><pre class="brush:html"><a class="anchor_mt" href="http://draft.blogger.com/blogger.g?blogID=1607064176246964751#"><br /> <div class="anchor_mt" id="footer_mt" name="footer_mt"><br />▲<br /><br />Top<br /> </div><br /></a>&nbsp;</pre>Dunque, creiamo due <b>div</b>, contenenti le scritte "Footer" e "Top" e con i due simboli Unicode ▼ e ▲. I div poi, li incapsuliamo dentro il tag <b>a, </b>in modo da usare come collegamento tutto il div, più facile da cliccare rispetto a del semplice testo. Per creare un link interno, basta indicare, nell'attributo <i>href</i> l'<i>id</i> della destinazione: in un caso sarà "footer" (<b>href="#footer"</b>), nell'altro sara "#" (<b>href="#</b><b>"</b>, cioè vuoto, il browser tornerà in alto). <br /><br />Due note:<br /><ol><li>Dobbiamo assicurarci che nel nostro sito/blog il footer abbia l'attributo <i>id="footer"</i>, altrimenti la cosa non funge.</li><li>Blogger, in fase di pubblicazione del post, interpreta i due id inserendo un riferimento assoluto, per questo il codice differisce leggermente da quello che ho scritto.</li></ol><br /><h3>        CSS</h3>Per impostare posizione e aspetto ci affidiamo al css:<br /><pre class="brush:css">div.anchor_mt { margin: auto; width:70px; height:35px; <br /><br />text-align:center;<br />padding:1px 3px 1px 3px;<br />background:#444444;<br /><br />-moz-transition: all .3s ease-in-out;<br />-webkit-transition: all .3s ease-in-out;<br />-o-transition: all .3s ease-in-out;<br />transition: all .3s ease-in-out;<br /><br />position:fixed;<br />display:block;<br />line-height:1.3;<br />z-index:90;<br />}<br /><br />a.anchor_mt { color:white; text-decoration:none; font-weight:bold;}<br />a.anchor_mt:hover { color:#CCE8EE; }<br /><br />div#top_mt { margin-top:0;  top:-18px; left:50%; <br /><br />margin-left:-35px;<br /><br />border-bottom-left-radius:5px; border-bottom-right-radius:5px;<br />box-shadow:0px 2px 6px #999999;<br />}<br /><br />div#top_mt:hover { top:0px;}<br /><br /><br />div#footer_mt { margin-bottom:0; bottom:-18px; left:50%; <br /><br />margin-left:-35px;<br /><br />border-top-left-radius:5px; border-top-right-radius:5px;<br />box-shadow:0px -2px 6px #999;<br />}<br /><br />div#footer_mt:hover { bottom:0px;}<br /></pre>Tralasciando le piccolezze estetiche, vediamo giusto come definire il comportamento che ho scelto.<br /><br /><i>div della classe <b>anchor_mt</b></i>, cioè i div che costituiscono i nostri link interni:<br /><ul><li>stanno in posizione <i>fixed</i>, cioè fissa, vale a dire tengono la loro posizione indipendentemente da tutto;</li><li>hanno una dimensione fissa (width:70px; height:35px;) e asseconderanno gli eventi su di essi usando delle transizioni (righe dalla 7 alla 10).</li><li>vengono sempre visualizzati davanti al contenuto della pagina (z-index:90);</li></ul><ul></ul><br /><i>div con id <b>top_mt</b></i>, cioè il div che sta nel bordo superiore della pagina:<br /><ul><li>sta 18 pixel fuori dalla pagina (top:-18px;), tenendo a vista soltanto il simbolo ▼;&nbsp;</li><li>è centrato (left:50%; margin-left:-35px;), i px di margine sinistro devono essere la metà della lunghezza (nel mio caso pari a 70px);</li><li>sull'evento <i>hover</i>, cioè quando la freccina del mouse ci passa sopra, fa coincidere il suo bordo superiore con quello della pagina (top:0px;), abbassandosi&nbsp; e mostrando la scritta "Footer", che spiega a che serve quell'affare su cui l'utente ha sovrapposto il pointer del mouse.</li></ul>&nbsp;<i>&nbsp;</i><br /><i>div con id <b>footer_mt</b></i>, cioè il div che sta nel bordo superiore della pagina:<br /><ul><li>analogo al precedente ma invertendo il comportamento.</li></ul><br />Questo è grosso modo tutto, spero di essere riuscito a spiegarmi, ma in caso contrario, nei commenti potete chiedere tutti i chiarimenti del caso :)
+  </article>
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+  <p class="footer-msg">Made with <a href="http://jekyllrb.com/">Jekyll</a> and ♥. Blog posts are under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a>.</p>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

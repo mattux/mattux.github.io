@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ease, semplice programma per creare presentazioni &middot; Mattux >> log</title>
+  <meta name="description" content="Ho scoperto di recente un programma molto carino per creare delle semplici presentazioni. Il suo nome è Ease.Oggi ho trovato un po' di tempo per provarlo e m...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://mattux.github.io/2010/12/03/ease-semplice-programma-per-creare.html">
+  <link rel="alternate" type="application/rss+xml" title="Mattux >> log" href="http://mattux.github.io/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+      <a class="site-title" href="/">Mattux >> log</a>
+      <p class="site-description">So contare fino a 31 usando una mano sola.</p>
+
+  </div>
+  <div class="wrapper">
+<!--
+    <p class="text">So contare fino a 31 usando una mano sola.</p>
+-->
+  <div class="trigger">
+    <span class="rss-subscribe"><a href="/feed.xml">RSS</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://plus.google.com/b/116514234298958416545/116514234298958416545/">Google+</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/mattux/">GitHub</a></span>
+    &nbsp;·&nbsp;
+    
+      
+      <a class="page-link" href="/about/">About</a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Ease, semplice programma per creare presentazioni</h1>
+<!--
+    <p class="post-meta">Dec 3, 2010 • Matteo Pani</p>
+-->
+    <p class="post-meta">Dec 3, 2010</p>
+
+    <!-- MATHJAX -->
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  </header>
+
+  <article class="post-content">
+    Ho scoperto di recente un programma molto carino per creare delle semplici presentazioni. Il suo nome è <b>Ease</b>.<br />Oggi ho trovato un po' di tempo per provarlo e mi ha fatto da subito una buona impressione. Vediamo come installarlo.<br /><a name='more'></a><br />Anzitutto andiamo nella pagina <a href="http://www.ease-project.org/download.html">download</a> del suo sito ufficiale e notiamo subito che per Ubuntu possiamo usare una comoda fonte sofware dedicata, ma per tutti gli altri? Beh, ad esempio per Debian ci viene in soccorso il Picchio con un suo <a href="http://picchiopc.wordpress.com/2010/11/14/ease-su-debian-ma-anche-si/">post</a>. Siccome però ora sto usando Fedora vediamo come fare in questo caso. Il discorso cambia di poco comunque: va compilato.<br /><br /><b>[EDIT 13/02/2011]</b>: <i>Ease è ora nei repository di Fedora 14! quindi basta un semplicissimo</i><br /><blockquote><i>yum install ease</i></blockquote><i>quello che ho scritto tempo fa e che sta qua sotto rimane comunque valido.</i><b>[/EDIT]</b> <br /><br /><br />Nella pagina dei <a href="http://www.ease-project.org/download.html">download</a> clicchiamo sul bottone giallo scaricandoci i sorgenti di Ease e nel frattempo notiamo che richiede i seguenti pacchetti:<br /><ul><li>clutter-gtk-0.10</li><li>clutter-gst-1.0</li><li>libarchive</li><li>gee-1.0</li><li>json-glib-1.0</li><li>unique-1.0</li><li>gmodule-2.0</li><li>rest-0.6</li><li>rest-extras-0.6</li></ul>Ora decomprimiamo il file scaricato in una directory a nostra scelta. Apriamo il nostro amato terminale e diamo un bel:<br /><blockquote>yum install clutter-gtk-devel clutter-gst-devel libgee-devel json-glib-devel libarchive-devel poppler-glib-devel rest-devel unique-devel</blockquote><b>Nota</b>: <i>poppler-devel non lo richiede nel sito ma a me lo richiede durante la compilazione, gmodule invece no. Se avete problemi in questo senso fatemi sapere</i>.<br /><br />Ora che abbiamo tutto ciò che ci serve, sempre da terminale, posizioniamoci nella directory in cui abbiamo precedentemente decompresso il file, quindi diamo, uno alla volta:<br /><blockquote>./configure<br />make<br />make install</blockquote><br />Et voilà! Ecco come si presenta il "ragazzo" :D<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/_c9tXAWBZ8s4/TPLcSX7fs2I/AAAAAAAAADc/V9m-3cz1GM4/s1600/ease.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="200" src="http://3.bp.blogspot.com/_c9tXAWBZ8s4/TPLcSX7fs2I/AAAAAAAAADc/V9m-3cz1GM4/s320/ease.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">interfaccia molto semplice e pulita :)</td></tr></tbody></table><br /><br />È un programma per ora piuttosto scarno, ma per fare qualcosa di non troppo complesso può andare bene (tra l'altro consente di inserire delle transizioni molto carine), non legge i .ppt purtroppo e salva in PDF, Postscript e HTML. Pecca ancora di poca stabilità però, purtroppo durante le mie prove si è chiuso inaspettatamente troppe volte, se decidete di usarlo salvate spesso!
+  </article>
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+  <p class="footer-msg">Made with <a href="http://jekyllrb.com/">Jekyll</a> and ♥. Blog posts are under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a>.</p>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

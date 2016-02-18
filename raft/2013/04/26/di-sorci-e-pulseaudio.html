@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Di sorci e PulseAudio &middot; Mattux >> log</title>
+  <meta name="description" content="Una delle poche cose che mi hanno sempre dato un po' noia su Xfce è il fatto che abilitando il mute&nbsp;dell'audio usando i tasti funzione/multimediali, l'u...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://mattux.github.io/2013/04/26/di-sorci-e-pulseaudio.html">
+  <link rel="alternate" type="application/rss+xml" title="Mattux >> log" href="http://mattux.github.io/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+      <a class="site-title" href="/">Mattux >> log</a>
+      <p class="site-description">So contare fino a 31 usando una mano sola.</p>
+
+  </div>
+  <div class="wrapper">
+<!--
+    <p class="text">So contare fino a 31 usando una mano sola.</p>
+-->
+  <div class="trigger">
+    <span class="rss-subscribe"><a href="/feed.xml">RSS</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://plus.google.com/b/116514234298958416545/116514234298958416545/">Google+</a></span>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/mattux/">GitHub</a></span>
+    &nbsp;·&nbsp;
+    
+      
+      <a class="page-link" href="/about/">About</a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Di sorci e PulseAudio</h1>
+<!--
+    <p class="post-meta">Apr 26, 2013 • Matteo Pani</p>
+-->
+    <p class="post-meta">Apr 26, 2013</p>
+
+    <!-- MATHJAX -->
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  </header>
+
+  <article class="post-content">
+    <div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-2W2WwGbNzwo/UXqyuxH9PFI/AAAAAAAACeM/a6G5lx-fStg/s1600/xfce_audio.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="153" src="http://1.bp.blogspot.com/-2W2WwGbNzwo/UXqyuxH9PFI/AAAAAAAACeM/a6G5lx-fStg/s320/xfce_audio.png" width="320" /></a></div>Una delle poche cose che mi hanno sempre dato un po' noia su Xfce è il fatto che abilitando il <i>mute</i>&nbsp;dell'audio usando i tasti funzione/multimediali, l'<i>unmute</i>&nbsp;non avviene correttamente, costringendomi ad aprire il mixer ed abilitare nuovamente il canale opportuno a manina.<br /><br /><br /><br /><a name='more'></a>Il colpevole di questo malfunzionamento è <b>xfce4-volumed</b>, che non supporta il nostro amico PulseAudio. Fortunatamente qualcuno ha provveduto a sistemare le cose (il bello dell'opensource :D).<br />Quello che bisogna fare è sostanzialmente <a href="https://launchpad.net/xfce4-volumed-pulse/trunk/0.2.0/+download/xfce4-volumed-pulse-0.2.0.tar.bz2" target="_blank">scaricare <b>xfce4-volumed-pulse</b></a>, compilarlo, installarlo ed abilitarlo al boot al posto del vecchio xfce4-volumed:<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td><a href="http://1.bp.blogspot.com/-Dki7s1reUms/UXqwhgpgxXI/AAAAAAAACd0/cUcw7iS786g/s1600/Selezione_031.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="187" src="http://1.bp.blogspot.com/-Dki7s1reUms/UXqwhgpgxXI/AAAAAAAACd0/cUcw7iS786g/s320/Selezione_031.png" width="320" /></a></td></tr><tr><td class="tr-caption" style="font-size: 13px;">"Mister, sostituzione!"</td></tr></tbody></table><a href="https://aur.archlinux.org/packages/xfce4-volumed-pulse/" target="_blank">Su AUR</a>&nbsp;le dipendenze indicate sono, a parte pulseaudio, <b>libkeybinder2</b>&nbsp;e <b>libnotify</b>, ma chiaramente i nomi dei pacchetti variano da distro a distro. Ora finalmente possiamo zittire il pc sapendo che non avremo il minimo sbattimento per riabilitare il sonoro, come in teoria dovrebbe essere...<br /><br />Ringrazio&nbsp;<a class="g-profile" href="http://plus.google.com/115147457025961956673" target="_blank">+Marco Milone</a>&nbsp;che me l'ha fatto scoprire :)
+  </article>
+
+
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+  <p class="footer-msg">Made with <a href="http://jekyllrb.com/">Jekyll</a> and ♥. Blog posts are under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a>.</p>
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
