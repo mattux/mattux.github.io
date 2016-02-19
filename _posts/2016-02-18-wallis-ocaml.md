@@ -53,7 +53,7 @@ Printf.printf "\n3.1415926535897932384626433 (valore reale)\n\n";;
 
 Compilo con *ocamlopt* che produce codice nativo e lo mando in esecuzione:
 
-![Recursive Wallis]({{ site.local_url }}/assets/wallis_rec.png)
+![Recursive Wallis]({{ site.url }}/assets/wallis_rec.png)
 
 Già dopo centomila iterazioni (lo so, non sono propriamente iterazioni) le prime cifre vengono approssimate bene, ma raggiunte le trecentomila, ottengo giustamente un bell'errore di **stack overflow**. Questo avviene perché la funzione non è *tail recursive* a causa delle operazioni aritmetiche tra le chiamate. Eliminiamole e riscriviamo la funzione:
 
@@ -76,7 +76,7 @@ Printf.printf "\n3.1415926535897932384626433 (valore reale)\n\n";;
 
 Ricompilo e mando in esecuzione:
 
-![Tail Recursive Wallis]({{ local_url.url }}/assets/wallis_tailrec.png)
+![Tail Recursive Wallis]({{ site.url }}/assets/wallis_tailrec.png)
 
 Molto, molto meglio. Addirittura riesce a fare 50 milioni di iterazioni (sostanzialmente ora lo sono per davvero) in 4 secondi.
 
