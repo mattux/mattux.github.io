@@ -14,7 +14,7 @@ L'affluenza è stata in linea con le aspettative e forse, in alcuni momenti dell
 
 Effettivamente faccio paura.
 
-![Talk](https://scontent-mxp1-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/p720x720/12143084_10153416635562326_7780239441049279199_n.jpg?oh=0acd1c0d04ef08c2cca4f70b279841f3&oe=56C1AD8D "Paura, eh?")
+![Talk]({{ site.url }}/assets/ld15_gdtalk.jpg "Paura, eh?")
 
 Come anticipato nello scorso post, ho parlato di [Graph Database](http://linuxday.gulch.it/slides/2015/traccia-tecnica/dbms.pdf "Graph Database"), un tipo di database la cui adozione è in forte crescita e a cui mi sono avvicinato poco più di un anno fa. Addirittura qualcuno stima che tra 3-4 anni ci sarà un vero e proprio boom; [qualcosa](https://www.google.it/trends/explore#q=graph%20database) mi dice che costoro ci hanno preso in pieno, visto anche l'interesse che il talk ha suscitato nei presenti.
 Più nel dettaglio, il seminario ha affrontato le ragioni che hanno portato alla loro nascita e gli aspetti teorici di base, introducendo infine [Neo4j](http://neo4j.com), il più popolare Graph-DBMS.
