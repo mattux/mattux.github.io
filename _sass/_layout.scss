@@ -1,38 +1,26 @@
-/**
+﻿/**
  * Site header
  */
 .site-header {
-    //  border-top: 5px solid $grey-color-dark;
-    // border-bottom: 1px solid $grey-color-light;
-
-    border-top: 20px solid transparent;
-    border-bottom: 40px solid transparent;
-    min-height: 56px;
-
     // Positioning context for the mobile navigation icon
     position: relative;
-
-
     text-align: center;
 
+    padding-top:15px;
+    padding-bottom: 60px;
 }
 
+
 .site-description {
-color: $grey-color;
-font-size: $base-font-size * 0.9;
-/*font-family: $mono-font-family;*/
+    color: $grey-color;
+    font-size: $base-font-size * 0.9;
 }
 
 .site-title {
-    font-size: 36px;
-
+    font-size: 44px;
     line-height: 56px;
-    //letter-spacing: -1px;
     margin-bottom: 0;
-    //float: left;
-
     font-family: $mono-font-family;
-
     &,
     &:visited {
         color: $grey-color-dark;
@@ -197,9 +185,10 @@ font-size: $base-font-size * 0.9;
 .post-list {
     margin-left: 0;
     list-style: none;
+/*     text-align: center; */
 
     > li {
-        margin-bottom: $spacing-unit;
+        margin-bottom: $spacing-unit * 0.3;
     }
 
     h2 {
@@ -212,15 +201,12 @@ font-size: $base-font-size * 0.9;
     font-size: $small-font-size;
     color: $grey-color;
     font-weight: 400;
-
 }
 
 .post-link {
     display: block;
     font-size: 24px;
 }
-
-
 
 /**
  * Posts
@@ -230,18 +216,18 @@ font-size: $base-font-size * 0.9;
 }
 
 .post-title {
-    font-size: 44px;
-    //letter-spacing: -1px;
-    line-height: 1;
+    font-size: 42px;
+    line-height: 1.3;
     font-weight: 600;
-
-//    color: $brand-color;
-
 
     @include media-query($on-laptop) {
         font-size: 36px;
     }
 
+}
+
+.post-summary {
+  color:$grey-color;
 }
 
 .post-content {
@@ -281,15 +267,22 @@ font-size: $base-font-size * 0.9;
 
     a {
         border-bottom: 2px solid transparentize($brand-color, 0.6);
-        // border-bottom: 2px solid lighten($brand-color, 40%);
 
-      &:hover {
-        border-bottom-color: transparentize($text-color, 0.6);
-      }
+        &:hover {
+          border-bottom-color: transparentize($text-color, 0.6);
+        }
     }
 
     p code {
       font-size: $base-font-size;
+    }
+
+    p {
+      margin-bottom:$spacing-unit;
+    }
+
+    img {
+      border-radius: 2px;
     }
 }
 
@@ -301,9 +294,22 @@ font-size: $base-font-size * 0.9;
     text-align:center;
     padding-top:40px;
 
+
     a, span {
       margin-right:10px;
       margin-left:10px;
     }
+}
 
+.page_number {
+  color:$grey-color;
+}
+
+/**
+ * Images
+ */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

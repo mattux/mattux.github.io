@@ -9,7 +9,7 @@ local_url: "http://127.0.0.1:4000"
 local: "127.0.0.1:4000"
 twitter_username: _mattux_
 github_username:  mattux
-paginate: 5
+paginate: 4
 paginate_path: "/page:num/"
 
 gems :
@@ -17,36 +17,3 @@ gems :
 
 # Build settings
 markdown: kramdown
-
-
-# prose.io
-#~ prose:
-  #~ rooturl: '_posts'
-  #~ siteurl: 'http://mattux.github.io/'
-  #~ relativeLinks: 'http://mattux.github.io/links.jsonp'
-  #~ ignore:
-    #~ - index.md
-    #~ - _config.yml
-    #~ - /_layouts
-    #~ - /_includes
-  #~ metadata:
-    #~ _posts:
-      #~ - name: "layout"
-        #~ field:
-          #~ element: "hidden"
-          #~ value: "post"
-      #~ - name: "tags"
-        #~ field:
-          #~ element: "multiselect"
-          #~ label: "Add Tags"
-          #~ placeholder: "Choose Tags"
-    #~ _posts/static:
-      #~ - name: "layout"
-        #~ field:
-          #~ element: "hidden"
-          #~ value: "page"
-      #~ - name: "permalink"
-        #~ field:
-          #~ element: "text"
-          #~ label: "Permalink"
-          #~ value: ""

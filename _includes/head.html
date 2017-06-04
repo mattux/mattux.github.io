@@ -1,15 +1,47 @@
-<head>
+﻿<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }}{% if site.description %} &middot; {{ site.description }}{% endif %}{% endif %}</title>
+  <title>{% if page.title %}{{ site.title }} &middot; {{ page.title }}{% else %}{{ site.title }}{% if site.description %} &middot; {{ site.description }}{% endif %}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <!-- MATHJAX: RENDER LATEX (caricato solo sui post in cui serve) -->
-  <!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> -->
+  <!-- MATHJAX: RENDER LATEX -->
+  <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+     CommonHTML: { linebreaks: { automatic: true } },
+     "HTML-CSS": { linebreaks: { automatic: true } },
+             SVG: { linebreaks: { automatic: true } }
+     });
+     </script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+  <!-- COOKIE LAW CONSENT -->
+   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+  <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#edeff5",
+          "text": "#444"
+        },
+        "button": {
+          "background": "#1070cb"
+        }
+      },
+      "theme": "edgeless",
+      "content": {
+        "message": "Questo sito usa un sistema per i commenti che fa uso di cookie.",
+        "dismiss": "Ah, ok.",
+        "link": "(Nel dettaglio)",
+        "href": "https://help.disqus.com/customer/portal/articles/466235-enabling-cookies"
+      }
+    })});
+  </script>
 </head>

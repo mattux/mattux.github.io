@@ -5,10 +5,10 @@ title: Il prodotto di Wallis in OCaml e la ricorsione in coda
 comments: true
 tags:
 - ocaml
-- functional programming
+- functional_programming
 ---
 
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> -->
 
 Circa due settimane fa, ho letto [questo post](https://okpanico.wordpress.com/2016/02/03/attenti-al-falso-amico-con-python/) e poi [quest'altro post](https://okpanico.wordpress.com/2016/02/05/ancora-wallis/) del buon *Juhan* (blog da seguire, il suo) e niente, quando vedo qualche curiosità matematica, mi incanto come un bimbo (non sempre capisco tutto, ma ci provo).
 
@@ -18,9 +18,10 @@ E se c'è un linguaggio che ho studiato male all'Università, questo è **OCaml*
 Dunque, riassumendo, **il prodotto di Wallis** è questo:
 
 $$
-\begin{align*}
-\prod_{n = 1}^{\infty} \left(\frac{4n^2}{4n^2 - 1}\right) = \prod_{n = 1}^{\infty} \left(\frac{2n}{2n-1} \cdot \frac{2n}{2n+1}\right) = \frac{2}{1} \cdot \frac{2}{3} \cdot \frac{4}{3} \cdot \frac{4}{5} \cdot \frac{6}{5} \cdot \frac{6}{7} \cdots = \frac{\pi}{2}
-\end{align*}
+\begin{gather*}
+\prod_{n = 1}^{\infty} \left(\frac{4n^2}{4n^2 - 1}\right) = \prod_{n = 1}^{\infty} \left(\frac{2n}{2n-1} \cdot \frac{2n}{2n+1}\right) = \\
+\frac{2}{1} \cdot \frac{2}{3} \cdot \frac{4}{3} \cdot \frac{4}{5} \cdot \frac{6}{5} \cdot \frac{6}{7} \cdots = \frac{\pi}{2}
+\end{gather*}
 $$
 
 Per l'implementazione è sicuramente più pratica la forma compatta.
@@ -53,6 +54,7 @@ Printf.printf "\n3.1415926535897932384626433 (valore reale)\n\n";;
 
 {% endhighlight %}
 
+
 Compilo con *ocamlopt* che produce codice nativo e lo mando in esecuzione:
 
 ![Recursive Wallis]({{ site.url }}/assets/wallis_rec.png)
@@ -75,6 +77,7 @@ Printf.printf "\n1.5707963267948966192313216 (valore reale)\n\n";;
 Printf.printf "%.20f (Tail Recursive)" (2. *. wallis (float_of_string Sys.argv.(1)));;
 Printf.printf "\n3.1415926535897932384626433 (valore reale)\n\n";;
 {% endhighlight %}
+
 
 Ricompilo e mando in esecuzione:
 

@@ -126,11 +126,8 @@ blockquote {
  */
 pre,
 code {
-    //font-size: 15px;
-
-    // border: 1px solid $grey-color-light;
     border-radius: 2px;
-    background-color: #eaeaea;
+    background-color: $grey-color-light;
     font-family: $mono-font-family;
     line-height: $base-line-height;
     color: #333;
@@ -154,7 +151,9 @@ pre {
     }
 }
 
-pre code {   font-size: 14px; }
+pre code {
+  font-size: $base-font-size * 0.8;
+}
 
 /**
  * Wrapper
@@ -208,4 +207,14 @@ pre code {   font-size: 14px; }
             fill: $grey-color;
         }
     }
+}
+
+
+/**
+ * About
+ *
+*/
+img.itsame {
+  display: inline-block;
+  border-radius:2px;
 }

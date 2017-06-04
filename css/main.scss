@@ -4,30 +4,26 @@
 @charset "utf-8";
 
 // Font
-@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,700,700italic,500,500italic|Source+Code+Pro:400";
+@import "http://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Fira+Mono";
 
 
 // Our variables
-$base-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-$base-font-size:   20px;
+$base-font-family: "Fira Sans Condensed", Helvetica, Arial, sans-serif;
+$base-font-size:   19px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 
-$mono-font-family: "Source Code Pro";
+$mono-font-family: "Fira Mono";
 
 $spacing-unit:     30px;
 
-$background-color: #fdfdfd;
-//$brand-color:      #2a7ae2;
+$background-color: #fefefe;
 $brand-color:      #1070cb;
-
-
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 30%);
 
-/*$text-color:       $grey-color-dark;*/
 $text-color:       #444;
 
 // Width of the content area
