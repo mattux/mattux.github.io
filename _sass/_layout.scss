@@ -102,6 +102,23 @@
 }
 
 
+img.avatar {
+  height: 60px;
+  width: 60px;
+  border: 2px solid $grey-color-dark;
+  border-radius: 100%;
+  margin-bottom: 5px;
+}
+
+
+.header-links-separator {
+    margin: 0 8px 0 8px;
+    
+    &:before {
+      content: '·' ;
+    }
+}
+
 /**
  * Site footer
  */
