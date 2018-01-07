@@ -5,20 +5,18 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-<!--
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
--->
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
 
-    <!-- MATHJAX -->
+    <p class="post-meta">{{ page.date | date: "%d %b %Y" }}</p>
+
+
 
   </header>
 
   <article class="post-content">
     {{ content }}
-
   </article>
-
+ 
+  
 {% if page.comments %}
 
   <div id="disqus_thread"></div>

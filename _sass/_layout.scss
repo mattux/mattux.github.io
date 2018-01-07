@@ -93,6 +93,13 @@
     }
 }
 
+#header-links {
+    font-size: 2rem;
+    
+    a {
+        color: $text-color;
+    }
+}
 
 
 /**
@@ -193,6 +200,7 @@
 
     h2 {
       font-weight: 400;
+      display: table;
     }
 
 }
@@ -252,7 +260,7 @@
             font-size: 22px;
         }
 
-        font-style: italic;
+        /*font-style: italic;*/
         font-weight: 600;
         margin-top: 40px;
     }
@@ -304,6 +312,7 @@
 .page_number {
   color:$grey-color;
 }
+
 
 /**
  * Images

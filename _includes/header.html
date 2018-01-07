@@ -2,27 +2,31 @@
 
   <div class="wrapper">
 
-      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <img class="avatar" src={{ site.url }}/assets/avatar_2.jpg />
+
+      <a class="site-title" href="{{ site.baseurl }}/">     
+        {{ site.title }}
+      </a>
+      
       {% if site.description %}<p class="site-description">{{ site.description }}</p>{% endif %}
 
   </div>
   <div class="wrapper">
-<!--
-    <p class="text">{{ site.description }}</p>
--->
-  <div class="trigger">
-    <span class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></span>
-    &nbsp;·&nbsp;
-    <a href="https://plus.google.com/b/116514234298958416545/116514234298958416545/">Google+</a></span>
-    &nbsp;·&nbsp;
-    <a href="https://github.com/mattux/">GitHub</a></span>
-    &nbsp;·&nbsp;
-    {% for page in site.pages %}
-      {% if page.title %}
-      <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      {% endif %}
-    {% endfor %}
-  </div>
+
+    <div class="trigger" id ="header-links">
+      <span class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fi-rss" alt="RSS" title="RSS"></i></a></span>
+      &nbsp;·&nbsp;
+      <span><a href="https://github.com/mattux/"><i class="fi-social-github" alt="Github: mattux" title="Github: mattux"></i></a></span>
+      &nbsp;·&nbsp;
+      <span><a href="https://www.twitter.com/mtpani"><i class="fi-social-twitter" alt="Twitter: @mtpani" title="Twitter: @mtpani"></i></a></span>
+      &nbsp;·&nbsp;
+      
+      {% assign aboutpage = (site.pages | where: "title" , "About") %}
+      {% for page in aboutpage %}
+        <span><a href={{ page.url | prepend: site.baseurl }}><i class="fi-torso" alt="About" title="About"></i></a></span>
+      {% endfor %}
+  
+    </div>
   </div>
 
 </header>
