@@ -16,9 +16,9 @@
     <div class="trigger" id ="header-links">
       <span class="rss-subscribe"><a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fi-rss" alt="RSS" title="RSS"></i></a></span>
       <span class="header-links-separator"></span>
-      <span><a href="https://github.com/mattux/"><i class="fi-social-github" alt="Github: mattux" title="Github: mattux"></i></a></span>
+      <span><a href="https://github.com/{{ site.github_username }}/"><i class="fi-social-github" alt="Github: mattux" title="Github: mattux"></i></a></span>
       <span class="header-links-separator"></span>
-      <span><a href="https://www.twitter.com/mtpani"><i class="fi-social-twitter" alt="Twitter: @mtpani" title="Twitter: @mtpani"></i></a></span>
+      <span><a href="https://www.twitter.com/{{ site.twitter_username }}"><i class="fi-social-twitter" alt="Twitter: @mtpani" title="Twitter: @mtpani"></i></a></span>
       <span class="header-links-separator"></span>
       
       {% assign aboutpage = (site.pages | where: "title" , "About") %}
