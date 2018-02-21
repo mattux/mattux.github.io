@@ -7,7 +7,7 @@ published: true
 
 Matteo.
 
-> Col pc faccio cose che poi i cosi si cosano da soli. <br />Ed è facile riconoscermi, sono quello basso. (auto-cit.)
+> Col pc faccio cose che poi i cosi si cosano da soli. (auto-cit)
 
 Qua scrivo un po' di Informatica, un po' di Linux, un po' di Open Source.
 
