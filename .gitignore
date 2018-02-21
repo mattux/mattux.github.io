@@ -2,4 +2,5 @@ _drafts
 _site
 .sass-cache
 .jekyll_metadata
+_local_config.yml
 *~
