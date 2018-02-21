@@ -14,6 +14,7 @@
 .site-description {
     color: $grey-color;
     font-size: $base-font-size * 0.9;
+    margin-bottom: 0;
 }
 
 .site-title {
@@ -107,7 +108,6 @@ img.avatar {
   width: 60px;
   border: 2px solid $grey-color-dark;
   border-radius: 100%;
-  margin-bottom: 5px;
 }
 
 
@@ -198,7 +198,7 @@ img.avatar {
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: ($spacing-unit / 2) 0;
 
 }
 
