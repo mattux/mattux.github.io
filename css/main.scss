@@ -4,17 +4,18 @@
 @charset "utf-8";
 
 // Font
-@import "http://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Fira+Mono";
+//@import "http://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Fira+Mono";
+@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro|Fira+Mono";
 
 // Our variables
-$base-font-family: "Fira Sans Condensed", Helvetica, Arial, sans-serif;
-$base-font-size:   19px;
+$base-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$base-font-size:   20px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.6;
+$base-line-height: 1.4;
 
 $mono-font-family: "Fira Mono";
 
-$spacing-unit:     30px;
+$spacing-unit:     40px;
 
 $background-color: #fefefe;
 $brand-color:      #1070cb;
