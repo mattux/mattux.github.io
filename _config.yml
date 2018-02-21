@@ -1,13 +1,10 @@
 # Site settings
-email:
 title: Mattux >> log
 description: So contare fino a 31 usando una mano sola.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://mattux.github.io" # the base hostname & protocol for your site
+baseurl: "" 
+url: "http://mattux.github.io" 
 base_hostname: "mattux.github.io"
-local_url: "http://127.0.0.1:4000"
-local: "127.0.0.1:4000"
-twitter_username: _mattux_
+twitter_username: mtpani
 github_username:  mattux
 paginate: 4
 paginate_path: "/page:num/"
