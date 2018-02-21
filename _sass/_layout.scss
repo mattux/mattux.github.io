@@ -226,6 +226,7 @@ img.avatar {
     font-size: $small-font-size;
     color: $grey-color;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 .post-link {
@@ -237,7 +238,7 @@ img.avatar {
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit / 2;
 }
 
 .post-title {
