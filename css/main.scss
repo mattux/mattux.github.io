@@ -4,8 +4,9 @@
 @charset "utf-8";
 
 // Font
-//@import "http://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Fira+Mono";
-@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro|Fira+Mono";
+@import "../assets/Fonts/Source_Sans_Pro/stylesheet.css";
+@import "../assets/Fonts/Fira_Mono/stylesheet.css";
+
 
 // Our variables
 $base-font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
