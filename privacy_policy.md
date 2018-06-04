@@ -11,8 +11,8 @@ Questo sito è hostato su [GitHub Pages](https://pages.github.com/) (qui la [Pri
 
 Il codice sorgente del sito è disponibile all'indirizzo [github.com/mattux/mattux.github.io](https://github.com/mattux/mattux.github.io).
 
-Questo sito **non salva alcun dato dell'utente**. 
-Non è attualmente attivo alcun componente che faccia uso di cookie o simili e di conseguenza non viene raccolto alcun dato dell'utente.
+Questo sito **non salva alcun dato dell'utente** al netto di ciò che fa GitHub. 
+Non è attualmente attivo alcun componente che faccia uso di cookie o simili.
 
 Niente. Nisba. Nudda.
 
